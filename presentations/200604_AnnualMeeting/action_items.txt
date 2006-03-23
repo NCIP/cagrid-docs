@@ -1,0 +1,15 @@
+To expand on Avinash’s points below:
+
+Let’s do plan on doing a dry run of the actual demos on the 29th.  Here should be the responsible parties for the demos:
+Manav: 0.5 client demo 
+Ravi, Patrick: Workflow demo 
+Shannon, Steve: Dorian-Introduce demo 
+Please let me know if you feel a meeting is necessary to discuss the logistics of the demos prior to the 29th.  We could meet briefly tomorrow during our regular call if necessary.
+
+ 
+
+As for the walk through of the presentations/talks, let’s plan on spending the time on the 29th to review the current drafts.  Since we are currently focusing on the software, I don’t expect us to be ready to walk through the actual slides by the 29th.  Lets get a draft by the 29th, and then do a semi-final review the following Tuesday, the 4th.  We can then review the actual final slides on our meeting on the 6th.
+Scott: Draft/Outline of caGrid 1.0 Architecture talk : End of the Week (3/24) 
+All: Draft of component design slides (3/29) – You can begin now, and incorporate into the master presentation at the end of the week 
+All: Semi-final slides, presented (4/4) 
+All: Final slides, incorporating feedback (4/6) 
