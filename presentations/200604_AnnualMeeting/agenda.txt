@@ -11,5 +11,12 @@ Monday
 	~20 mins Workflow-oriented Demonstration 
 	~20 mins Secure Introduce Demonstration 
 4:15-5:30pm		Architecture of caGrid 1.0
-	~10 min overview
-	~
+	~5 min overview
+	~10 min Service Infrastructure and Tools
+	~10 min Data Service Enhancements
+	~10 min Security Infrastructure Enhancements
+	~10 min Metadata Management
+	~10 min Workflow Middleware
+	~10 min Object Identifiers
+	~10 min caGrid 1.0 Portal/Monitor
+	
