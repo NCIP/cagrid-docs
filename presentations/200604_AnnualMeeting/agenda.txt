@@ -6,10 +6,12 @@ Below are the main sessions that related to caGrid:
 
 Monday
 10:30-12pm		caGrid 0.5 Update
+
 1:30-2:30pm		caGrid Demos
 	~15 mins Distributed Query on caGrid 0.5 (Manav) 
 	~20 mins Workflow-oriented Demonstration 
 	~20 mins Secure Introduce Demonstration 
+
 4:15-5:30pm		Architecture of caGrid 1.0
 	~5 min overview
 	~10 min Service Infrastructure and Tools
