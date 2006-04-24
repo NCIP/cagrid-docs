@@ -1,0 +1,6 @@
+
+	~5 mins Introduction (Scott)
+	~10-15 mins Distributed Query on caGrid 0.5 (Manav) 
+	~10-15 mins Workflow-oriented Demonstration (Ravi/Patrick) 
+	~10-15 mins Introduce Demonstration (Shannon/Steve)
+	~10-15 mins Dorian Demonstration (Steve) 
