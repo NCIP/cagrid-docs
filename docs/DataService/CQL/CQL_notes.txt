@@ -1,0 +1,68 @@
+
+From Patrick:
+====================
+1) Should only have Target, properties, and associations - not objects 
+2) Why does target support multiple groups and objects does not? 
+3) Why does objects not support multiple sub-objects? 
+4) Group should require the predicate (why called logical operation?) if 3) is supported 
+	-scott: agreed; the way groups are done is confusing.. should probably just have named elements ("And" and "Or" instead of Group LogicRelation="OR")
+5) Why does CQLQuery have to be named 
+	-scott: agreed; should be optional
+6) You should support properties underneath Target, as it does not make sense to repeat the object name of the target again unless it is strictly required
+	-scott: strongly agreed; target and object should share the same complexType, if not the same element name... worse than not making sense, it is actually incorrect, 
+	 because its ambiguous if it is expected to mean just apply the property filters, or if it means a "self association" should be followed
+       
+Scott:
+====================
+Some example classes:
+
+ class Person
+   String name;
+   Address homeAddress;
+   Address workAddress;
+ 
+ class Address
+   String address;
+
+1) association traversal is ambiguous when there are multiple associations to the same class (with different roles)
+For example Consider the query:
+Target name=Person
+ Object name=Address
+ 
+What does it mean?  Could use the rolename instead.. 
+ or have an optional rolename attribute to use as a disambiguator (accompanied with a documented default behavior if its not present, such as it means OR)
+
+2) We should probably support attribute/CDE returns (for example, give me the Gene.symbol instead of all of Gene)
+how best to represent?
+
+3) Should we support ranges? (or just handle in delivery options) 
+
+4) There is currently no way to filter a parent and return a child (unless bi-directional associations are present)
+For example:
+I can say, "give me the Persons for a given address" but I can't say "give me the Address for a given person"
+
+5) When multiple properties are specified its ambiguous if they are "anded" or "ored"
+
+6) Need to decide on allowable property predicate types, and enumerate them... do we want it to be extensible?... probably do as long as core set is always supported
+  - heres a first cut (i suggest synonyms...):  Then need to define how they are supposed to work over given data types (for example, what should happen if >= is called on a non-numeric)
+    - =, equal
+    - !=, not equal
+    - <, less than
+    - <=, less than or equal 
+    - >, greater than
+    - >=, greater than or equal
+            
+7) How can i do a property predicate specifying null as a value? 
+
+8) We may also want to consider allowing property values to be function calls.  If we do, I suggest we adopt a subset of the xpath functions
+for String (http://www.w3.org/TR/xpath#section-String-Functions) and Number (http://www.w3.org/TR/xpath#section-Number-Functions)
+ - would have to consider trade off of utility vs. difficulty to implement
+
+9) not really a "language" issue but... need a common set of Exceptions the query method can throw:
+ - heres a first cut:
+   -MalformedQueryException: the query doesn't validate to the xsd
+   -IllegalQueryException: the query is valid format, but the objects, attributes, or associations used in the query aren't allowed by the exposed object model.
+   	 -for example, querying for Gene when the model doesn't have one, or querying for Foo->Bar when there is no such association.
+   -QueryProcessingExeception: some failure during query processing... could be subtyped
+
+====================
