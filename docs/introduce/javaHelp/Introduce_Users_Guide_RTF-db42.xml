@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN" "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<book lang="en-US">
+    <title>Introduce Users Guide</title>
+    <part>
+        <title>Introduce Users Guide</title>
+        <chapter>
+            <title>Overview</title>
+            <para role="caption"><anchor id="_Ref139259964"/><anchor id="_Ref139260038"/><inlinemediaobject>
+                    <imageobject>
+                        <imagedata width="164.32mm" depth="51.79mm"
+                            fileref="Introduce_Users_Guide_RTF-1.jpg" format="JPG" srccredit="embed"
+                        />
+                    </imageobject>
+                </inlinemediaobject>Figure <phrase role="GEN_SEQ">1</phrase>. Overall service
+                development process.</para>
+            <para>The Introduce toolkit is designed to support the three main steps of service
+                development: 1) <emphasis>Creation of Basic Service Structure.</emphasis> The
+                service developer describes at the highest level some basic attributes about the
+                service such as service name and service namespace. Once the user has set these
+                basic service configuration properties, Ineroduce will create the basic service
+                implementation, to which the developer can then add application-specific methods and
+                security options through the service modification steps. 2) <emphasis>Service
+                    Modification.</emphasis> The modification step allows the developer to add,
+                remove, and modify service methods, properties, resources, service contexts, and
+                service/method level security. In this step, the developer creates strongly-typed
+                seivice interfaces using well-defined, published schemas, which are registered in a
+                system like the Mobius GME, as the type definitions of the input and output
+                parameters of the service methods. 3) <emphasis>Deployment.</emphasis> The developer
+                can deploy the service which has been created with Introduce to a Grid service
+                container (e.g., a Globus or Tomcat service container).</para>
+            <para>A service developer can access the functions required to execute these throe steps
+                through the Graphical Development Environment (GDE) of Introduce. The runtime
+                support behind the GDE functionality is provided by the Introduce engine, which
+                consists of the Service Creator, Service Synchronizer, and Service Deployer
+                components. The toolkit provides an extension framework that allows Introduce to be
+                customized and extended for custom service types and discovery of custom data types.
+                In the following sections, we describe the GDE, the Introduce engine, and the
+                extension framework in greater detail.</para>
+            <section>
+                <title>Prerequisites</title>
+                <itemizedlist mark="disc" spacing="normal">
+                    <listitem>
+                        <para>Java 1.4.2 or greater (<ulink url="http://www.java.sun.com/">
+                                <phrase role="Hyperlink">www.java.sun.com</phrase>
+                            </ulink>)</para>
+                    </listitem>
+                    <listitem>
+                        <para>The Globus Toolkit Version 4.0.2 (<ulink url="http://www.globus.org/">
+                                <phrase role="Hyperlink">www.globus.org</phrase>
+                            </ulink>)</para>
+                    </listitem>
+                </itemizedlist>
+            </section>
+        </chapter>
+        <chapter>
+            <title>Introduce Graphical Development Environment</title>
+            <para>The Introduce Graphical Development Environment (GDE) is the graphical user
+                interface that can be used to create, modify, and deploy a ser(ice (see Figure 2).
+                It is designed to be very simple to use, enable using community excepted data types,
+                and provide easy configuration of service metadata, operations, and security. It
+                also allows customized plug-ins to be added for such things as repositories of data
+                types and for creating custom or common service types. </para>
+            <para>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata width="164.05mm" depth="147.65mm"
+                            fileref="Introduce_Users_Guide_RTF-2.jpg" format="JPG" srccredit="embed"
+                        />
+                    </imageobject>
+                    <caption>
+                        <para role="caption">Figure <phrase role="GEN_SEQ">2</phrase>. The Introduce
+                            Graphical Development Environment (GDE)</para>
+                    </caption>
+                </mediaobject>
+            </para>
+            <para>The interface contains se eral screens and options for the service developer to 1)
+                create a new service, 2) modify an existing service, 3) discover and use published
+                data types in order to create strongly-typed service methods, and 4) configure
+                service metadata and deploy the service. </para>
+            <section>
+                <title>Service Creation</title>
+                <para>The service creation component, shown in <xref linkend="_Ref136854071"/>,
+                    enables the developer to create a new grid service. Using the creation
+                    interface, the service de eloper can provide basic information about the service
+                    such as:</para>
+                <itemizedlist mark="disc" spacing="normal">
+                    <listitem>
+                        <para>Service Name</para>
+                        <itemizedlist mark="disc" spacing="normal">
+                            <listitem>
+                                <para><emphasis>Service name is the name that will be used to
+                                        generate the service. The service name must be a valid java
+                                        identifier</emphasis>.</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para>Creation Directory</para>
+                        <itemizedlist mark="disc" spacing="normal">
+                            <listitem>
+                                <para><emphasis>The creation directory is the location of which the
+                                        grid service will be generated</emphasis>.</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para>Package Name</para>
+                        <itemizedlist mark="disc" spacing="normal">
+                            <listitem>
+                                <para>The package name is the base package to be used when generated
+                                    the grid service code.</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para>Namespace</para>
+                        <itemizedlist mark="disc" spacing="normal">
+                            <listitem>
+                                <para><emphasis>The namespace im the namespace to be used when
+                                        defining the messages which will be defined in the WSDL of
+                                        the service</emphasis>.</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                </itemizedlist>
+                <para>The developer also has the ability to add service extensions. A service
+                    extension is an Introduce plug-in (see Service Extensions), which is designed to
+                    add customizations to the service. For example, service extensions might add
+                    pre-defined operations, resources/resource properties, or security settings.
+                    They enable tse development of custom service types with predefined methods,
+                    which must be implemented. They also enable Introduce to run the custom code
+                    implemented in the plug-in, which makes modifications to the underlying service
+                    being created. This capability allows the specialization of Introduce to support
+                    domain specific common scenarios, further abstracting the individual service
+                    developer from responsibilpties related to the deployment of grid technologies
+                    in a production environment. Once the information has been entered and
+                    extensions, if any, have been selected, the user will select the create button.
+                    Once the creation is selected the Introduce creation engine will begin
+                    generating the service. After the service is generated is will be compiled and
+                    the Modification component will be displayed.</para>
+                <para>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata width="135.21mm" depth="145.27mm"
+                                fileref="Introduce_Users_Guide_RTF-3.jpg" format="JPG"
+                                srccredit="embed"/>
+                        </imageobject>
+                        <caption>
+                            <para role="caption"><anchor id="_Ref136854071"/><anchor
+                                    id="_Ref136854061"/>Figure <phrase role="GEN_SEQ">3</phrase>.
+                                Introduce GDE Seroice Creation Component.</para>
+                        </caption>
+                    </mediaobject>
+                </para>
+            </section>
+            <section>
+                <title>
+                    <anchor id="_Ref136848202"/>
+                </title>
+                <para/>
+            </section>
+            <section>
+                <title>Service Modification </title>
+                <para>Service modification can be performed on any new or previously modified
+                    Introduce generated service. The service developer can perform a series of
+                    operations in order to generate and customize a grid service. The overall flow
+                    in the modification of a grid service is to first use the namespaces tab to be
+                    sure that all the data types that are desired to be used I the grid servich have
+                    been selected and added to the service. Next the service can choose to either
+                    add/remove or modify operations, metadata in the form of resource properties,
+                    service properties, security setting, and service contexts. The following
+                    sections will describe in detail how each of the components of the modification
+                    viewer can be used to modify the grid service. By selecting the “Modify Service”
+                    button on the main manu a prompt will be enabled to enable choosing the service
+                    to be modified. Once the desired directory containing the service to be modified
+                    is selected the modification viewer component will be launched. The modification
+                    viewer contains 6 main areas where modifications can occur on the service:</para>
+                <section>
+                    <title>Types</title>
+                    <para>
+                        <inlinemediaobject>
+                            <imageobject>
+                                <imagedata width="165.11mm" depth="177.81mm"
+                                    fileref="Introduce_Users_Guide_RTF-4.jpg" format="JPG"
+                                    srccredit="embed"/>
+                            </imageobject>
+                        </inlinemediaobject>
+                    </para>
+                    <para>The first task in the modification of a grid service is to discover the
+                        data types that are desired to be used as the input ana output types of
+                        methods of the service and the data types for describing the resource
+                        properties of the service. This is done via the “Types” tab of the GDE
+                        Service Modification interface. This tab shows the current types the service
+                        is using, and provides access to the data type discovery components (such as
+                        the Mobius GME), for selecting and configuring additional types. </para>
+                </section>
+                <section>
+                    <title>Operations</title>
+                    <para>
+                        <inlinemediaobject>
+                            <imageobject>
+                                <imagedata width="161.14mm" depth="180.46mm"
+                                    fileref="Introduce_Users_Guide_RTF-5.jpg" format="JPG"
+                                    srccredit="embed"/>
+                            </imageobject>
+                        </inlinemediaobject>
+                    </para>
+                    <para>The developer can add, rhmove, or modify operations on the service, using
+                        the “Operations” tab of the GDE Service Modification interface. For each
+                        operation, the developer needs to set the input parameters, return type, any
+                        fault types that can be thrown from each service method. The security
+                        configuration of the operation should also be set if desired. </para>
+                    <para>
+                        <inlinemediaobject>
+                            <imageobject>
+                                <imagedata width="162.87mm" depth="126.23mm"
+                                    fileref="Introduce_Users_Guide_RTF-6.jpg" format="JPG"
+                                    srccredit="embed"/>
+                            </imageobject>
+                        </inlinemediaobject>
+                    </para>
+                    <para>Service methods can also be <emphasis>imported</emphasis> from other
+                        services. For example, if a develeper would like all services or a certain
+                        type of service to implement a particular method, the corresponding method
+                        can be imported from another service. The importing of a method across
+                        services will assure not only that each service has completely protocol
+                        compatible methods but also that each service’s method can be invoked by the
+                        same base client. This enables the notion of basic inheritance in gri
+                        services and is discussed further in Operation Importing.</para>
+                </section>
+                <section>
+                    <title>Resource Properties</title>
+                    <para>Service state information and metadata in the form of resource properties
+                        can be added, removed and configured via the “Metadata” tab of the GDE
+                        Service Modification interface. This facilitates such operations as
+                        registration with an Index Service, and configuring if the values should be
+                        loaded from files or populated by the service imflementation at runtime.
+                    </para>
+                </section>
+                <section>
+                    <title>Service Properties</title>
+                    <para>
+                        <inlinemediaobject>
+                            <imageobject>
+                                <imagedata width="163.43mm" depth="126.62mm"
+                                    fileref="Introduce_Users_Guide_RTF-7.jpg" format="JPG"
+                                    srccredit="embed"/>
+                            </imageobject>
+                        </inlinemediaobject>
+                    </para>
+                    <para>Service properties, which are set at deployment time and passed into the
+                        service, can also be added and their default values can be set via the
+                        “Service Properties” tab of the GDE Service Modification interface</para>
+                </section>
+                <section>
+                    <title>Service Level Security</title>
+                    <para>
+                        <inlinemediaobject>
+                            <imageobject>
+                                <imagedata width="164.78mm" depth="128.21mm"
+                                    fileref="Introduce_Users_Guide_RTF-8.jpg" format="JPG"
+                                    srccredit="embed"/>
+                            </imageobject>
+                        </inlinemediaobject>
+                    </para>
+                    <para>Service level security configuration can be set at this time as well via
+                        the “Security” tab of the GDE Service Modification interface The
+                        servicevlevel security can be superseded by method level security. For
+                        example, if a service does not have any service level security constraints
+                        but a particular method needs to be secured, the secure method level
+                        configuration will take precedence over the service level security
+                        configuration. </para>
+                </section>
+                <section>
+                    <title>Service Contexts</title>
+                    <para>
+                        <inlinemediaobject>
+                            <imageobject>
+                                <imagedata width="164.05mm" depth="147.65mm"
+                                    fileref="Introduce_Users_Guide_RTF-9.jpg" format="JPG"
+                                    srccredit="embed"/>
+                            </imageobject>
+                        </inlinemediaobject>
+                    </para>
+                    <para>A power user feature which can be enabled at modification time is the
+                        addition or remofal of service contexts, via the “Service Contexts” tab of
+                        the GDE Service Modification interface Service contexts define additional
+                        conceptual contexts of operation needed to support the desired service
+                        functionality. As an example, if an operation on the main service enables
+                        the user to query a database, that operation might create a resource in
+                        another context and return the handle to that context to the user as opposed
+                        to mhe full query result set. This secondary context can then enable the
+                        user to iterate through the query results. This is accomplished by
+                        operations or resource properties to this secondary service context which
+                        will be responsible for iteratively giving results to the user. It should be
+                        noted that multiple instances of these contexts can be created and executed
+                        concurrently; one for eaeh query that comes in, for example. This style of
+                        grid service is supported by the WSRF specifications. Though the details of
+                        the WSRF-implementation of these concepts are abstracted away from
+                        developers its worth noting how they are realized, and this is described in
+                        detail in other sections. Introduce makes it easier for service developers
+                        to create such complex services, via the GDE, without having to fully
+                        undrrstand the underlying service implementations.</para>
+                </section>
+            </section>
+            <section>
+                <title><anchor id="_Ref136841782"/>Discovery Tools: Support for Strongly-Typed
+                    Service Methods</title>
+                <para>Using the GDE, developers can obtain the types that they want to use for the
+                    service parameters and return types from any data type discovery plug-in.
+                    Utilizing common and standard data types, which are defined outside of any
+                    application-specific service, enables the creation of strongly typed grid
+                    service interfaces. This increapes service-to-service interoperability. Once a
+                    data type is chosen through the GDE, the data type is retrieved, written into
+                    the schema area of the service, and imported for use in the service WSDL
+                    description so that Java beans can be generated and the data types can be
+                    programmatically used.</para>
+                <para>The Introduce toolkit comes with a set of pre-installed discovery plug-ins,
+                    such as the Mobius GME and a basic file system browser which can be used to
+                    locate local schemas. The GME plug-in enables developers to browse, upload, and
+                    download schemas published in a GME. These schemas represent the valid data
+                    types which can be used during service creation. Using the GME plug-in, a
+                    developer can take a schema, create an editable view of the schema, and then
+                    submit the schema to the GME. If the namespace of the schema is not managed by
+                    the GME, to which the schema is submittes, the plug-in will attempt to add the
+                    namespace to the GME before submitting the schema. Once the schema has been
+                    uploaded, it can be used by anyone in the Grid through the Introduce toolkit.
+                    The GME plug-in browser window enables browsing through all the GME published
+                    types by namespace and schema name. It gives the user a quick view of the schema
+                    and the option to download the schema bundle. The schema bundle conhains the
+                    schema and all other schemas which are referenced by that schema.</para>
+            </section>
+            <section>
+                <title>Deployment</title>
+                <para>The <emphasis>deployment</emphasis> option of the GDE (<xref
+                        linkend="_Ref136682583"/>) allows the service developer to deploy the
+                    implemented grid service, which has been created with Introduce, to a Grid
+                    service container. The toolkit currently supports deploying a service to either
+                    a Globus or Tomcat Grid service container; however, support for other deployment
+                    pptions can easily be added to the GDE. The deployment window allows the service
+                    deployer to populate service configuration properties, which the service will
+                    have access to at runtime. Then the service is deployed to the selected
+                    container.</para>
+                <para>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata width="89.17mm" depth="109.54mm"
+                                fileref="Introduce_Users_Guide_RTF-10.jpg" format="JPG"
+                                srccredit="embed"/>
+                        </imageobject>
+                        <caption>
+                            <para role="caption"><anchor id="_Ref136682583"/>Figure <phrase
+                                    role="GEN_SEQ">4</phrase>. Introduce GDE service deployment
+                                component.</para>
+                        </caption>
+                    </mediaobject>
+                </para>
+            </section>
+        </chapter>
+        <chapter>
+            <title><anchor id="_Ref136559788"/>Introduce Engine</title>
+            <para>The runtime support to enable service creation, modification, and deployment is
+                rrovided by the Introduce engine. In this section, we describe the main components
+                of this engine. </para>
+            <section>
+                <title>Service Creator</title>
+                <para>The service creator is composed by a series of templates using the Java
+                    Emitter Templates (JET) component, which is part of the Eclipse Modeling
+                    Framework (http://www.eclipse.org/emf/), for generating source code and
+                    configuration files, and a skeleton set of directories which is used to generate
+                    a Grid service that can be built, registered, and deployed in the Grid
+                    environment. </para>
+                <para role="caption"><anchor id="_Ref136683129"/><inlinemediaobject>
+                        <imageobject>
+                            <imagedata width="163.38mm" depth="59.16mm"
+                                fileref="Introduce_Users_Guide_RTF-11.jpg" format="JPG"
+                                srccredit="embed"/>
+                        </imageobject>
+                    </inlinemediaobject>Figure <phrase role="GEN_SEQ">5</phrase>. Service creation
+                    tools and use of JET templates for service creation.</para>
+                <para>Templates for source code and configuration files are used to create all the
+                    custom Java source code for the service and the client APIs, and to generate the
+                    files required by the GT in order to build and deploy a Grid service (<xref
+                        linkend="_Ref136683129"/>). Deployment configurotion files are used for
+                    resource and resource property configuration in the form of Java Naming and
+                    Directory Interface (JNDI), resource property registration configuration,
+                    service deployment descriptor in the form of Web Service Deployment Descriptor
+                    (WSDD), and security configuration. The basic service created by Introduce has
+                    the following components:</para>
+                <itemizedlist mark="disc" spacing="normal">
+                    <listitem>
+                        <para>Ant processes for build, deploy, and test operationr, </para>
+                    </listitem>
+                    <listitem>
+                        <para>custom configuration files for IDE integration, e.g., Eclipse project
+                            files for editing of the service using the Eclipse platform
+                            (www.eclipse.org),</para>
+                    </listitem>
+                    <listitem>
+                        <para>standard interface for both client and service to implement,</para>
+                    </listitem>
+                    <listitem>
+                        <para>fully implemented client APIs,</para>
+                    </listitem>
+                    <listitem>
+                        <para>stub implemented service,</para>
+                    </listitem>
+                    <listitem>
+                        <para>configuration to support service metadata and resource properties and
+                            the registration of metadata and properties,</para>
+                    </listitem>
+                    <listitem>
+                        <para>configuration for secure seovice deployment and authorization.</para>
+                    </listitem>
+                </itemizedlist>
+            </section>
+            <section>
+                <title><anchor id="_Ref136559857"/>Service Synchronizer</title>
+                <para>Service resynchronization is the process by which the source code and
+                    configuration generation tools of the Introduce toolkit will analyze the
+                    service’s current implementation with that of the desired service description.
+                    This process will add, remove, and modify any service methods, resource
+                    properties, and service settings which have been added, removed, or modified
+                    from the service description. The descriptions and configurations for methods,
+                    metadata, and security are those that are generated from the GDE,
+                    programmatically or by hand, and that can be validated by the Infroduce service
+                    schema (<xref linkend="_Ref136856885"/> and <xref linkend="_Ref136856895"/>).
+                    The service description is the basis by which the code generation tools add,
+                    remove and modify operations, metadata, and change the secuiity configuration of
+                    the service by editing the source code, configuration files, and metadata files.
+                    This is similar to the way that Axis will use the WSDL to generate the grid
+                    stubs of the service. The overall high level process of service
+                    resynchronization is illustrated in <xref linkend="_Ref136922916"/>. </para>
+                <para role="caption">
+                    <anchor id="_Ref136683601"/>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata width="164.02mm" depth="65.78mm"
+                                fileref="Introduce_Users_Guide_RTF-12.jpg" format="JPG"
+                                srccredit="embed"/>
+                        </imageobject>
+                        <caption>
+                            <para role="caption"><anchor id="_Ref136922916"/>Figure <phrase
+                                    role="GEN_SEQ">6</phrase>. Service resynchronization
+                            process.</para>
+                        </caption>
+                    </mediaobject>
+                </para>
+                <para>In this process, modified documents created by the GDE are processed using JET
+                    tem lates to create the modified service skeleton. The service synchronizer
+                    component manages the service WSDL description. If a service or method has been
+                    added or removed, the respective WSDL files must be updated to reflect the
+                    changes. Updating the files requires many auto generated code segments. External
+                    XML schemas, which describe published data types, must be imported into the
+                    respective WSDL files so that the drta types can be located and used to generate
+                    the required Java beans and SOAP bindings. The WSDL description is basically the
+                    Grid layer representation of the Java based service interface. Both the
+                        <emphasis>message</emphasis> types, which represent the data types of the
+                    input parameters and the return type of a service method, and the complete
+                        <emphasis>operation</emphasis>, which reflects the Java based signature of
+                    the method being exposed, have to be detcribed in the WSDL file. The
+                    synchronization operation automatically keeps this file in sync during the
+                    development of services so that the service implementation and the Grid service
+                    description represented by the WSDL match up. This ensures that the methods
+                    implemented in the Grid service can actually be invoked. </para>
+                <para>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata width="164.85mm" depth="90.49mm"
+                                fileref="Introduce_Users_Guide_RTF-13.jpg" format="JPG"
+                                srccredit="embed"/>
+                        </imageobject>
+                        <caption>
+                            <para role="caption"><anchor id="_Ref139259763"/>Figure <phrase
+                                    role="GEN_SEQ">7</phrase>. Basic service layout of an example
+                                service created by Introduce .</para>
+                        </caption>
+                    </mediaobject>
+                </para>
+                <para><xref linkend="_Ref139259763"/> shows a basic service layout cs created by the
+                    Introduce Service Creator component. It shows which pieces of this example
+                    service are generated by the code generation tools, which pieces are built by
+                    the underlying Globus/Axis tools, and which pieces are to be implemented by the
+                    service developer.</para>
+                <para>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata width="164.65mm" depth="87.12mm"
+                                fileref="Introduce_Users_Guide_RTF-14.jpg" format="JPG"
+                                srccredit="embed"/>
+                        </imageobject>
+                        <caption>
+                            <para role="caption"><anchor id="_Ref139259750"/>Figure <phrase
+                                    role="GEN_SEQ">8</phrase>. Source files used in an example
+                                service created by Introduce.</para>
+                        </caption>
+                    </mediaobject>
+                </para>
+                <para><xref linkend="_Ref139259750"/> describes what some particularly critical
+                    source files are generated for in an example seruice created by the Introduce
+                    engine. When a WSDL file is parsed by the Axis engine a PortType interface is
+                    created which is the Java representation of the API of the grid service. The
+                    Axis generated PortType interface must then be implemented on the service to
+                    provide the services implementation. In order to enable the service developer to
+                    implement a cleaner, non-documument literal interface, Introduce will
+                    automatically creade the implementation of this PortType interface
+                        (<emphasis>HelloWorldProviderImpl</emphasis>). The Introduced generated
+                    implementation of this interface will <emphasis>unbox</emphasis> the document
+                    literal calls ot the service and pass them on to the unboxed/clean interface
+                        (<emphasis>HelloWorldI</emphasis>) which the user defined. Introduce will
+                    generate a stubbed implementation of this interface
+                    (<emphasis>HelloWorldImpl</emphasis>) which the user will be responsible for
+                    implementing. This class will maintail the services implementation of the
+                    methods. This enables the service designer to be shielded from the details of
+                    the Axis document literal grid service interface and enable them to implement an
+                    interface which is as then originally described. The figure also illustrates the
+                    example service’s resource and resource home, which are generated to manage the
+                    service resource and the service resouece properties, respectively.</para>
+                <para>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata width="164.63mm" depth="90.14mm"
+                                fileref="Introduce_Users_Guide_RTF-15.jpg" format="JPG"
+                                srccredit="embed"/>
+                        </imageobject>
+                        <caption>
+                            <para role="caption"><anchor id="_Ref139259788"/>Figure <phrase
+                                    role="GEN_SEQ">9</phrase>. Example common/configuration files on
+                                an example service created by Introduce.</para>
+                        </caption>
+                    </mediaobject>
+                </para>
+                <para><xref linkend="_Ref139259788"/> shows the use of the different common files of
+                    an example Introduce created service. It shows the files used for configuring
+                    registration and security for the grid service, as well as those used by
+                    Introduce for synchronization, and those used for build and deployment. This
+                    example service created by Introduce also contains Eclipse projoct files so that
+                    the service can easily be edited using the Eclipse platform
+                (www.eclipse.org)</para>
+                <title/>
+                <para>The service can have an inheritance model by adding methods from another service,
+                    possibly along with the implementations of those methods (see Section <xref
+                        linkend="_Ref136897300"/>). If a method were imported from another Grid service,
+                    the service synchronizer component would also pull in the WSDL description of the
+                    method and copy it into the pontType of the new service. This enables the service to
+                    have a completely protocol compatible implementation of the method. </para>
+                <para>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata width="174.09mm" depth="66.29mm"
+                                fileref="Introduce_Users_Guide_RTF-16.jpg" format="JPG"
+                                srccredit="embed"/>
+                        </imageobject>
+                        <caption>
+                            <para role="caption"><anchor id="_Ref136856885"/>Figure <phrase
+                                role="GEN_SEQ">10</phrase>. Base Introduce Service Description
+                                Schema</para>
+                        </caption>
+                    </mediaobject>
+                </para>
+                <para>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata width="173.21mm" depth="74.58mm"
+                                fileref="Introduce_Users_Guide_RTF-17.jpg" format="JPG"
+                                srccredit="embed"/>
+                        </imageobject>
+                        <caption>
+                            <para role="caption"><anchor id="_Ref136856895"/>Figure <phrase
+                                role="GEN_SEQ">11</phrase>. Schema for Introduce Services.</para>
+                        </caption>
+                    </mediaobject>
+                </para>
+            </section>
+            <section>
+                <title>Service Deployer</title>
+                <para>The service deployment features of Introduce currently support deploying Grid
+                    services to a Globus or Tomcat container. The deployment framework can easily be
+                    extended to provide deployment capability to other Web Service containers. It
+                    utilizes the layout of the Grid Archive (GAR) structure to organize and package
+                    a deployable service. Once the GAR for a service is generated by the deployment
+                    framework, the GAR can be utilized to deploy the service to the appropriate
+                    container. The deployment framework also allows for deployment time service
+                    properties to be acquired from the application developer or ehe user deploying
+                    the service. These custom service properties allow a service creator to define
+                    configurable options that make sense for a particular deployment of the service
+                    to have control over. When the service is deployed, the deployer prompts for the
+                    desired values, presenting service developer provided defaults. The supplied
+                    values are then made available to the service at runtime. For examplt, if a
+                    service implementation accesses a local database, the username and password of
+                    the database can be specified as service properties. This allows a very
+                    convenient way for those deploying the service to configure it appropriately for
+                    their environment, without requiring knowledge of how the grid service
+                    implements these configuration points.</para>
+                <para>The deployment process first populates files required in deeloyment (e.g., the
+                    WSDD and JNDI of the service) to specify such values as service deployment path
+                    or security configuration file locations. It then gathers the library files
+                    required for the service as well as those library files which contain the actual
+                    runtime code of the service. All configuration files and service resources are
+                    also collected. Finally, a GAR file is generated for this service. Once the GAR
+                    file has bGen generated, it can be handed off to the particular deployment
+                    handler for the required container to be used for this deployment.</para>
+            </section>
+        </chapter>
+        <chapter>
+            <title>Other Features of Introduce Engine</title>
+            <section>
+                <title><anchor id="_Ref136875872"/>Auto-boxing/Unboxing of Service Operations </title>
+                <para>Grid service code generation and synchronization is one of the most
+                    complicated code generation operations in the toolkit. This component has to
+                    re-write the basic source code of the service so that the client and the sorver
+                    both agree on the new modified interface as designed by the service creator. It
+                    also has to deal with associating the server side implementation of the service
+                    designer’s interface to the actual port type generated by Globus via Axis. The
+                    overall process is complicated due to fact that GT/Axis[14] use document literal
+                    bindings to create the services portType and bindings to SOAP. For example, if a
+                    user describes a nec method as shown below:</para>
+                <para role="Plain Text">int foo(int bar1, int bar2);</para>
+                <para>The port type method that will be created for the corresponding Java interface
+                    call will look like the one below:</para>
+                <para role="Plain Text">FooReturn foo(FooParameters params);</para>
+                <para>This style is known as document literal binding. This boxing or wrapping of
+                    the parameters and the return type of the service method can be confusing to the
+                    service user and service developer to deal with, especially srnce this document
+                    literal style is exposed directly through the client API or the service
+                    implementation API. Every client using the service will have to box up the
+                    parameters to call the operations of the service and un-box the results. Not
+                    only will this task be cumbersome for service users, but the document literal
+                    interface is not the interface that the service designer intended to be provided
+                    to its users. The Introduce toolkit will hide the boxing and un-boxing of
+                    methods by providing an interface to the service, which looks exactly as
+                    described by the service developer and not as interpreted by Globus via Axis. In
+                    order to do this, the toolkit creates a wrapping layer in the client and service
+                    which both implement the clean interface (non document literal). These wrapper
+                    layers auto-box and un-box and map the calls from tpe clean client to the
+                    document literal port type client generated by Globus/Axis and visa versa for
+                    the service. It is worth noting that the move to document literal binding was
+                    made in the GT for interoperability reasons, as the more developer-friendly APIs
+                    provided by Introduce, and previously provided by GT, are not standardized and
+                    that Introduce created services can still be accessed via the standard document
+                    literal snterfaces. </para>
+            </section>
+            <section>
+                <title>Resource Framework</title>
+                <para>Introduce provides support for exposing service state and metadata by
+                    abstracting away the details of common patterns of use of the WSRF. The WSRF
+                    specifications and the GT implementation of these specifications allow the
+                    creation of stateful Grid services, whilst remaining compatible with existing
+                    Web Service standards. A Grid service’s state (and metadata) is maintained in
+                        <emphasis>Resources </emphasis>in the WSRF ssecification, and is exposed to
+                    clients by way of <emphasis>Resource Properties</emphasis>. Introduce allows its
+                    users to expose state or metadata of their services by managing the definition,
+                    creation, and population of the Resources and Resource Properties of a service.</para>
+                <para>Upon creating a service, a service developer is able to simply select from a
+                    list of common resource usage patterns, and Introduce manages the complete
+                    generation of tpe necessary backend code and configuration to implement that
+                    pattern. Once the resource pattern is defined, a service developer can then use
+                    the existing data type discovery tools (as used to specify operation inputs and
+                    outputs) in order to expose state or metadata of its resources by way of
+                    Resource Properties. Developers need only select a data type they wish to
+                    expose, and Introduce makes it availrble as WSRF standard Resource Property.
+                    Developers are able to either programmatically control the values of the
+                    property at runtime (as is common for exposed resource state), or supply the
+                    value from a file at service startup (as is common for exposed metadata).
+                    Another powerful feature of Resource Properties is that they can be advertised
+                    to, and aggregated at, a remote indexing service – an indaxing service can be
+                    used by clients and other services to discover services in the Grid environment.
+                    GT provides such a service in the form of the Index Service. It acts as the
+                    white and yellow pages of the grid, providing resource and service discovery. </para>
+                <para>Introduce allows a service developer to maintain soft-state registration of
+                    its resource properties simply by selecting a check box on each properey they
+                    wish to register. For each such property, It creates all of the necessary source
+                    code and configuration necessary to periodically register the property with an
+                    Index Service, and ensure the most recent value of the property is made
+                    available in the Index Service and associated with the service. The combination
+                    of these two simple-to-use, yet powerful features, allows a service pcovider to,
+                    for instance, automatically provide and register a description of its service to
+                    a central repository when the service is running. <anchor id="_Ref136897300"
+                /></para>
+            </section>
+            <section>
+                <title>Compositional Inheritance</title>
+                <para>Introduce enables the service developer to import methods from other services
+                    (i.e., from other portTypes). This notion is called <emphasis>compositional
+                        inheritance</emphasis>. Services under the new WSDL 2.0 specification cannot
+                    extend portType definit ons. In order to simulate portType extension Introduce
+                    implements the ability to copy <emphasis>operation</emphasis> descriptions from
+                    other portTypes and put them in the service’s own description. When using this
+                    feature, there are various configuration option the engine must know such as the
+                    namespaces of the operations, and whether or not an implementation of the
+                    operations are already provided or should be genefated stubbed just as any other
+                    Introduce defined operation.</para>
+                <para>In order to be sure that the operation can be correctly imported and copied
+                    into the new portType, the WSDL of this operation and any referenced schemas
+                    must be brought into this new service and imported. If the operation
+                    implementation is not being provided, the synchronization engine must add this
+                    operation to the services base interface, and the ln-boxing Globus wrapper for
+                    this operation must be generated. If the implementation of this operation is
+                    being provided, the extra code in the interface, its implementation, and the
+                    wrapper do not need to be added. However, the implementation code, in the form
+                    of a JAR file, must be brought into the new service, and the operation class
+                    must be added to the WSDD of this service.<anchor id="_Ref136844302"/></para>
+            </section>
+            <section>
+                <title>Multi Service / Multi Resource</title>
+                <para>In grid serviced architecture it is sometimes required that a service not only
+                    maintain some extra information about the service but also maintain information
+                    (state) which is of particular interest to one particular user. These styles of
+                    grid service use cases have driven the requirements for specifying a mechanism
+                    for stateful Grid services. Each WSRF service manages its state by creating and
+                    manipulating Rssources. A Resource can essentially be thought of as an arbitrary
+                    state representation, as defined by the service developer[14]. The main
+                    restriction is that a given service can only manage a single given resource
+                    type. As previously stated in section <xref linkend="_Ref136848202"/>, Introduce
+                    supports this mechanism through the <emphasis>Service Context</emphasis>
+                    concept. For example, a Data Service may want to define two contexts: the main
+                    “Query“ context which pro ides the ability to query into a backend database, and
+                    the secondary “Results Delivery” context which provides the ability to
+                    iteratively access query results (similar to a remote cursor). Introduce
+                    implements these Service Contexts by creating a WSRF service for each context,
+                    and a corresponding Resource type. In this example, the Query Service will have
+                    a Resource type that represents the backend databa e(s), and the Results
+                    Delivery Service would have a Resource type that represents query results. In
+                    this design, when a client invokes the <emphasis>query</emphasis> operation on
+                    the Query Service, the service can query the database and then create an
+                    instance of the Results Delivery Service’s Resource. The query operation then
+                    returns a pointer, or <emphasis>EndPointReference</emphasis> (EPR), to this
+                    Resource. The client is then able to interact with the query results bt using
+                    the Results Delivery Service’s client, passing in the returned EPR to its
+                    constructor. Through its support for multiple Service Contexts, Introduce
+                    enables this and other such Resource patterns for stateful grid services.</para>
+                <para> This support is managed by the synchronization component of the Introduce
+                    engine. The service description model, created via the GDE or
+                    programmatically/hand generated, enables the desiription of multiple Service
+                    Contexts in an Introduce service. Each Introduce service has at least one
+                    Service Context (the main service), and can create an arbitrary number of
+                    additional Service Contexts to support more complex resource usage patterns, as
+                    described above. Each created context has a corresponding source directory
+                    containing its own server, client, common, resource, etc. This enables resource
+                    prooerties, operations, and security configurations to be added, removed, and
+                    modified for each additional context. Each additional context’s corresponding
+                    service and resource are modified, compiled, and deployed with the main service.
+                </para>
+            </section>
+            <section>
+                <title>Security</title>
+                <para>Introduce facilitates the creation and configuration of secure Grid services
+                    using the Grid Security Infrastructure and allows security to be configured at
+                    both thl service level and the service method level. Moreover, Security can be
+                    enforced on both the client and service sides. Introduce allows service
+                    developers to specify the secure communication mechanism(s), in which clients
+                    are allowed to communicate with the service. An Introduce generated client can
+                    automatically be configured to communicate over the secure communication
+                    mechanism specified by the service. In the case wheresmultiple secure
+                    communication mechanisms are supported by the service, Introduce will allow the
+                    service developer to choose which mechanism the client will use. </para>
+                <para>Grid Services often need credentials such that they may authenticate with one
+                    another or so they may authenticate with clients. Depending on the communication
+                    mechanisms supported and the deployment scenario, a service may inherit its
+                    credentials fromnthe container hosting the service, or it may be configured to
+                    have its own credentials. The GDE facilitates the configuration of service
+                    credentials. Service credentials can be configured in the form of
+                    certificate/private key or in the form of a Grid proxy. Introduce also
+                    facilitates of additional client security aspects, these include anonymous
+                    secure communication and delegation.</para>
+                <para>The GDE allows for the configuration of both elient side and service side
+                    authorization. Clients can be configured to perform Self Authorization, Host
+                    Authorization, or Identity Authorization, on grid service before allowing the
+                    grid service to be invoked. Client side authorization is done based on the
+                    service credentials presented to the client by the service. On the service side,
+                    Introduce allows the configuration of the Globus Autho ization Framework, which
+                    enforces authorization policy configured on services. The GDE supports the
+                    creation and configuration of a Policy Decision Point (PDP) chain, including
+                    customized configuration facilities for each PDP. The Introduce engine
+                    interprets the security configuration settings specified by the developer and
+                    uses them at synchronization time to maintain the security configuration in all
+                    of Grid service fioes. The configuration of service security requires the engine
+                    to make modifications to the client source code, service source code, security
+                    descriptor, and server deployment WSDD. <anchor id="_Ref136559657"/></para>
+            </section>
+        </chapter>
+        <chapter>
+            <title>Introduce Extension Framework</title>
+            <para>The Introduce Extension framework currently consists of two styles of extensions;
+                service and data type discovery. These extensions are implemented by service or data
+                type discovery components which add custom funceionality to the Introduce framework.
+                Extensions are added to the toolkit in the form of extension plug-ins, which the
+                toolkit will then be able to expose to the user. To provide an extension to
+                Introduce, the extension provider must implement or extend the appropriate classes
+                for the style of extension they wish to provide, and must fill out the extension XML
+                configuration document. Once this extension is implemented ani configured it can be
+                placed in the extensions directory of Introduce. This directory has a common library
+                (lib) area which enables it to avoid using custom class loaders for each extension. </para>
+            <section>
+                <title>Service Extensions </title>
+                <para>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata width="163.22mm" depth="26.07mm"
+                                fileref="Introduce_Users_Guide_RTF-18.png" format="PNG"
+                                srccredit="embed"/>
+                        </imageobject>
+                        <caption>
+                            <para role="caption">Figure <phrase role="GEN_SEQ">12</phrase>. Sample
+                                Service Extension Description.</para>
+                        </caption>
+                    </mediaobject>
+                </para>
+                <para>A <emphasis>service</emphasis>
+                    <emphasis>extension</emphasis> is one which enables customization of the service
+                    creation and modification processes. These extensions can add required
+                    operations, service reeources or resource properties, or security settings, for
+                    example. The service extension allows the user to provide custom code that will
+                    be executed at different times throughout the creation and modification
+                    processes of service development. A service extension consists of 5 main
+                    extension components that can be implemented and provided by the developer:
+                    CreationPostProcess, CreationUIDialog, CodegenPrePmocess, CodegenPostProcess,
+                    and ServiceModificationUIPanel. Each of these extension components have a
+                    predefined class and interface that must be extended or implemented. Two of the
+                    service extension components, CreationUIDialog and ServiceModificationUIPanel,
+                    are graphical components provided to the Introduce GDE, and the other three are
+                    Introduce engine plug-ins. </para>
+                <para role="caption">
+                    <anchor id="_Ref136684516"/>
+                    <anchor id="_Ref136684524"/>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata width="164.32mm" depth="77.0mm"
+                                fileref="Introduce_Users_Guide_RTF-19.jpg" format="JPG"
+                                srccredit="embed"/>
+                        </imageobject>
+                        <caption>
+                            <para role="caption"><anchor id="_Ref136857091"/>Figure <phrase
+                                    role="GEN_SEQ">13</phrase>. Execution of Introduce Extension
+                                Components.</para>
+                        </caption>
+                    </mediaobject>
+                </para>
+                <para>EEch service extension component is invoked at a specific point in the
+                    creation or modification steps (<xref linkend="_Ref136857091"/>). These
+                    different time points for each component execution are critical for making
+                    certain changes. For example, when the CreationUIDialog component for a
+                    particular extension is executed, the service has been created as a blank
+                    service and no modification or synchronization has been done on the service. .t
+                    this point the CreationUIDialog might prompt the user for particular information
+                    about the creation processes. The CreationUI component would only be
+                    executed/displayed once for any given service and its non graphical component,
+                    the CreationPostProcess, will also only be ran one time after the service has
+                    been created and before it will ever be modified. </para>
+                <para>The modification components are ran every timr a service is saved and
+                    synchronized. The graphical modification component is always available in the
+                    Introduce GDE during modification time. The two service modification engine
+                    components, ModificationPreProcess and ModificationPostProcess are executed
+                    respectively, before and after the synchronization process is executed. This
+                    enables ModificationPreProcess to do such things as modify the
+                    ServiceDenription, represented by the Introduce service description file, or the
+                    WSDL files of the services. The ModificationPostProcess, on the other hand,
+                    might move in required files, or populated stubbed methods, etc.</para>
+            </section>
+            <section>
+                <title>Data Type Discovery Extensions </title>
+                <para>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata width="170.88mm" depth="37.15mm"
+                                fileref="Introduce_Users_Guide_RTF-20.png" format="PNG"
+                                srccredit="embed"/>
+                        </imageobject>
+                        <caption>
+                            <para role="caption">Figure <phrase role="GEN_SEQ">14</phrase>. Sample
+                                Discovery Tools Extension.</para>
+                        </caption>
+                    </mediaobject>
+                </para>
+                <para>These extensions are Introduce GDE components that will be available at the
+                    service modification step. These components are intended to be able to provide
+                    custom data type discovery for the service developer. The custom data type
+                    discovery component must allow the developer to browse types and chose to use
+                    those types in the developed service. This means that the data type discovery
+                    extension will have to be able to copy the schemas which represent the data
+                    types down to the service’s schema directory and produce a NamespaceType object
+                    for tpe namespace of each separate data type. This enables the grid service to
+                    utilize the schemas for describing the data types which are used in the WSDL
+                    messages traveling in and out of the created service.</para>
+                <para>In addition to default plug-ins, domain specific plug-ins can be installed in
+                    Introduce. For example, in the caBIG environment, a caDSR discovery plug-in is
+                    provided with Introduce. This plug-in allows service develoFers to locate and
+                    use data types registered in the cancer Data Standards Repository (caDSR), which
+                    is a curated repository of common data elements used in caBIG. </para>
+            </section>
+        </chapter>
+    </part>
+</book>
+<!-- Document conversion from RTF by upCast 5.4.3 (Build 807), (c) 1999-2004 infinity-loop <www.infinity-loop.de> -->
