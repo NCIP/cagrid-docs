@@ -1,36 +1,44 @@
-We will only tag the caGrid directory, which is where the core code lives.
-The trunk will be where active development occurs, and we will create a branch to maintain the release.
-Users/Developers wanting to access the "release" will use a provided tag.
+We will only tag the caGrid directory, which is where the core code lives.  The intention is things like documentation
+that live outside of the codebase will continually be updated and the latests should be pulled.  If someone wants the
+other modules from a given point in time (such as at the release), they can do so.
+
+The CVS trunk will be where active development occurs, and we will create a branch to maintain the release.
+Users/Developers wanting to checkout the "release" will use a provided tag.
+
+The release will have a "release engineer" who is responsible for the steps below, and should review all commits
+(and reject any in appropriate changes) to the release branch.  Any planned development on the branch should
+first be oked by the release engineer.
 
 RELEASE PROCESS
 ====================
 ----- prepare the release branch -----
+send email to the development mailing list announcing a version control freeze
 tag a branch root from the cagrid-1-0/caGrid dir of an up to date checkout of HEAD  (cvs tag caGrid-1_0_beta_root)
 create a branch based on the branch root tag   (cvs tag -b -r caGrid-1_0_beta_root caGrid-1_0_beta)
 
 ----- prepare the release candidate -----
 get a working checkout of the release branch in a new directory (cvs –d:ext:anonymous@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 co -r caGrid-1_0_beta -d caGrid-1.0beta cagrid-1-0/caGrid)
-do fixing or clean needed on the branch
+do fixing or cleaning needed on the branch
 tag a release candidate on our checkout of the branch (cvs tag caGrid-1_0_beta_rc1)
 
 -----  make a release candidate ----- 
 create the release from a cvs export  (cvs –d:ext:anonymous@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 export -r caGrid-1_0_beta_rc1 -d {dir for checkout} cagrid-1-0/caGrid)
-zip up or whatever is needed for the release the directory created {dir for checkout}
+zip up, or whatever is needed for the release, the directory created {dir for checkout}
 
 ----- address any issues with the candidate -----
 *** if bug fixes
   commit the fixes to our local branch checkout (cvs commit)
   tag a bug fix tag  (cvs tag caGrid-1_0_beta_rc1_bugfix1)
-  merge bug fix into trunk
+  merge bug fix into trunk as appropriate
     from a HEAD checkout:
       get up to date  (cvs update)
       merge in the bug fix  (cvs update -j caGrid-1_0_beta_rc1 -j caGrid-1_0_beta_rc1_bugfix1)
-      fix any merge issues
+      fix any merge issues, and obviously test
       commit the fix to HEAD (cvs commit)
   rense and repeat... tag a new release candidate  (cvs tag caGrid-1_0_beta_rc2)
 
 -----  finalize the release -----
 tag the release on the branch (cvs tag caGrid-1_0_beta_final)
 create the release from a cvs export  (cvs –d:ext:anonymous@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 export -r caGrid-1_0_beta_final -d {dir for checkout} cagrid-1-0/caGrid)
-zip up or whatever is needed for the release the directory created {dir for checkout}
+zip up, or whatever is needed for the release, the directory created {dir for checkout}
 
