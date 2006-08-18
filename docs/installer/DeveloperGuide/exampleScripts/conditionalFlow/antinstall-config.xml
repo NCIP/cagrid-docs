@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+<!DOCTYPE installer PUBLIC "-//tp23 //DTD Ant Installer Config//EN" "http://antinstaller.sf.net/dtd/antinstall-config-0.7.dtd">
+
+<installer
+			ui="swing,text"
+			verbose="true"
+			debug="true"
+			lookAndFeel="org.tp23.jgoodies.plaf.plastic.PlasticXPLookAndFeel"
+			antialiased="true"
+			name="Test Installer"
+			windowIcon="/resources/gkmain_inv.png"
+			defaultImageResource="/resources/antbar.png"
+			minJavaVersion="1.4"
+			finishButtonText="Build">
+	<page
+			type="input"
+			name="intro"
+			displayText="ifProperty and ifTarget tests">
+		<comment
+				displayText="ifProperty and ifTarget tests"
+				title="true"/>
+	</page>
+	<page
+			type="input"
+			name="color-properties"
+			displayText="Test Color">
+		<select
+				property="test.colour"
+				defaultValue="#FF0000"
+				displayText="Select your favorite colour">
+			<option text="Red" value="#FF0000"/>
+			<option text="Green" value="#00FF00"/>
+			<option text="Blue" value="#0000FF"/>
+		</select>
+		<comment
+				displayText="Green results in next page"
+				title="true"/>
+	</page>
+	<page
+			type="input"
+			name="test.colour"
+			displayText="GREEN"
+			ifProperty="${test.colour}==#00FF00">
+		<comment displayText="WEHEY! GREEN" title="true"/>
+	</page>
+	<page
+			type="input"
+			name="test.colour"
+			displayText="GREEN"
+			ifProperty="${test.colour}!=#00FF00">
+		<comment displayText="OOOOH NOT GREEN" title="true"/>
+	</page>
+	<page
+			type="input"
+			name="test-select-number"
+			displayText="Test Number">
+		<select
+				property="test.number"
+				defaultValue="1"
+				displayText="Select a Number">
+			<option text="One" value="1"/>
+			<option text="Two" value="2"/>
+			<option text="Three" value="3"/>
+		</select>
+	</page>
+	<page
+			type="input"
+			name="selector"
+			displayText="Number += 2"
+			ifProperty="${test.number}+=2">
+	</page>
+	<page
+			type="input"
+			name="selector"
+			displayText="Number -= 2"
+			ifProperty="${test.number}-=2">
+	</page>
+	<page
+			type="input"
+			name="properties"
+			displayText="Test Validated Number">
+		<validated
+			property="test.number.validated"
+			displayText="Enter a Double"
+			defaultValue="0.0"
+			regex="[0-9]+\.*[0-9]*"/>
+	</page>
+	<page
+			type="input"
+			name="selector"
+			displayText="Number += 23"
+			ifProperty="${test.number.validated}+=23.0">
+	</page>
+	<page
+			type="input"
+			name="selector"
+			displayText="Number -= 23"
+			ifProperty="${test.number.validated}-=23.0">
+	</page>
+	
+	<page
+			type="input"
+			name="text.properties"
+			displayText="Test Text">
+		<text
+			property="test.text.startend"
+			displayText="Enter some text"
+			defaultValue="start and end"/>
+	</page>
+	<page
+			type="input"
+			name="selector"
+			displayText="Text ^=start (startsWith)"
+			ifProperty="${test.text.startend}^=start">
+	</page>
+	<page
+			type="input"
+			name="selector"
+			displayText="Text $=end (endsWith)"
+			ifProperty="${test.text.startend}$=end">
+	</page>
+
+	<page
+			type="input"
+			name="selector"
+			displayText="non.existent.property is null"
+			ifProperty="${non.existent.property}==null">
+	</page>
+	<page
+			type="input"
+			name="selector"
+			displayText="test.text.startend is NOT null (or blank)"
+			ifProperty="${test.text.startend}!=null">
+	</page>
+	
+	<page
+			type="input"
+			name="selector"
+			displayText="Select components to install">
+		<target
+			displayText="Source code"
+			target="tgsrc"
+			defaultValue="true"
+			force="false"/>
+		<large-select
+				property="lang"
+				defaultValue="uk"
+				displayText="Select your favorite language">
+			<option text="Spanish" value="es"/>
+			<option text="Catalan" value="ca"/>
+			<option text="English" value="uk"/>
+			<option text="French" value="fr"/>
+			<option text="Japanese" value="jp"/>
+			<option text="Persian" value="pe"/>
+			<option text="Urdu" value="ur"/>
+			<option text="Flemish" value="fl"/>
+			<option text="German" value="de"/>
+			<option text="Greek" value="gk"/>
+			<option text="Turkish" value="tk"/>
+			<option text="Slav" value="sv"/>
+			<option text="Euskera" value="ek"/>
+			<option text="Welsh" value="we"/>
+			<option text="Jamaican patoi" value="ra"/>
+			<option text="Mockney" value="??"/>
+			<option text="Giberish" value="¿¿"/>
+			<option text="Love" value="lv"/>
+			<option text="Sign" value=":)"/>
+			<option text="Java" value="jv"/>
+			<option text="C++" value="++"/>
+			<option text="American" value="us"/>
+		</large-select>
+		<target
+			displayText="OS Specific target"
+			osSpecific="true"
+			target="myOsSpecific"
+			defaultValue="true"
+			force="false"/>
+	</page>
+	<page
+			ifProperty="lang=lv"
+			type="input"
+			name="Language of Love"
+			displayText="Language of Love">
+		<comment
+				displayText="Aaaarrr, how sweet"
+				bold="true"/>
+	</page>
+	<page
+			ifProperty="lang=us"
+			type="input"
+			name="American"
+			displayText="Hey Yankiee">
+		<comment
+				displayText="It totaliser and initialise, with Ss you know, but never mind"
+				bold="true"/>
+	</page>
+	<page
+			ifTarget="tgsrc"
+			type="input"
+			name="properties"
+			displayText="Source code selected">
+		<comment
+				displayText="Source Code Selected"
+				bold="true"/>
+	</page>
+	<page
+			type="input"
+			name="contrib"
+			displayText="Contributions">
+		<comment
+				displayText="target-select (Tested Via Properies)"
+				bold="true"/>
+		<target-select
+				property="colourtarget"
+				defaultValue="#FF0000"
+				displayText="Select a target"
+				explanatoryText="only one target available">
+			<option text="target-red" value="#FF0000"/>
+			<option text="target-green" value="#00FF00"/>
+			<option text="target-blue" value="#0000FF"/>
+		</target-select>
+	</page>
+	<page
+			type="input"
+			name="propcond"
+			displayText="Blue Conditional"
+			ifProperty="colourtarget=#0000FF">
+			<comment
+				displayText="original syntax"
+				bold="false"/>
+			<comment
+				displayText="colourtarget is Blue"
+				bold="false"/>
+	</page>
+	<page
+			type="input"
+			name="propcond"
+			displayText="Red Conditional"
+			ifProperty="${colourtarget}=#FF0000">
+			<comment
+				displayText="preferred syntax"
+				bold="false"/>
+			<comment
+				displayText="This page only shows if colourtarget is RED"
+				bold="false"/>
+	</page>
+	<page
+			type="input"
+			name="envcond"
+			displayText="Environment Conditional"
+			ifProperty="${env.DISPLAY}=:0.0">
+			<comment
+				displayText="This page only shows if DISPLAY=:0.0"
+				bold="false"/>
+	</page>
+	<page
+			type="progress"
+			name="progress"
+			displayText="Installation progress"
+			showTargets="true"
+			target="cleanuptarget">
+	</page>
+</installer>
+
+
