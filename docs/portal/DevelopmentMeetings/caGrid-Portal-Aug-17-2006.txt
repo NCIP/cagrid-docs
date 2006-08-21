@@ -1,0 +1,61 @@
+The meeting was focused on two general areas.
+
+** General, business keeping, topics
+Attendees: Arumani (BAH), Steve (GU), Arnie (GU), Chad (GU)
+
+1. Georgetown asked to clarify the process for getting documents
+finalized and approved. Arumani replied that the process was to vet it
+with the development community, have the caGrid chief architect (Oster)
+sign off on it, and then send it to a BAH reviewer.  Once the BAH
+reviewer approved the document Arumani would send it to NCICB for final
+approval. {A.I.} Arumani will provide the contact person at BAH.
+
+2. Georgetown asked for guidance on the Risk Matrix.  Arumani noted that
+Georgetown should create this document using the template available in
+CAMP, check it into CVS, and treat it as a living document. He noted
+that all the risks & the mitigation should be tracked/updated.
+
+3. Georgetown asked for clarification on why a number of GU invoices had
+not yet been processed and paid as well as why GU's architecture
+contract had not been updated to include money for last year's
+face-to-face meeting at Georgetown.  Arumani noted he would contact Paul
+Mulhern to get these invoices processed.  {A.I.} Georgetown will contact
+Arumani next Friday for an update.
+
+** caGrid Portal topics
+Attendees: Arumani (BAH), Manav (NCI), Steve (GU), Arnie (GU), Chad (GU)
+
+1. Arumani provided the new tentative release date for the caGrid 1.0
+software package, and thus the Portal project, as the 2nd week of
+December. Arumani also mentioned that we would need to work backwards to
+determine the code freeze date to get the various elements finalized on
+time by Dec 2nd week (tentative release date).
+
+2. Georgetown asked for clarification about the project manager for the
+caGrid Portal project.  Arumani noted the possibility that Manav may be
+moved from the Portal project and agreed with Georgetown that if he was
+moved this would represent a high risk to the project.  To mitigate this
+it was agreed that Georgetown would lead the project, with Chad as
+project lead.  Manav will continue to provide help in design and
+development for the duration of time he's on the project, specifically
+Georgetown noted that his experience with JSF would be valuable.
+
+Georgetown will be responsible for the timeliness of the Portal and its
+deliverables, and will direct the development of the Portal.
+
+3. Chad then asked that the developers have bi-weekly face-to-face
+developer meetings going forward.  These meetings will allow the
+Georgetown programmers and Manav to discuss progress and work out any
+issues currently on the table.  Arumani will attend the meetings
+(possibly via phone) when he is available.  The developers may ask
+others to attend (via phone if necessary) if their expertise is
+required. {A.I.} Chad will send logistics of the first meeting, to be
+held at Georgetown on the Tuesday the 22nd.
+
+Action Items:
+* Arumani - Provide contact information, to Georgetown, for BAH reviewer
+that will provide final review of documents.
+* Arumani - Provide an update about currently queued invoices to
+Georgetown by Friday, August 25th.
+* Chad - Send out logistics today for the portal face-to-face developers
+meeting on August 22nd.
