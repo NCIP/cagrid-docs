@@ -54,6 +54,20 @@
 		<attribute name="new.globus" />
 
 		<sequential>
+			<mkdir dir="@{new.globus}/tmp"/>
+			<exec executable="@{new.globus}/bin/grid-proxy-init.bat" dir="@{new.glous}">
+				<arg value="-hours"/>
+				<arg value="100000"/>
+				<arg value="-cert"/>
+				<arg value="@{new.globus}/grid-security/cagrid2.duhs.duke.edu-cert.pem"/>
+				<arg value="-key"/>
+				<arg value="@{new.globus}/grid-security/cagrid2.duhs.duke.edu-key.pem"/>
+				<arg value="-out"/>
+				<arg value="@{new.globus}/tmp/x509up_u1247"/>
+			</exec>
+			<mkdir dir="@{new.globus}/autonfs/home/madduri"/>
+			<touch file="@{new.globus}/autonfs/home/madduri/gridmap"/>
+
 			<echo>Deploying dorian to @{new.globus}</echo>
 			<ant dir="${cagrid.dir}/projects/dorian" target="deployGlobus">
 				<property name="env.GLOBUS_LOCATION" value="@{new.globus}"/>
