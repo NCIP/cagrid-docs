@@ -1,0 +1,121 @@
+<project name="Master" default="all" basedir=".">
+	<!-- Give user the chance to override properties -->
+	<property environment="env" />
+	<property name="cagrid.dir" location="C:\caBIG\cagrid-1-0\caGrid"/>
+	<property name="cagrid.tests.dir" location="C:\caBIG\cagrid-1-0\tests"/>
+
+	<macrodef name="createGlobus">
+		<attribute name="new.globus" />
+
+		<sequential>
+			<echo>Recreating globus container at @{new.globus}</echo>
+			<delete dir="@{new.globus}"/>
+			<mkdir dir="@{new.globus}"/>
+			<copy todir="@{new.globus}">
+				<fileset dir="${env.GLOBUS_LOCATION}">
+					<include name="**/*"/>
+				</fileset>
+			</copy>
+		</sequential>
+	</macrodef>
+
+	<macrodef name="deployCore">
+		<attribute name="new.globus" />
+
+		<sequential>
+			<echo>Deploying cadsr to @{new.globus}</echo>
+			<ant dir="${cagrid.dir}/projects/cadsr" target="deployGlobus">
+				<property name="env.GLOBUS_LOCATION" value="@{new.globus}"/>
+			</ant>
+
+			<echo>Deploying gme to @{new.globus}</echo>
+			<ant dir="${cagrid.dir}/projects/gme" target="deployGlobus">
+				<property name="env.GLOBUS_LOCATION" value="@{new.globus}"/>
+			</ant>
+
+			<echo>Deploying index to @{new.globus}</echo>
+			<ant dir="${cagrid.dir}/projects/index" target="deployIndexGlobus">
+				<property name="env.GLOBUS_LOCATION" value="@{new.globus}"/>
+			</ant>
+
+			<echo>Deploying wms SampleService1 to @{new.globus}</echo>
+			<ant dir="${cagrid.tests.dir}/projects/workflow-services/SampleService1" target="deployGlobus">
+				<property name="env.GLOBUS_LOCATION" value="@{new.globus}"/>
+			</ant>
+
+			<echo>Deploying wms SampleService2 to @{new.globus}</echo>
+			<ant dir="${cagrid.tests.dir}/projects/workflow-services/SampleService2" target="deployGlobus">
+				<property name="env.GLOBUS_LOCATION" value="@{new.globus}"/>
+			</ant>
+		</sequential>
+	</macrodef>
+
+	<macrodef name="deploySecure">
+		<attribute name="new.globus" />
+
+		<sequential>
+			<echo>Deploying dorian to @{new.globus}</echo>
+			<ant dir="${cagrid.dir}/projects/dorian" target="deployGlobus">
+				<property name="env.GLOBUS_LOCATION" value="@{new.globus}"/>
+			</ant>
+
+			<echo>Deploying gts to @{new.globus}</echo>
+			<ant dir="${cagrid.dir}/projects/gts" target="deployGlobus">
+				<property name="env.GLOBUS_LOCATION" value="@{new.globus}"/>
+			</ant>
+
+			<echo>Deploying syncgts to @{new.globus}</echo>
+			<ant dir="${cagrid.dir}/projects/syncgts" target="deployGlobus">
+				<property name="env.GLOBUS_LOCATION" value="@{new.globus}"/>
+			</ant>
+
+			<echo>Deploying wms to @{new.globus}</echo>
+			<ant dir="${cagrid.dir}/projects/workflow/WorkflowManagementService" target="deployGlobus">
+				<property name="env.GLOBUS_LOCATION" value="@{new.globus}"/>
+			</ant>
+
+			<echo>Deploying wms SecureSample to @{new.globus}</echo>
+			<ant dir="${cagrid.tests.dir}/projects/workflow-services/SecureSample" target="deployGlobus">
+				<property name="env.GLOBUS_LOCATION" value="@{new.globus}"/>
+			</ant>
+		</sequential>
+	</macrodef>
+
+	<macrodef name="netsvc">
+		<attribute name="action" />
+		<attribute name="service" />
+
+		<sequential>
+			<exec executable="net">
+				<arg line="@{action} @{service}"/>
+			</exec>
+		</sequential>
+	</macrodef>
+
+	<target name="update">
+		<echo>Updating caGrid</echo>
+		<cvs dest="${cagrid.dir}" command="update"/>
+		<echo>Updating caGrid tests</echo>
+		<cvs dest="${cagrid.tests.dir}" command="update"/>
+	</target>
+
+	<target name="build">
+		<echo>Building caGrid</echo>
+		<ant dir="${cagrid.dir}" target="all"/>
+		<echo>Building caGrid tests</echo>
+		<ant dir="${cagrid.tests.dir}" target="all"/>
+	</target>
+
+	<target name="all" depends=""><!-- update,build -->
+		<netsvc action="stop" service="Globus-8080"/>
+		<createGlobus new.globus="c:/ws-core-4.0.2-8080"/>
+		<deployCore new.globus="c:/ws-core-4.0.2-8080"/>
+		<netsvc action="start" service="Globus-8080"/>
+
+		<netsvc action="stop" service="Globus-8443"/>
+		<createGlobus new.globus="c:/ws-core-4.0.2-8443"/>
+		<deployCore new.globus="c:/ws-core-4.0.2-8443"/>
+		<deploySecure new.globus="c:/ws-core-4.0.2-8443"/>
+		<netsvc action="start" service="Globus-8443"/>
+	</target>
+</project>
