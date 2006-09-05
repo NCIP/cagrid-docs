@@ -1,0 +1,40 @@
+caGrid 1.0 Portal Developer Meeting
+August 22nd, 2006
+Attendees: Manav, Scott (via phone), Chad, Paul, Arumani (cameo via phone)
+
+At the start of the meeting Arumani popped online to provide us the new 
+deadline dates for caGrid 1.0 work.
+
+Manav then gave an update of the coding he had done to date.  He had 
+written aggregators to fetch data from the index service and grid 
+services and unmarshall their XML metadata into the metadata domain 
+objects.  Those objects are then copied into the hibernate controlled 
+data objects.
+
+Chad raised a concern with this approach because as the XML from the 
+services grows this process will increasingly consume memory.  The use 
+of StAX parser to convert from the XML directly to the hibernate 
+controlled objects was discussed.  {A.I.} Chad said he would look into 
+using StAX for this.
+
+A discussion on the way that aggregators were scheduled, via the 
+java.util.Timer, and executed, via separate threads, was discussed. 
+Both Chad and Scott were concerned about the number of threads going to 
+large and Scott suggested we look at the threading manager provided by 
+Globus[1].  The page also includes a work scheduler that could be used.
+
+Chad raised a concern with the use of the GeoCoder (geocoder.us) service 
+that Manav had begun stubbing out.  Chad's prior research had found a 
+service with the same APIs that required a license for use.  Manav 
+pointed out a different site (the one mentioned above) that is free for 
+non-commercial use.  {A.I.} Chad will verify that the license is 
+compatible with caGrid work.
+
+The next developers face-to-face meeting will be at NCI on September 8th 
+at 10:30am.
+
+Action Items:
+  - Chad will look into using StAX to parse the XML returned from services
+  - Chad will look into the license for GeoCoder.us
+
+[1] http://dev2dev.bea.com/wlplatform/commonj/twm.html
