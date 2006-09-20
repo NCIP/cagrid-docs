@@ -1,0 +1,3 @@
+ssh madduri@spirulina.ci.uchicago.edu 
+cd /autonfs/home/madduri/cagrid-1-0/Demos/06annual/workflow/RProteomicsWorkFlow
+ant runClient
