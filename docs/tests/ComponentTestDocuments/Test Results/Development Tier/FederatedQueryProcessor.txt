@@ -1,0 +1,515 @@
+This is the output from running the FederatedQueryProcessorClient with the following arguments:
+-url
+http://cbiovdev5017.nci.nih.gov:8080/wsrf/services/cagrid/FederatedQueryProcessor
+-dcql
+D:\Development\cagrid-1-0\caGrid\projects\fqp\test\resources\exampleQuery1.xml
+
+The DCQL is as follows:
+<?xml version="1.0" encoding="UTF-8"?>
+<DCQLQuery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://caGrid.caBIG/1.0/gov.nih.nci.cagrid.dcql ../../schema/FederatedQueryProcessor/Distributed_CQL_schema_2.0.xsd"
+    xmlns:cql="http://CQL.caBIG/1/gov.nih.nci.cagrid.CQLQuery" xmlns="http://caGrid.caBIG/1.0/gov.nih.nci.cagrid.dcql">
+    <TargetObject name="gov.nih.nci.cabio.domain.Gene">
+        <Attribute name="fullName" value="BRCA%" predicate="LIKE" />
+    </TargetObject>
+    <targetServiceURL>http://cbiovdev5017.nci.nih.gov:8080/wsrf/services/cagrid/CaBIOSvc</targetServiceURL>
+</DCQLQuery>
+
+
+============Below is the test output ================
+
+Running the Grid Service Client
+.Got results from:http://cbiovdev5017.nci.nih.gov:8080/wsrf/services/cagrid/CaBIOSvc
+===== RESULT [0] =====
+<ns2:Gene id="4041" fullName="BRCA1 associated protein-1 (ubiquitin carboxy-terminal hydrolase)" clusterId="106674" symbol="BAP1" xmlns:ns2="gme://caCORE.caCORE/3.1/gov.nih.nci.cabio.domain"/>
+===== END RESULT=====
+
+
+===== RESULT [1] =====
+<ns3:Gene id="15123" fullName="BRCA2 and CDKN1A interacting protein" clusterId="370292" symbol="BCCIP" xmlns:ns3="gme://caCORE.caCORE/3.1/gov.nih.nci.cabio.domain"/>
+===== END RESULT=====
+
+
+===== RESULT [2] =====
+<ns4:Gene id="26359" fullName="BRCA1 interacting protein C-terminal helicase 1" clusterId="532799" symbol="BRIP1" xmlns:ns4="gme://caCORE.caCORE/3.1/gov.nih.nci.cabio.domain"/>
+===== END RESULT=====
+
+
+===== RESULT [3] =====
+<ns5:Gene id="34123" fullName="BRCA1/BRCA2-containing complex, subunit 3" clusterId="558537" symbol="BRCC3" xmlns:ns5="gme://caCORE.caCORE/3.1/gov.nih.nci.cabio.domain"/>
+===== END RESULT=====
+
+
+===== RESULT [4] =====
+<ns6:Gene id="46817" fullName="BRCA1 associated RING domain 1" clusterId="591642" symbol="BARD1" xmlns:ns6="gme://caCORE.caCORE/3.1/gov.nih.nci.cabio.domain"/>
+===== END RESULT=====
+
+
+===== RESULT [5] =====
+<ns7:Gene id="41732" fullName="BRCA1 associated protein" clusterId="577448" symbol="BRAP" xmlns:ns7="gme://caCORE.caCORE/3.1/gov.nih.nci.cabio.domain"/>
+===== END RESULT=====
+
+
+===== RESULT [6] =====
+<ns8:Gene id="76565" fullName="BRCA2 region, mRNA sequence CG017" clusterId="633948" xmlns:ns8="gme://caCORE.caCORE/3.1/gov.nih.nci.cabio.domain"/>
+===== END RESULT=====
+
+
+===== RESULT [7] =====
+<ns9:Gene id="88616" fullName="BRCA1 associated RING domain 1" clusterId="10764" symbol="Bard1" xmlns:ns9="gme://caCORE.caCORE/3.1/gov.nih.nci.cabio.domain"/>
+===== END RESULT=====
+
+
+===== RESULT [8] =====
+<ns10:Gene id="87672" fullName="Brca1 associated protein 1" clusterId="3779" symbol="Bap1" xmlns:ns10="gme://caCORE.caCORE/3.1/gov.nih.nci.cabio.domain"/>
+===== END RESULT=====
+
+
+===== RESULT [9] =====
+<ns11:Gene id="97071" fullName="BRCA1 associated protein" clusterId="153372" symbol="Brap" xmlns:ns11="gme://caCORE.caCORE/3.1/gov.nih.nci.cabio.domain"/>
+===== END RESULT=====
+
+
+===== RESULT [10] =====
+<ns12:Gene id="98213" fullName="BRCA1 interacting protein C-terminal helicase 1" clusterId="186143" symbol="Brip1" xmlns:ns12="gme://caCORE.caCORE/3.1/gov.nih.nci.cabio.domain"/>
+===== END RESULT=====
+
+
+===== RESULT [11] =====
+<ns13:Gene id="100298" fullName="BRCA1/BRCA2-containing complex, subunit 3" clusterId="226957" symbol="Brcc3" xmlns:ns13="gme://caCORE.caCORE/3.1/gov.nih.nci.cabio.domain"/>
+===== END RESULT=====
+
+
+===== RESULT [12] =====
+<ns14:Gene id="118535" fullName="BRCA2 and CDKN1A interacting protein" clusterId="389983" symbol="Bccip" xmlns:ns14="gme://caCORE.caCORE/3.1/gov.nih.nci.cabio.domain"/>
+===== END RESULT=====
+
+
+Current time Wed Dec 06 16:07:00 CST 2006
+Requested termination time Wed Dec 06 16:15:04 CST 2006
+Scheduled termination time Wed Dec 06 16:15:04 CST 2006
+Should terminate in: 9 seconds.
+Should terminate in: 8 seconds.
+Should terminate in: 7 seconds.
+Should terminate in: 6 seconds.
+Should terminate in: 4 seconds.
+Should terminate in: 3 seconds.
+Should terminate in: 2 seconds.
+Should terminate in: 0 seconds.
+Should terminate in: 0 seconds.
+Should terminate in: -2 seconds.
+Should terminate in: -3 seconds.
+Should terminate in: -4 seconds.
+Should terminate in: -5 seconds.
+Should terminate in: -6 seconds.
+Should terminate in: -8 seconds.
+Should terminate in: -9 seconds.
+Should terminate in: -10 seconds.
+Should terminate in: -11 seconds.
+Should terminate in: -13 seconds.
+Should terminate in: -14 seconds.
+Should terminate in: -15 seconds.
+Should terminate in: -16 seconds.
+Should terminate in: -18 seconds.
+Should terminate in: -19 seconds.
+Should terminate in: -20 seconds.
+Should terminate in: -21 seconds.
+Should terminate in: -23 seconds.
+Should terminate in: -24 seconds.
+Should terminate in: -25 seconds.
+Should terminate in: -26 seconds.
+Should terminate in: -28 seconds.
+Should terminate in: -29 seconds.
+Should terminate in: -30 seconds.
+Should terminate in: -31 seconds.
+Should terminate in: -32 seconds.
+Should terminate in: -34 seconds.
+Should terminate in: -35 seconds.
+Should terminate in: -36 seconds.
+Should terminate in: -37 seconds.
+Should terminate in: -39 seconds.
+Should terminate in: -40 seconds.
+Should terminate in: -41 seconds.
+Should terminate in: -42 seconds.
+Should terminate in: -44 seconds.
+Should terminate in: -45 seconds.
+Should terminate in: -46 seconds.
+Should terminate in: -47 seconds.
+Should terminate in: -49 seconds.
+Should terminate in: -50 seconds.
+Should terminate in: -51 seconds.
+Should terminate in: -52 seconds.
+Should terminate in: -54 seconds.
+Should terminate in: -55 seconds.
+Should terminate in: -56 seconds.
+Should terminate in: -57 seconds.
+Should terminate in: -59 seconds.
+Should terminate in: -60 seconds.
+Should terminate in: -61 seconds.
+Should terminate in: -62 seconds.
+Should terminate in: -64 seconds.
+Should terminate in: -65 seconds.
+Should terminate in: -66 seconds.
+Should terminate in: -67 seconds.
+Should terminate in: -69 seconds.
+Should terminate in: -70 seconds.
+Should terminate in: -71 seconds.
+Should terminate in: -72 seconds.
+Should terminate in: -74 seconds.
+Should terminate in: -75 seconds.
+Should terminate in: -76 seconds.
+Should terminate in: -77 seconds.
+Should terminate in: -79 seconds.
+Should terminate in: -80 seconds.
+Should terminate in: -81 seconds.
+Should terminate in: -82 seconds.
+Should terminate in: -84 seconds.
+Should terminate in: -85 seconds.
+Should terminate in: -87 seconds.
+Should terminate in: -88 seconds.
+Should terminate in: -90 seconds.
+Should terminate in: -91 seconds.
+Should terminate in: -92 seconds.
+Should terminate in: -93 seconds.
+Should terminate in: -95 seconds.
+Should terminate in: -96 seconds.
+Should terminate in: -97 seconds.
+Should terminate in: -98 seconds.
+Should terminate in: -100 seconds.
+Should terminate in: -101 seconds.
+Should terminate in: -102 seconds.
+Should terminate in: -103 seconds.
+Should terminate in: -105 seconds.
+Should terminate in: -106 seconds.
+Should terminate in: -107 seconds.
+Should terminate in: -108 seconds.
+Should terminate in: -110 seconds.
+Should terminate in: -111 seconds.
+Should terminate in: -112 seconds.
+Should terminate in: -113 seconds.
+Should terminate in: -114 seconds.
+Should terminate in: -116 seconds.
+Should terminate in: -117 seconds.
+Should terminate in: -118 seconds.
+Should terminate in: -120 seconds.
+Should terminate in: -121 seconds.
+Should terminate in: -122 seconds.
+Should terminate in: -123 seconds.
+Should terminate in: -125 seconds.
+Should terminate in: -126 seconds.
+Should terminate in: -127 seconds.
+Should terminate in: -128 seconds.
+Should terminate in: -130 seconds.
+Should terminate in: -131 seconds.
+Should terminate in: -132 seconds.
+Should terminate in: -134 seconds.
+Should terminate in: -135 seconds.
+Should terminate in: -136 seconds.
+Should terminate in: -138 seconds.
+Should terminate in: -139 seconds.
+Should terminate in: -140 seconds.
+Should terminate in: -141 seconds.
+Should terminate in: -143 seconds.
+Should terminate in: -144 seconds.
+Should terminate in: -145 seconds.
+Should terminate in: -146 seconds.
+Should terminate in: -148 seconds.
+Should terminate in: -149 seconds.
+Should terminate in: -150 seconds.
+Should terminate in: -151 seconds.
+Should terminate in: -153 seconds.
+Should terminate in: -154 seconds.
+Should terminate in: -155 seconds.
+Should terminate in: -157 seconds.
+Should terminate in: -158 seconds.
+Should terminate in: -159 seconds.
+Should terminate in: -160 seconds.
+Should terminate in: -162 seconds.
+Should terminate in: -163 seconds.
+Should terminate in: -164 seconds.
+Should terminate in: -166 seconds.
+Should terminate in: -167 seconds.
+Should terminate in: -168 seconds.
+Should terminate in: -169 seconds.
+Should terminate in: -171 seconds.
+Should terminate in: -172 seconds.
+Should terminate in: -173 seconds.
+Should terminate in: -175 seconds.
+Should terminate in: -176 seconds.
+Should terminate in: -177 seconds.
+Should terminate in: -178 seconds.
+Should terminate in: -180 seconds.
+Should terminate in: -181 seconds.
+Should terminate in: -182 seconds.
+Should terminate in: -183 seconds.
+Should terminate in: -185 seconds.
+Should terminate in: -186 seconds.
+Should terminate in: -187 seconds.
+Should terminate in: -189 seconds.
+Should terminate in: -190 seconds.
+Should terminate in: -194 seconds.
+Should terminate in: -196 seconds.
+Should terminate in: -197 seconds.
+Should terminate in: -198 seconds.
+Should terminate in: -199 seconds.
+Should terminate in: -201 seconds.
+Should terminate in: -202 seconds.
+Should terminate in: -203 seconds.
+Should terminate in: -205 seconds.
+Should terminate in: -206 seconds.
+Should terminate in: -207 seconds.
+Should terminate in: -208 seconds.
+Should terminate in: -210 seconds.
+Should terminate in: -211 seconds.
+Should terminate in: -212 seconds.
+Should terminate in: -213 seconds.
+Should terminate in: -215 seconds.
+Should terminate in: -216 seconds.
+Should terminate in: -217 seconds.
+Should terminate in: -218 seconds.
+Should terminate in: -220 seconds.
+Should terminate in: -221 seconds.
+Should terminate in: -222 seconds.
+Should terminate in: -223 seconds.
+Should terminate in: -225 seconds.
+Should terminate in: -226 seconds.
+Should terminate in: -227 seconds.
+Should terminate in: -228 seconds.
+Should terminate in: -230 seconds.
+Should terminate in: -231 seconds.
+Should terminate in: -232 seconds.
+Should terminate in: -233 seconds.
+Should terminate in: -235 seconds.
+Should terminate in: -236 seconds.
+Should terminate in: -238 seconds.
+Should terminate in: -239 seconds.
+Should terminate in: -240 seconds.
+Should terminate in: -242 seconds.
+Should terminate in: -243 seconds.
+Should terminate in: -244 seconds.
+Should terminate in: -245 seconds.
+Should terminate in: -247 seconds.
+Should terminate in: -248 seconds.
+Should terminate in: -249 seconds.
+Should terminate in: -250 seconds.
+Should terminate in: -251 seconds.
+Should terminate in: -253 seconds.
+Should terminate in: -254 seconds.
+Should terminate in: -255 seconds.
+Should terminate in: -256 seconds.
+Should terminate in: -258 seconds.
+Should terminate in: -259 seconds.
+Should terminate in: -260 seconds.
+Should terminate in: -261 seconds.
+Should terminate in: -263 seconds.
+Should terminate in: -264 seconds.
+Should terminate in: -265 seconds.
+Should terminate in: -266 seconds.
+Should terminate in: -268 seconds.
+Should terminate in: -269 seconds.
+Should terminate in: -271 seconds.
+Should terminate in: -272 seconds.
+Should terminate in: -273 seconds.
+Should terminate in: -274 seconds.
+Should terminate in: -276 seconds.
+Should terminate in: -277 seconds.
+Should terminate in: -278 seconds.
+Should terminate in: -279 seconds.
+Should terminate in: -281 seconds.
+Should terminate in: -282 seconds.
+Should terminate in: -283 seconds.
+Should terminate in: -284 seconds.
+Should terminate in: -286 seconds.
+Should terminate in: -287 seconds.
+Should terminate in: -288 seconds.
+Should terminate in: -289 seconds.
+Should terminate in: -290 seconds.
+Should terminate in: -292 seconds.
+Should terminate in: -293 seconds.
+Should terminate in: -294 seconds.
+Should terminate in: -295 seconds.
+Should terminate in: -297 seconds.
+Should terminate in: -298 seconds.
+Should terminate in: -299 seconds.
+Should terminate in: -300 seconds.
+Should terminate in: -301 seconds.
+Should terminate in: -303 seconds.
+Should terminate in: -304 seconds.
+Should terminate in: -305 seconds.
+Should terminate in: -306 seconds.
+Should terminate in: -308 seconds.
+Should terminate in: -309 seconds.
+Should terminate in: -310 seconds.
+Should terminate in: -311 seconds.
+Should terminate in: -313 seconds.
+Should terminate in: -314 seconds.
+Should terminate in: -315 seconds.
+Should terminate in: -316 seconds.
+Should terminate in: -318 seconds.
+Should terminate in: -319 seconds.
+Should terminate in: -320 seconds.
+Should terminate in: -321 seconds.
+Should terminate in: -323 seconds.
+Should terminate in: -324 seconds.
+Should terminate in: -325 seconds.
+Should terminate in: -326 seconds.
+Should terminate in: -328 seconds.
+Should terminate in: -329 seconds.
+Should terminate in: -330 seconds.
+Should terminate in: -331 seconds.
+Should terminate in: -332 seconds.
+Should terminate in: -334 seconds.
+Should terminate in: -335 seconds.
+Should terminate in: -336 seconds.
+Should terminate in: -337 seconds.
+Should terminate in: -339 seconds.
+Should terminate in: -340 seconds.
+Should terminate in: -341 seconds.
+Should terminate in: -342 seconds.
+Should terminate in: -344 seconds.
+Should terminate in: -345 seconds.
+Should terminate in: -346 seconds.
+Should terminate in: -347 seconds.
+Should terminate in: -349 seconds.
+Should terminate in: -350 seconds.
+Should terminate in: -351 seconds.
+Should terminate in: -352 seconds.
+Should terminate in: -354 seconds.
+Should terminate in: -355 seconds.
+Should terminate in: -356 seconds.
+Should terminate in: -357 seconds.
+Should terminate in: -358 seconds.
+Should terminate in: -360 seconds.
+Should terminate in: -361 seconds.
+Should terminate in: -362 seconds.
+Should terminate in: -363 seconds.
+Should terminate in: -365 seconds.
+Should terminate in: -366 seconds.
+Should terminate in: -367 seconds.
+Should terminate in: -369 seconds.
+Should terminate in: -370 seconds.
+Should terminate in: -371 seconds.
+Should terminate in: -372 seconds.
+Should terminate in: -374 seconds.
+Should terminate in: -375 seconds.
+Should terminate in: -376 seconds.
+Should terminate in: -377 seconds.
+Should terminate in: -379 seconds.
+Should terminate in: -380 seconds.
+Should terminate in: -381 seconds.
+Should terminate in: -383 seconds.
+Should terminate in: -384 seconds.
+Should terminate in: -386 seconds.
+Should terminate in: -387 seconds.
+Should terminate in: -388 seconds.
+Should terminate in: -390 seconds.
+Should terminate in: -391 seconds.
+Should terminate in: -392 seconds.
+Should terminate in: -393 seconds.
+Should terminate in: -395 seconds.
+Should terminate in: -396 seconds.
+Should terminate in: -397 seconds.
+Should terminate in: -398 seconds.
+Should terminate in: -400 seconds.
+Should terminate in: -401 seconds.
+Should terminate in: -402 seconds.
+Should terminate in: -403 seconds.
+Should terminate in: -405 seconds.
+Should terminate in: -406 seconds.
+Should terminate in: -407 seconds.
+Should terminate in: -408 seconds.
+Should terminate in: -410 seconds.
+Should terminate in: -411 seconds.
+Should terminate in: -412 seconds.
+Should terminate in: -413 seconds.
+Should terminate in: -415 seconds.
+Should terminate in: -416 seconds.
+Should terminate in: -417 seconds.
+Should terminate in: -418 seconds.
+Should terminate in: -420 seconds.
+Should terminate in: -421 seconds.
+Should terminate in: -422 seconds.
+Should terminate in: -423 seconds.
+Should terminate in: -425 seconds.
+Should terminate in: -426 seconds.
+Should terminate in: -427 seconds.
+Should terminate in: -428 seconds.
+Should terminate in: -430 seconds.
+Should terminate in: -431 seconds.
+Should terminate in: -432 seconds.
+Should terminate in: -433 seconds.
+Should terminate in: -434 seconds.
+Should terminate in: -436 seconds.
+Should terminate in: -437 seconds.
+Should terminate in: -438 seconds.
+Should terminate in: -439 seconds.
+Should terminate in: -441 seconds.
+Should terminate in: -442 seconds.
+Should terminate in: -443 seconds.
+Should terminate in: -444 seconds.
+Should terminate in: -446 seconds.
+Should terminate in: -447 seconds.
+Should terminate in: -448 seconds.
+Should terminate in: -449 seconds.
+Should terminate in: -451 seconds.
+Should terminate in: -452 seconds.
+Should terminate in: -453 seconds.
+Should terminate in: -454 seconds.
+Should terminate in: -456 seconds.
+Should terminate in: -457 seconds.
+Should terminate in: -458 seconds.
+Should terminate in: -459 seconds.
+Should terminate in: -460 seconds.
+Should terminate in: -462 seconds.
+Should terminate in: -463 seconds.
+Should terminate in: -464 seconds.
+Should terminate in: -465 seconds.
+Should terminate in: -467 seconds.
+Should terminate in: -468 seconds.
+Should terminate in: -469 seconds.
+Should terminate in: -470 seconds.
+Should terminate in: -472 seconds.
+Should terminate in: -473 seconds.
+Should terminate in: -474 seconds.
+Should terminate in: -475 seconds.
+Should terminate in: -477 seconds.
+Should terminate in: -478 seconds.
+Should terminate in: -479 seconds.
+Should terminate in: -480 seconds.
+Should terminate in: -482 seconds.
+Should terminate in: -483 seconds.
+Should terminate in: -487 seconds.
+Should terminate in: -488 seconds.
+Should terminate in: -489 seconds.
+Should terminate in: -491 seconds.
+Should terminate in: -492 seconds.
+Should terminate in: -493 seconds.
+Should terminate in: -494 seconds.
+Should terminate in: -496 seconds.
+Should terminate in: -497 seconds.
+Should terminate in: -498 seconds.
+Should terminate in: -499 seconds.
+Should terminate in: -501 seconds.
+Should terminate in: -502 seconds.
+Should terminate in: -503 seconds.
+Should terminate in: -504 seconds.
+Should terminate in: -505 seconds.
+Should terminate in: -507 seconds.
+Should terminate in: -508 seconds.
+Should terminate in: -509 seconds.
+Should terminate in: -510 seconds.
+Should terminate in: -512 seconds.
+Should terminate in: -513 seconds.
+Should terminate in: -514 seconds.
+Should terminate in: -515 seconds.
+Should terminate in: -517 seconds.
+Should terminate in: -518 seconds.
+Should terminate in: -519 seconds.
+Should terminate in: -520 seconds.
+Should terminate in: -522 seconds.
+Should terminate in: -523 seconds.
+Should terminate in: -524 seconds.
+Should terminate in: -525 seconds.
+Should terminate in: -527 seconds.
+Should terminate in: -528 seconds.
+Resource has been destroyed
