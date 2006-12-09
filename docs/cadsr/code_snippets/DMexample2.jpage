@@ -1,0 +1,28 @@
+	CaDSRServiceClient cadsr = new CaDSRServiceClient(
+		"http://cagrid-service.nci.nih.gov:8080/wsrf/services/cagrid/CaDSRService");
+	
+	Project project = new Project();
+	project.setVersion("3.1");
+	project.setShortName("caCORE");
+	
+	String classNames[] = new String[]{Gene.class.getName(), Chromosome.class.getName(),
+		Taxon.class.getName(), Tissue.class.getName()};
+	UMLAssociationExclude exclude1 = new UMLAssociationExclude(Gene.class.getName(),
+		"geneCollection", Chromosome.class.getName(), "chromosome");
+	UMLAssociationExclude exclude2 = new UMLAssociationExclude("*", "*",
+		Tissue.class.getName(), "*");
+	UMLAssociationExclude associationExcludes[] = new UMLAssociationExclude[]{
+		exclude1, exclude2};
+	DomainModel domainModel = cadsr.generateDomainModelForClassesWithExcludes(project,
+		classNames, associationExcludes);
+
+	FileWriter fw = new FileWriter(project.getShortName() 
+		+ "_" + project.getVersion() + "_DomainModel.xml");
+	MetadataUtils.serializeDomainModel(domainModel, fw);
+	fw.close();
+	
+	System.out.println("Domain Model generation complete.");
+	System.out.println("\t exposed Association count:"
+		+ domainModel.getExposedUMLAssociationCollection().getUMLAssociation().length);
+	System.out.println("\t exposed Class count:"
+		+ domainModel.getExposedUMLClassCollection().getUMLClass().length);

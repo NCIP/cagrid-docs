@@ -1,0 +1,48 @@
+	CaDSRServiceClient cadsr = new CaDSRServiceClient(
+		"http://cagrid-service.nci.nih.gov:8080/wsrf/services/cagrid/CaDSRService");
+
+	Project[] projs = client.findAllProjects();
+	if (projs != null) {
+		for (int i = 0; i < projs.length; i++) {
+			Project project = projs[i];
+			System.out.println("\n" + project.getShortName());
+			UMLPackageMetadata[] packs = client.findPackagesInProject(project);
+			if (packs != null) {
+				for (int j = 0; j < packs.length; j++) {
+					UMLPackageMetadata pack = packs[j];
+					System.out.println("\t-" + pack.getName());
+	
+					UMLClassMetadata[] classes = client.findClassesInPackage(
+						project, pack.getName());
+					if (classes != null) {
+						for (int k = 0; k < classes.length; k++) {
+							UMLClassMetadata clazz = classes[k];
+							System.out.println("\t\t-" + clazz.getName());
+							UMLAttributeMetadata[] atts =
+								client.findAttributesInClass(project, clazz);
+							if (atts != null) {
+								for (int l = 0; l < atts.length; l++) {
+									UMLAttributeMetadata att = atts[l];
+									System.out.println("\t\t\t-" + att.getName());
+								}
+							}
+	
+							UMLAssociation[] assocs =
+								client.findAssociationsForClass(project, clazz);
+							if (assocs != null) {
+								for (int index = 0; index < assocs.length; index++) {
+									UMLAssociation assoc = assocs[index];
+									System.out.println("\t\t\t("
+										+ assoc.getSourceRoleName()
+										+ ")---> ("+ assoc.getTargetRoleName()+ ")"
+										+ assoc.getTargetUMLClassMetadata()
+											.getUMLClassMetadata().getFullyQualifiedName());
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
