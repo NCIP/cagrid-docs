@@ -1,0 +1,55 @@
+The Workflow service is not registering with the IndexService at cagrid-index-qa:8080/wsrf/services/DefaultIndexService
+
+As i looked at the registration.xml file I see that it is pointing to OSU
+  <!-- The ServiceGroupEPR defines the servicegroup to which registrations will be made -->
+  <ServiceGroupEPR>
+    <wsa:Address>http://cagrid01.bmi.ohio-state.edu:8080/wsrf/services/DefaultIndexService</wsa:Address>
+  </ServiceGroupEPR>
+  <!-- Specifies that the registration will be renewed every 10 minutes -->
+
+
+However, even going to url http://cagrid-portal-qa:8080/wsrf/services
+
+I get a 500 error and the domain of the url is duplicated (see the extra .nci.nih.gov) see below:
+
+HTTP Status 500 -
+
+--------------------------------------------------------------------------------
+
+type Exception report
+
+message
+
+description The server encountered an internal error () that prevented it from fulfilling this request.
+
+exception
+
+javax.servlet.ServletException: cagrid-portal-qa.nci.nih.gov.nci.nih.gov: cagrid-portal-qa.nci.nih.gov.nci.nih.gov
+        org.globus.wsrf.container.AxisServlet.init(AxisServlet.java:104)
+        javax.servlet.GenericServlet.init(GenericServlet.java:211)
+        org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:118)
+        org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+        org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:799)
+        org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:705)
+        org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:577)
+        org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:683)
+        java.lang.Thread.run(Thread.java:595)
+
+
+root cause
+
+java.net.UnknownHostException: cagrid-portal-qa.nci.nih.gov.nci.nih.gov: cagrid-portal-qa.nci.nih.gov.nci.nih.gov
+        java.net.InetAddress.getAllByName0(InetAddress.java:1128)
+        java.net.InetAddress.getAllByName0(InetAddress.java:1098)
+        java.net.InetAddress.getAllByName(InetAddress.java:1061)
+        java.net.InetAddress.getByName(InetAddress.java:958)
+        org.globus.wsrf.container.ServiceHost.getHost(ServiceHost.java:360)
+        org.globus.wsrf.container.AxisServlet.init(AxisServlet.java:102)
+        javax.servlet.GenericServlet.init(GenericServlet.java:211)
+        org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:118)
+        org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+        org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:799)
+        org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:705)
+        org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:577)
+        org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:683)
+        java.lang.Thread.run(Thread.java:595)
