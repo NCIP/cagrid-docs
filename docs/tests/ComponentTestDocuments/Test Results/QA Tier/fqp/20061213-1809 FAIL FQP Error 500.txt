@@ -1,0 +1,39 @@
+If I try to go to http://cagrid-portal-qa.nci.nih.gov:8080/wsrf/services  I now get:
+HTTP Status 500 - 
+
+--------------------------------------------------------------------------------
+
+type Exception report
+
+message 
+
+description The server encountered an internal error () that prevented it from fulfilling this request.
+
+exception 
+
+javax.servlet.ServletException: Failed to initialize 'cagrid/FederatedQueryProcessor' service [Caused by: WSDLException (at /wsdl:definitions/wsdl:import/wsdl:definitions/wsdl:import/definitions/types/schema): faultCode=OTHER_ERROR: An error occurred trying to resolve schema referenced at '..\wsrf\lifetime\WS-ResourceLifetime.xsd', relative to 'file:/usr/local/tomcat-5.0.28.nonsecure/webapps/wsrf/share/schema/FederatedQueryProcessor/FederatedQueryProcessor.wsdl'.: This file was not found: file:/usr/local/tomcat-5.0.28.nonsecure/webapps/wsrf/share/schema/FederatedQueryProcessor/..\wsrf\lifetime\WS-ResourceLifetime.xsd]
+	org.globus.wsrf.container.AxisServlet.init(AxisServlet.java:131)
+	javax.servlet.GenericServlet.init(GenericServlet.java:211)
+	org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:118)
+	org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:799)
+	org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:705)
+	org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:577)
+	org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:683)
+	java.lang.Thread.run(Thread.java:595)
+
+
+root cause 
+
+org.globus.wsrf.container.ContainerException: Failed to initialize 'cagrid/FederatedQueryProcessor' service [Caused by: WSDLException (at /wsdl:definitions/wsdl:import/wsdl:definitions/wsdl:import/definitions/types/schema): faultCode=OTHER_ERROR: An error occurred trying to resolve schema referenced at '..\wsrf\lifetime\WS-ResourceLifetime.xsd', relative to 'file:/usr/local/tomcat-5.0.28.nonsecure/webapps/wsrf/share/schema/FederatedQueryProcessor/FederatedQueryProcessor.wsdl'.: This file was not found: file:/usr/local/tomcat-5.0.28.nonsecure/webapps/wsrf/share/schema/FederatedQueryProcessor/..\wsrf\lifetime\WS-ResourceLifetime.xsd]
+	org.globus.wsrf.container.ServiceManager.start(ServiceManager.java:150)
+	org.globus.wsrf.container.AxisServlet.init(AxisServlet.java:129)
+	javax.servlet.GenericServlet.init(GenericServlet.java:211)
+	org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:118)
+	org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:799)
+	org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:705)
+	org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:577)
+	org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:683)
+	java.lang.Thread.run(Thread.java:595)
+
