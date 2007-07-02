@@ -36,7 +36,7 @@ zip up, or whatever is needed for the release, the directory created {dir for ch
       merge in the bug fix  (cvs update -j caGrid-1_0_release_rc1 -j caGrid-1_0_release_rc1_bugfix1)
       fix any merge issues, and obviously test
       commit the fix to HEAD (cvs commit)
-  rense and repeat... tag a new release candidate  (cvs tag caGrid-1_0_release_rc2)
+  rinse and repeat... tag a new release candidate  (cvs tag caGrid-1_0_release_rc2)
 
 -----  finalize the release -----
 tag the release on the branch (cvs tag caGrid-1_0_release_final)
