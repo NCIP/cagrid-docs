@@ -1,0 +1,35 @@
+
+AGENDA:
+copied from 20070806_08_Arch_VCDE_F2F_DRAFT_Agenda_jul26.doc
+
+MONDAY
+===============
+* Current caGrid 1.0 Feature Highlights
+	* 815-845 AM
+	* David Ervin, Shannon Hastings, Steve Langella, Scott Oster
+	* 20070806_Day1_caGrid_Current_Features.ppt
+* caGrid Demos and Training
+	* 845-945 AM
+	* David Ervin , Shannon Hastings, Steve Langella, Scott Oster
+	* 20070806_Day1_caGrid_Demos_and_Training.ppt
+* caGrid Future Direction Planning    	  
+	* Noon-100 PM
+	* Scott Oster
+	* 20070806_Day1_Future_Planning.ppt
+
+TUESDAY
+===============
+* caGrid 1.1 Overview
+	* 145–215 PM
+	* Scott Oster
+	* 20070806_Day2_caGrid-1.1_Overview.ppt
+* caGrid 2.0 Plans
+	*  215-245 PM
+	* Scott Oster
+	* 20070806_Day2_caGrid-2.0_Plans.ppt
+* caGrid/TeraGrid Working Group
+	* 445-515 PM
+	* Scott Oster, Patrick McConnell
+	* http://gforge.nci.nih.gov/pugins/scmcvs/cvsweb.php/cagrid-teragrid/Documentation/presentations/20070806_arch_vcde_f2f_cagrid_teragrid.ppt?cvsroot=cagrid-teragrid
+	
+	
