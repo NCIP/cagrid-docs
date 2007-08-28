@@ -1,6 +1,3 @@
-We will only tag the caGrid directory, which is where the core code lives.  The intention is things like documentation
-that live outside of the codebase will continually be updated and the latests should be pulled.  If someone wants the
-other modules from a given point in time (such as at the release), they can do so.
 
 The CVS trunk will be where active development occurs, and we will create a branch to maintain the release.
 Users/Developers wanting to checkout the "release" will use a provided tag.
