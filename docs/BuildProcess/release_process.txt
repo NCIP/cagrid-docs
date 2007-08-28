@@ -45,3 +45,48 @@ zip up, or whatever is needed for the release, the directory created {dir for ch
 
 ----- prepare the trunk for new development -----
 *fix items in the HEAD (e.g. jar names, readmes, etc) to indicate it is the next release (when next release is known) 
+
+
+
+INSTALLER RELEASE
+====================
+----- get checkouts -----
+mkdir <directory for release>
+cd <directory for release>
+cvs -d :ext:anonymous@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 checkout -r <tag> cagrid-1-0/caGrid
+cvs -d :ext:anonymous@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 checkout -r <tag> cagrid-1-0/Applications
+
+----- create caGrid source release -----
+cd cagrid-1-0
+zip -r caGrid-1.1.zip caGrid
+mv  caGrid-1.1.zip <directory for release>
+
+----- create browser source release -----
+cd caGrid
+ant all
+cd ../Applications
+ant build-cagrid-browser
+cd cagrid-browser
+ant clean
+cd ..
+zip -r caGrid-1.1-browser.zip cagrid-browser
+mv caGrid-1.1-browser.zip <directory for release>
+
+----- upload caGrid and browser release -----
+Create file release on gforge and upload <directory for release>/caGrid-1.1.zip and <directory for release>/caGrid-1.1-browser.zip
+Copy the URLs to these releases for use in the installer below
+
+----- create installer release -----
+cd ../caGrid/projects/installer
+ant -Ddownload.properties.url=<PROPS URL>/cagrid.installer.properties \
+  -Dcagrid.download.url=<CAGRID URL>/caGrid-1.1.zip \
+  -Dbrowser.download.url=<BROWSER URL>/caGrid-1.1-cagrid-browser.zip \
+  clean dist-installer
+mv build/caGrid-1.1-installer.zip <directory for release>
+mv build/cagrid.installer.properties <directory for release>
+
+----- upload installer -----
+Verify correctness of <directory for release>/cagrid.installer.properties
+Upload <directory for release>/cagrid.installer.properties to <PROPS URL>
+Upload <directory for release>/caGrid-1.1-installer.zip to gforge
+
