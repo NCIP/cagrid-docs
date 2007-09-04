@@ -1,0 +1,382 @@
+                            caGrid
+                          Version 1.0
+                       December 15, 2006 
+
+
+================================================================
+                            Contents
+================================================================
+    
+1.0 caGrid Introduction
+2.0 Release History
+3.0 New Features and Updates
+4.0 Bug fixes since last release
+5.0 Known Issues/Defects
+6.0 Bug Reports and Support
+7.0 Documentation
+8.0 References
+
+================================================================
+                      1.0 caGrid Introduction
+================================================================
+
+    This document contains the release notes for the caGrid 1.0
+    release.  
+
+    caGrid 1.0 is a revolutionary release of the caGrid infrastructure.
+    It is generally not compatible with caGrid 0.5.x releases, though
+    conceptually, it plays the same role with increased stability,
+    enhanced functionality, and scope. 
+
+    This release of caGrid supports caBIG compatibility level gold.
+
+    https://cabig.nci.nih.gov/workspaces/Architecture/caGrid1-0/
+
+================================================================
+                      2.0 Release History
+================================================================
+
+caGrid 0.5 was released on 31st August 2005
+caGrid 0.5.1 was released on 7th October 2005
+caGrid 0.5.2 was released on 15th November 2005
+caGrid 0.5.3 was released on 25th January 2006
+caGrid 0.5.4 was released on 12th May 2006
+caGrid 1.0 Beta was released on 17th July 2006
+
+This is the first major production release of the caGrid 1.0 infrastructure.
+
+
+================================================================
+                      3.0 New Features and Updates
+================================================================
+
+Building the software:
+	A graphical installer is provided which will install
+	prerequisites and a source release of caGrid.
+	Both the source release of caGrid, and the installer installed
+	distribution must be built before any tools can be used.
+	
+	To build caGrid, type:
+	ant clean all
+
+	To find out other targets available, and type:
+	ant -p
+
+	To find out targets available in each project, cd to the project's
+	directory (projects/*), and type:
+	ant -p
+	
+	More information can be found on the Wiki:
+	http://gforge.nci.nih.gov/plugins/wiki/index.php?id=25&type=g
+
+Introduce:
+	Introduce is the caGrid service creation toolkit.  It provides
+	the capability to create both Analytical and Data services.
+		
+Dorian:
+	Dorian is the caGrid identity federation solution.  It provides
+	the capability to integrate with institutional identity management
+	systems, as well as create a local user management solution.  It
+	consists of both a service and client APIs and tools.
+	
+	The Dorian service was created with Introduce, and can also be edited/deployed
+	via Introduce.
+
+Authentication Service:
+	The Authentication Service provides a framework for issuing SAML assertions
+	for existing user identity providers such that they may be used to obtain
+	grid credentials from Dorian.  It provides a uniform authentication
+	interface on which applications can be built.
+	
+	The Autentication Service was created with Introduce, and can also be edited/deployed
+	via Introduce.
+
+GTS:
+	GTS is the caGrid trust management service.  The Grid Trust Service (GTS)
+	is a WSRF compliant grid service framework for the creation, management,
+	and provisioning of a federated grid trust fabric.  It consists of both
+	a service and client APIs and tools.
+	
+	The GTS service was created with Introduce, and can also be edited/deployed
+	via Introduce.
+	
+SyncGTS:
+	SyncGTS is a mechanism used synchronize a Globus installation with
+	the trust fabric maintained in a GTS deployment.  It consists of
+	both a service (to dynamically synchronize a service container
+	with the trust fabric) and client APIs and command line tools. 
+	
+	The SyncGTS service was created with Introduce, and can also be edited/deployed
+	via Introduce.
+
+Grid Grouper:
+	Grid Grouper provides a group based authorization solution for the grid, 
+	where grid services and applications enforce authorization policy based on
+	membership to groups defined and managed at the grid level.  Grid Grouper is
+	built on top of Grouper, an internet initiative focused on providing tools
+	for group management.
+	
+	The Grid Grouper service was created with Introduce, and can also be edited/deployed
+	via Introduce.
+
+Authorization Module:
+	The main responsibility of the Authorization (Authz) component is to provide
+	an integration point between local authorization policy and grid-wide
+	authorization policy. It provides a framework to integrate groups that have
+	been defined in the Common Security Module (CSM) and Grid Grouper groups,
+	enabling local administrators to extend access privileges to members of the
+	caBIG community based on membership in Grid Grouper groups, rather than
+	having to create local identities for each individual
+
+Discovery API:
+	The Discovery client API provides a high-level API to discover advertised
+	services in the grid.  A command line client (which makes use of the API)
+	is provided solely for demonstration purposes.
+
+caDSR Service:
+	The caDSR grid service provides grid service access to UML-like information in items
+	registered in caDSR.  Additionally, it provides the ability to generate caGrid metadata
+	instances for grid services.  Finally, it is integrated into Introduce to provide UML
+	model browsing and type discovery.  It consists of both a service and client APIs and tools.
+	
+	The caDSR service was created with Introduce, and can also be edited/deployed
+	via Introduce.
+
+EVS Service:
+	The EVS grid service provides access to data semantics and controlled
+	terminology as managed by the NCI Enterprise Vocabulary Service
+	
+	The EVS service was created with Introduce, and can also be edited/deployed
+	via Introduce.
+
+GME:
+	The Global Model Exchange (GME) grid service provides grid service access to the
+	XML Schemas used by the caGrid infrastructure.  It is integrated into Introduce
+	to provide XML Schema model browsing, upload, and type discovery.  It consists of
+	both a service and client APIs and tools.
+
+Index Service:
+	The Globus Index Service is used as the grid service registry, white pages, and yellow pages.
+	When caGrid services start up, they register their existence and metadata to the Index Service, 
+	and the Discovery API allows clients to discovery services in the registry.  caGrid uses an
+	unaltered version of the Globus Index Service, and provides convenience mechanisms to deploy it.
+	The Globus clients can be used to query the Index Service directly.
+
+caGrid Portal:
+	The Monitoring and Discovery Portal is a web application providing an
+	overview of the status all running grid services (Data, Analytical and Core)
+	based on aggregated information (from the Index Service).
+
+Federated Query Service:
+	The caGrid Federated Query Infrastructure provides a mechanism to perform
+	basic distributed aggregations and joins of queries over multiple data services.
+	
+	The Federated Query Service was created with Introduce, and can also be edited/deployed
+	via Introduce.	
+
+Workflow:
+	The Workflow component is used to submit and run simple workflows that are
+	written using BPEL. More details on how to deploy, submit workflows can be found
+	in projects/workflow/README.
+	
+	The Workflow service was created with Introduce, and can also be edited/deployed
+	via Introduce.
+
+Identifiers:
+	The Indentifiers framework represents the initial effort for integration of
+	the Handle system, aimed at providing grid-wide unique identifiers.
+
+ 
+================================================================
+                      4.0 Bug fixes Since Last Release
+================================================================
+Signigicant changes have been made since the caGrid 1.0 Beta codebase.
+The following are the Known Issues from the Beta release, which 
+have been addressed:
+
+--------------------
+Advertisement Related
+--------------------
+----------
+ISSUE:
+	When using tomcat, a service does not show up in the Index Service (or shows 
+	up incorrectly - port 8443 with https).
+FIX:
+	The installer automatically configures the settings described in the workaround.
+----------
+
+
+--------------------
+Introduce Related
+--------------------
+----------
+ISSUE:
+	If a type is removed from the types tab which is being used by the operations list or the
+	metadata list the user will be able to save an unbuildable and incomplete service.
+FIX:
+	The Introduce GUI prevents removal of such types.
+----------
+
+
+--------------------
+caCORE Related
+--------------------
+----------
+ISSUE:
+	[#988] caCORE 3.1 schemas Re: Support Wizard ticket #14235 Submitted by Scott Oster
+FIX:
+	bug closed
+----------
+ISSUE:
+	[#1063] Wrong URL in the cadsr xsd
+FIX:
+	bug closed
+----------	
+----------
+ISSUE:
+	[#1280] UMLAssociationMetadata source and target UMLClassMetadata are always the same
+FIX:
+	bug closes
+----------
+
+
+
+--------------------
+caCORE Query Processor Related
+--------------------
+----------
+ISSUE:
+	Associations placed in Groups of a CQL query are not processed by the Core Query Processor implementation.
+FIX:
+	Default query processor now uses HQL, and does not have this limitation
+----------
+   
+  	
+================================================================
+                     5.0 Known Issues Not Yet Fixed
+================================================================
+
+Update to date bug reports and feature requests can be found on the tracker section
+of the project's gforge site:
+http://gforge.nci.nih.gov/tracker/?group_id=25
+
+--------------------
+Global Model Exchange Related
+--------------------
+----------
+ISSUE:
+	GME Deployment does not allow for running GME on any other port besides 8080
+DETAILS:
+	When the GME gets deployed the port which is written into the gme config file
+	is always set to 8080.  This means that the GME, when it wants to talk with itself, will attempt
+	to do so on the wrong port if the GME is actually running in a container which is on anything
+	other than 8080.
+IMPACT:
+	 Will cause an exception to be thrown back when tryin access the GME when it is on another port.
+WORKAROUND:
+	After the GME is deployed go to the etc dir of the container for the GME and edit the config
+	file to have the correct URL for the GME grid service once the container is restarted.
+----------
+
+
+--------------------
+caCORE Related
+--------------------
+----------
+ISSUE:
+	[#1277] caCORE schemas contain cyclic references
+DETAILS:
+	http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=1277&group_id=38&atid=279
+IMPACT:
+	GME will not accept XSDs with cycles, therefore XSDs with cycles cannot be uploaded.
+WORKAROUND:
+	None, without editing the XSD/Model.
+----------
+----------
+ISSUE:
+	[#1293] LazyInitializationException thrown, but correct data returned
+DETAILS:
+	http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=1293&group_id=38&atid=279
+IMPACT:
+	Minimal; makes it difficult to identify "real" exceptions in caDSR service.
+WORKAROUND:
+	None (without editing caCORE source code).
+----------
+
+
+--------------------
+Worflow Related
+----------
+ISSUE:
+	Workflow service does not properly communicate with secure services.
+WORKAROUND:
+	The code attempts to use the user's proxy; a code fix will be required post-release.
+----------
+--------------------
+----------
+ISSUE:
+	Services using Secure Messaging/Conversation cannot be accessed by the Workflow service
+WORKAROUND:
+	None, support will be provided as a fix in the incremental release.
+----------
+----------
+ISSUE:
+	Services using WSRF Resource pattern cannot be accessed by the Workflow service
+DETAILS:
+	Current version of ActiveBPEL, 2.1, does not support this yet.
+WORKAROUND:
+	None, until ActiveBPEL supports (development under way)
+----------
+
+
+================================================================
+                	6.0 Bug Reports and Support
+================================================================
+	The preferred approach is to first search the user's email
+	archives for your problem, then email your question to the
+	list.  Bugs can also be entered on the gforge project page.
+	
+	User's listserv archive:
+	https://list.nih.gov/archives/cagrid_users-l.html
+	
+	Join listserv:
+	https://list.nih.gov/cgi-bin/wa?SUBED1=cagrid_users-l&A=1
+
+	GForge Project Page:
+	http://gforge.nci.nih.gov/projects/cagrid-1-0/
+	
+	Submit Bug:
+	http://gforge.nci.nih.gov/tracker/?func=add&group_id=25&atid=174
+	
+================================================================
+                     	7.0 Documentation
+================================================================
+
+	The release documentation can be found along with the downloads on the project's 
+	gforge file section:
+	http://gforge.nci.nih.gov/frs/?group_id=25
+
+	The latest documentation, including individual project desgin documents,
+	can be found in GForge:
+	http://gforge.nci.nih.gov/plugins/scmcvs/cvsweb.php/cagrid-1-0/Documentation/docs/?cvsroot=cagrid-1-0
+	
+
+================================================================
+                    	8.0 References
+================================================================
+    
+The following urls access web pages relevant to caGrid.
+
+    caBIG Home Page
+     
+    --  http://cabig.nci.nih.gov/
+    
+    NCICB Download Center
+
+    --  http://ncicb.nci.nih.gov/download/
+
+    caGrid
+    -- https://cabig.nci.nih.gov/workspaces/Architecture/caGrid1-0/
+    -- http://gforge.nci.nih.gov/projects/cagrid-1-0/
+    
+    
