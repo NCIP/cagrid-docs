@@ -50,8 +50,8 @@ INSTALLER RELEASE
 ----- get checkouts -----
 mkdir <directory for release>
 cd <directory for release>
-cvs -d :ext:anonymous@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 checkout -r <tag> cagrid-1-0/caGrid
-cvs -d :ext:anonymous@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 checkout -r <tag> cagrid-1-0/Applications
+cvs -d :ext:anonymous@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 export -r <release tag> cagrid-1-0/caGrid
+cvs -d :ext:anonymous@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 export -r <release tag> cagrid-1-0/Applications
 
 ----- create caGrid source release -----
 cd cagrid-1-0
