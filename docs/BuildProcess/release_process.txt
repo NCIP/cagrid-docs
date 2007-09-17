@@ -47,11 +47,15 @@ zip up, or whatever is needed for the release, the directory created {dir for ch
 
 INSTALLER RELEASE
 ====================
+
+Create file release on gforge
+
 ----- get checkouts -----
 mkdir <directory for release>
 cd <directory for release>
 cvs -d :ext:anonymous@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 export -r <release tag> cagrid-1-0/caGrid
 cvs -d :ext:anonymous@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 export -r <release tag> cagrid-1-0/Applications
+cvs -d :ext:anonymous@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 export -r <release tag> cagrid-1-0/Tools
 
 ----- create caGrid source release -----
 cd cagrid-1-0
@@ -69,8 +73,14 @@ cd ..
 zip -r caGrid-1.1-browser.zip cagrid-browser
 mv caGrid-1.1-browser.zip <directory for release>
 
+----- create trust updater release -----
+cd ../Tools
+zip -r caGrid-1.1-trust-upgrader.zip trust-fabric-upgrader
+mv caGrid-1.1-trust-upgrader.zip <directory for release>
+Upload to gforge, <directory for release>/caGrid-1.1-trust-upgrader.zip
+
 ----- upload caGrid and browser release -----
-Create file release on gforge and upload <directory for release>/caGrid-1.1.zip and <directory for release>/caGrid-1.1-browser.zip
+Upload to gforge, <directory for release>/caGrid-1.1.zip and <directory for release>/caGrid-1.1-browser.zip
 Copy the URLs to these releases for use in the installer below
 
 ----- create installer release -----
@@ -86,4 +96,5 @@ mv build/cagrid.installer.properties <directory for release>
 Verify correctness of <directory for release>/cagrid.installer.properties
 Upload <directory for release>/cagrid.installer.properties to <PROPS URL>
 Upload <directory for release>/caGrid-1.1-installer.zip to gforge
+
 
