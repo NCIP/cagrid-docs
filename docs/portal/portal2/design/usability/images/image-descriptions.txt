@@ -1,0 +1,30 @@
+# analytical_services-active-20071128.gif #
+Depicts an analytical service that is active.
+
+# analytical_services-inactive-20071130.gif #
+Depicts an analytical service that is NOT active.
+
+# data-services-active-20071128.gif
+Depicts a data service that is not active.
+
+# data-services-inactive-20071130.gif
+Depicts a data service that is not active.
+
+# hosting-research-center-active-20071128.gif
+Depicts a location at which one or more services are running an all services are active.
+
+# hosting-research-center-inactive-20071130.gif
+Depicts a location at which one or more services are running an all services are NOT active.
+
+# hosting-research-center-partial-20071130.gif
+Depicts a location at which one or more services are running at at least one service is active but at least one service is not active.
+
+# participant_institute-20071128.gif
+Depicts a caBIG participant.
+
+# participant_POC-20071128.gif #
+Depicts a caGrid POC
+
+# shadow-20071128.png #
+The shadow that should be used for all Google Map icons.
+
