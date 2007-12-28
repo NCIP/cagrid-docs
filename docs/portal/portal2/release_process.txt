@@ -1,0 +1,44 @@
+#######################
+# Creating the branch #
+#######################
+
+1. Do a clean checkout:
+
+  cvs -d :ext:<user>@cbiocvs2.nci.nih.gov:/cvsshare/content/gforge/cagrid-1-0 co -d cagrid-portal-2-0_release cagrid-1-0/Applications/cagrid-portal
+
+2. Tag
+
+  cd cagrid-portal-2-0_release
+  cvs tag cagrid-portal-2-0_release_root
+  
+3. Branch
+
+  cvs tag -b -r cagrid-portal-2-0_release_root cagrid-portal-2-0_release
+  
+#############################
+# Tag the release candidate #
+#############################
+
+1. Check out the branch
+
+  cvs -d :ext:<user>@cbiocvs2.nci.nih.gov:/cvsshare/content/gforge/cagrid-1-0 co -r cagrid-portal-2-0_release -d cagrid-portal-2-0_release cagrid-1-0/Applications/cagrid-portal
+  
+2. Tag
+
+  cd cagrid-portal-2-0_release
+  cvs tag cagrid-portal-2-0_release_rc1
+  
+3. Export
+
+  cvs -d :ext:<user>@cbiocvs2.nci.nih.gov:/cvsshare/content/gforge/cagrid-1-0 export -r cagrid-portal-2-0_release_rc1 -d cagrid-portal cagrid-1-0/Applications/cagrid-portal
+
+4. Then zip and upload to GForge.
+
+########################
+# Create final release #
+########################
+
+When ready to create final release...
+Tag as cagrid-portal-2-0_release_final
+Export
+Zip and upload to GForge
