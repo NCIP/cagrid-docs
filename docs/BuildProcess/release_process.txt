@@ -10,38 +10,38 @@ RELEASE PROCESS
 ====================
 ----- prepare the release branch -----
 send email to the development mailing list announcing a version control freeze
-tag a branch root from the cagrid-1-0/caGrid dir of an up to date checkout of HEAD  (cvs tag caGrid-1_0_release_root)
-create a branch based on the branch root tag   (cvs tag -b -r caGrid-1_0_release_root caGrid-1_0_release)
+tag a branch root from the cagrid-1-0/caGrid dir of an up to date checkout of HEAD  (cvs tag caGrid-1_2_release_root)
+create a branch based on the branch root tag   (cvs tag -b -r caGrid-1_2_release_root caGrid-1_2_release)
 
 ----- prepare the release candidate -----
-get a working checkout of the release branch in a new directory (cvs -d:ext:{GFORGE_USERNAME}@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 co -r caGrid-1_0_release -d caGrid-1.0-release/caGrid cagrid-1-0/caGrid)
-do fixing or cleaning needed on the branch
-tag a release candidate on our checkout of the branch (cvs tag caGrid-1_0_release_rc1)
+get a working checkout of the release branch in a new directory (cvs -d:ext:{GFORGE_USERNAME}@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 co -r caGrid-1_2_release -d caGrid-1.2-release/caGrid cagrid-1-0/caGrid)
+do fixing or cleaning needed on the branch (setting versions, default target grids, etc)
+tag a release candidate on our checkout of the branch (cvs tag caGrid-1_2_release_rc1)
 
 -----  make a release candidate ----- 
-create the release from a cvs export  (cvs -d:ext:anonymous@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 export -r caGrid-1_0_release_rc1 -d {dir for checkout} cagrid-1-0/caGrid)
+create the release from a cvs export  (cvs -d:ext:anonymous@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 export -r caGrid-1_2_release_rc1 -d {dir for checkout} cagrid-1-0/caGrid)
   -password is anonymous
 zip up, or whatever is needed for the release, the directory created {dir for checkout}
 
 ----- address any issues with the candidate -----
 *** if bug fixes
   commit the fixes to our local branch checkout (cvs commit)
-  tag a bug fix tag  (cvs tag caGrid-1_0_release_rc1_bugfix1)
+  tag a bug fix tag  (cvs tag caGrid-1_2_release_rc1_bugfix1)
   merge bug fix into trunk as appropriate
     from a HEAD checkout:
       get up to date  (cvs update)
-      merge in the bug fix  (cvs update -j caGrid-1_0_release_rc1 -j caGrid-1_0_release_rc1_bugfix1)
+      merge in the bug fix  (cvs update -j caGrid-1_2_release_rc1 -j caGrid-1_2_release_rc1_bugfix1)
       fix any merge issues, and obviously test
       commit the fix to HEAD (cvs commit)
-  rinse and repeat... tag a new release candidate  (cvs tag caGrid-1_0_release_rc2)
+  rinse and repeat... tag a new release candidate  (cvs tag caGrid-1_2_release_rc2)
 
------  finalize the release -----
-tag the release on the branch (cvs tag caGrid-1_0_release_final)
-create the release from a cvs export  (cvs -d:ext:anonymous@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 export -r caGrid-1_0_release_final -d {dir for checkout} cagrid-1-0/caGrid)
+-----  finalize the release (after validation of last RC; this should just be retagging the last RC as the final)-----
+tag the release on the branch (cvs tag caGrid-1_2_release_final)
+create the release from a cvs export  (cvs -d:ext:anonymous@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 export -r caGrid-1_2_release_final -d {dir for checkout} cagrid-1-0/caGrid)
 zip up, or whatever is needed for the release, the directory created {dir for checkout}
 
 ----- prepare the trunk for new development -----
-*fix items in the HEAD (e.g. jar names, readmes, etc) to indicate it is the next release (when next release is known) 
+*fix items in the HEAD (e.g. project versions) to indicate it is the next release (when next release is known) 
 
 
 
@@ -59,42 +59,28 @@ cvs -d :ext:anonymous@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 expo
 
 ----- create caGrid source release -----
 cd cagrid-1-0
-zip -r caGrid-1.1.zip caGrid
-mv  caGrid-1.1.zip <directory for release>
+zip -r caGrid-1.2.zip caGrid
+mv  caGrid-1.2.zip <directory for release>
 
------ create browser source release -----
-cd caGrid
-ant all
-cd ../Applications
-ant build-cagrid-browser
-cd cagrid-browser
-ant clean
-cd ..
-zip -r caGrid-1.1-browser.zip cagrid-browser
-mv caGrid-1.1-browser.zip <directory for release>
-
------ create trust updater release -----
-cd ../Tools
-zip -r caGrid-1.1-trust-upgrader.zip trust-fabric-upgrader
-mv caGrid-1.1-trust-upgrader.zip <directory for release>
-Upload to gforge, <directory for release>/caGrid-1.1-trust-upgrader.zip
-
------ upload caGrid and browser release -----
-Upload to gforge, <directory for release>/caGrid-1.1.zip and <directory for release>/caGrid-1.1-browser.zip
-Copy the URLs to these releases for use in the installer below
+----- upload caGrid release -----
+Upload to gforge, <directory for release>/caGrid-1.2.zip 
+Copy the URL to this release for use in the installer below, refer to this as <CAGRID URL>
+Obtain URL of portal release which is being integrated (currently a separate project, so creation
+  of the portal release is not part of the caGrid release), refer to this as <CURRENT PORTAL URL>
+Obtain URL of where the installer properties (cagrid.installer.properties) will be stored, refer to this as <PROPS URL>
 
 ----- create installer release -----
 cd ../caGrid/projects/installer
-ant -Ddownload.properties.url=<PROPS URL>/cagrid.installer.properties \
-  -Dcagrid.download.url=<CAGRID URL>/caGrid-1.1.zip \
-  -Dbrowser.download.url=<BROWSER URL>/caGrid-1.1-cagrid-browser.zip \
+ant -Ddownload.properties.url=<PROPS URL> \
+  -Dcagrid.download.url=<CAGRID URL>/caGrid-1.2.zip \
+  -Dportal.download.url=<CURRENT PORTAL URL> \
   clean dist-installer
-mv build/caGrid-1.1-installer.zip <directory for release>
+mv build/caGrid-1.2-installer.zip <directory for release>
 mv build/cagrid.installer.properties <directory for release>
 
 ----- upload installer -----
 Verify correctness of <directory for release>/cagrid.installer.properties
 Upload <directory for release>/cagrid.installer.properties to <PROPS URL>
-Upload <directory for release>/caGrid-1.1-installer.zip to gforge
+Upload <directory for release>/caGrid-1.2-installer.zip to gforge
 
 
