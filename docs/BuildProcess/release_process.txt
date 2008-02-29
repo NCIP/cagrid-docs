@@ -14,8 +14,9 @@ tag a branch root from the cagrid-1-0 dir of an up to date checkout of HEAD  (cv
 create a branch based on the branch root tag   (cvs tag -b -r caGrid-1_2_release_root caGrid-1_2_release)
 
 ----- prepare the release candidate -----
-get a working checkout of the release branch in a new directory (cvs -d:ext:{GFORGE_USERNAME}@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 co -r caGrid-1_2_release -d caGrid-1.2-release/caGrid cagrid-1-0)
+get a working checkout of the release branch in a new directory (cvs -d:ext:{GFORGE_USERNAME}@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 co -r caGrid-1_2_release -d caGrid-1.2-release cagrid-1-0)
 do fixing or cleaning needed on the branch (setting versions, default target grids, etc)
+setup automated builds/tests for the branch
 tag a release candidate on our checkout of the branch (cvs tag caGrid-1_2_release_rc1)
 
 -----  make a release candidate ----- 
