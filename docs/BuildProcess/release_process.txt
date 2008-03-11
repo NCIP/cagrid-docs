@@ -62,15 +62,24 @@ cvs -d :ext:anonymous@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 expo
 
 ----- create caGrid source release -----
 cd cagrid-1-0
+zip -r caGrid-1.2-src.zip caGrid
+mv  caGrid-1.2-src.zip <directory for release>
+md5sum <directory for release>/caGrid-1.2-src.zip > <directory for release>/caGrid-1.2-src.zip.md5sum
+
+----- create a reduced size caGrid source release (for 1.2 until we can reorganize) -----
+rm *.zip projects/data/test/resources
 zip -r caGrid-1.2.zip caGrid
 mv  caGrid-1.2.zip <directory for release>
 md5sum <directory for release>/caGrid-1.2.zip > <directory for release>/caGrid-1.2.zip.md5sum
+
+----- verify the build/test -----
 cd caGrid
-ant all
+ant all test
 
 ----- upload caGrid release -----
+Upload to gforge, <directory for release>/caGrid-1.2-src.zip 
 Upload to gforge, <directory for release>/caGrid-1.2.zip 
-Copy the URL to this release for use in the installer below, refer to this as <CAGRID URL>
+Copy the URL to this release (caGrid-1.2.zip) for use in the installer below, refer to this as <CAGRID URL>
 Copy the md5 value from caGrid-1.2.zip.md5sum, and refer to this as <CAGRID MD5>
 Obtain URL of where the installer properties (cagrid.installer.properties) will be stored, refer to this as <PROPS URL>
 
@@ -82,10 +91,10 @@ cd projects/installer
 #  in the download.properties file, inside the caGrid-installer-1.2.jar, inside the caGrid-1.2.zip
 ant -Ddownload.properties.url=<PROPS URL> \
   -Dcagrid.download.url=<CAGRID URL>/caGrid-1.2.zip \
-  -Dcagrid.md5.checksum=<CAGRID MD5> \
   clean dist-installer
 mv build/caGrid-1.2-installer.zip <directory for release>
 mv build/cagrid.installer.properties <directory for release>
+#uncomment and edit the value of the cagrid.md5.checksum property in <directory for release>/cagrid.installer.properties to be that of the value of <CAGRID MD5> 
 
 ----- upload installer -----
 Verify correctness of <directory for release>/cagrid.installer.properties
