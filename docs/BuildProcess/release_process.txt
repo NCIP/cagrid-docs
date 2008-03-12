@@ -92,7 +92,7 @@ cd projects/installer
 ant -Ddownload.properties.url=<PROPS URL> \
   -Dcagrid.download.url=<CAGRID URL>/caGrid-1.2.zip \
   clean dist-installer
-mv build/caGrid-1.2-installer.zip <directory for release>
+mv build/caGrid-installer-1.2.zip <directory for release>
 mv build/cagrid.installer.properties <directory for release>
 #uncomment and edit the value of the cagrid.md5.checksum property in <directory for release>/cagrid.installer.properties to be that of the value of <CAGRID MD5> 
 
