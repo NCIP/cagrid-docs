@@ -67,7 +67,7 @@ mv  caGrid-1.2-src.zip <directory for release>
 md5sum <directory for release>/caGrid-1.2-src.zip > <directory for release>/caGrid-1.2-src.zip.md5sum
 
 ----- create a reduced size caGrid source release (for 1.2 until we can reorganize) -----
-rm *.zip projects/data/test/resources
+rm caGrid/projects/data/test/resources/*.zip
 zip -r caGrid-1.2.zip caGrid
 mv  caGrid-1.2.zip <directory for release>
 md5sum <directory for release>/caGrid-1.2.zip > <directory for release>/caGrid-1.2.zip.md5sum
