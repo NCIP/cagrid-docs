@@ -1,0 +1,1 @@
+This folder contains documents pertaining to the Testing project in caGrid.
