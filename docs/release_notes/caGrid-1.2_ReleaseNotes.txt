@@ -89,7 +89,7 @@ Specific highlighted improvements of caGrid 1.2 include:
  * caGrid Transfer service for lightweight solution to large or binary data transfer
  * caGrid Portal 2.0 installer
  * Refactored build system supporting formal transitive dependency management (Apache Ivy-based) 
- * Nearly than 20 fixed bugs
+ * Nearly 20 fixed bugs
  * Usability improvements
  * Documentation improvements
  * Even more testing
