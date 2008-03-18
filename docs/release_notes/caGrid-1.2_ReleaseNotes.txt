@@ -127,7 +127,7 @@ The complete fixed bug list and additional details can be found on the project G
                      5.0 Known Issues Not Yet Fixed
 ================================================================
 
-Update to date bug reports and feature requests can be found on the tracker section
+Updated bug reports and feature requests can be found on the tracker section
 of the project's gforge site:
 http://gforge.nci.nih.gov/tracker/?group_id=25
 
