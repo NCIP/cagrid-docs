@@ -1,7 +1,7 @@
     
                             caGrid
-                          Version 1.1
-                       September 17, 2007 
+                          Version 1.2
+                       March ??, 2008 
 
 
 ================================================================
@@ -21,18 +21,18 @@
                       1.0 caGrid Introduction
 ================================================================
 
-    This document contains the release notes for the caGrid 1.1
+    This document contains the release notes for the caGrid 1.2
     release.  
 
-    caGrid 1.1 is a point release of the caGrid 1.0 stream.  It
-    is backwards compatible with the service interfaces of caGrid 1.0.
-    That is, services and applications developed against the caGrid 1.0 release,
-    will continue to function against caGrid 1.1 versions of those services
-    (including the production grid).
+    caGrid 1.2 is a point release of the caGrid 1.x stream.  It
+    is backwards compatible with the service interfaces of caGrid 1.0/1.1.
+    That is, services and applications developed against the caGrid 1.0 or 1.1
+    release, will continue to function against caGrid 1.2 versions of
+    those services (including the production grid).
 
     This release of caGrid supports caBIG compatibility level gold.
 
-    https://cabig.nci.nih.gov/workspaces/Architecture/caGrid1-0/
+    https://cabig.nci.nih.gov/workspaces/Architecture/caGrid/
     http://www.cagrid.org
 
 ================================================================
@@ -46,7 +46,8 @@ caGrid 0.5.3 was released on 25th January 2006
 caGrid 0.5.4 was released on 12th May 2006
 caGrid 1.0 Beta was released on 17th July 2006
 caGrid 1.0 was released on 15th December 2006
-
+caGrid 1.1 was released on 17th September 2007
+ 
 
 ================================================================
                       3.0 New Features and Updates
@@ -54,52 +55,44 @@ caGrid 1.0 was released on 15th December 2006
 
  RFE	Description
 ------------------------------------------------------------   
-3693	CQL Query Processor parameters should always be configurable “deploy time”
-3869	Manually specified domain model path should be made relative to the service dir
-4056	Support Copy Paste in the “View/Edit” window for metadata.
-4094	Support mechanism for archiving and possibly disabling the SyncGTS cache.
-4137	CQL Query Processor Parameters should be allowed to start with upper case chars
-4149	Introduce to support generating XSDs and Castor Mappings from XMI file
-4328	Introduce model should have documentation capabilities
-4350	Need to create a caGrid Sandbox instance for testing grid deployments
-4359	Be able to turn off service registration at deploy time
-4376	ServiceMetadata Editor
-4434	BDT needs a system test to test service creation
-4447	Need to make an upgrader for metadata extension to populate new description fields in introduce model
-4615	Make HQLCoreQueryProcessor.java easier to extend for post processing results
-4669	Service Metadata editor for Introduce
-4723	Meaningful IdP names in Grid Identities
-4724	Add support for a Hardware Security Module (HSM) to Dorian.
-4726	Modify Grid Grouper to allows users to get a list of groups in which they are a member.
-4728	Design and Develop a solution for provisioning service/container certificates / develop CPS if required.
-5365	Add support for service's to unregister from the Index Service at shutdown
-6047	Sort items in drop down lists
-6326	Busy Dialog while modification viewer is being loaded.
-6404	Introduce to enable user to write in custom PDP
-6811	Update or delete Introduce GUI tests
-7168	FQP needs integration test
-7989	AuthenticationService should issue assertion a small amount of time in the past
-8137	Need installer for portal
-8138	Need installer for browser
-8139	Installer should have option to configure service container without deploying a service
-8168	Installer should look for a system property for overloading the download properties url
+4355    Introduce disable/remove extensions
+5368    Implement a CAS plugin for the Authentication Service.
+5426    See if Singleton and Main resources can be brought together.
+6802    Introduce to enable state to be managed or modified by developers in the singleton type resources
+6814    Have a create gar option for folks who need to move it around.
+8347    SSO Web Component
+8654    Service Properties values should be editable in the table
+9493    Introduce to allow security control of imported base operations for resource property acess.
+9846    Support for custom webapp context name (i.e. other than wsrf)
+10326   Provide additional higher-level APIs for interrogating service metadata
+10436   Allow GAARDS UI to import credentials
+10492   Migrate SDK Discovery Introduce Extenstion to SDK 4.0
+10496   Remove dependencies on Mobius UI and configuration components
+11016   Need a way to add full project in Data Service creation GUI
+11896   FQP engine should support passing credentials to use when invoking data services
+12150   Sync WebSSO Server and Client Programmatically
+12157   Resolve TrustStore Issues
 
 The complete list of new features and additional details can be found on the project Gforge Tracker:
   http://gforge.nci.nih.gov/tracker/index.php?group_id=25&atid=177
 and in the scope documents:
-  http://gforge.nci.nih.gov/docman/index.php?group_id=25&selected_doc_group_id=1576&language_id=1 
-
-Specific highlighted improvements of caGrid 1.1 include:
- * Services are backwards compatible with 1.0 release
- * Automated migration of 1.0 services to 1.1
- * Coordination with Security Working Group to create policy for credentialing in production deployment
- * Complete “training grid” deployment
- * Support for simple switching between grid deployments (production, training, local, etc)
- * More than 40 fixed bugs
+    http://gforge.nci.nih.gov/docman/index.php?group_id=25&selected_doc_group_id=2414&language_id=1
+    
+Specific highlighted improvements of caGrid 1.2 include:
+ * Services are backwards compatible with 1.0/1.1 release
+ * Automated migration of 1.0 and 1.1 services to 1.2
+ * caCORE SDK 4.0 support in Data Services and Introduce "create XSD from XMI"
+ * Ability to create Data Services metadata from XMI 
+ * WebSSO stable release
+ * Credential Delegation Service (CDS) stable release
+ * WS-Notification, Persistent Resources, and Service Undeployment support in Introduce
+ * caGrid Transfer service for lightweight solution to large or binary data transfer
+ * caGrid Portal 2.0 installer
+ * Refactored build system supporting formal transitive dependency management (Apache Ivy-based) 
+ * Nearly than 20 fixed bugs
  * Usability improvements
  * Documentation improvements
  * Even more testing
- * Significant installation improvements
 
  
 ================================================================
@@ -108,53 +101,24 @@ Specific highlighted improvements of caGrid 1.1 include:
 
 Bug		Description
 ------------------------------------------------------------   
-3773	Introduce service properties removal can get corrupted.
-3856	cagrid-portal doesn't configure client stubs correctly to pull metadata from secure services
-4045	NullPointerException in FQP 
-4047	caGrid portal Number of Services is not consistent
-4048	caGrid portal changes - Usability session feedback
-4049	caGrid Portal - Map View issue
-4054	Introduce methods which are “Provided” do not have the ability to infuse authorization callouts.
-4075	Installer does not properly install and configure a secure Tomcat
-4081	GTS Shutdown BUG
-4087	caDSR driven domain model not regenerated when modified in data service UI
-4182	GAARDS UI: dialog text incorrect
-4303	Introduce inserts new methods (in client) without regard to java 5 annotations, which can cause compile errors
-4304	Introduce generated client overrides getServiceSecurityMetadata and shouldn't
-4354	Terrapin Systems on caGrid portal should be renamed to TerpSys
-4356	Introduce: Clicking on a type namespace in the namespace tree should turn off custom serializer view
-4488	Introduce doesn't prevent you from creating java packages using numbers
-4502	Due to a hibernate bug, grouper and therefore gridgrouper has problems on MySQL 5
-4618	Introduce modify service window may be closed while method modification window is open
-4694	Service's don't seem to be unregistering from Index Service on container shutdown
-5351	Installer overloads Globus Trusted Certificate Directory in Tomcat
-5371	Dorian throws a null pointer when adding/updating a Trusted IdP with no authentication method specified.
-5372	Security UI does not properly list all Trusted IdPs in the user management search criteria drop down.
-5916	ResourcePropertyEditorDialog leaving file handles open
-6048	Investigate synchronization/timing issue on “load schemas” button in data service caCORE wizard
-6049	Introduce needs to strip trailing whitespace from methods names, etc
-6236	In Introduce generated service's XML and WSDL files, URL path to caGridMetadata.xsd contains backslashes
-6248	Domain Model generation excludes classes with no attributes
-6268	Service property description not updated
-6270	Introduce configuration preferences GLOBUS_LOCATION is inconsistently used
-6325	caDSR extension to Introduce throws exception when refresh is clicked while a package is being brought down.
-6416	Dorian IDP registration GUI needs to prevent submitting registration multiple times
-6734	GMEService (from mobius) doesn't properly propagate initialization exception
-6748	Unexpected Behavior in Removing or Suspending the Initial Dorian Admin Account
-6982	CRL not updating in subordinates when you overload a Trusted Authority.
-7400	Deploy Grid Service window extends off the screen
-7668	Introduce generated client is not properly loading service-specific wsdd before generic one
-7808	When FQP securely deployed the client always looks for credentials; should support anonymous as well
-7903	Exception thrown when clicking “delete” button in proxy view window.
-7977	AuthenticationService build is broken
-7988	caGrid authentication service SAML assertions out of time
-8000	Tomcat Security Descriptor has gridmap file entry in it.
-8016	GME deployment doesn't edit the gme conf properly when running on a different port
-8207	Upgrading data service using SDK 3.1, shows wrong appservice url in GUI
-8212	Introduce method viewer lets you edit a provided/imported method when you first open it
-8217	Service Migrator does not address  removing the old security jar and copy in the new ones.
-8219	Service Migrator does not seem to be editing the eclipse classpath correctly with the new jars after upgrade.
-8486	Installer should not ask if caGrid should be reconfigured if user has selected to install caGrid.
+7881    Introduce is generating invalid schema for &quot;types&quot; schema
+8632    Installer shouldn't require caGrid installation for initial run of installation.
+8766    AntTask using java executable obtained from ${java.home}/bin rather than JAVA_HOME/bin
+9023    Renewing a Host Certificate and Revoking Later does not include earlier host certificates in the CRL.
+9042    Installer creates duplicate HTTPS Connector element on re-configure.
+9167    Data Service without custom query processor fails to start up correctly
+9226    Introduce flags fatal error when trying to modify an operation that returns arrays of arrays
+9420    Service name collision with imported WSDL name causes build failure
+9566    Service Level Authorization Mechanism Locks some Operation Level Configuration.
+9567    Grid Map Authorization (Service Level)  and Operation Level Authorization Conflict
+10497   CaGridEnumeration schema is superfluously added to all caBIG services
+11460   Introduce throws null when opening a service which requires an extension that is not installed
+11671   Introduce does not permit package names that start with capital letters, even for custom beans.
+12381   Authz jars not included in SDK 3.2(.1) backed data services
+12674   In services tree view should be able to click on a resource property and open view/edit resource
+12675   When editing a method that is imported is does not fill int he values properly
+12677   services jtree is not expanding correctly as new things are added and it still has the plus minus icons instead of the icons i want it to use
+12880   Not all installer threads cancel when installer is canceled
 
 The complete fixed bug list and additional details can be found on the project Gforge Tracker:
   http://gforge.nci.nih.gov/tracker/index.php?group_id=25&atid=174
@@ -169,7 +133,7 @@ http://gforge.nci.nih.gov/tracker/?group_id=25
 
 ----------
 ISSUE:
-	Bug# #7671 Lowercase chars in complexType names from schema can cause compile failure
+	Bug #7671 Lowercase chars in complexType names from schema can cause compile failure
 DETAILS:
 	http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=7671&group_id=25&atid=174
 IMPACT:
@@ -178,6 +142,41 @@ WORKAROUND:
 	None, without editing the XSD/Model.
 ----------
 
+----------
+ISSUE:
+    Bug #10897 caCORE backed data services (3.1/3.2.x) don't handle queries with single quotes in query parameters
+DETAILS:
+    http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=10897&group_id=25&atid=174
+IMPACT:
+    Queries using single quote characters in Predicates will fail. 
+WORKAROUND:
+    None, without moving to caCORE 4.0.
+----------
+
+----------
+ISSUE:
+    Bug #12370 Circular references in XSDs are not supported (in GME)
+DETAILS:
+    http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=12370&group_id=25&atid=174
+IMPACT:
+    User's with such schemas will be unable to upload their schemas which hinders
+    reuse.
+WORKAROUND:
+    None, without making changes to the modle/XML Schemas to remove the cycles.
+    Impacted users which cannot change the model should simply not upload their schemas.
+----------
+
+----------
+ISSUE:
+    Bug #12893 Installer Error dialogs sometimes popup behind the installer itself, confusing the user
+DETAILS:
+    http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=12893&group_id=25&atid=174
+IMPACT:
+    The installer may appear "frozen" if this occurs.
+WORKAROUND:
+    Use ALT+TAB or a comparable "window toggling OS command" to bring the error dialog
+    to the foreground.
+----------
 
 
 ================================================================
@@ -209,8 +208,7 @@ WORKAROUND:
 
 	The latest documentation, including individual project design documents,
 	can be found in GForge:
-	http://gforge.nci.nih.gov/docman/index.php?group_id=25&selected_doc_group_id=1400&language_id=1
-	
+    http://gforge.nci.nih.gov/docman/index.php?group_id=25&selected_doc_group_id=2414&language_id=1	
 
 ================================================================
                     	8.0 References
@@ -226,6 +224,6 @@ The following urls access web pages relevant to caGrid.
 
     caGrid
     -- http://cagrid.org
-    -- https://cabig.nci.nih.gov/workspaces/Architecture/caGrid1-0/
+    -- https://cabig.nci.nih.gov/workspaces/Architecture/caGrid/
     -- http://gforge.nci.nih.gov/projects/cagrid-1-0/
 
