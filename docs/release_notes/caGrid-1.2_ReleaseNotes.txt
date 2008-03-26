@@ -1,7 +1,7 @@
     
                             caGrid
                           Version 1.2
-                       March ??, 2008 
+                       March 31, 2008 
 
 
 ================================================================
@@ -176,6 +176,18 @@ IMPACT:
 WORKAROUND:
     Use ALT+TAB or a comparable "window toggling OS command" to bring the error dialog
     to the foreground.
+----------
+
+----------
+ISSUE:
+    Bug #13231 Adding data types from schemas on the file system with cyclic imports fails
+DETAILS:
+    http://gforge.nci.nih.gov/tracker/?func=detail&atid=174&aid=13231&group_id=25
+IMPACT:
+    Users importing schemas, using the filesystem import, cannot have schemas with cycles in them.
+    Other import mechanisms (e.g from cadsr, the data service wizard, create from XMI, etc) are not affected.
+WORKAROUND:
+    See gforge for more details.
 ----------
 
 
