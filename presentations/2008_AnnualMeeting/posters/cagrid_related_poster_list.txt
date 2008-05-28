@@ -1,0 +1,42 @@
+caGrid Security Infrastructure (GAARDS)
+-Steve
+        
+Web Single Sign On (WebSSO)
+-Kunal
+
+Introduce: caGrid Service Generation Framework
+-Shannon
+
+caGrid 1.2 Overview
+-Scott
+
+caGrid Transfer Services
+-Shannon
+
+caBIG™ Gold-level Compatibility Guidelines
+-Scott
+
+caGrid Portal 2.0
+-Josh/Manav
+
+Virtualizing XML Resources as caGrid Data Services
+-Tony?
+
+Maximizing Semantic Interoperability on the caGrid
+?
+
+caGrid Workflow
+-Ravi
+
+caGrid and GAARDS Infrastructure in the caBIG™ Clinical Trials Suite (CCTS) v1.0
+?
+
+Training Module: End-to-End Process of Developing a Silver-Level Compatible caGrid Data Service
+?
+
+geWorkbench/caGrid/TeraGrid Integration Overview
+?
+
+caGrid Use in the CardioVascular Research Grid
+-Justin    
+    
