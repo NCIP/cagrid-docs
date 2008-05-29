@@ -17,7 +17,7 @@ caBIG™ Gold-level Compatibility Guidelines
 -Scott
 
 caGrid Portal 2.0
--Josh/Manav
+-Josh
 
 Virtualizing XML Resources as caGrid Data Services
 -Tony?
@@ -29,13 +29,13 @@ caGrid Workflow
 -Ravi
 
 caGrid and GAARDS Infrastructure in the caBIG™ Clinical Trials Suite (CCTS) v1.0
-?
+patrick?
 
 Training Module: End-to-End Process of Developing a Silver-Level Compatible caGrid Data Service
 ?
 
 geWorkbench/caGrid/TeraGrid Integration Overview
-?
+? Scott/Steve
 
 caGrid Use in the CardioVascular Research Grid
 -Justin    
