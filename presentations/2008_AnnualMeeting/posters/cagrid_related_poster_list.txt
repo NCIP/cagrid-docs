@@ -20,7 +20,7 @@ caGrid Portal 2.0
 -Josh
 
 Virtualizing XML Resources as caGrid Data Services
--Tony?
+-Tony
 
 Maximizing Semantic Interoperability on the caGrid
 ?
