@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="ivylib/ivy-2.0.0-beta2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/caGrid-core.jar"/>
+	<classpathentry kind="lib" path="lib/caGrid-CQL-cql.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/caGrid-data-common.jar"/>
+	<classpathentry kind="lib" path="lib/caGrid-data-stubs.jar"/>
+	<classpathentry kind="lib" path="lib/castor.jar"/>
+	<classpathentry kind="lib" path="lib/jdom.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
