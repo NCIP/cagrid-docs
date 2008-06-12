@@ -29,6 +29,8 @@
     <dependency rev="1.2" org="caGrid" name="core" conf="default->default"/>
     <dependency rev="1.2" org="caGrid" name="cql" conf="default->cql"/>
     <dependency rev="1.2" org="caGrid" name="data" conf="default->common;default->utils"/>
+    <dependency rev="1.2" org="caGrid" name="fqp" 
+    	conf="default->stubs;default->common;default->client;default->service" />
     
     <!-- non-cagrid dependencies -->
 	<dependency rev="1.0" org="jdom" name="jdom" conf="default->*"/>
