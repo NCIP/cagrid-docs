@@ -1,0 +1,100 @@
+<!-- ======================================================================= -->
+<!-- caGrid DCQL Hackathon - caBIG Annual Meeting 2008                      -->
+<!-- ======================================================================= -->
+<project name="dcqlHackathon2008" default="all" basedir=".">
+	<!-- Environment -->
+	<property environment="env" />
+	<property file="${basedir}/build.properties" />
+	<property file="${basedir}/project.properties" />
+	
+	<!-- version properties -->
+	<property name="project.version" value="1.0"/>
+
+	<property name="globus.dir" location="${env.GLOBUS_LOCATION}" />
+
+	<!-- build with debugging information -->
+	<property name="java.debug" value="on" />
+	<!-- enforce java 1.5 compliance at build time -->
+	<property name="java.source" value="1.5" />
+
+	<!-- Information -->
+	<property name="project.name" value="${ant.project.name}" />
+
+	<!-- directory locations -->
+	<property name="lib.dir" location="${basedir}/lib"/>
+	<property name="ivy.lib.dir" location="${basedir}/ivylib"/>
+
+	<!-- source dir -->
+	<property name="src.dir" location="${basedir}/src" />
+	
+	<!-- resources dir -->
+	<property name="resources.dir" location="${basedir}/resources"/>
+	
+	<!-- build output dirs -->
+	<property name="build.dir" location="${basedir}/build"/>
+	<property name="classes.dir" location="${build.dir}/classes"/>
+	<property name="build.jars.dir" location="${build.dir}/lib"/>
+	
+	<!-- jar -->
+	<property name="jar.name" value="${project.name}-${project.version}.jar" />
+	<property name="jar.file" value="${build.jars.dir}/${jar.name}" />
+	
+	<!-- build file for stub generation -->
+	<property name="ant.build.stubs" location="${globus.dir}/share/globus_wsrf_tools/build-stubs.xml" />
+	
+	<!-- main build / run classpath -->
+	<path id="project.classpath">
+		<fileset dir="${globus.dir}/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${ext.lib.dir}">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+	
+	
+	<!-- creates output directories -->
+	<target name="init">
+		<mkdir dir="${build.dir}" />
+		<mkdir dir="${build.jars.dir}" />
+		<mkdir dir="${classes.dir}" />
+	</target>
+	
+
+	<!-- compiles the classes -->
+	<target name="compile" depends="init">
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" debug="${java.debug}" source="${java.source}">
+			<include name="**/*.java" />
+			<classpath refid="project.classpath"/>
+		</javac>
+	</target>
+
+
+	<!-- jars the common classes and source -->
+	<target name="jar" depends="compile" description="Builds and jars">
+		<jar destfile="${jar.file}">
+			<fileset dir="${classes.dir}">
+				<include name="**/*.class" />
+			</fileset>
+			<fileset dir="${src.dir}">
+				<include name="**/*.java" />
+			</fileset>
+			<fileset dir="${resources.dir}">
+				<include name="**/*"/>
+			</fileset>
+		</jar>
+	</target>
+		
+
+	<!-- removes all build output -->
+	<target name="clean" description="Cleans up build artifacts">
+		<delete dir="${build.dir}" />
+	</target>
+
+
+	<!-- build and jar everything -->
+	<target name="all" depends="jar" description="Builds and jars all the classes in the project" />
+</project>

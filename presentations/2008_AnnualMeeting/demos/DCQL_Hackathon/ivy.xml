@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://incubator.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="caGrid" module="dcqlHackathon2008" revision="${project.version}">
+    <license name="caGrid" url="http://www.cagrid.org/mwiki/index.php?title=CaGrid:LICENSE-1.1"/>
+    <description>DCQL Hackathon 2008</description>
+  </info>
+
+  <configurations>
+    <!-- Private Configurations-->
+    <conf name="target_grid" visibility="private"/>
+
+    <conf name="impl" visibility="private" extends="default"/>
+    
+    <!-- Public Configurations-->
+    <conf name="default" visibility="public"/>
+  </configurations>
+
+
+  <publications>
+    <!-- no publications -->
+  </publications>
+  
+
+  <dependencies>
+  	<!-- caGrid libs -->
+    <dependency rev="1.2" org="caGrid" name="core" conf="default->default"/>
+    <dependency rev="1.2" org="caGrid" name="cql" conf="default->cql"/>
+    <dependency rev="1.2" org="caGrid" name="data" conf="default->common"/>
+    <dependency rev="1.2" org="caGrid" name="data" conf="default->utils"/>
+    
+    <!-- non-cagrid dependencies -->
+	<dependency rev="1.0" org="jdom" name="jdom" conf="default->*"/>
+  </dependencies>
+</ivy-module>
