@@ -28,8 +28,7 @@
   	<!-- caGrid libs -->
     <dependency rev="1.2" org="caGrid" name="core" conf="default->default"/>
     <dependency rev="1.2" org="caGrid" name="cql" conf="default->cql"/>
-    <dependency rev="1.2" org="caGrid" name="data" conf="default->common"/>
-    <dependency rev="1.2" org="caGrid" name="data" conf="default->utils"/>
+    <dependency rev="1.2" org="caGrid" name="data" conf="default->common;default->utils"/>
     
     <!-- non-cagrid dependencies -->
 	<dependency rev="1.0" org="jdom" name="jdom" conf="default->*"/>
