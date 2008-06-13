@@ -24,4 +24,3 @@ caGrid Workflow
 
 geWorkbench/caGrid/TeraGrid Integration Overview
 -Christine (content help from Scott/Steve)
-    
