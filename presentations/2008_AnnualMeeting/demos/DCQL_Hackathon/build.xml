@@ -90,6 +90,20 @@
 	<target name="clean" description="Cleans up build artifacts">
 		<delete dir="${build.dir}" />
 	</target>
+	
+	
+	<!-- invokes the target to execute a DCQL query -->
+	<target name="dcqlQuery" description="Executes a single DCQL query and prints results">
+		<java classname="org.cagrid.hackathon.dcql.DCQLQueryRunner" fork="true">
+			<arg value="${dcql.query.document}"/>
+			<classpath refid="project.classpath"/>
+			<classpath>
+				<fileset dir="${build.jars.dir}">
+					<include name="**/*"/>
+				</fileset>
+			</classpath>
+		</java>
+	</target>
 
 
 	<!-- build and jar everything -->
