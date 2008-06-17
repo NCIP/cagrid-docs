@@ -13,9 +13,11 @@ import gov.nih.nci.cagrid.fqp.processor.exceptions.FederatedQueryProcessingExcep
  * @author David Ervin
  * 
  * @created Jun 16, 2008 12:21:22 PM
- * @version $Id: DCQLQueryRunner.java,v 1.1 2008-06-16 18:47:54 dervin Exp $ 
+ * @version $Id: DCQLQueryRunner.java,v 1.2 2008-06-17 19:09:05 dervin Exp $ 
  */
 public class DCQLQueryRunner {
+    
+    public static final String DCQL_QUERY_PROPERTY = "dcql.query.document";
     
     private DCQLQueryRunner() {
         // prevents instantiation
@@ -60,15 +62,24 @@ public class DCQLQueryRunner {
     
 
     public static void main(String[] args) {
-        if (args.length != 0) {
+        // String queryFileName = null;
+        if (args.length != 1) {
             System.err.println("USAGE: " + DCQLQueryRunner.class.getName() + " <dcql_query.xml>");
             System.exit(1);
         }
         String queryFileName = args[0];
+        System.out.println("Executing query " + queryFileName);
         try {
+            long start = System.currentTimeMillis();
+            System.out.println("Loading query from disk");
             DCQLQuery query = QueryLoader.loadDcqlQuery(queryFileName);
+            System.out.println("Query loaded in " + (System.currentTimeMillis() - start) + " ms");
+            start = System.currentTimeMillis();
+            System.out.println("Executing query");
             DCQLQueryResultsCollection results = executeDcqlQuery(query);
+            System.out.println("Query executed in " + (System.currentTimeMillis() - start) + " ms");
             QueryResultPrinter.printDcqlQueryResults(results);
+            System.out.println("DONE");
         } catch (FederatedQueryProcessingException ex) {
             ex.printStackTrace();
             System.exit(1);
