@@ -104,6 +104,23 @@
 			</classpath>
 		</java>
 	</target>
+	
+	
+
+	
+	<!-- invokes the target to execute a DCQL query -->
+	<target name="dcqlAggregateQuery" description="Executes a single DCQL query and prints results">
+		<java classname="org.cagrid.hackathon.dcql.DCQLQueryRunner" fork="true">
+			<arg value="${dcql.query.document}"/>
+			<arg value="aggregate"/>
+			<classpath refid="project.classpath"/>
+			<classpath>
+				<fileset dir="${build.jars.dir}">
+					<include name="**/*"/>
+				</fileset>
+			</classpath>
+		</java>
+	</target>
 
 
 	<!-- build and jar everything -->

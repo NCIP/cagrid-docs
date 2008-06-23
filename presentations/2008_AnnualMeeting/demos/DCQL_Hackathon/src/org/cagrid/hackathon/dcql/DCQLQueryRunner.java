@@ -13,11 +13,9 @@ import gov.nih.nci.cagrid.fqp.processor.exceptions.FederatedQueryProcessingExcep
  * @author David Ervin
  * 
  * @created Jun 16, 2008 12:21:22 PM
- * @version $Id: DCQLQueryRunner.java,v 1.2 2008-06-17 19:09:05 dervin Exp $ 
+ * @version $Id: DCQLQueryRunner.java,v 1.3 2008-06-23 19:45:17 dervin Exp $ 
  */
 public class DCQLQueryRunner {
-    
-    public static final String DCQL_QUERY_PROPERTY = "dcql.query.document";
     
     private DCQLQueryRunner() {
         // prevents instantiation
@@ -63,8 +61,8 @@ public class DCQLQueryRunner {
 
     public static void main(String[] args) {
         // String queryFileName = null;
-        if (args.length != 1) {
-            System.err.println("USAGE: " + DCQLQueryRunner.class.getName() + " <dcql_query.xml>");
+        if (!(args.length == 1 || args.length == 2)) {
+            System.err.println("USAGE: " + DCQLQueryRunner.class.getName() + " <dcql_query.xml> [aggregate]");
             System.exit(1);
         }
         String queryFileName = args[0];
@@ -75,10 +73,17 @@ public class DCQLQueryRunner {
             DCQLQuery query = QueryLoader.loadDcqlQuery(queryFileName);
             System.out.println("Query loaded in " + (System.currentTimeMillis() - start) + " ms");
             start = System.currentTimeMillis();
-            System.out.println("Executing query");
-            DCQLQueryResultsCollection results = executeDcqlQuery(query);
-            System.out.println("Query executed in " + (System.currentTimeMillis() - start) + " ms");
-            QueryResultPrinter.printDcqlQueryResults(results);
+            if (args.length == 2 && "aggregate".equals(args[1])) {
+                System.out.println("Executing Aggregation query");
+                CQLQueryResults results = executeAndAggregateQuery(query);
+                System.out.println("Query executed in " + (System.currentTimeMillis() - start) + " ms");
+                QueryResultPrinter.printCqlQueryResults(results);
+            } else {
+                System.out.println("Executing query");
+                DCQLQueryResultsCollection results = executeDcqlQuery(query);
+                System.out.println("Query executed in " + (System.currentTimeMillis() - start) + " ms");
+                QueryResultPrinter.printDcqlQueryResults(results);
+            }
             System.out.println("DONE");
         } catch (FederatedQueryProcessingException ex) {
             ex.printStackTrace();
