@@ -1,6 +1,9 @@
 package org.cagrid.hackathon.dcql;
 
+import gov.nih.nci.cagrid.cqlquery.Attribute;
+import gov.nih.nci.cagrid.cqlquery.Predicate;
 import gov.nih.nci.cagrid.cqlresultset.CQLQueryResults;
+import gov.nih.nci.cagrid.dcql.Association;
 import gov.nih.nci.cagrid.dcql.DCQLQuery;
 import gov.nih.nci.cagrid.dcqlresult.DCQLQueryResultsCollection;
 import gov.nih.nci.cagrid.fqp.processor.FederatedQueryEngine;
@@ -16,7 +19,7 @@ import gov.nih.nci.cagrid.fqp.processor.exceptions.FederatedQueryProcessingExcep
  * @author David Ervin
  * 
  * @created Jun 24, 2008 8:39:44 AM
- * @version $Id: DCQLQueryAPIExample.java,v 1.1 2008-06-24 12:51:32 dervin Exp $ 
+ * @version $Id: DCQLQueryAPIExample.java,v 1.2 2008-06-24 13:18:39 dervin Exp $ 
  */
 public class DCQLQueryAPIExample {
     
@@ -50,6 +53,8 @@ public class DCQLQueryAPIExample {
          * it touches in the course of the query
          */
         
+        query = createAggregationExample();
+        
         return query;
     }
     
@@ -64,8 +69,10 @@ public class DCQLQueryAPIExample {
          */
         try {
             if (aggregate) {
+                System.out.println("Executing aggregation query");
                 queryResults = engine.executeAndAggregateResults(query);
             } else {
+                System.out.println("Executing standard query");
                 queryResults = engine.execute(query);
             }
         } catch (FederatedQueryProcessingException ex) {
@@ -77,6 +84,7 @@ public class DCQLQueryAPIExample {
             System.exit(1);
         }
         
+        System.out.println("RESULTS:");
         printResults(queryResults);
     }
     
@@ -95,5 +103,59 @@ public class DCQLQueryAPIExample {
     public static void main(String[] args) {
         DCQLQueryAPIExample example = new DCQLQueryAPIExample();
         example.runQuery();
+    }
+    
+    
+    /**
+     * This query corresponds to the document resources/queries/sampleAggregation.xml
+     * @return
+     *      The DCQL Query
+     */
+    private DCQLQuery createAggregationExample() {
+        // <ns1:DCQLQuery xmlns:ns1="http://caGrid.caBIG/1.0/gov.nih.nci.cagrid.dcql">
+        DCQLQuery query = new DCQLQuery();
+        
+        //  <ns1:TargetObject name="model1.domain.Gene">
+        gov.nih.nci.cagrid.dcql.Object targetObject = new gov.nih.nci.cagrid.dcql.Object();
+        targetObject.setName("model1.domain.Gene");
+        
+        //   <ns1:Association name="model1.domain.Term" roleName="terms">
+        Association termAssociation = new Association();
+        termAssociation.setName("model1.domain.Term");
+        termAssociation.setRoleName("terms");
+        
+        //    <ns1:Association name="model1.domain.Term" roleName="ancestors">
+        Association ancestorTermAssociation = new Association();
+        ancestorTermAssociation.setName("model1.domain.Term");
+        ancestorTermAssociation.setRoleName("ancestors");
+        
+        //     <ns1:Attribute name="value" predicate="EQUAL_TO" value="root">
+        Attribute valueAttribute = new Attribute();
+        valueAttribute.setName("value");
+        valueAttribute.setPredicate(Predicate.EQUAL_TO);
+        valueAttribute.setValue("root");
+        
+        //     </ns1:Attribute>
+        ancestorTermAssociation.setAttribute(valueAttribute);
+        
+        //    </ns1:Association>
+        termAssociation.setAssociation(ancestorTermAssociation);
+        
+        //   </ns1:Association>
+        targetObject.setAssociation(termAssociation);
+        
+        //  </ns1:targetObject>
+        query.setTargetObject(targetObject);
+        
+        // <ns1:targetServiceURL>http://sbdev1000.semanticbits.com:13080/wsrf-model1/services/cagrid/Model1Svc</ns1:targetServiceURL>
+        // <ns1:targetServiceURL>http://sbdev1000.semanticbits.com:13080/wsrf-model1-a/services/cagrid/Model1Svc</ns1:targetServiceURL>
+        String[] targetServiceUrls = new String[] {
+            "http://sbdev1000.semanticbits.com:13080/wsrf-model1/services/cagrid/Model1Svc",
+            "http://sbdev1000.semanticbits.com:13080/wsrf-model1-a/services/cagrid/Model1Svc"
+        };
+        query.setTargetServiceURL(targetServiceUrls);
+        
+        // </ns1:DCQLQuery>
+        return query;
     }
 }
