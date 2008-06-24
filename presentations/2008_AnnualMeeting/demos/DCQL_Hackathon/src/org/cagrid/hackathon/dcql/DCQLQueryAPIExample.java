@@ -19,7 +19,7 @@ import gov.nih.nci.cagrid.fqp.processor.exceptions.FederatedQueryProcessingExcep
  * @author David Ervin
  * 
  * @created Jun 24, 2008 8:39:44 AM
- * @version $Id: DCQLQueryAPIExample.java,v 1.2 2008-06-24 13:18:39 dervin Exp $ 
+ * @version $Id: DCQLQueryAPIExample.java,v 1.3 2008-06-24 15:51:04 dervin Exp $ 
  */
 public class DCQLQueryAPIExample {
     
@@ -53,7 +53,12 @@ public class DCQLQueryAPIExample {
          * it touches in the course of the query
          */
         
-        query = createAggregationExample();
+        // --- ADD SAMPLE CODE HERE ---
+
+        // --- ADD SAMPLE CODE HERE ---
+        
+        // uncomment the following line to use the aggregation query example
+        // query = createAggregationExample();
         
         return query;
     }
