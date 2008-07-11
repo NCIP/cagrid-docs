@@ -1,0 +1,56 @@
+From: "Eisenschmidt, John (NIH/NCI) [C]" <eisenschmidtjw@mail.nih.gov>
+Subject: caGrid Portal 2.0.2 Released
+Bcc: "caGrid Users discussion Forum" <CAGRID_USERS-L@list.nih.gov>, 
+	cabig_arch-l@list.nih.gov, cabig_vcde-l@lists.nih.gov, 
+	cabig_facilitators-l@lists.nih.gov
+
+On behalf of the caGrid Portal team, I am pleased to announce the
+release of caGrid Portal version 2.0.2. Enhancements in this release
+are focused primarily on using the caGrid semantic infrastructure to
+perform service discoveries and data access from multiple services.
+
+Some of the new functionality includes:
+*	New query builder interface, with support for distributed caGrid
+Query Language (DCQL) [RFE 14931]
+*	Services can now be discovered using EVS concept codes [RFE 14932]
+*	caBIG(TM) Tools, maintained by NCI CBIIT, are now displayed within
+the portal [RFE 14930]
+*	Services that no longer advertise to the index service are removed
+from portal [RFE 13232]
+
+We invite you to view these exciting enhancements at:
+http://cagrid-portal.nci.nih.gov
+
+
+A complete list of new features, remediated defects, and known issues
+can be found in the release notes:
+https://gforge.nci.nih.gov/frs/shownotes.php?release_id=2452
+
+For your reference, several documentation guides were updated for this release:
+
+Administrator Guide:	https://gforge.nci.nih.gov/frs/download.php/4239/caGrid_Portal_2.0.2_AdminstratorsGuide.pdf
+Installation Guide:	https://gforge.nci.nih.gov/frs/download.php/4240/caGrid-Portal_2.0.2_InstallationGuide.pdf
+User Guide: 		https://gforge.nci.nih.gov/frs/download.php/4241/caGrid-Portal_2.0.2_UsersGuide.pdf
+
+Those wishing to deploy their own caGrid Portal can download the
+distribution here:
+Source Code: 		https://gforge.nci.nih.gov/frs/download.php/4201/cagrid-portal-2.0.2.zip
+
+Additional caGrid Portal information can be found on the caGrid wiki:
+http://www.cagrid.org/mwiki/index.php?title=Portal:Portal
+
+
+There are several ways to get assistance with, and provide feedback
+on, the caGrid Portal project:
+*	Join the caGrid GForge Project at
+http://gforge.nci.nih.gov/projects/cagrid-1-0/ to view existing
+requests for enhancement and defects.
+*	Post your questions to the caGrid_Users-L listserv
+(https://list.nih.gov/cgi-bin/wa?SUBED1=cagrid_users-l&A=1) and attend
+user group meetings.
+*	Contact NCI CBIIT Application Support at ncicb@pop.nci.nih.gov
+*	Get additional support information from the caGrid wiki:
+http://www.cagrid.org/mwiki/index.php?title=CaGrid:FAQ#How_can_I_get_support.3F
+
+We appreciate your interest in caGrid!
+
