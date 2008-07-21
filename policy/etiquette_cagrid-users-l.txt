@@ -2,12 +2,9 @@ Welcome to the caGrid Users Mailing List, hosted by the NIH.
 
 What is caGrid?
 ---------------
-caGrid was built by, and is the technical foundation of, The National 
-Cancer Institute's (NCI) Biomedical Informatics Grid (caBIG(TM)). 
+caGrid was built by, and is the technical foundation of, The National Cancer Institute's (NCI) Biomedical Informatics Grid: caBIG(TM). 
 
-caGrid has also been adopted as the basis for other scientific
-grids, including the Cardiovascular Research Grid (CVRG) and
-by the National Cancer Research Institute (NCRI) in the UK.
+caGrid has also been adopted as the basis for other scientific grids, including the Cardiovascular Research Grid (CVRG) and by the National Cancer Research Institute (NCRI) in the UK.
 
 Participation
 -------------
@@ -15,56 +12,49 @@ Hundreds of people subscribe to the list, including:
 	* Staff from the NCI,
 	* Participants in the caBIG(TM) program,
 	* Non-caBIG(TM) users of caGrid, such as CVRG or NCRI, and
-	* Grid computing enthusiasts who find value our tools 
+	* Grid computing enthusiasts who find value in using our tools 
 
-The list is open; anyone can ask or reply to questions. We encourage
-participation with a few caveats. 
+This list is open; anyone can ask or reply to questions. We encourage participation with a few caveats. 
 
-Before you post
+Before You Post
 ---------------
-To minimize duplicate posts, we ask that you first check the caGrid
-Frequently Asked Questions (FAQ) and search the archives. The URL
-for these and other informative resources can be found below.
+To minimize duplicate posts, we ask that you first check the caGrid Frequently Asked Questions (FAQ) and search the archives. The URL for these and other informative resources can be found below.
 
 Proper Etiquette: New Posting
 -----------------------------
 When posting, please be as specific as possible, and include (if applicable):
-	* the caGrid component and version to which the posting refers
-	* a description of your problem, including background information 
-	  about your use case that may speed resolution
-	* what steps you have taken to try and resolve the problem
-	* configuration information
-	* stack trace
+	* A descriptive subject line. E-mails with no subject line may be perceived as spam by an email filter, and be deleted before reaching the recipient's inbox.
+	* The caGrid component and version to which the posting refers
+	* A description of your problem, including background information about your use case that may speed resolution
+	* What steps you have taken to try and resolve the problem
+	* Configuration information
+	* Stack trace
 
-If your question is not troubleshooting, but information-gathering in nature,
-(can I use Dorian to...?), the same rules apply: please be as specific as 
-possible about your use case, and explain your issue or how you expect to 
-leverage a component.
+If your question is not troubleshooting but rather information-gathering in nature, (e.g. can I use Dorian to...?), the same rules apply: please be as specific as possible about your use case, and explain your issue or how you expect to leverage a component.
 
 Proper Etiquette: Answering a Posting
 -------------------------------------
-Community members are encouraged to participate: if you know the answer,
-feel free to speak up. 
+Community members are encouraged to participate: if you know the answer, feel free to speak up. 
 
-What is inappropriate?
+What Is Inappropriate?
 ----------------------
 Please do not:
-	* Ask open-ended questions but expect closed-ended answers
+	* Address your questions directly to anyone. When clicking 'reply', your message will be sent to the list, and not a specific user. For everyone's benefit, questions sent to the list should remain on-list and be directed at the entire community. 
+	* Ask open-ended questions, but expect closed-ended answers
 	* Cross-post to other lists
 	* Post your thoughts ("I wonder if", "I'll try this next")
-	* Profanity
-	* Uncivil communication to other participants
-	* Off-topic Discussion - anything from weather to issues with 
-	  other caBIG(TM) applications
+	* Use profanity
+	* Engage in uncivil communication with other participants
+	* Engage in off-topic discussion - anything from the weather to issues with other caBIG(TM) applications
 
-We ask our participants to follow these guidelines so all our community 
-members find the posts relevant and informative.
+We ask our participants to follow these guidelines so all our community members find the posts relevant and informative.
 
 Resources
 ---------
-caBIG(TM):		https://cabig.nci.nih.gov
-caGrid:			https://cabig.nci.nih.gov/workspaces/Architecture/caGrid/
-caGrid gForge Project:	http://gforge.nci.nih.gov/projects/cagrid-1-0/
-caGrid.org Wiki:	http://www.cagrid.org
-caGrid FAQ:		http://www.cagrid.org/wiki/CaGrid:FAQ
-Users List Archives:	https://list.nih.gov/cgi-bin/wa?S1=cagrid_users-l
+caBIG(TM):                 https://cabig.nci.nih.gov
+caBIG(TM) Architecture WS: https://cabig.nci.nih.gov/workspaces/Architecture 
+caGrid:                    https://cabig.nci.nih.gov/workspaces/Architecture/caGrid/
+caGrid GForge Project:     http://gforge.nci.nih.gov/projects/cagrid-1-0/
+caGrid.org Wiki:           http://www.cagrid.org
+caGrid FAQ:                http://www.cagrid.org/wiki/CaGrid:FAQ
+Users List Archives:       https://list.nih.gov/cgi-bin/wa?S1=cagrid_users-l
