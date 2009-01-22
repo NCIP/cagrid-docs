@@ -8,7 +8,7 @@ first be oked by the release engineer.
 
 In the current process ( 1.2; not true in the past), only the "caGrid" module is being formally released.
 However, all "release" tags and branches should be performed against the full repository.
-For example, while the system/integration tests (tests module), are not release, they are runagainst a given release and so must be branched with the core release.  
+For example, while the system/integration tests (tests module), are not released, they are run against a given release and so must be branched with the core release.  
 
 RELEASE PROCESS
 ====================
@@ -19,7 +19,7 @@ create a branch based on the branch root tag   (cvs tag -b -r caGrid-1_2_release
 
 ----- prepare the release candidate -----
 get a working checkout of the release branch in a new directory (cvs -d:ext:{GFORGE_USERNAME}@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 co -P -r caGrid-1_2_release -d caGrid-1.2-release cagrid-1-0)
-do fixing or cleaning needed on the branch (setting versions, default target grids, set ivy publish status to "release" etc)
+do fixing or cleaning needed on the branch (setting versions (ant set-project-versions), default target grids (in caGrid/antfiles/target-grid.xml), set ivy publish status to "release" (in publish-artifacts macro of caGrid/antfiles/ivy/ivy-shared-targets.xml) etc)
 setup automated builds/tests for the branch
 tag a release candidate on our checkout of the branch (cvs tag caGrid-1_2_release_rc1)
 
@@ -63,22 +63,15 @@ cvs -d :ext:anonymous@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 expo
 
 ----- create caGrid source release -----
 cd cagrid-1-0
-zip -r caGrid-1.2-src.zip caGrid
-mv  caGrid-1.2-src.zip <directory for release>
-md5sum <directory for release>/caGrid-1.2-src.zip > <directory for release>/caGrid-1.2-src.zip.md5sum
-
------ create a reduced size caGrid source release (for 1.2 until we can reorganize) -----
-rm caGrid/projects/data/test/resources/*.zip
 zip -r caGrid-1.2.zip caGrid
 mv  caGrid-1.2.zip <directory for release>
-md5sum <directory for release>/caGrid-1.2.zip > <directory for release>/caGrid-1.2.zip.md5sum
+md5sum <directory for release>/caGrid-1.2-src.zip > <directory for release>/caGrid-1.2.zip.md5sum
 
 ----- verify the build/test -----
 cd caGrid
 ant all test
 
 ----- upload caGrid release -----
-Upload to gforge, <directory for release>/caGrid-1.2-src.zip 
 Upload to gforge, <directory for release>/caGrid-1.2.zip 
 Copy the URL to this release (caGrid-1.2.zip) for use in the installer below, refer to this as <CAGRID URL>
 Copy the md5 value from caGrid-1.2.zip.md5sum, and refer to this as <CAGRID MD5>
