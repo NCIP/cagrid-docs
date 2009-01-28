@@ -1,0 +1,13 @@
+<security-config>
+	<upt-context-name>csmupt</upt-context-name>
+	<application-list>
+	<!-- For every application using the security api an entry should be made here -->
+		<application>
+			<context-name>cagrid_csm</context-name>
+			<authorization>
+				<authorization-provider-class></authorization-provider-class>
+				<hibernate-config-file>/Users/hastings/Desktop/cagrid_csm.new.csm.hibernate.xml</hibernate-config-file>
+			</authorization>
+		</application>
+	</application-list>
+</security-config>
