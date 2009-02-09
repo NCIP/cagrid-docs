@@ -82,7 +82,8 @@ cd projects/installer
 #NOTE: if you cannot provide these values yet, you can use placeholders, and then edit: <directory for release>/cagrid.installer.properties
 #  the download.properties.url is the only property value that is actually built into the created installer zip
 #  so it is strongly encouraged you know the value of that before hand (as to change it you must edit the value
-#  in the download.properties file, inside the caGrid-installer-1.3.jar, inside the caGrid-1.3.zip
+#  in the download.properties file, inside the caGrid-installer-1.3.jar, inside the caGrid-1.3.zip)
+#  For release candidates, you can run this command once to create the properties file, upload it to gforge (get the URL), then run it again passing the properties URL in
 ant -Ddownload.properties.url=<PROPS URL> \
   -Dcagrid.download.url=<CAGRID URL>/caGrid-1.3.zip \
   clean dist-installer
