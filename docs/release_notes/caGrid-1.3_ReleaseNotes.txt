@@ -1,0 +1,254 @@
+    
+                            caGrid
+                          Version 1.3
+                       March 31, 2009 
+
+
+================================================================
+                            Contents
+================================================================
+    
+1.0 caGrid Introduction
+2.0 Release History
+3.0 New Features and Updates
+4.0 Bug fixes since last release
+5.0 Known Issues/Defects
+6.0 Bug Reports and Support
+7.0 Documentation
+8.0 References
+
+================================================================
+                      1.0 caGrid Introduction
+================================================================
+
+    This document contains the release notes for the caGrid 1.3
+    release.  
+
+    caGrid 1.3 is a point release of the caGrid 1.x stream.  It
+    is generally backwards compatible with the service
+    interfaces of caGrid 1.0/1.1/1.2. That is, services and
+    applications developed against the caGrid 1.0 or 1.1 or 1.2
+    release, will continue to function against caGrid 1.3
+    versions of those services (including the production grid).
+    More details on backwards compatibility can be found here:
+    http://cagrid.org/display/caGrid13/Deprecation%20Plan
+
+    This release of caGrid supports caBIG compatibility level gold.
+
+    https://cabig.nci.nih.gov/workspaces/Architecture/caGrid/
+    http://cagrid.org
+
+================================================================
+                      2.0 Release History
+================================================================
+
+caGrid 0.5 was released on 31st August 2005
+caGrid 0.5.1 was released on 7th October 2005
+caGrid 0.5.2 was released on 15th November 2005
+caGrid 0.5.3 was released on 25th January 2006
+caGrid 0.5.4 was released on 12th May 2006
+caGrid 1.0 Beta was released on 17th July 2006
+caGrid 1.0 was released on 15th December 2006
+caGrid 1.1 was released on 17th September 2007
+caGrid 1.2 was released on 31st March 2008
+ 
+
+================================================================
+                      3.0 New Features and Updates
+================================================================
+
+ RFE	Description
+------------------------------------------------------------   
+TODO
+
+The complete list of new features and additional details can be found on the project Gforge Tracker:
+  http://gforge.nci.nih.gov/tracker/index.php?group_id=25&atid=177
+and in the scope documents:
+    http://gforge.nci.nih.gov/docman/index.php?group_id=25&selected_doc_group_id=2414&language_id=1
+    
+Specific highlighted improvements of caGrid 1.2 include:
+ * Services are backwards compatible with 1.0/1.1 release
+ * Automated migration of 1.0 and 1.1 services to 1.2
+ * caCORE SDK 4.0 support in Data Services and Introduce "create XSD from XMI"
+ * Ability to create Data Services metadata from XMI 
+ * WebSSO stable release
+ * Credential Delegation Service (CDS) stable release
+ * WS-Notification, Persistent Resources, and Service Undeployment support in Introduce
+ * caGrid Transfer service for lightweight solution to large or binary data transfer
+ * caGrid Portal 2.0 installer
+ * Refactored build system supporting formal transitive dependency management (Apache Ivy-based) 
+ * Nearly 20 fixed bugs
+ * Usability improvements
+ * Documentation improvements
+ * Even more testing
+
+ 
+================================================================
+                      4.0 Bug fixes Since Last Release
+================================================================
+
+TODO
+
+Bug		Description
+------------------------------------------------------------   
+7881    Introduce is generating invalid schema for &quot;types&quot; schema
+8632    Installer shouldn't require caGrid installation for initial run of installation.
+8766    AntTask using java executable obtained from ${java.home}/bin rather than JAVA_HOME/bin
+9023    Renewing a Host Certificate and Revoking Later does not include earlier host certificates in the CRL.
+9042    Installer creates duplicate HTTPS Connector element on re-configure.
+9167    Data Service without custom query processor fails to start up correctly
+9226    Introduce flags fatal error when trying to modify an operation that returns arrays of arrays
+9420    Service name collision with imported WSDL name causes build failure
+9566    Service Level Authorization Mechanism Locks some Operation Level Configuration.
+9567    Grid Map Authorization (Service Level)  and Operation Level Authorization Conflict
+10497   CaGridEnumeration schema is superfluously added to all caBIG services
+11460   Introduce throws null when opening a service which requires an extension that is not installed
+11671   Introduce does not permit package names that start with capital letters, even for custom beans.
+12381   Authz jars not included in SDK 3.2(.1) backed data services
+12674   In services tree view should be able to click on a resource property and open view/edit resource
+12675   When editing a method that is imported is does not fill int he values properly
+12677   services jtree is not expanding correctly as new things are added and it still has the plus minus icons instead of the icons i want it to use
+12880   Not all installer threads cancel when installer is canceled
+
+The complete fixed bug list and additional details can be found on the project Gforge Tracker:
+  http://gforge.nci.nih.gov/tracker/index.php?group_id=25&atid=174
+
+================================================================
+                     5.0 Known Issues Not Yet Fixed
+================================================================
+
+Updated bug reports and feature requests can be found on the tracker section
+of the project's gforge site:
+http://gforge.nci.nih.gov/tracker/?group_id=25
+
+----------
+ISSUE:
+	Bug #7671 Lowercase chars in complexType names from schema can cause compile failure
+DETAILS:
+	http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=7671&group_id=25&atid=174
+IMPACT:
+	Data services with models using Class names that start with lowercase characters won't compile. 
+WORKAROUND:
+	None, without editing the XSD/Model.
+----------
+
+----------
+ISSUE:
+	Bug #9466 Introduce is not passing any system properties on to it's ant calls it makes when running the engine.
+DETAILS:
+	http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=9466&group_id=25&atid=174
+IMPACT:
+	Users behind web proxies may have issues communicating with grid services through Introduce 
+WORKAROUND:
+	Manually edit the Introduce ant task for your proxy settings (see bug report)
+----------
+
+----------
+ISSUE:
+	Bug #19306 Introduce grid service path cannot contain spaces
+DETAILS:
+	http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=19306&group_id=25&atid=174
+IMPACT:
+	Users creating services into a directory with spaces in it 
+WORKAROUND:
+	Move the service to a directory path without spaces
+----------
+
+----------
+ISSUE:
+	Bug #19045 Introduce generated WSDL breaks unique key constraint of WSDL XSD
+DETAILS:
+	http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=19045&group_id=25&atid=174
+IMPACT:
+	Users of external tools which validate WSDL to the its XML Schema (such as some BPEL tools)
+WORKAROUND:
+	If you own the service, you can manually remove the spaces; otherwise you may have to disable XML Schema validation in the tool
+----------
+
+----------
+ISSUE:
+	Bug #11607 DataService gets in inconsistent state and returns confusing errors when not properly initialized
+DETAILS:
+	http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=11607&group_id=25&atid=174
+IMPACT:
+	Users deploying data services which are not properly configured may not see an appropriate error message at startup. 
+WORKAROUND:
+	After making any configuration changes, validate the service is working correctly.
+----------
+
+----------
+ISSUE:
+	Bug #18649 Certain types of Hibernate database tables for subclasses are not supported by Data Services with SDK 4.0 and 4.1
+DETAILS:
+	http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=18649&group_id=25&atid=174
+IMPACT:
+	Users using custom hibernate table mappings
+WORKAROUND:
+	None; avoid using custom table mappings if possible.
+----------
+
+----------
+ISSUE:
+	Bug #14007 Multiple services using WS-Enumeration cannot run in same container
+DETAILS:
+	http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=14007&group_id=25&atid=174
+IMPACT:
+	Users attempting to deploy multiple services using WS-Enum in the same container
+WORKAROUND:
+	Deploy services to a separate container, or see configuration changes described in bug report
+----------
+
+----------
+ISSUE:
+	Bug #18966 JVM shutdown hooks sometimes don't run to completion under Tomcat
+DETAILS:
+	http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=18966&group_id=25&atid=174
+IMPACT:
+	Things like service unregistration may not occur immediately.
+WORKAROUND:
+	None; registrations will expire.
+----------
+
+================================================================
+                	6.0 Bug Reports and Support
+================================================================
+	The preferred approach is to first search the knowledge center
+	forums for your problem, then post your question to the forum.
+	Bugs can also be entered on the gforge project page.
+	
+	Knowledge Center Forums:
+	https://cabig-kc.nci.nih.gov/CaGrid/forums/
+
+	GForge Project Page:
+	http://gforge.nci.nih.gov/projects/cagrid-1-0/
+	
+	Submit Bug:
+	http://gforge.nci.nih.gov/tracker/?func=add&group_id=25&atid=174
+	
+================================================================
+                     	7.0 Documentation
+================================================================
+
+	The release documentation, and component design documentation
+	can be found on the project's wiki:
+	http://cagrid.org/display/caGrid13/Home
+
+
+================================================================
+                    	8.0 References
+================================================================
+    
+The following URLs access web pages relevant to caGrid.
+
+    caBIG Home Page
+    --  http://cabig.nci.nih.gov/
+    
+    NCICB Download Center
+    --  http://ncicb.nci.nih.gov/download/
+
+    caGrid
+    -- http://cagrid.org
+    -- https://cabig-kc.nci.nih.gov/CaGrid/KC
+    -- https://cabig.nci.nih.gov/workspaces/Architecture/caGrid/
+    -- http://gforge.nci.nih.gov/projects/cagrid-1-0/
+
