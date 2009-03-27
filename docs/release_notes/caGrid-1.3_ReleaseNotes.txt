@@ -35,7 +35,7 @@
 
     This release of caGrid supports caBIG compatibility level gold.
 
-    https://cabig.nci.nih.gov/workspaces/Architecture/caGrid/
+    https://cabig.nci.nih.gov/workspaces/Architecture/caGrid
     http://cagrid.org
 
 ================================================================
@@ -207,6 +207,17 @@ IMPACT:
 	Things like service unregistration may not occur immediately.
 WORKAROUND:
 	None; registrations will expire.
+----------
+
+----------
+ISSUE:
+	Bug #20196 Installer overwrites the installed credentials if already installed credentials are selected
+DETAILS:
+	http://gforge.nci.nih.gov/tracker/?func=detail&atid=174&aid=20196&group_id=25
+IMPACT:
+	Minor.
+WORKAROUND:
+	Use the correct credential option: "Host credentials are already installed."
 ----------
 
 ================================================================
