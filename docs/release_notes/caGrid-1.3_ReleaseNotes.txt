@@ -58,57 +58,174 @@ caGrid 1.2 was released on 31st March 2008
 ================================================================
 
  RFE	Description
-------------------------------------------------------------   
-TODO
+------------------------------------------------------------
+20244	Adding support for XML schema with xs:include
+20243	Installer to add execute permissions to scripts used by prerequisites it installs
+20240	Data service creation wizard has mac issues.
+20239	DCQL foreign association on multiple attributes
+20236	Reformat GAARDS UI to display properly on the MAC
+20235	Add Account Auditing to Dorian
+20234	Enable Dorian Host Certificates to work with new version of IE and Firefox
+20231	Move from issuing Proxy Certificates to Issuing short term certificates.
+20230	Spring enable Dorian
+20226	DCQL fails when some target services are down
+20216	Introduce upgrade to SDK 4.1
+20215	Data Service plug-in for SDK 4.1
+20211	Single sign-out
+20208	Author System Tests for WebSSO
+20188	GME needs to support the ability to update and delete schemas which are in development
+20187	GME's service metadata and wsdl need to reflect the service's operations
+20186	GME should allow any valid URI as a namespace
+20185	GME needs to support schemas with includes/redefines
+20184	GME needs to support schemas with cycles
+20111	Installer should not have MyIntroduceService as a selection in the service panel
+20110	Installer should have short description of each service in the sevice selection panel.
+20001	Migrate caDSR service to 4.0
+19996	FQP should support delegation
+19989	GME to support MySQL version 5 
+17002	FQP should support caGrid Transfer of results
+16869	ServiceConstants file shouldn't get completely re-written every save
+16623	Review Advertisement settings
+15606	Investigate moving caGrid to Globus 4.2
+15605	CSM Introduce Authorization Extension
+15604	Grid Grouper Introduce Authorization Extension
+15603	Introduce GDE Extension to enable having other grape components available in Introduce
+15602	Create Introduce Authorization Extension
+15600	Transfer Service supporting streaming
+15576	Develop system integration tests for the Authentication Service.
+15574	Update GAARDS UI to leverage new Authentication Profile / Trusted IdP metadata.
+15573	Add Trusted IdP metadata to Dorian
+15572	Extend Trusted Identity Provider information to include information regarding the IdP's Authentication Service
+15571	Add Authentication Profile Metadata to Dorian.
+15570	Implement new Authentication Service interface
+15569	Authentication Profile Service Metadata
+15214	Grid Authentication Manager/Security Integration
+15000	Transfer Service Helper returns reference and is hard to alter resource before returning
+14998	Introduce Service tab should use tooltips in the jtree
+14992	Introduce clients do not set user credential when returning client handle to stateful resources
+14946	Introduce client code should be more override friendly
+14933	Add additional utilities for working with query results
+14863	Upon login dorian should automatically set the credential as the default credential.
+14862	Enter key on dorian login window is not mapped to the login button
+14861	Introduce services which support persistence are hard to customize persistence on the resource itself
+14129	Authentication Profile Metadata
+14127	Support multiple authentication profile
+14080	Problem with Anonymous Security Setting
+14050	Provide discovery and metadata APIs for determining if a given service is an analytical or data service and discovering the given type
+13405	API to discover trusted IDs (Use case for caB2B security requirements)
+13224	Introduce needs a button that will allow user to turn stub generation off and then default to the default serializers
+13167	Improve Introduce usability when adding extensions or service contexts
+12968	Reorganize testing resources to reduce size
+12151	Improve Exception Handling
+12149	To Support Multiple Authentication Providers
+11863	Need a way to hook in pre-deployment validation checks to enforce policy
+11388	documentation on logging in through code
+6307	Add service extensions to service contexts
+4513	FQP should support ws-notification
+4512	FQP should support ws-enumeration transfer of results
 
 The complete list of new features and additional details can be found on the project Gforge Tracker:
-  http://gforge.nci.nih.gov/tracker/index.php?group_id=25&atid=177
-and in the scope documents:
-    http://gforge.nci.nih.gov/docman/index.php?group_id=25&selected_doc_group_id=2414&language_id=1
+	http://gforge.nci.nih.gov/tracker/?atid=2252&group_id=25&func=browse
     
-Specific highlighted improvements of caGrid 1.2 include:
- * Services are backwards compatible with 1.0/1.1 release
- * Automated migration of 1.0 and 1.1 services to 1.2
- * caCORE SDK 4.0 support in Data Services and Introduce "create XSD from XMI"
- * Ability to create Data Services metadata from XMI 
- * WebSSO stable release
- * Credential Delegation Service (CDS) stable release
- * WS-Notification, Persistent Resources, and Service Undeployment support in Introduce
- * caGrid Transfer service for lightweight solution to large or binary data transfer
- * caGrid Portal 2.0 installer
- * Refactored build system supporting formal transitive dependency management (Apache Ivy-based) 
- * Nearly 20 fixed bugs
- * Usability improvements
- * Documentation improvements
- * Even more testing
+Specific highlighted improvements in caGrid 1.3 include:
+* Continuous Integration:
+  caGrid 1.3 enhances support for the latest releases (version 4.1.1) of the caCORE Software Development Kit (SDK)
+  and Common Security Module (CSM). caGrid and the caCORE SDK now share a common code base for CQL.
+  In addition, caGrid 1.3 supports the most recent web services containers in the
+  NCI CBIIT Technology Stack (Tomcat 5.5 and JBoss 4.0.5).
+* Data Services:
+  Significant enhancements to the Federated Query Processor (FQP), allowing a single, semantic query to execute across
+  multiple caGrid services and return a single result set. FQP now supports WS-Notification, querying secure grid services
+  via the caGrid Credential Delegation Service (CDS), configurable query execution parameters to allow only partial results
+  to be returned, and out-of-band results using the caGrid Transfer Service and WS-Enumeration.
+* Introduce Toolkit
+  The Introduce Toolkit has a number of security-related enhancements, adding fine-grain control over authorization using
+  the caCORE Common Security Module (CSM) and Grid Grouper. Introduce also includes service updaters, allowing service
+  developers to easily update-to and leverage caGrid 1.3.
+* Metadata Services:
+  The Mobius Global Model Exchange (GME) has been entirely rewritten for caGrid 1.3 to support the semantic
+  requirements of caBIG¨ software developers. The caGrid-developed caDSR grid service, based on the caCORE 3.1 API,
+  has been deprecated, It has been replaced by the caDSR 4.0 data service (maintained by the caDSR team), and a
+  new caGrid Metadata Model Service (MMS), whose purpose is creation and semantic annotation of caGrid
+  metadata models using caDSR-derived data.
+* Security:
+  Enhancements to the GAARDS infrastructure include support for multiple authentication profiles,
+  including one-time passwords. Trusted Identity Providers can now be discovered programmatically, allowing full
+  realization of federated authentication use cases. Auditing support has also been added to Dorian, giving systems
+  administrators the degree of control they have requested.
+* Workflow
+  Orchestration of caGrid services is supported in this release though joint development with the Taverna project.
+  The caGrid plug-in for the Taverna 2.0 workbench allows development of workflows using their rich user interface.
 
- 
+
 ================================================================
                       4.0 Bug fixes Since Last Release
 ================================================================
 
-TODO
-
 Bug		Description
 ------------------------------------------------------------   
-7881    Introduce is generating invalid schema for &quot;types&quot; schema
-8632    Installer shouldn't require caGrid installation for initial run of installation.
-8766    AntTask using java executable obtained from ${java.home}/bin rather than JAVA_HOME/bin
-9023    Renewing a Host Certificate and Revoking Later does not include earlier host certificates in the CRL.
-9042    Installer creates duplicate HTTPS Connector element on re-configure.
-9167    Data Service without custom query processor fails to start up correctly
-9226    Introduce flags fatal error when trying to modify an operation that returns arrays of arrays
-9420    Service name collision with imported WSDL name causes build failure
-9566    Service Level Authorization Mechanism Locks some Operation Level Configuration.
-9567    Grid Map Authorization (Service Level)  and Operation Level Authorization Conflict
-10497   CaGridEnumeration schema is superfluously added to all caBIG services
-11460   Introduce throws null when opening a service which requires an extension that is not installed
-11671   Introduce does not permit package names that start with capital letters, even for custom beans.
-12381   Authz jars not included in SDK 3.2(.1) backed data services
-12674   In services tree view should be able to click on a resource property and open view/edit resource
-12675   When editing a method that is imported is does not fill int he values properly
-12677   services jtree is not expanding correctly as new things are added and it still has the plus minus icons instead of the icons i want it to use
-12880   Not all installer threads cancel when installer is canceled
+20123	XMI to DomainModel tool doesn't populate association multiplicity
+19812	Cannot use data types with - in them
+19753	Introduce: Build: Post-processor: gov.nih.nci.cagrid.introduce.servicetasks.axis.FixSoapBindingStub does not process multiple services as defined within introduce.xml and introduce.properties
+19697	Issue upgrading passwords with Dorian 1.3
+19566	Modifying a provided method in Introduce allows an inconsistent GUI state
+19563	Check boxes on Advanced tab of Create Service Skeleton can get in unclickable state
+19181	Presence of .DS_Store file in caCORE 4.0 Output directory prevents creation of a data service
+19091	Introduce Deployment UI can throw null pointer exception if an extension does not supply a deployment UI class
+19066	Mapping schemas to packages in caCORE SDK 3.2 wizard can throw an exception
+19052	Installer throws error for JBoss container
+18974	Utils.getRelativePath() fails when comparing certain unix style paths
+18972	Some methods of the FQP grid service do not perform checks against query processing constraints.
+18969	Some data service creation wizards get truncated depending on system font / UI component rendering sizes.
+18963	SyncGTS deploy targets not replacing cog-jglobus.jar correctly for insecure containers
+18619	CQL2ParameterizedHQL valueToObject doesn't handle Boolean attributes
+18512	Queries including attribute restrictions on numeric data types can return unexpected results when the queryCaseInsensitive flag is set to true
+18247	SDK 4.0 query processor can return duplicate object results
+18225	Introduce does not support the http://www.w3.org/XML/1998/namespace correctly
+17135	SDK 3.2 query processor makes potentially slow probing query
+16999	CSM authorization cannot be added to any service or methods that is not the main service or its methods.
+16548	GME has issues with multiple elements of the same name/type in a complexType
+16439	Pasting values in to fields on SDK 4 wizard configuration causes exception
+16413	SDK 4 Data Service wizard can blank copied schema files
+16319	cog-jglobus.jar file is not updated in syncgts globus container deployment
+16137	Introduce Grid Grouper PDP requires default proxy to connect to Grid Grouper
+16060	results from enumeration iteration contains encoded XML - no serializable into object
+15757	Gaards UI throws an error popup that makes the UI unusable
+15614	Schema selection from local file system can occasionally create incorrect namespace types
+15607	Introduce service security metadata is not consistent with security descriptor for resource property operations
+15502	Using 1.2 installer in a fresh machine that already had globus with enum installed and with the GLOBUS_LOCATION set installer still wanted to install globus
+15488	Introduce services have some code in them that is not jdk 1.4 compliant
+15311	silent exceptions (no service properties from custom query processor) when adding a custom query processor using Introduce data extension
+15287	Properties not set for service redirect/cookie age within the cas-servlet.xml file
+15196	CaGridWebSSOAttributeLoaderFilter will not work as designed
+15166	Dorian Security Vulnerability - Password digest algorithm only accounts for the first 8 plus the last character of the password.
+14999	Introduce Metdata Extension is not setting method descriptions properly
+14944	DomainModelUtils inner class CDE is not visible outside of package context
+14923	WebSSO project is missing jar  dependencies for syncGTS
+14922	SyncGTS Ivy "common" configuration is missing a dependency on mobius common-client
+14908	classnotfoundexception when deploying to tomcat 5.5+
+14860	Introduce Log Viewer hangs in certain scenarios
+14793	Subject in Dorian limited to 255 characters
+14606	Grape Error Dialog is allowing editing of the details.
+14531	Introduce "configure types" validator lets you save when there are validation errors
+14505	Deploy and Undeploy JBoss ant targets don't allow the Globus webapp name to be specified
+14491	CQL QueryModifier with single, non-distinct attribute fails when run against caCORE SDK 4.0
+14260	getEtcDirectoryPath() operation in the &lt;serviceName&gt;Configuration class was returning wrong value.
+14128	Adding fault from types list is causing error
+14051	Nullpointer when using SDKSerializer for non-SDK system
+13968	Bug importing a schema that was already added but removed.
+13952	Error importing a schema that imports other schemas.
+13771	SDK 4 data service wizard fails with 'No Domain Model'
+13678	Introduce GUI forgets that the main service is a Main type of service
+13353	When importing a method from another introduce service package names are broken
+13298	Introduce patch system is looking for the introduce.engine.properties and template in the wrong place
+13231	Adding data types from schemas on the file system with cyclic imports fails
+13177	When the trasfer resource is being destroyed it tries to delete the cache file.  If the cache files does not exist it throws a resource exception.
+13002	Portal Admin password is set to null in Portal installer
+12964	If a previous release of the Installer was run, caGrid fails to build in the current installation
+12532	Grid Grouper Authorization not configured but service can be deployed
+12229	Security Service Metadata Anonymous Clients Ignored in Grid Grouper
+10992	CDS will return delegated credentials even after user logs out
 
 The complete fixed bug list and additional details can be found on the project Gforge Tracker:
   http://gforge.nci.nih.gov/tracker/index.php?group_id=25&atid=174
