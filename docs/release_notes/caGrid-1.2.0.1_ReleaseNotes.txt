@@ -1,0 +1,195 @@
+    
+                            caGrid
+                      Version 1.2.0.1
+                       May 31, 2009 
+
+
+================================================================
+                            Contents
+================================================================
+    
+1.0 caGrid Introduction
+2.0 Release History
+3.0 New Features and Updates
+4.0 Bug fixes since last release
+5.0 Known Issues/Defects
+6.0 Bug Reports and Support
+7.0 Documentation
+8.0 References
+
+================================================================
+                      1.0 caGrid Introduction
+================================================================
+
+    This document contains the release notes for the caGrid 
+    1.2.0.1 release.  
+
+    caGrid 1.2.0.1 is a patch release of the caGrid 1.2 stream, 
+    and is recommended for all caGrid 1.2 users.  It is both 
+    forwards and backwards compatible with the service interfaces 
+    and APIs of caGrid 1.2. That is, the artifacts provided with
+    this release can be used as drop in replacements for those 
+    from caGrid 1.2 with no functional difference besides the 
+    bug fixes specified below.
+    This release of caGrid supports caBIG(r) compatibility 
+    level gold.
+    https://cabig.nci.nih.gov/workspaces/Architecture/caGrid
+    http://www.cagrid.org
+    
+================================================================
+                      2.0 Release History
+================================================================
+
+caGrid 0.5 was released on 31st August 2005
+caGrid 0.5.1 was released on 7th October 2005
+caGrid 0.5.2 was released on 15th November 2005
+caGrid 0.5.3 was released on 25th January 2006
+caGrid 0.5.4 was released on 12th May 2006
+caGrid 1.0 Beta was released on 17th July 2006
+caGrid 1.0 was released on 15th December 2006
+caGrid 1.1 was released on 17th September 2007
+caGrid 1.2 was released on 31st March 2008
+ 
+================================================================
+                      3.0 New Features and Updates
+================================================================
+
+The 1.2.0.1 release only contains bug fixes to the caGrid 1.2 code base and
+does not contain any new features or updates.  The complete list of features 
+and additional details about the full caGrid 1.2 release can be found on 
+the project Gforge Tracker:
+	http://gforge.nci.nih.gov/tracker/?atid=2252&group_id=25&func=browse
+and in the scope documents:
+    http://gforge.nci.nih.gov/docman/index.php?group_id=25&selected_doc_group_id=2414&language_id=1
+    
+================================================================
+                      4.0 Bug fixes Since Last Release
+================================================================
+
+Bug		Description
+------------------------------------------------------------
+13231    Adding data types from schemas on the file system with cyclic imports fails
+13392    Introduce Deployment Viewer rounds down on the Advanced Deployment properties, and causes exception when 0 is used
+13678    Introduce GUI forgets that the main service is a Main type of service
+13952    Error importing a schema that imports other schemas.
+13968    Bug importing a schema that was already added but removed.
+14128    Adding fault from types list is causing error
+14757    Some UML / XMI models do not convert to DomainModel properly
+14908    classnotfoundexception when deploying to tomcat 5.5+
+14922    SyncGTS Ivy "common" configuration is missing a dependency on mobius common-client
+14923    WebSSO project is missing jar dependencies for syncGTS
+14944    DomainModelUtils inner class CDE is not visible outside of package context
+14999    Introduce Metata Extension is not setting method descriptions properly
+15196    CaGridWebSSOAttributeLoaderFilter will not work as designed
+15287    Properties not set for service redirect/cookie age within the cas-servlet.xml file
+15614    Schema selection from local file system can occasionally create incorrect namespace types
+16319    cog-jglobus.jar file is not updated in syncgts globus container deployment
+16413    SDK 4 Data Service wizard can blank copied schema files
+16439    Pasting values in to fields on SDK 4 wizard configuration causes exception
+18247    SDK 4.0 query processor can return duplicate object results
+18512    Queries including attribute restrictions on numeric data types can return unexpected results when the queryCaseInsensitive flag is set to true
+19181    Presence of .DS_Store file in caCORE 4.0 Output directory prevents creation of a data service
+19753    Introduce: Build: Post-processor: gov.nih.nci.cagrid.introduce.servicetasks.axis.FixSoapBindingStub does not process multiple services as defined within introduce.xml and introduce.properties
+20921    caCORE SDK 4.0 Query Processor does not support queries against attributes of type java.lang.Float
+
+
+The complete fixed bug list and additional details can be found on the project Gforge Tracker:
+  http://gforge.nci.nih.gov/tracker/index.php?group_id=25&atid=174
+
+================================================================
+                     5.0 Known Issues Not Yet Fixed
+================================================================
+
+Updated bug reports and feature requests can be found on the tracker section
+of the project's gforge site:
+http://gforge.nci.nih.gov/tracker/?group_id=25
+
+----------
+ISSUE:
+	Bug #7671 Lowercase chars in complexType names from schema can cause compile failure
+DETAILS:
+	http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=7671&group_id=25&atid=174
+IMPACT:
+	Data services with models using Class names that start with lowercase characters won't compile. 
+WORKAROUND:
+	None, without editing the XSD/Model.
+----------
+
+----------
+ISSUE:
+    Bug #10897 caCORE backed data services (3.1/3.2.x) don't handle queries with single quotes in query parameters
+DETAILS:
+    http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=10897&group_id=25&atid=174
+IMPACT:
+    Queries using single quote characters in Predicates will fail. 
+WORKAROUND:
+    None, without moving to caCORE 4.0.
+----------
+
+----------
+ISSUE:
+    Bug #12370 Circular references in XSDs are not supported (in GME)
+DETAILS:
+    http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=12370&group_id=25&atid=174
+IMPACT:
+    User's with such schemas will be unable to upload their schemas which hinders
+    reuse.
+WORKAROUND:
+    None, without making changes to the modle/XML Schemas to remove the cycles.
+    Impacted users which cannot change the model should simply not upload their schemas.
+----------
+
+----------
+ISSUE:
+    Bug #12893 Installer Error dialogs sometimes popup behind the installer itself, confusing the user
+DETAILS:
+    http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=12893&group_id=25&atid=174
+IMPACT:
+    The installer may appear "frozen" if this occurs.
+WORKAROUND:
+    Use ALT+TAB or a comparable "window toggling OS command" to bring the error dialog
+    to the foreground.
+----------
+
+================================================================
+                	6.0 Bug Reports and Support
+================================================================
+	The preferred approach is to first search the knowledge center
+	forums for your problem, then post your question to the forum.
+	Bugs can also be entered on the gforge project page.
+	
+	Knowledge Center Forums:
+	https://cabig-kc.nci.nih.gov/CaGrid/forums/
+
+	GForge Project Page:
+	http://gforge.nci.nih.gov/projects/cagrid-1-0/
+	
+	Submit Bug:
+	http://gforge.nci.nih.gov/tracker/?func=add&group_id=25&atid=174
+	
+================================================================
+                     	7.0 Documentation
+================================================================
+
+	The release documentation, and component design documentation
+	can be found on the project's wiki:
+	http://cagrid.org/display/caGrid13/Home
+
+================================================================
+                    	8.0 References
+================================================================
+    
+The following URLs access web pages relevant to caGrid.
+
+    caBIG(r) Home Page
+    --  http://cabig.nci.nih.gov/
+    
+    NCI CBIIT Download Center
+    --  http://ncicb.nci.nih.gov/download/
+
+    caGrid
+    -- http://cagrid.org
+    -- https://cabig-kc.nci.nih.gov/CaGrid/KC
+    -- https://cabig.nci.nih.gov/workspaces/Architecture/caGrid/
+    -- http://gforge.nci.nih.gov/projects/cagrid-1-0/
+
