@@ -1,0 +1,24 @@
+****************************************************************************
+* Meeting: 	caGrid Core Infrastructure Status
+* Date: 	2008-07-14
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster
+****************************************************************************
+
+Agenda
+------
+1) Dorian
+2) Q/A
+3) Knowledge Center 
+4) CQL2 
+
+
+Notes
+-----
+2) Scott still working with QA. They should be able to start on scenarios in the next few weeks. They will test the 1.2 release and should run into the issues we've already found.
+3) Technology Stack is fixed. 
+4) Working with Mike Keller to get TBPT engaged for CQL2 TP
+
+
+Action Items
+------------

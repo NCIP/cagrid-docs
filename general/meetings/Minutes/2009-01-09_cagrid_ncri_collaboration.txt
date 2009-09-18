@@ -1,0 +1,33 @@
+****************************************************************************
+* Meeting: 	caGrid NCRI Collaboration
+* Date: 	2009-01-09
+* Venue:	Teleconference
+* Attendees: 	Alan Hogg, Manav Kher, Joshua Phillips, Max Wilson,
+*               Edward Zukowski
+****************************************************************************
+
+Agenda
+------
+1) Discussion of model comparison
+
+Notes
+-----
+ - Joshua's document described possible approaches to exchanging data
+   between portals.
+ - The conclusion of the document was that it would not be feasible to
+   support two-way exchange without significant changes to both
+   applications. It also suggested that we need to consider other
+   models, e.g. FOAF, DOAP, OWL-S.
+ - ONIX team suggested that we start with caGrid -> ONIX exchange, and
+   make assumptions necessary to produce ONIX-compatible data.
+ - caGrid Portal team agreed that this would be a good approach.
+   
+Action Items
+------------
+ - caGrid Portal Team will provide ONIX team with DB dump and other
+   relevant schema information.
+ - ONIX team will provide further ideas on mapping caGrid Portal data
+   into the ONIX model.
+ - Next meeting we will discuss:
+   - Future vision of caGrid Portal and Index Service.
+   - How to handle provenance information.

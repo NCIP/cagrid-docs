@@ -1,0 +1,27 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2008-11-03
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster
+****************************************************************************
+
+Agenda
+------
+1) Discuss F2F (feedback/open items)
+2) GME Bindings / Bilal's email
+3) CQL 2 / complex data types
+4) Deprecation Plan
+5) Installer
+6) Model Registration
+
+Notes
+-----
+1) Presentations went well. Action items belong to Knowledge Center. Will need to get more plugged into Josh post-1.3 on Semantics. 
+2) Scott will review their test cases. 
+3) Dave Hau's thoughts seemed to line up with Scott's. Will keep lines of communication open.
+4) Goal: draft done before Thanksgiving.
+5) Split: GUI will be desktop install, refine service install from command line.
+6) John working on it.
+
+Action Items
+------------

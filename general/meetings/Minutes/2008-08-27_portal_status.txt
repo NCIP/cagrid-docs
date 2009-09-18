@@ -1,0 +1,27 @@
+****************************************************************************
+* Meeting: 	Portal Status
+* Date: 	2008-08-27
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Manav Kher, Joshua Phillips
+****************************************************************************
+
+Agenda
+------
+1) Integration Environment for Community Portlets
+2) Calendar Updates
+3) 2.0.3 Status
+4) Update Project Schedule
+5) Monitoring of the Portal
+
+Notes
+-----
+1) Training Portal hosted at S.B. right now; Scott felt they should since it's their development. Avinash indicated that OSU's dev team should host training grid (including Portal) and Knowledge Center should run it.
+3) caBIO Portlet uses Ajax, so it suffers from page update/refresh issue. Manav working on service diagnostic portlet. 
+5) QA Portal was down yesterday, container up but in some indeterminent state. Can use the RSS feed (which is addressable) to test. 
+
+Action Items
+------------
+1) John will talk to Scott and Justin 
+2) John will talk to Craig Fee to see if this can be done.
+3) John will let QA know that code freeze should be 9/15, they should be on our call 9/10 and 9/17. Continuous monthly QA will start after this release, and someone from QA should join our call on a bi-weekly basis after that. 
+5) John will bring this up to Doug and systems team on Friday. 

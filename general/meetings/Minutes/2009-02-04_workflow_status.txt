@@ -1,0 +1,19 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2009-02-04
+* Venue:	Teleconference
+* Attendees: 	Bronwyn Gagne, John Eisenschmidt, Ravi Madduri
+****************************************************************************
+
+Agenda
+------
+1) Development Status
+2) Documentation Template
+
+Notes
+-----
+1) Unit tests integrated into caGrid nightly tests
+2) Wei working on updates to User Guide. Adding an example WF with a data service and analytical service. 
+
+Action Items
+------------

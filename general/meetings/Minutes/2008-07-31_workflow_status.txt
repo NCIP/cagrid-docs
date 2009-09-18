@@ -1,0 +1,25 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2008-07-31
+* Venue:	Teleconference
+* Attendees: 	Larry Brem, John Eisenschmidt, Ravi Madduri
+****************************************************************************
+
+Agenda
+------
+1) Taverna 2
+
+Notes
+-----
+1a) Working on design document on WF service based on Taverna 2. Would like feedback once it's done. Going to Scott on Tuesday for review. 
+1b) Received Tavera 2 preview release. 
+1c) Licensing - the code that lets Taverna invoke caGrid services will be checked into and live in the Taverna cvs, since they are LGPL, then our code is LGPL'ed once it's committed. Discussed possibility of dual-licensing: caGrid plugin stays under caGrid license. Changes to base Taverna under LGPL. 
+1d) Taverna Contract Update
+1e) Projected release: end August/early September. Ravi feels the Tech Preview isn't ready for prime time (UI has issues). caGrid plugin is almost entirely ported to Taverna 2. 
+1f) If ICR is ready, we could move forward with Taverna 1.7 while we wait for Taverna 2. 
+1g) Ravi had a student try and build workflows this summer. As a CS student, but with no knowledge of grids, Globus, or Taverna, he was able to successfully build several workflows, including a workflow of workflows. He did come up with a list of issues developing workflows (e.g. no WHILE construct) which should be documented and socialized to developers.
+
+Action Items
+------------
+1f) John will check with Avinash on building a training module for Taverna.
+1g) Ravi will compile that list of potential issues developing workflows.

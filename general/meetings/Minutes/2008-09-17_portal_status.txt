@@ -1,0 +1,32 @@
+****************************************************************************
+* Meeting: 	caGrid Portal Status
+* Date: 	2008-09-17
+* Venue:	Teleconference
+* Attendees: 	Larry Brem, Ram Chilukuri, John Eisenschmidt, 
+*		Carolyn Klinger, Manav Kher, Joshua Phillips
+****************************************************************************
+
+Agenda
+------
+1) Portal 2.1 Status and Next Steps
+
+Notes
+-----
+1) Release candidate posted on Monday to gforge. Manav working to update documentation.
+
+Action Items
+------------
+1) 	Manav will remove "Rate the Portal" portlet from Release candidate.
+	Manav will let Carolyn know when individual documentation updates are ready so she can start.
+	Carolyn will attempt to checkout the Documentation module from the caGrid cvs repo so she can update from there.
+	John will check with Sharon and Juli to ensure our release time line works for caBIO
+	John will contact Aynur to ensure double check the QA schedule and have her work with Manav to review new functionality in 2.1
+
+
+Dates
+-----
+Documentation	22-Sep to 29-Sep
+QA		29-Sep to 3-Oct (Aynur 50% Portal, 50% caGrid)
+QA		6-Oct to 10-Oct (Aynur 100% Portal)
+Systems		Deployment Request to Stage 13-Oct
+Systems		in Production by 17-Oct

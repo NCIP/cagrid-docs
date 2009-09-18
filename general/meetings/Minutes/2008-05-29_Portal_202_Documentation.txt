@@ -1,0 +1,27 @@
+****************************************************************************
+* Meeting: 	Documentation for Portal 2.02 Release
+* Date: 	2008-05-29 14:00-14:15
+* Venue:	Teleconference
+* Attendees: 	Carolyn Klinger, John Eisenschmidt, Joshua Phillips
+****************************************************************************
+
+Notes
+-----
+Joshua: Stable instance of Portal should be available on Monday
+Joshua: Portal into QA this week, Systems team for Staging environment following week, install doc updated appropriately (mid to late that week)
+Carolyn: at conference next Mon-Wed
+
+Action Items
+------------
+* Joshua will send updated link and changes for user guide to Carolyn by Wed next next week
+* Carolyn will start work on user guide after she returns from conference
+* By the time she finishes those updates, Portal should be in Stage tier and Joshua will have updated installation guide. At that point, he will send to Carolyn for update
+* Carolyn will send any changes to John, who will make sure they're checked into cvs
+
+
+Prior to the meeting, Joshua sent this email as a primer for our discussion:
+============================================================================
+
+Date: Thu, 29 May 2008 09:17:35 -0400Subject: Re: Discuss Portal Docs: 2.02From: Joshua Phillips <joshua.phillips@semanticbits.com>To: <eisenschmidtjw@mail.nih.gov>, "Klinger, Carolyn (NIH/NCI) [C]" <klingerc@mail.nih.gov>, "manav.kher@semanticbits.com" <manav.kher@semanticbits.com>
+
+Carolyn,Here is some background for our meeting.We provide the following documents: - Installation Guide - User's Guide - Administrator's Guide - Portal Design and Implementation - NCICB Deployment InstructionsThe portal documentation wiki pages provide links to the production versions of all this (except the NCICB Deployment Instructions).http://www.cagrid.org/wiki/Portal:DocumentationWe have wiki, Word, and PDF versions of many of the documents. Ideally, I would like to have the wiki documents serve as the source for the Word documents. However, in the case of the User's Guide, there is fair bit of formatting and image editing that would be difficult for us to do in the wiki page. Final PDF versions should be produced for all documents (except NCICB Deployment Instructions). We would like to have final versions of the documents ready for publication by the week of 6/30.Here's how I'd like to proceed:Installation and Administrator's Guides: - Developers: update in wiki - Tech. Writer: create Word version from wiki page, with the minimum amount of extra formattingUser's Guide: - Developers: provide notes (by email) on sections that need to be updated - Tech. Writer: incorporate text from developers into Word version; use live portal instance to create/format any new images, where necessary; check-in to CVSPortal Design and Implementation Document: - Developers: update Word document in CVS - Tech. Writer: edits/formats Word document in CVSNCICB Deployment Instructions - Developers: update on wikiWe will provide the URL to a (relatively) stable instance of the portal in our QA environment. This will be available all of next week (6/2 - 6/6). Then we'll point you to the staging instance for the following week (6/9 - 6/13). You'll be able to use these to work with the application and create images.Here's where to find stuff:Installation Guide: - Wiki:   - Manual Installation:http://www.cagrid.org/wiki/Portal:2.0:Installation_Guide   - With Installer:http://www.cagrid.org/wiki/Portal:2.0:Portal_Installer_Guide - Word:   - Latest:http://gforge.nci.nih.gov/plugins/scmcvs/cvsweb.php/~checkout~/cagrid-1-0/Documentation/docs/portal/portal2/guides/caGrid-Portal_2.0_Installation-Guide_20071218.doc?rev=1.1;content-type=application%2Foctet-stream;cvsroot=cagrid-1-0User's Guide: - Word:  - Latest:http://gforge.nci.nih.gov/plugins/scmcvs/cvsweb.php/~checkout~/cagrid-1-0/Documentation/docs/portal/portal2/guides/caGrid-Portal_2.0_UsersGuide_20071221.doc?rev=1.2;content-type=application%2Foctet-stream;cvsroot=cagrid-1-0 - PDF:  - Production:https://gforge.nci.nih.gov/frs/download.php/3062/caGrid-Portal_2.0_UsersGuide.pdfPortal Design and Implementation: - Word:  - Latest:https://gforge.nci.nih.gov/plugins/scmcvs/cvsweb.php/~checkout~/cagrid-1-0/Documentation/docs/portal/portal2/design/arch/cagrid-portal-2.0-design-and-impl.doc?rev=1.3;content-type=application%2Foctet-stream;cvsroot=cagrid-1-0You probably don't need to look at the NCICB Deployment Instructions doc.

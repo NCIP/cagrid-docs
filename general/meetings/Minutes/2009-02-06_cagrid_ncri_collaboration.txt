@@ -1,0 +1,30 @@
+****************************************************************************
+* Meeting: 	caGrid NCRI Collaboration
+* Date: 	2009-02-06
+* Venue:	Teleconference
+* Attendees: 	Alan Hogg, Manav Kher, Joshua Phillips, Max Wilson,
+*               Edward Zukowski, John Eisenschmidt, See Wah Cheng,
+*               Jianxiong Pang
+****************************************************************************
+
+Agenda
+------
+1) Discuss integration of caGrid metadata into ONIX resources.
+2) Discuss strategies for dealing with service instability, versioning,
+   and error handling.
+
+Notes
+-----
+ - Reviewed work done by NCRI to integrate caBIG service metadata.
+   - The ONIX team is using caGrid Portal components to aggregated from 
+     caGrid Index Service.
+ - Answered technical questions about use of caGrid Portal code components.
+ - Answered questions about service stability, model versioning, error 
+   handling.
+ - Discussed UML-to-OWL model generation effort and how that fits into ONIX.
+
+Action Items
+------------
+  - Next meeting we will discuss:
+   - details of OWL generation issues
+   

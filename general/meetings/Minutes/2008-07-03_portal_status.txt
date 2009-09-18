@@ -1,0 +1,35 @@
+****************************************************************************
+* Meeting: 	Portal Status
+* Date: 	2008-07-03
+* Venue:	Teleconference
+* Attendees: 	Ram Chilukuri, John Eisenschmidt, Manav Kher, 
+*		Carolyn Klinger, Joshua Phillips 
+****************************************************************************
+
+Agenda
+------
+1) Post mortem: Portal 2.0.2
+2) Portal 2.0.2.1
+3) Scope: Portal 2.0.3
+4) Current cvs/gforge structure
+5) caBIO Portlet
+6) NCRI Collaboration
+
+Notes
+-----
+1) 	Joshua: QA time lacking - could schedule regular time with QA on a biweekly basis. Need to expand automated UI testing framework (Selenium?). Better communication of features to Avinash prior to release.
+	Manav: underestimated QA timing. Periodic release to QA to streamline. 
+	Ram: underestimated scope causing us to burn our resources at a higher rate (Joshua only has 56 hours left this contract). SAIC was given a submission schedule. 
+	Carolyn: Annual Meeting became focus, but got everything done. Going forward, easier for Carolyn to do everything at the end. 
+2) Manav is out week of July 14th. Joshua cannot participate in QA given his current hours situation.
+3) Next release (as planned): October, following release in January. Joshua and Manav put together a feature document: https://gforge.nci.nih.gov/docman/view.php/25/12935/Portal_Feature_List.doc 
+4) Current docs structure in gforge makes it difficult to locate.
+5) Call with caBIO went well. Best practices/tutorial is listed in scope document for next iteration. John asked that work with caBIO be directed through the cagrid-users list for visibility.
+6) Given Joshua's remaining hours, preparation for these meeting will be difficult (if not impossible). 
+
+Action Items
+------------
+1) John with follow up with Larry Brem to send a contract mod
+2) John will let Ye know to finish testing before Manav's vacation or start when he gets back. Manav will work with QA on this release when they're ready. 
+3) John will review scope document next week in consideration of next release. Following that, Joshua and Manav will be asked to produce LOE for chosen features.
+4) John with create a new Portal link at top level of docs and expose approprate docs from cvs. When everyone has reviewed and ok's, John will hide Portal links under caGrid 1.2 and 2.0.

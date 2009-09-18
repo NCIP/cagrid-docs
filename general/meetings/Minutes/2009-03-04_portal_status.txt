@@ -1,0 +1,22 @@
+****************************************************************************
+* Meeting: 	caGrid Portal Status
+* Date: 	2009-03-04
+* Venue:	Teleconference
+* Attendees: 	Aynur Abdurazik, John Eisenschmidt, Manav Kher, 
+*		Joshua Phillips
+****************************************************************************
+
+Agenda
+------
+1) 2.3 Development Roadmap
+2) Usability
+3) Appscan
+
+Notes
+-----
+2) Manav integrating feedback: working on changes to the Services Portlet
+
+Action Items
+------------
+1) John will sketch out a rough roadmap for the coming year. Manav will work on his to-do list (usability, Liferay 5.1, investigate use of new caDSR Data Service and EVS grid service)
+3) John will follow up with Net Security with the writeup Joshua did last year on App Scan. After they review that, we can all meet and discuss. 

@@ -1,0 +1,26 @@
+****************************************************************************
+* Meeting: 	caGrid Portal Status
+* Date: 	2008-11-19
+* Venue:	Teleconference
+* Attendees: 	Aynur Abdurazik, John Eisenschmidt, Manav Kher, 
+*		Joshua Phillips
+****************************************************************************
+
+Agenda
+------
+1) 2.2 Development
+2) QA / Test Automation
+3) Configuration
+4) Usability Analysis
+
+Notes
+-----
+1) DB tuning helps, but Ajax will be needed on home page to realize greatest performance improvement. 
+2) Goal is to have candidate to QA by Monday to start continuous QA. Only one license for Quick Test, so Aynur is using Selenium. Need to install Selenium core server on Portal QA Server.
+3) Config has been standardized across all tiers.
+4) Kickoff meeting last Friday. 
+
+Action Items
+------------
+3) Verify and update the JAVA_OPTS in JBoss run.sh
+4) John will schedule the demo. 

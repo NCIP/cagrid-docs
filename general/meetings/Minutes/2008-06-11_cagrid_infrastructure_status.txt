@@ -1,0 +1,37 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2008-06-10 : 15:00-16:15 EST
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster, Raghu Chintalapati
+****************************************************************************
+
+Agenda
+------
+1) Status: Deployment Team Support of cagrid-users-l [Raghu]
+2) Annual Meeting
+3) caGrid 1.3 & caCORE SDK
+4) Technology Preview Process/Policy
+5) Knowledge Center
+6) June User Group Meeting
+7) Meeting 6/11: QA Next Steps
+8) Meeting 7/9: caDSR Grid Service
+9) caBIG Workspace Strategy Meeting 6/11
+
+Notes
+-----
+1) Raghu indicated that no postings seem to be missed, and that it seems clear what questions they can handle and what caGrid team should handle. Scott and John agree. We will continue as-is and check in with Raghu in 2-3 weeks. If something comes up before then, he will let us know.
+2) 	Posters: caGrid done, Transfer done, Introduce in progress, Security almost done. 
+	Hackathon: new Portal up at SemanticBits, content in Word but not updated on Wiki. 
+	Worlds Fair: Shannon working on Introduce video, caGrid intro not done yet. 
+	Breakout presentation not started, Gold Compatibility breakout done. 
+4) Constrain time? Kind of feedback? Know what we're going to do before we constrain it. Most time consuming: understanding new CQL2 language. Use cases that are not fulfilled by CQL 2. Feedback is crucial, as is deprecation plan. Expectations for backwards compatibility?
+5) Bug fixes - if we want people fixing bugs, they should be part of development team (even if they belong to KC). Division is also in response to gov't response to solicitation: clear division between development and k.c. activities. Avinash and Leslie Durr scheduling a kickoff. 
+8) Part of 1.3 and backwards compatibility. caDSR should own grid service, but caGrid should own other information/operations that we do on the grid from caDSR (caDSR grid service: caDSR team - metadata service: caGrid team) -- how do we get there?
+
+Action Items
+------------
+3) John will schedule a call with Charles, Satish, Scott, and Dave to review their list of feature requests, ensure we're discussing same thing, and prioritize.
+4)	a) John will write-up the plan on how we will engage, have Scott review, then send to Avinash. 
+	b) Avinash will bring this to Ian to designate someone to work with us to move forward. 
+	c) Dave and Scott will review what feedback is of value and get back to John.
+6) John will cancel June UGM due to proximity to Annual Meeting.

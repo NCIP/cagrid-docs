@@ -1,0 +1,25 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2009-01-26
+* Venue:	Teleconference
+* Attendees: 	Aynur Abdurazik, John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) Index Service
+2) caGrid 1.3 QA 1 Tag
+3) Deployment 
+4) Documentation
+5) QA
+
+Notes
+-----
+1) Scott has a note out to Mike about how best to accommodate the changes we need to the Index Service (a branch in their cvs, etc). 
+2) Does not include BIGIndex, and WebSSO still has outstanding items (due COB Fri 1/30)
+3) KC working out deployment process on Training Grid. Should be complete Fri 2/13. 
+4) Outline for Admin guide complete. Scott owes outline for the Developer Guide.
+5) Discussed timing/approach with Aynur: desktop QA (installer and Introduce) should start immediately. We will meet again on 2/16 to discuss upgrading the QA grid once the KC has worked out the process on the training grid. After the QA grid is upgraded to 1.3, we should re-test a few things and then test WebSSO. Aynur is working to automate the already defined test cases, so regressions can be run automatically.
+
+Action Items
+------------

@@ -1,0 +1,25 @@
+****************************************************************************
+* Meeting: 	caGrid Core Infrastructure Status
+* Date: 	2008-09-29
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster
+****************************************************************************
+
+Agenda
+------
+1) Index Service
+2) Deprecation Policy
+3) Project Plan Updates
+4) caDSR
+
+Notes
+-----
+1) Scott started working on a program to close the index for profiling. Stopped. 
+2) John is working on this.
+3) John is working on updates.
+4) Christophe seems to be writing some CQL queries, seeing if what they're writing will work for us. Likely some things the old service could do that new service can't, but won't be critical. 
+
+Action Items
+------------
+1) John will check with Deployment Team to see if they have bandwidth to make this change. Change Request to block lower tiers and CBIIT desktops goes before CCB on Wednesday. On Friday, we will review the utilization graphs and decide what next steps to take.
+4) John will review what is already written and figure out what project managers on caDSR side have and how we can best move forward.

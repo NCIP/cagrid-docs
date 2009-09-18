@@ -1,0 +1,25 @@
+****************************************************************************
+* Meeting: 	caGrid NCRI Collaboration
+* Date: 	2008-08-01
+* Venue:	Teleconference
+* Attendees: 	Alex Gonzalez-Beltran, John Eisenschmidt, Alan Hogg, 
+*		Manav Kher, Joshua Phillips, Max Wilson
+****************************************************************************
+
+Agenda
+------
+1) Questions from NCRI
+2) Interoperability NCRI <--> caBIG(TM)
+
+Notes
+-----
+1a) Extension of metadata in the index service (define new resource properties and register those to the index service, but convenience features of discovery apis will not support those, Globus api would need to be use). 
+1b) Continuous integration (caGrid uses cruise control for automated build/test. Portal uses Hudson for ci.)
+1c) How to get most recent caGrid 1.2 release and Portal release?
+1d) How are queries executed concurrently? 
+1e) Semantic queries and terminology metadata?
+2) Possibility of unifying the discovery model. [Joshua] Should we provide a service API that allows respective services to be discovered in our respective portals? [Alan] In principle, yes. 
+
+Action Items
+------------
+1c) Joshua and John will send NCRI instructions to checkout most recent 1.2 branch and Portal.

@@ -1,0 +1,39 @@
+****************************************************************************
+* Meeting: 	Discuss WebSSO 1.4 Scope
+* Date: 	2009-08-25
+* Venue:	Teleconference
+* Attendees: 	Scott Oster, Steve Langella, John Eisenschmidt
+****************************************************************************
+
+Notes
+-----
+1) Steve received signed memorandum between NIH and InCommon this week
+Scott proposes:
+  a) Have Santhosh document what current implementation doesn't support
+  b) Document possibly alternative architectures
+  c) Estimate impact/LOE
+
+CTSA has use cases to integrate with non-Java providers
+Santhosh has done LOE for moving to Shib
+[Scott] what's LOE to modify our current implementation to support InCommon?
+
+Requirements: 
+  [Scott] how an institution can provide a profile to hook in to our framework
+          nice to support deployment that's manageable and secure for a central WebSSO
+  [Steve] support Incommon/SAML 2.0
+	  provide a Java plug-in for Shib
+          ability to work with other OOB solutions (Moss, Confluence)
+
+[SL] Shib service provider written in C, not that extensible
+[SO] Can we use CAS as a framework to interoperate with Shib?
+[SL] Even if we stay with CAS, we could make some architectural changes
+[SO] Current implementation is less-coupled to Dorian and Authn Svc
+
+[SO] Need a couple weeks of his time to develop design and implementation plan 
+     -document new use cases
+     -investigate potential solutions
+     -develop LOE
+
+Action Items
+------------
+1) John will reach out to Sichen to allocate Santhosh's time. 

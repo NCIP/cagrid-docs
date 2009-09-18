@@ -1,0 +1,41 @@
+****************************************************************************
+* Meeting: 	caGrid Core Infrastructure Status
+* Date: 	2008-08-13
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster
+****************************************************************************
+
+Agenda
+------
+1) caGrid 1.3 Project Plan
+2) KC/BDA Meetings Follow up
+3) Deprecation Policy
+4) QA
+5) Systems
+   a) Time Drift
+   b) DB Password Change SOP
+   c) Future Architecture
+6) Vocabulary Services Integration
+7) Availability of Dev Team for ad-hoc requests
+8) Deployment responsibilities
+
+Notes
+-----
+1) Targeting January. Concerns about Development team being drawn into other activities. May need Iterations, still working out approach. Assertions not necessary for Gold, but for making a programmatic decision based on Gold.
+2) Progress on Ivy and Installer are important, but not critical. More likely long term (caGrid 2.0) concerns.
+3) API, grid service, and entire grid. No reaction on WS Call.
+4) Aynur almost done with first pass of testing, had one issue that Shannon fixed for her.
+5a) Time drift fix going in next maintenance window
+5b) Scott working on wiki page with procedures.
+5c) John working with Doug Hosier on high availability architecture
+6) John met with Tom from Mayo. Tom will enter an RFE for Introduce piece and one for Discovery Client. Also will start process to get model registered in caDSR. caGrid 1.3 not dependent on this to release, Introduce piece can come first and well before Discovery Client piece (if successful). VCDE could develop this in lieu of caGrid development. 
+7) Discussed requests for arch review, ad-hoc questions. Dev team should feel free (but not always obligated) to punt to John if request is a time sink. John will try to address larger issues around getting caGrid development team's input on everything. Gold Compat working group is taking a lot of Scott's time.
+8) Why isn't deployment team answering emails on user list? 
+
+Action Items
+------------
+1) Scott will update the project plan in cvs. 
+2) John will follow up with Paul Duvall from Stelligent
+3) John will draft a survey on gforge to call for comments and draft email to send out. All will go to Scott for review before being sent.
+7) Try to use Kevin Puscas instead of constant "caGrid on Tour" 
+8) John will email Raghu asking about recent lack of responsiveness. Scott will talk to Justin about plans to move mailing lists (possibly separate current 2 into 3-4). John will try to buffer deployment team requests. 

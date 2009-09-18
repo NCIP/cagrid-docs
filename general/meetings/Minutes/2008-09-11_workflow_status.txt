@@ -1,0 +1,22 @@
+****************************************************************************
+* Meeting: 	Workflow Status Meeting
+* Date: 	2008-09-11
+* Venue:	Teleconference
+* Attendees: 	Larry Brem, John Eisenschmidt, Bronwyn Gagne, Ravi Madduri
+****************************************************************************
+
+Agenda
+------
+1) Taverna Status
+2) Globus
+
+Notes
+-----
+1) 	Bronwyn was able to checkout Documentation module from caGrid cvs. 
+	Ravi says design doc needs to be updated; design changes based on last weeks meeting with Stein from myGrid. Larry can review design document (should not need full SAIC design review).
+2)	Meeting next week to follow up on past call, see what Globus has come up with and is willing to commit to in a future release.
+
+Action Items
+------------
+1) 	Ravi will review and update the Cookbook.
+	Ravi will work with Wei to get Design Document updated first, then he can work with John to update Project Schedule.

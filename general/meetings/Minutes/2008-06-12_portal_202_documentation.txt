@@ -1,0 +1,36 @@
+****************************************************************************
+* Meeting: 	caGrid Portal 2.02 Documentation 
+* Date: 	2008-06-12
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Manav Kher, Carolyn Klinger
+****************************************************************************
+
+Agenda
+------
+1) caBIG Tools
+2) Screen Captures
+3) EVS Search mode - EVS search mode/concept-based discovery, auto completion, ontological search
+4) Three Queries Sections
+5) Using caGrid Into Portlet
+
+Notes
+-----
+1) Tools come from caBIG website, nothing about individual tools need to be captured 
+2) Screen captures need to be replaced. Annotated by another technical writer. Do those call outs need to be maintained?
+3) More description on the wiki page (concept-based discovery) http://www.cagrid.org/wiki/Portal:Portal
+4) Joshua requested: Aggregate queries, DCQL, and aggregate queries with DCQL. Currently 3 scenarios: No URL or Query, With URL without Query, With URL and Query. 
+
+Manav clarified:
+  I. Building Query using Query Builder
+  I.a) CQL Queries (existing content, just update screen shots)
+  I.b) DCQL Queries 
+  I.b.1) aggregate
+  I.b.2) distributed (reference: https://gforge.nci.nih.gov/docman/view.php/25/12533/Portal%20QA%20-DCQL.doc)
+
+5) Service Info Popup - upper right hand corner now shows metadata on hover
+
+Action Items
+------------
+2) Annotations will not be carried forward into replacement screen shots.
+3) John will send link to Carolyn for Portal Wiki page and content for hack-a-thon. Carolyn will review and send a PDF draft to Joshua for review and clarification.
+4) Manav will extract aggregate queries (I.b.1) from presentation and wiki, aggregate (pun intended) and send to Carolyn by COB 6/13.

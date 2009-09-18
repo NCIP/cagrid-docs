@@ -1,0 +1,33 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2008-09-15
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster
+****************************************************************************
+
+Agenda
+------
+1) CQL 2 Technology Preview
+2) Deprecation Policy
+3) User Group Meeting
+4) 1.3 Project Schedule
+5) Index Service
+6) caDSR Grid Service
+7) Contracts expire in 10 days
+
+
+Notes
+-----
+1) Has Dave contacted Persistent to schedule meetings with them?
+2) John reminded folks on ARCH call that Friday is last day for comments.
+3) caArray 2.1 & Transfer, caGrid 1.3 Overview
+4) John updated with Steve/Shannon/Dave's updates and checked in. 
+5) Issues with services going Active/Inactive. Index seems to be stalling during the day under load. Meeting with Globus scheduled for Wednesday.
+6) caDSR team says they are building a simple data service, that APIs and Model have not changed since 3.2
+7) Should see something from Contracts in next two days. Ping Larry Wednesday if you have not heard anything.
+
+Action Items
+------------
+2) John will send a reminder to mailing lists
+4) Scott will provide his updates and check in.
+6) Scott should talk to Christophe to see what their implementation will be. John will ask Steve Aldred for access to caDSR 4.0 in Stage as well as source and documentation.

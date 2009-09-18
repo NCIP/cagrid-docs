@@ -1,0 +1,24 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2008-11-24
+* Venue:	Teleconference
+* Attendees: 	Bronwyn Gagne, John Eisenschmidt, Ravi Madduri
+****************************************************************************
+
+Agenda
+------
+1) Face-to-face Meeting
+2) Taverna Documentation
+3) Commit WF Service to cvs today
+4) Deprecation Plan
+5) Cookbook
+6) Project Plan
+
+Notes
+-----
+2) Question about Taverna being online docs or offline docs? Online is priority.
+4) Ravi will try and finish today
+5) Bronwyn will send most recent updates/changes to Ravi for thorough review.
+
+Action Items
+------------

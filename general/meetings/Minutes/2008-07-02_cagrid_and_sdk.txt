@@ -1,0 +1,43 @@
+****************************************************************************
+* Meeting: 	caGrid and SDK
+* Date: 	2008-07-02
+* Venue:	2115EJ5039 & Teleconference
+* Attendees: 	John Eisenschmidt, David Ervin, Charles Griffin, David Hau, 
+*		Scott Oster, Vijay Parmar, Satish Patel
+****************************************************************************
+
+Agenda
+------
+
+Grid Team Development Activities1) Data Service plug-in for SDK 4.x2) Upgrade to SDK 4.x3) XMI Reader API Integration in Introduce4) Bulk Data Transfer (BDT)
+
+SDK Team Development Activities5) GME Namespace implementation in SDK6) SDK Web SSO IntegrationGrid/SDK Team Joint Development Activities7) Proxy Framework and XML serialization8) Grid Authentication Manager/Security Integration9) Implementation of Common Testing 10) Identify modeling gaps/requirements for the analytical/data service11) Hibernate Version Upgrade12) CQL 2 Integration in SDK 13) Continuous integration of SDK and cagrid
+
+14) Managerial housekeeping
+
+Notes
+-----
+1) SDK 4.1 iteration 1 done, this item is targeted for iteration 3 (Sept/Oct timeframe). 
+2) Introduce bundled in caGrid 1.2 supports SDK 4.0.
+3) Introduce should reuse the same API as caCORE
+4) SDK pagination creates a concurrency issue at query time which may not be appropriate.
+5) SDK plans to implement in 4.1 iteration 2.
+6) This speaks to SDK supporting authentication against WebSSO out of the box.
+7) An SOP could be written now to avoid development issues between current inconsistencies. Making this change, and being consistent, is a good idea for next release.
+8) Scott disagrees that this will require a fix to grouper. There is also an issue with certificate authentication: over local API doesn't make sense, and remote API won't have access to the user's private key. CDS could be used, but is not an ideal solution.
+9) Common Unit Testing: how often (daily? milestone?) and what manner (tag to tag, head to head, tag to head, etc). 
+10) Not currently an issue, Axis 1.2 (Globus 4.03) does not support multidimensional arrays. Issue tabled until a user raises the issue with a compelling use case.
+11) Hibernate point releases are volatile, and CQL2HQL currently only supports what SDK supports. If the tech stack forces us to a new release, we will support that. Short of that, support for multiple hibernate versions can't be officially support by caGrid.
+12) Scott agrees we should move forward, it just may be CQL1 and not CQL2 (depending on timing). 
+13) Addressed as part of other discussion items.
+14) David Hau would like us to stay in sync so we deliver a consistent message when we meet with caTissue on 7/16. The only overlapping item for that meeting is the CSM -> Dorian plugin to migrate authorized users.
+
+Action Items
+------------
+1) Satish will send Dave design documents for SDK 4.x
+2) caGrid 1.3's Introduce should support SDK 4.1 (caGrid 1.2 uses SDK 4.0)
+3) Satish will send Dave a pointer to JAR containing caCORE XMI reader, Dave will investigate using it in next release.
+7) Satish will provide details on issues encountered, appropriate caGrid team member will investigate (Dave?).  Bug will be addressed or SOP will be written.
+9) Dave and Satish will exchange their current integration testing approaches in an attempt to come up with a common one. A separate integration project may need to be built for this testing.
+12) Need to come up with timeline for CQL2 and next caGrid and SDK releases, then determine if CQL2 or CQL (if we want to do it now and CQL2 won't be in next release) should be used for this.
+14) Charles will add the items from Satish's list to gforge and send tracker id's to John. John will add gforge tracker items on caGrid side and reference SDK's. 

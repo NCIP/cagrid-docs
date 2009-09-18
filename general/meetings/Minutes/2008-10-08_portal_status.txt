@@ -1,0 +1,36 @@
+****************************************************************************
+* Meeting: 	caGrid Portal Status
+* Date: 	2008-10-08
+* Venue:	Teleconference
+* Attendees: 	Larry Brem, John Eisenschmidt, Carolyn Klinger, 
+*		Manav Kher, Joshua Phillips
+****************************************************************************
+
+Agenda
+------
+1) Q/A Status
+2) Documentation Status
+3) Training Portal
+4) App Support Training
+5) User Group Meeting
+
+Notes
+-----
+1) Aynur is testing, found a few bugs which will be logged to gforge if they have not been already. Should be done testing by Friday.
+2) Carolyn has completed the updates to the user, admin, and install guides.
+3) Should be hosted by KC not SB
+4) Manav is training App Support today on Portal admin and GAARDS-UI
+
+Action Items
+------------
+2) John needs to review for some highlights he claims he placed in a guide.
+3) John will email Justin at KC to see if this is possible and when
+5) Manav needs to put together presentation on Portal 2.1 new features and a refresher on using Query Builder for Federated Queries.
+
+Dates
+-----
+Documentation	22-Sep to 10-Oct
+QA		29-Sep to 3-Oct (Aynur 50% Portal, 50% caGrid)
+QA		6-Oct to 10-Oct (Aynur 100% Portal)
+Systems		Deployment Request to Stage 13-Oct
+Systems		in Production by 17-Oct

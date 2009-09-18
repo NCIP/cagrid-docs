@@ -1,0 +1,26 @@
+4/11 ARCH WS Call
+
+caGrid Core Infrastructure
+
+Past Activities
+---------------
+1) caGrid 1.2 Software and Documentation officially released March 31st. Production Grid Deployed/Upgraded (new CDS deployment, updated Dorian deployment), and OSU Training Grid Deployed
+
+2) caTissue inception meeting - discuss use cases for security needs. Kunal Modi new Security 
+Solutions Architect. Working with Kunal as he transitions into his new role.
+
+3) CTMS WS/CAT Team meeting - reviewed architectural model with CAT team, discussed current functionality in caGrid. Identified three gaps: 
+	1) messaging, 
+	2) embedded business logic (esb), and
+	3) security. Three working groups formed and meeting (Daniella Smith)
+
+Upcoming Activities
+-------------------
+1) caGrid User Group Meeting 4/17/2008: Overview of Grid Transfer Tech Preview
+
+2) caGrid Developer F2F - 4/23-4/25: Rockville, MD. 
+	* Facilitate Communication between development teams
+	* caGrid 1.2 release means concurrent releases with caCORE SDK. Time set aside Friday for those teams to discuss
+	* Time set aside for Grid Transfer with teams who have already started integration
+
+4) caGrid Roadmap - begin discussions about what features and functionality will be in next release. Input from Developer F2F. Scott and John working on a way to publicly vet scope for forthcoming releases.

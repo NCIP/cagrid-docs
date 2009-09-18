@@ -1,0 +1,28 @@
+****************************************************************************
+* Meeting: 	caGrid.org Wiki
+* Date: 	2009-05-15
+* Venue:	Teleconference
+* Attendees: 	Avinash, Mike, John, Scott, Steve, Justin, Joel
+****************************************************************************
+
+Notes
+------
+1) Review the issue: 
+	[Avinash] caGrid.org was started by OSU Development team before CBIIT had a wiki infrastructure. Now that caGrid KC is established, does it make sense (resources, consistency) for caBIG(r) to support two wikis? 
+	[Scott] Objectively we don't need two sites, but we do because they currently fulfill two roles (which could be merged). As middleware, non-cancer adopters we target (CTSA, etc) are hesitant to use cancer-branded software. Also, concern that caGrid.org is hosted at OSU, may need to address longevity of artifacts and service level agreements. 
+	[Steve] Put yourself in the shoes of another program, there is some natural competition, and using caBIG(r) branded software doesn't make that PI look good. 
+	[Joel] Acceptance of caGrid is better than expected, a large part of semantics is coming though unfunded efforts. Inclined to tweak around the edges but in general it's going fine.
+	[Justin] Different strengths for caGrid.org and caGrid KC Wiki. 
+	[John] Understands why we have two right now, but if the KC tech stack were different it would be ideal to have just one site. 
+	[Mike] Programmatically, one point of entry, one landing page. 
+2) Question: [Avinash] Given two wikis, looking one year out, what problems do you see?
+	[Scott] It was a problem, but since dev and KC discussed prior to 1.3 release, it's pretty clear what content goes where. Each wiki is serving two different purposes. 
+	[Steve] Problem with relationship between NCI and Knowledge Center (since metrics are being kept).
+	[Justin] CVRG, as an example, benefitted from having two wiki sites. 
+	[John] Would be concerned if some policy changes requires content to be located in one place to another. 
+
+
+Action Items
+------------
+1) [Steve, Justin, Scott, John] A document (1-2 pages) proposing what content goes on what wiki so Avinash can take this to the caBIG(r) leadership. 
+2) Determine how to ensure availability and durability through an honest broker like caBIG(r)?

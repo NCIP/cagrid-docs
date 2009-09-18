@@ -1,0 +1,22 @@
+****************************************************************************
+* Meeting: 	caGrid Portal Status
+* Date: 	2008-10-22
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Carolyn Klinger, Manav Kher, Joshua Phillips
+****************************************************************************
+
+Agenda
+------
+1) 2.1 Deployment Status
+2) Ian Fore's account
+3) Portal 2.2 Planning
+
+Notes
+-----
+1) Systems has it on hold. Portal is in stage but caBIO Portlet is not. Systems wants to setup Portlet to build through Anthill Pro before they deploy it. 
+2) His NCI Authentication Service account should be able to login, but his Dorian account cannot without removing history from the Portal DB. 
+
+Action Items
+------------
+2) Manav with tag the fix for 2.1.1 and we can give it to QA if our last fix does not resolve his issue.
+3) John will setup a scoping meeting for after the F2F. 

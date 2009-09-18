@@ -1,0 +1,26 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2009-07-01
+* Venue:	Teleconference
+* Attendees: 	Bronwyn Gagne, John Eisenschmidt, Ravi Madduri
+****************************************************************************
+
+Agenda
+------
+1) Postponed release of Workflow
+2) Lymphoma Workflow
+3) Annual Meeting
+4) Workflow Portlet
+5) Summer Student (funded by Google)
+
+Notes
+-----
+1) Still making API changes in Taverna Workbench. Beta 2 in June, official 2.1 should be August-end. Support to send the EPR to a delegated credential already built-into the Taverna Workflow Service. Changes to the Taverna Workflow Service: invocation of the Taverna Execution Engine uses default heap size, workflow build file downloading latest Taverna JARs from Maven
+2) Priority: Get Annual Meeting Demo Working (show easy to create and run a workflow on Workbench and Workflow Service). Was a JAR mismatch with Workflow Service, fixed last week
+3) Updating slides for Annual Meeting Presentation
+4) Workflow Portlet is coming well
+5) Student built a graphical CQL Query Builder inside of Taverna Workbench
+
+Action Items
+------------
+5) Student should demo their work to Scott and David.

@@ -1,0 +1,21 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2008-06-30
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster
+****************************************************************************
+
+Agenda
+------
+1) Roadmap
+2) CQL 2
+3) WebSSO and SDK meetings rescheduled
+
+Notes
+-----
+1) Scott had questions about directionality. 
+
+Action Items
+------------
+1) John will have scope for 1.3 by 7/14
+2) Scott will check with Dave to get status on John's email last Friday

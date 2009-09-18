@@ -1,0 +1,28 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2008-08-25
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster
+****************************************************************************
+
+Agenda
+------
+1) Project Plan
+2) Gold Compatibility
+3) Tech Stack
+4) Globus Meeting
+5) CQL2 Tech Preview
+
+Notes
+-----
+1) Larry would like a formal kickoff and scope review with TPMs and WS leads.
+2) Someone to facilitate registration of models of caDSR (CQL, CQL Results, Service Metadata Model, Domain Model (Data Service), Security Metadata). Not done with the SDK, so we have EA UML Models (not annotated). 
+3) Updated http://cagrid.org/wiki/CBIIT:TechStack:FY2008
+
+Action Items
+------------
+1) After John updates MPP, beed to schedule a call with OSU to review project plan and assignments.
+2) John will find out whom to work with and liaison. 
+3) John will ask KC to test caGrid 1.2 with future tech stack and verify JUnit 3.8 tests on JUnit 4.4
+4) John will send follow up email to Dan to setup follow up meeting
+5) John will send follow up email to WS leads with deadline reminder.

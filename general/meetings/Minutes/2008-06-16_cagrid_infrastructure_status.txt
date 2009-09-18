@@ -1,0 +1,26 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2008-06-16 : 12:00-13:00 EST
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster	
+****************************************************************************
+
+Agenda
+------
+1) Annual Meeting
+2) Monitoring of Production Grid
+3) WebSSO Development Resource
+4) Technology Preview Process/Policy
+5) Biomedical Informatics Without Borders Meeting
+
+Notes
+-----
+1) Rough draft of caGrid Breakout done, Shannon has first draft done. Posters done. 
+2) Avinash thinks we should work with Todd Cox to explore moving the grid to our offsite hosting facility to improve monitoring and availability.
+4 & 5) Sent to Avinash: he asked Mike, Larry, and I to review and come to a decision. 
+
+Action Items
+------------
+1) How videos are played in the booth? John will follow up. 
+2) John will talk to Avinash to setup conversation with Todd Cox about what's involved. 
+3) John will email Charles and CC Scott to identify and bring in WebSSO resource.

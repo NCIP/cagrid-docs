@@ -1,0 +1,22 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2009-02-09
+* Venue:	Teleconference
+* Attendees: 	Aynur Abdurazik, John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) caGrid 1.3 QA Status
+2) Documentation
+3) Training Grid -> 1.3
+4) Developer F2F
+
+Notes
+-----
+1) Secure Service / Secure Testing containers successful with all three (JBoss, Tomcat, Globus). Command line and Installer works. Some minor issues reported to Scott, replacement JARs provided. Started testing with Workflow. 
+2) Scott asked team to focus on Admin guide first. Have not set a deadline for that. Carolyn should start shelling out the new document based on the Admin Guide outline Scott did and had her shell out the sections. How do we get the Word Docs closer to the Wiki? How do we combine this content and frame the content correctly. 
+
+Action Items
+------------
+2) John will talk to Carolyn and Shannon to try to pilot/draft this (possibly with Shannon). 

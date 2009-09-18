@@ -1,0 +1,24 @@
+****************************************************************************
+* Meeting: 	caGrid Core Infrastructure Status
+* Date: 	2008-10-20
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster
+****************************************************************************
+
+Agenda
+------
+1) caGrid 1.3
+2) F2F
+3) Deprecation Policy / Plan
+
+Notes
+-----
+1) If we assume no/low risk with SDK 4.1 and caDSR 4.0, code freeze could be January 2nd. Based on that, QA would run the next 6 weeks, 5 days for deployment to stage, weekend deployment to prod, best case is 27-Feb to be live.
+2) Scott starting to work on his presentation. 
+
+Action Items
+------------
+1a) John will email Charles to see where SDK 4.1 is at and get a copy of the design doc (to see changes). 
+1b) John will socialize tentative schedule with Avinash, Mike, and Larry. 
+1c)Scott will check with dev team on 2-Jan as code freeze and review the remaining work.
+3) Scott will check with dev team and let me know when we'll get deprecation plan

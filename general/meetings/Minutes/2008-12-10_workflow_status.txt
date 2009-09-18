@@ -1,0 +1,24 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2008-12-10
+* Venue:	Teleconference
+* Attendees: 	Bronwyn Gagne, John Eisenschmidt, Ravi Madduri
+****************************************************************************
+
+Agenda
+------
+1) Development Status
+2) Holiday Schedules
+
+Notes
+-----
+1) Upgraded Taverna WF service to Introduce 1.3 with no issues. 
+   Taverna 2 Workbench and Workflow Client required creating a Maven artifact
+   Execution of Taverna 2 workflows using execution engine (caused by Axis JAR mismatch). 
+   Issue: WF Service only works with workflows that have one output
+   (Soft) Code Freeze still 12/18
+2) ANL closed 12/22-1/2
+   Ravi travels 12/22-1/30
+
+Action Items
+------------

@@ -1,0 +1,32 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2009-05-18
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) Grid Identifiers
+2) Charlie Architecture Meeting in Chicago/June
+3) Novartis Training
+4) Developer F2F
+5) CQL Results 
+6) CQL 2 Status
+7) 1.2.0.1 and 1.3.0.1 Release Status 
+
+Notes
+-----
+1) John thought both meetings went well, but that many folks are not getting it. May need more illustrative examples to get what Scott wants (feedback from developers on APIs and how to integrate).
+2) Meeting with Argonne June 3rd to discuss Globus. John will get additional information and report back.
+3) John will work with Paul to try and reschedule for June 22-26 (if possible).
+4) Cancelled. Will reschedule when we have a better sense of Globus future.
+5) Models will need to be created.
+6) Dave has made some progress, some use cases still outstanding. Requirements still coming in from Todd Parnell and Dan Kokotav after LS-CAT meeting.
+7) Should publish at least abbreviated release notes. KC will draft and send for review.
+
+Action Items
+------------
+1) Calixto should put together a few slides that are illustrative of what the identifier will look like, and the possible deployment scenarios. We should then review those with the caCORE leads (Jim, Konrad, and Christophe) to harmonize with caBIO and caDSR.
+2) Meeting focus will be HL7 Behavioral Framework. John will coordinate to determine whom from caGrid team will represent us at this meeting. Avinash says the goal is to learn, not to protect turf. George will send a required reading list to all attendees. 
+5) Dave will need to model in EA for annotation/registration.

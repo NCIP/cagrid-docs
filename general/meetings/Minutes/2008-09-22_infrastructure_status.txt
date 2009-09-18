@@ -1,0 +1,34 @@
+****************************************************************************
+* Meeting: 	caGrid Core Infrastructure Status
+* Date: 	2008-09-22
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster
+****************************************************************************
+
+Agenda
+------
+1) Index Service 
+2) Contracts
+3) Scope 1.3
+4) CQL 2.0 Technology Preview
+5) Deprecation Policy
+6) QA
+7) Project Plan Timeline
+8) caDSR Status
+
+Notes
+-----
+1) JVM update in QA, Stage tomorrow. Still trying to find remove Java profiler that does not require a server-side agent.
+5) Finalize and present policy itself
+   Set date, send out deprecation plan
+6) Scenarios on Wiki by Fri 10/10
+7) Initial Levels of Effort / Schedule
+8) Scott corresponded with Christophe over implementation. Does not sound like what was agreed upon. 
+
+Action Items
+------------
+5) John with finalize policy and put together slides for WS
+   Scott with let John know when he can have a draft of plan
+6) John will send a note to team with date
+   John will update schedule with what Aynur provided
+7) John will try and update that this week

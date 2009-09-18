@@ -1,0 +1,22 @@
+****************************************************************************
+* Meeting: 	WebSSO Kickoff with shared Ekagra development resource
+* Date: 	2008-07-01
+* Venue:	2115/EJ/5017 & Teleconference
+* Attendees: 	John Eisenschmidt, Santhosh Garmilla, Charles Griffin, 
+		Steve Langella, Kunal Modi, Scott Oster
+****************************************************************************
+
+Agenda
+------
+1) Introductions
+2) Review WebSSO Roadmap Document
+3) Managerial Housekeeping
+
+Notes
+-----
+2) Use Cases need to be written for "Support separate delegation policies".
+
+Action Items
+------------
+2) John will update document, ensure everything has a corresponding gforge RFE, and distribute to group. John will work with Steve and Kunal on Use Cases (see note above).
+3) Scott will add Santhosh to developers list and send information about developer calls.

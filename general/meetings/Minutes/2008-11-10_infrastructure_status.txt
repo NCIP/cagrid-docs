@@ -1,0 +1,20 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2008-11-10
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster
+****************************************************************************
+
+Agenda
+------
+1) caDSR Grid Service
+2) Knowledge Center 
+
+Notes
+-----
+1) No update
+2) Scott thinks we're all on the same page. Need to schedule a call to discuss how road map will be published.
+
+Action Items
+------------
+1) John will ping Steve Aldred for an update

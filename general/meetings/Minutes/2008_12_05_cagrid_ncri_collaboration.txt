@@ -1,0 +1,31 @@
+****************************************************************************
+* Meeting: 	caGrid NCRI Collaboration
+* Date: 	2008-1205
+* Venue:	Teleconference
+* Attendees: 	Alan Hogg, Manav Kher, Joshua Phillips, Max Wilson,
+*               Edward Zukowski
+****************************************************************************
+
+Agenda
+------
+1) ONIX demo
+2) Next steps for interop
+
+Notes
+-----
+ - ONIX portal is finishing first phase. Prototype is available externally.
+ - NCRI has developed a resource catalog model that allows users to find tools,
+   projects, services, etc. The intention is that this model could be used
+   to describe resources that are available in other efforts such as caBIG,
+   and the UK's NHS.
+ - All agree that it would be useful if we could exchange general information
+   about resources. The caGrid Portal team will try to communicate these ideas
+   to other caBIG groups.
+ - The ONIX model will likely need some extensions:
+   - provenance, service stability
+   
+Action Items
+------------
+ - caGrid Portal team will annotate the ONIX model with gaps and suggestions
+   based the caBIG use cases.
+ - caGrid Portal team will describe some discovery use cases. 

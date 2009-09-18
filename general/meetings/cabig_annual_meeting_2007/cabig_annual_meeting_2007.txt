@@ -1,0 +1,36 @@
+This file summarizes the various caGrid activities at the annual meeting.
+
+Workflow Breakout
+
+	Who: Patrick, Ravi, Shannon
+	Draft: No
+	Final: No
+
+Workflow Demo
+
+	Who: Ravi, Shannon
+	Draft: No
+	Final: No
+
+Workflow Poster
+
+	Who: Patrick, Ravi, Shannon
+	Draft: No
+	Final: No
+
+Testing Poster
+
+	Who: Patrick, TerpSys?, SemanticBits?
+	Draft: cagrid_testing_framework.ppt
+	Final: No
+
+caGrid 1.0 - Reference Implications - How we got on the Grid
+
+	Who: Patrick, Scott, Arumani, Rakesh, Tony, Martin, Ted, Kiran, Ram
+	Draft: No
+	Final: No
+
+Part B: Case Study on Grid Enabling Your Silver-Level Compatible System
+
+	Who: Patrick, Shannon, Tahsin, Scott, Mike K
+

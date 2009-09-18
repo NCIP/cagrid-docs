@@ -1,0 +1,33 @@
+****************************************************************************
+* Meeting: 	caGrid Portal Status
+* Date: 	2008-08-20
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Manav Kher, Joshua Phillips
+****************************************************************************
+
+Agenda
+------
+1) October ARCH F2F
+2) Finalize 2.0.3 release
+3) Portal Calendar
+4) Mockups of Service Diagnostic Portlet
+5) QA
+6) caBIO Portlet Meeting Thursday
+
+
+Notes
+-----
+1a) Whom should attend? If there is enough money in travel budget, Manav and Joshua may.
+1b) What to prepare? Agenda still not finalized, so not sure yet. 
+2) Manav added: (1) admin interface to ban/unban services (2) popup on discovery portlet that shows what hosting center a service is hosted from (Juli is concerned now that there are 9 caArray services and growing, RFE 16211 added)
+3) Calendar is not being used. Admin (App Support) needs to update. Discussed at last meeting to either move it off home page and/or try to get regular updates.
+4) Manav completed HTML mockups of proposed Service Diagnostic Portlet (2.0.4). From list of proposed functionality, only addition was to add 
+5) John emailed Ye to discuss a propose regular testing by QA of Portal release candidates. John asked if 2 weeks was often enough or too often, Manav feels once a month is sufficient to get coverage but not overburden. Also need to consider an integration environment for community portlets to test integration into portal. 
+6) Ideal Process: We give our RC to QA, developers give their portlet WAR RC to QA, they deploy into QA for testing. Our QA (Aynur) should test portal, another QA should test the community portlets. For now (since we have no integration environment): deploy portal RC to dev, get WAR from caBIO, we deploy to dev. Work with QA to ensure this is acceptable. 
+
+Action Items
+------------
+2) John to finalize project plan by next meeting based on discussions
+3) Manav will move off home page to news page for 2.0.3. John will check with Craig Fee to see if App Support will update on a regular basis.
+5) John will work with Ye to setup regular testing. John will investigate how we get an integration environment.
+6) Manav will update dev, we will review process with caBIO on our call. 

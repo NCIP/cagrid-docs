@@ -1,0 +1,24 @@
+****************************************************************************
+* Meeting: 	caGrid Workflow Status
+* Date: 	2008-08-14
+* Venue:	Teleconference
+* Attendees: 	Larry Brem, John Eisenschmidt, Ravi Madduri, 
+****************************************************************************
+
+Agenda
+------
+1) NCI/NCRI Meeting
+2) Globus 
+3) Taverna Development
+4) Taverna Cookbook
+
+Notes
+-----
+1) Ravi will attend, ARCH will pay. 
+2) Meeting scheduled for next Wednesday
+3) Design Doc on hold. Did not want to use Taverna provided remote execution service because of security implications. Easier for Taverna content to invoke as another app as opposed to a service. However, proof of concept shows errors b/c of version mismatch of JDOM jar files. WSRF code committed on Taverna side, will be tested continuously as part of their build process. Official release of Taverna 2 is last week of September, and caGrid invocation components will be included. Tech preview of caGrid WF Service in October. Wei's code works standalone with developer preview release.
+
+Action Items
+------------
+3) Ravi needs to verify approach before he finalizes design doc. John will draft a project plan and circulate.
+4) Ravi will review and send comments to Bronwyn. 

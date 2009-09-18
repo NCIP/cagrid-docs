@@ -1,0 +1,20 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2008-07-03
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Bronwyn Gagne, Ravi Madduri
+****************************************************************************
+
+Agenda
+------
+1) Taverna
+2) Cookbook
+
+Notes
+-----
+1) Targeting release of Taverna 2 for end of July, but test cases are still failing. Working on resources pattern to get Taverna to work. Introduce fixed sending of EPR headers in 1.2. Should not use resource as argument to the method, but should be sent though the soap header. Also did a paper on Taverna + GEWorkbench in ICWS, asked for it to be published in a journal. ICR Workflow Work Group owes Ravi a workflow in 2-3 weeks. Likewise, Tony and Ashish owe an Imaging Workflow (no date committed). Would like something to show at the NCRI meeting in September.
+2) Follow up on email sent to Bronwyn: at Avinash's request, create a 'cookbook' for caBIG(TM) participants who have Terragrid allocations to use the gRAVI plugin to Introduce.
+
+Action Items
+------------
+2) Bronwyn will send any questions she has asynchronously and provide a status update next meeting.

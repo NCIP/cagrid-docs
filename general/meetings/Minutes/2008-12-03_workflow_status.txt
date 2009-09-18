@@ -1,0 +1,24 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2008-12-03
+* Venue:	Teleconference
+* Attendees: 	Larry Brem, Bronwyn Gagne, John Eisenschmidt, Ravi Madduri
+****************************************************************************
+
+Agenda
+------
+1) Development Status
+2) Deprecation Plan
+3) Cookbook
+4) Project Plan
+
+Notes
+-----
+1) Workflow code committed to cvs last week. Currently working to integrate with Taverna 2. Should make the 12/9 code freeze. Taverna 2 plans to code freeze this week and release on 12/15.
+2) Updated last week.
+3) No Update
+
+Action Items
+------------
+3) Ravi will review and send comments to Bronwyn
+4) John will update schedule based on updates received during call

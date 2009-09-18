@@ -1,0 +1,18 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2009-06-15
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) Scope: caGrid 1.4/2.0 <?>
+
+Notes
+-----
+1) We will begin to scope both 1.4 and 2.0. 1.4 will contain new features 
+
+Action Items
+------------
+1) 

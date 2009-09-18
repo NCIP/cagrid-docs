@@ -1,0 +1,23 @@
+****************************************************************************
+* Meeting: 	caGrid Workflow Status
+* Date: 	2008-06-19
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Ravi Madduri, Bronwyn Gagne, Larry Brem
+****************************************************************************
+
+Agenda
+------
+1) Documentation
+2) Annual Meeting
+3) Taverna
+
+Notes
+-----
+1) Reviewed history of workflow and timeline for Taverna 2/caGrid release with Bronwyn.
+2) Poster done. Video recorded. Hack-a-thon session not done. Breakout session slides are up (waiting for feedback from Elaine). 
+3) Finish semantic discovery plugin for Taverna -- search box extended to do more caBIG-centric queries. Still upgrading Workflow service to Introduce 1.2 (based on pre-1.0 Introduce). Targeting next week for completion. Still no Taverna 2 upgrade guide. 
+
+Action Items
+------------
+1) Ravi will send Bronwyn the link to the Workflow demo.
+2) John will send a schedule where people should be at what time. 

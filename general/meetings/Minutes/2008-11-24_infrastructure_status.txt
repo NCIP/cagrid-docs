@@ -1,0 +1,29 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2008-11-24
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster
+****************************************************************************
+
+Agenda
+------
+1) SDK 4.1 
+2) caDSR Grid Service
+3) Deprecation Plan
+4) Installer
+5) Gforge RFE Tracker
+6) Model Registration
+
+
+Notes
+-----
+1) Blocking Bug in SDK 4.1 (https://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=17856&group_id=148&atid=730). Satish needs to investigate and get back to Dave, he's on vacation until 12/1. Also an issue with SDK returning subclasses where it has not in the past. We can sub-optimally deal with by filtering results returned through the data services (possibly performance problem). 
+2) Code / Design Document?
+3) Deprecation Plan - originally due this week, no progress thus far.
+5) John delivered operationalized fix to Systems on Friday, 11/21
+
+Action Items
+------------
+2) John will email Denise to get App Service API / Domain Models for 4.0.0.0
+Timeline loading GME Namespaces into caDSR (4.0.0.1 release mid-November?)
+4) John will check with CVRG and Onix to make sure they are alright with our decision not to support server service deployment in the 1.3 installer. 

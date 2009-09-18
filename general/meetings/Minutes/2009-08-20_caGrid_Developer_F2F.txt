@@ -1,0 +1,90 @@
+****************************************************************************
+* Meeting: 	caGrid Developer F2F
+* Date: 	2009-08-20 9:30am - 4:45pm
+* Venue:	OSU BRT
+* Attendees: 	Scott, Steve, Shannon, David, Justin, Bill, Joe, Joshua, 
+*		Manav, Ravi, Dinah, Wei, Santhosh, Larry, John
+****************************************************************************
+
+Agenda: https://ncisvn.nci.nih.gov/WebSVN/filedetails.php?repname=cagrid&path=%2Ftrunk%2Fcagrid%2FMeetings%2F200908_caGrid_Developer_F2F%2FAgenda.docx
+
+F2F Artifacts: https://ncisvn.nci.nih.gov/WebSVN/listing.php?repname=cagrid&path=%2Ftrunk%2Fcagrid%2FMeetings%2F200908_caGrid_Developer_F2F%2F#path_trunk_cagrid_Meetings_200908_caGrid_Developer_F2F_
+
+Notes
+-----
+1) [Ravi] We'd like to drop support for BPEL (move to workflow discussion)
+2) caGrid 1.3 Post Mortem:
+	Went Well
+	* [Scott] More formal interaction with QA, more thorough testing of Installer and graphical components	
+	* [Joshua] Deprecation plan was helpful to NCRI
+	* [John] Move to Confluence went well
+	* [Joe] since moving to subversion and Hudson, we have point-and-click builds now which automates a lot
+	* [David] Testing much improved across the board. Very few minor bugs.
+	* [Manav] KC is a positive since they ramped up. With Portal out of mainline caGrid release, IVY has made integration easier.
+	* [Wei] Invocation of caGrid Secure Services supported by most recent Taverna Workbench beta, but caGrid 1.3 Taverna Workflow Service does not support CDS
+	* [Shannon] Quality was much improved this time around, no major issues. 
+	* [John] Full redeployment went well, including problem with Dorian update
+
+	Could Improve
+	* [Scott] Better communication of scope/schedule. Set scope for next release between code complete and delivery of new release.
+	* [Ravi] 1.3.0.1 was a surprise. [Shannon] need rules for release numbering [Scott]'s rules: 
+		major (1.x -> 2.x) does not guarantee backwards compatible. 
+		1.1 -> 1.2 is backwards compatible.  
+		1.2.0.0 -> 1.2.0.1 is backwards and forward compatible. 
+	* [Justin] KC would like to be in the loop earlier, help disseminate information sooner	
+	* [Ravi] better internal communication
+	* [David] Documentation: Users who want to implement very specific use cases that we end up reacting to. Can we anticipate?
+	* [Manav] Not using central build and testing, should move over. Would be nice to add an integration grid (shadow copy of prod). 
+	* [Wei] Eliminate 2 BPELs, documenting to 2 wikis
+	* [John] Where Taverna has inputs to Ravi's development, We can do a better job setting expectations and communicating schedules
+	* [Shannon] Could have planned better for the Installer and prioritized. Needs to be maintained/updated/improved. Usability could be improved across the board.
+	* [Steve] Agrees on installer. More communication between Core/Portal/Workflow to take showcase each other's new functionality. Move to KC forums was a huge mistake, users have given their feedback: email notifications are not threaded and no link back to KC forum. Steve has received 10 emails that they won't participate because of forums. We have lost a big part of our user community. [Scott] bigger issue is that it was top-down mandated on the community without any input. 
+	* [John] Outage window too long
+
+	Feedback On:
+	* [Larry] Documentation being wiki-only: [Scott] went well, [Ravi] no user complaints so far
+	* [Larry] Release Messaging: 1-2 weeks after 1.2, bug found in caArray and folks were concerned if that was related. Suggest a meeting with Project Managers after that release. Suggest cross-XC call, CATs. 
+	* [Santhosh] how is WebSSO being used, what are the use cases, what are their requirements, etc?
+	* [Steve] KC Tech stack referendum. For bugs: gforge? jira? bugzilla?
+
+3) Scope for Future Releases
+ a) caGrid 1.4
+    * Standardized CRUD for data services would be good policy for CATs to make.
+    * Display Service URLs for Target Grids: could be an ant target, could be displayable in Introduce and GAARDS-UI. Also [Steve] thinks that Introduce and GAARDS-UI should allow changing target grid inside. 
+
+ b) caGrid 2.0
+
+4) Workflow
+  * [Ravi] would like to release Workflow client-side components on their own schedule
+  * Can we release/make product announcements for Taverna?
+
+5) Portal
+  * Demo of Portal 3.0 [Steve & Ravi] think this would work well for BIRN and will speak to them
+  * Grouper groups might map to catalogue entries. [Steve] added a feature request in gforge
+  * May work for CVRG (use case: communities of people), [Steve] will follow up since they have a developer to allocate
+  * Infrastructure Needs
+     Common Service Interfaces
+	Service Metadata Update
+	Access Control Management
+	User Attribute Management
+     New Features
+	Dorian Account Management
+	Person Disambiguation (in metadata)
+
+6) Subversion
+  * Suggested top-level Documentation, Core, Portal, Workflow, Incubator
+  * [Joshua] prefers to keep documentation with code, but most folks prefer documentation separate.
+
+7) Taverna Security
+
+Parking Lot
+-----------
+1) [Ravi] CQL2 is a surprise to me. 
+2) BDA - will discuss during svn refactor
+3) Assertion Repository
+
+Action Items
+------------
+4) [Larry] What is the future of Active BPEL? -> Avinash
+5) [Larry] Elements in Enumerated Value Domains not modeled correctly in caDSR, doesn't map to CDE for ICD9 code -> VCDE
+6) Scott will create proposal and present at the next developer call

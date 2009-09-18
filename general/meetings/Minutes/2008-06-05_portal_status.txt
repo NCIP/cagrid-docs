@@ -1,0 +1,29 @@
+****************************************************************************
+* Meeting: 	caGrid Portal Status
+* Date: 	2008-06-05
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Joshua Phillips
+****************************************************************************
+
+Agenda
+------1) Portal Iteration Status  -Development  -QA  -Systems  -caBIG Tools Page  -New Logo2) Onix Collaboration Friday AM - does John need to setup a Centra?3) caBIG Portal Exploration (David Wu)
+4) Annual Meeting
+5) Documentation
+
+Notes
+-----
+Development is progressing well (as expected)
+QA done by Ye Wu (Aynur not available). Deployment testing, not regression yet. Hopefully test suite by tomorrow. Hand off to systems next week. 
+Systems -> stage Monday. 
+
+Video for Annual Mtg - walk through (15 minutes)
+Joshua at SemanticBits office in Virginia on 6/16, record portal demo 6/17
+Content in wiki for hackathon next week
+
+Action Items
+------------
+John will email Jenny to setup video recording
+Joshua will follow up on new logo with email
+John will setup a Centra for ONIX demo
+John will send background for Friday Portal Meeting to Joshua and Scott
+John will follow up with Carolyn since she was unable to attend meeting

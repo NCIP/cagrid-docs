@@ -1,0 +1,34 @@
+****************************************************************************
+* Meeting: 	caCORE SDK / caGrid Discussion
+* Date: 	2009-09-15
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, David Ervin, Scott Oster, Satish Patel
+****************************************************************************
+
+Agenda
+------
+1) status of shared CQL query processor
+2) RFE 20221 status of joint testing
+3) RFE 20220 proxy serialization
+4) RFE 20217 XMI reader
+5) SDK timelines/versions supported caGrid 1.4
+6) table structure for inheritance
+7) exception propagation best practices
+8) (if time) planning for caGrid 2.0
+   - potential for CXF to host both appservice and grid services
+   - serialization technologies (castor vs JAXB, XMLBeans, Aegis, etc)
+
+Notes
+-----
+SDK Developer Priority: abstract datatypes (no timeline, will know more in a month or two)
+SDK 4.2 does not work with caGrid 1.3
+ -BDA certified but does not work out-of-box with caGrid 1.3
+ -feature-wise same, but some bug fixes
+[Satish sent] http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=16327&group_id=148&atid=730
+
+WS-Enum with SDK
+
+Action Items
+------------
+1) Dave will investigate effort to move to common CQL Projects (dependencies)
+2) John will schedule a follow-up meeting with Satish, Steve, and Scott to discuss further use of grid security within the SDK

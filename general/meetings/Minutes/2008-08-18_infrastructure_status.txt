@@ -1,0 +1,25 @@
+****************************************************************************
+* Meeting: 	caGrid Core Infrastructure Status
+* Date: 	2008-08-18
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster
+****************************************************************************
+
+Agenda
+------
+1) caGrid 1.2 and CBIIT Future Tech Stack
+2) Deprecation Policy
+3) Project Plan
+4) UGM
+
+Notes
+-----
+1) Statement of compatibility of caGrid 1.2 against future tech stack. Work at that point will be validation.  
+4) Steve will present Institutional IdPs
+
+Action Items
+------------
+1) John will add wiki page and send request to Knowledge Center.
+2) John still needs to draft and send to Scott for review.
+3) John will review, update, and attend developer call to discuss how to track and update on Thursday.
+4) John will send note to users list.

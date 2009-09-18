@@ -1,0 +1,32 @@
+****************************************************************************
+* Meeting: 	caGrid Portal Status Meeting
+* Date: 	2008-06-19
+* Venue:	Teleconference
+* Attendees: 	1:00pm John Eisenschmidt, Joshua Phillips
+*               1:30pm John Eisenschmidt, Carolyn Klinger
+*               3:00pm John Eisenschmidt, Manav Kher, Joshua Phillips, Wei Lu, Chet Bochan, Larry Behm
+*               3:15pm John Eisenschmidt, Manav Kher, Joshua Phillips, Larry Brem
+****************************************************************************
+
+Agenda
+------
+1) Documentation for 2.02 Release
+2) Status of 2.02 upgrade
+3) Release Notes for 2.02
+4) Annual Meeting
+5) NCRI - reschedule July Meeting
+
+Notes
+-----
+1) Carolyn has updated all screen caps, documented EVS search feature. Not done: update query section (largest), but she thinks she has everything she needs. Also section on caBIG Tools. Have not received any other documents (Admin guide, Install guide). Track changes was not on. Joshua wants to Carolyn to update Portal design document?
+2) QA did not give them the go-ahead until Tuesday. Today's 2.02 deployment was aborted b/c the upgrade script took much longer than Stage. Manav modified the upgrade script to use a second db, which allows the Portal to stay up while the upgrade runs, then there's a 10 minute cut over and the old db can be destroyed. 
+3) Done
+5) Reschedule for August
+
+Action Items
+------------
+1) Carolyn should have user guide done by end of this week (Sunday). 
+   Joshua and Manav owe Carolyn their revisions to Admin and Install guides by COB Friday 6/20. 
+2) Wei will follow up with the DBAs and Chet will plan to redeploy tonight. Chet will ask App Support to send a note out before and after the outage.
+3) Manav will send link to John and hide the 2.02 release in gforge
+5) John will let Alan know that we'll reconvene in August.

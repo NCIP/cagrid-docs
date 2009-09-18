@@ -1,0 +1,48 @@
+****************************************************************************
+* Meeting: 	Bi-weekly PM/TPM Status Meeting
+* Date: 	2008-11-03
+* Venue:	Teleconference
+* Attendees: 	Larry Brem, John Eisenschmidt
+****************************************************************************
+
+Agenda
+------
+1) Portal
+  a) Portal Audience and Use Cases
+  b) contract
+  c) 2.2 scope (from our perspective)
+  d) Usability Study
+2) F2F Meeting (any action items)
+3) Operations (App Support, Systems) / Next Steps
+4) Index Service and ISI work (Globus as well)
+5) caGrid Core and directorship
+6) Knowledge Center (any questions?)
+
+Notes
+-----
+1) Larry has drafted use case model for FY2009 scope (contract). John's thoughts for scope of 2.2:
+   1) Basic UI Cleanup (see attached)
+      * Reposition Map
+      * No scroll bars on homepage (if possible)
+      * Cleanup "Contact Us", "Accessibility", and "Support"
+      * Append "Portlet" to every portlet's name (Discovery becomes Discovery Portlet)
+      * Change service list view in Discovery Portlet to include Hosting Center, maybe affect sort order from column names
+      * Clean up the registration portlet, instructions are too long (nobody will read them)
+   2) Performance
+      * Google Map load speed (async? cache?)
+      * Upgrade to latest Liferay (supports remote portlets, JSR286), especially before we integrate WebSSO
+      * Minimize noise in logs (currently many "known exceptions")
+      * JVM Parameters in delivered JBoss are not optimum (only use -server and -Xmx)
+      * 64-bit JVM, if possible (tech stack deviation)
+   3) Security
+      * WebSSO integration 
+   4) High Availability
+      * Explore HA deployment of portal (may not be complete in 2.1, will require some code/documentation changes)
+      ** mySQL Replication:  http://dev.mysql.com/doc/refman/5.0/en/replication.html
+      ** Liferay HA: http://www.liferay.com/web/guest/community/wiki/-/wiki/Main/High+Availability+Guide
+2) Keep .NET Open
+
+Action Items
+------------
+3) John will setup a meeting between Larry, Craig, and Gavin
+4) Larry will schedule a meeting with Globus

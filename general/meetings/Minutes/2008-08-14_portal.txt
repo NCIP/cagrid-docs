@@ -1,0 +1,36 @@
+****************************************************************************
+* Meeting: 	caGrid Portal Status
+* Date: 	2008-08-14
+* Venue:	Teleconference
+* Attendees: 	Larry Brem, Ram Chilukuri, John Eisenschmidt, Manav Kher, 
+*		Joshua Phillips
+****************************************************************************
+
+Agenda
+------
+1) Meeting
+2) Community Portlets
+3) Improve Performance of Homepage Load
+   a) Google Map
+   b) Calendar Portlet
+4) Status Reports
+5) Project Plans
+
+Notes
+-----
+1) Current: Every other Thursday 1:00pm-2:00pm. Desired: Weekly from 10:00am-11:00am 
+2) Unsure when caBIO plans to release. 
+	Manav: should we post a generic portlet if caBIO not ready? 
+	John: No, if release is focused on community portlets, we should release around that. If they aren't ready, and we want something for ARCH WS F2F, we should consider something else (like a first pass at service diagnostic portlet). If 15824 (fix for Portal banning bugfix) is an issue, we can point release 2.0.2.2 without release overhead. Tabled until next meeting when we find out when caBIO plans release.
+3a) Google map loaded synchronously, Joshua and Manav think code should be changed to load async. Joshua says fix will not take a long time, but not sure how long. Manav says testing affect to browsers will take longest. 
+3b) Calendar Portlet not used. John thinks it should be removed (hidden?) or moved off home tab until more people can use it. 
+4) Financial information (dollars, not burn down rate) should be removed from future status reports.
+5) Scope for 2.0.3 will be determined at next meeting. 2.0.4 will require reexamination. 
+
+Action Items
+------------
+1) John will send updated appointment
+2) Manav will check with Jim Sun on when caBIO thinks their portlet will be ready, and if it will query the grid service (strongly preferred) or the REST api? If Jim does not know, John will follow up with Juli Klem.
+3a) Tabled until next meeting
+3b) Calendar should be moved to News, Community Portets, or removed in next release.
+5) John will work with QA to try and setup regular, continuous testing of release candidates. 

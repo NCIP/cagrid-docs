@@ -1,0 +1,21 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2009-03-16
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) Identifiers
+2) Documentation
+3) Model Annotation
+
+Notes
+-----
+1) caGrid Team is ready to meet with stakeholders and review use cases and requirements.
+2) Coming along. To-do: Doc Landing Page. What pages need to be PDF-able? (Scott thinks Install Guide). 
+3) In process.
+
+Action Items
+------------

@@ -1,0 +1,25 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2009-09-14
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) October F2F Meeting
+2) 1.4 Scope/Schedule
+3) Identifiers
+3) Vision Document for caGrid 2.0
+
+Notes
+-----
+1) Scott needs to talk to the dev team and determine how many topics we need to discuss, who is planning to attend. He will at the Thu Dev call. 
+2) CQL 2, Identifiers, Workflow Changes (Active BPEL), WebSSO, Tech Stack updates 
+3) Scott was not on the call with Calixto, Denis, and Raghu, but they sound like they're trying to do something in the very near term. 
+
+Action Items
+------------
+1) John will let Natasha know that we need another week to lock down topics and how much time we need. 
+2) John will schedule a meeting with Santhosh either 9/25 or 9/28 to decide on next WebSSO. John needs to work with Larry to get an answer on BPEL. 
+3) Scott should have a first draft in the next 2-3 weeks. 

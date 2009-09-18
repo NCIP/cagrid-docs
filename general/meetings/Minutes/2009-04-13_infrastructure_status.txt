@@ -1,0 +1,21 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2009-04-13
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) Dev F2F
+2) java.lang.Calendar
+3) Model Registration
+
+Notes
+-----
+1) Scott will speak to the dev team this week
+2) https://gforge.nci.nih.gov/frs/download.php/1526/cadsr_datatypes_white_paper.doc
+3) In process
+
+Action Items
+------------

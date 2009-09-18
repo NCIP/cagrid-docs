@@ -1,0 +1,26 @@
+****************************************************************************
+* Meeting: 	caGrid Portal Status
+* Date: 	2008-09-10
+* Venue:	Teleconference
+* Attendees: 	Larry Brem, John Eisenschmidt, Manav Kher, Joshua Phillips
+****************************************************************************
+
+Agenda
+------
+1) 2.0.2.2 Bug fix release
+2) 2.0.3 Status (henceforth 2.1)
+3) Webstart Version of GAARDS and Introduce?
+
+Notes
+-----
+1)	Passed CCB yesterday. Deployment request sent yesterday. 
+2) 	Development: Code freeze week of 9/15. We will give exact date at next status meeting when we walk through new functionality on Centra.
+	Documentation: Manav to work with Carolyn week of 9/22 to get updated.
+	QA: Aynur out week of 22nd, QA to start week of 9/29 (Aynur testing SDK that week, but fully available week of 10/6 to test). Manav will work with Aynur week of 9/29 to review what is tested and ensure coverage.
+	Systems: Target deployment week of 10/13 if QA goes as planned. Live by 10/17 so we have a full week of uptime prior to ARCH/VCDE F2F
+3) Should be able to expose GAARDS-UI and Introduce through Portal as Java webstart apps
+
+Action Items
+------------
+2) John will send our updated schedule to caBIO Team
+3) John will mention to Scott in his Monday call. Joshua and Manav will discuss on next Thursday's caGrid Developer call.

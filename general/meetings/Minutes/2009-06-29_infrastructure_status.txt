@@ -1,0 +1,29 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2009-06-29
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) Scope: caGrid 1.4/2.0
+2) Identifiers
+3) CQL 2.0
+4) Annual Meeting
+5) Second Charlie Meade Meeting in 2 weeks
+6) 1.3.0.1 Release
+7) Novartis Training
+
+Notes
+-----
+1) Scott started, will send first draft. 
+2) Meeting July 10th to review SDK Prototype. 
+3) Language in good shape. Plans included in rough draft scope document. Design issues: how infrastructure needs to change for SDK 4.1/1.3 services are upgraded in 1.4 to support CQL1 or CQL 2 or CQL 1 and 2. Also, should FQP continue to work with CQL or also with CQL 2? How do we handle that?
+4) No issues, still need to put presentation together. 
+6) Not going to include Workflow, need to update properties files on FTP site and can release. 
+7) Latter half of the week went well. 
+
+Action Items
+------------
+1) 

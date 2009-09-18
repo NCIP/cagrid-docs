@@ -1,0 +1,37 @@
+****************************************************************************
+* Meeting: 	caGrid Portal Status
+* Date: 	2008-09-24
+* Venue:	Teleconference
+* Attendees: 	Larry Brem, John Eisenschmidt, Carolyn Klinger, 
+*		Manav Kher, Joshua Phillips
+****************************************************************************
+
+Agenda
+------
+1) Portal 2.1 Development Status
+2) Portal 2.1 Documentation Status
+3) Webstart: GAARDS-UI and Introduce Toolkit
+4) NCRI
+
+Notes
+-----
+1) Some questions about the layout in RC2 (location of the Calendar, size of grid status and news portlets, removal of ratings portlet)
+2) Documentation updated on Wiki (User, Admin, Upgrade, Community Portlets). Design Doc still needs to be updated.
+4) Need to identify places where we can get traction with them and take the initiative/move forward.
+
+Action Items
+------------
+1) John will request DNS entry for dev portal
+   Manav will adjust the layouts 
+   Joshua will go back and verify the spreadsheet/participant fixes that were done in the back end and make sure they jive with the updated spreadsheet. 
+2) Manav will finish his updates and send to Carolyn
+3) John will bring up idea of webstart version on GAARDS and Introduce to Scott before next Developer call.
+4) John will send Joshua his calendar. Joshua will pick convenient time and we'll meet to discuss.
+
+Dates
+-----
+Documentation	22-Sep to 29-Sep
+QA		29-Sep to 3-Oct (Aynur 50% Portal, 50% caGrid)
+QA		6-Oct to 10-Oct (Aynur 100% Portal)
+Systems		Deployment Request to Stage 13-Oct
+Systems		in Production by 17-Oct

@@ -1,0 +1,24 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2009-02-02
+* Venue:	Teleconference
+* Attendees: 	Aynur Abdurazik, John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) caGrid 1.3 QA Status
+2) Documentation
+3) License 
+4) Deprecation Plan
+5) Developer F2F
+
+Notes
+-----
+1) Aynur has completed the unsecured testing with RC2, found and communicated some issues to Scott (which he says are fixed in RC3). Aynur will switch to using RC3 once Scott makes it available before she begins testing secure containers. 
+2) Coming along (slow but sure).
+3) All set and checked in.
+
+Action Items
+------------
+1) Scott will create RC3 tag and post to developers list.

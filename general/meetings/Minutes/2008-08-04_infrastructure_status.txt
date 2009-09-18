@@ -1,0 +1,26 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2008-08-04
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Ravi Madduri, Scott Oster
+****************************************************************************
+
+Agenda
+------
+1) CQL 2
+2) Index Service
+3) caGrid 1.3 Project Plan
+
+Notes
+-----
+1) John working to reschedule kickoff / involve BAH Workspace leads. John will reply to spurrious email from Gunther.
+2) Running out of file descriptors on busy Globus Services
+3a) caDSR Grid Service - need timeline, affects Introduce development
+3b) Grid-based Policy Enforcement
+
+Action Items
+------------
+2a) John will talk to Wei at his 1:00pm to increase the number of file descriptors 
+2b) Investigate when we think we'll outgrow current Globus index service
+2c) Based on when we think we'll hit a problem, work with Globus team to see we think we'll run out of memory
+3b) John will start discussions of what policy is, and how to enforce it.

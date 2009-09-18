@@ -1,0 +1,26 @@
+****************************************************************************
+* Meeting: 	caGrid Identifiers
+* Date: 	2009-04-30
+* Venue:	CBIIT 2115/5001 & Teleconference
+* Attendees: 	John Eisenschmidt, Ian Fore, Stephen Goldstein, John Koisch, 
+*		Juli Klemm, Calixto Melean, Scott Oster, Libby Prince,  Kevin Puscas		
+****************************************************************************
+
+Agenda
+------
+1) Review requirements and use cases to-date
+2) Discuss new requirements and use cases
+
+Notes
+-----
+1a) Regeneration of GIDs: (Juli) caBIO's bigID always issues new IDs when "key" fields change, even if there is just a typo (Scott) Different communities in caBIG(r) will have different needs 
+1b) (Ian & Scott) multiple ids on one object is ok, multiple objects for one id is NOT ok (but multiple metadata objects is fine: such as alternate sources, etc).
+1c) (John K) No mention of Correlation or Co-identification (Scott) If you use identifiers co-located in your application (naming authority == data provider), not a big deal. If you use central identifiers, more difficult.
+1d) (John K) Identifiers should take two additional inputs: OIDs and IIs (ISO datatypes)
+1e) (John K) It may be valid for us to produce a series of frameworks, not just one. (Scott) generally agreed provided they were unique and resolvable across the grid; the existence of an ID framework doesn't mean all applications doing "identification" need to use it, but ideally any application identifying "data" across the grid should.
+
+Action Items
+------------
+1) Scott and Calixto should enumerate the possible deployment scenarios for follow up meeting with larger group
+2) Specimen Sample Use Case to John E. once finalized (Libby)
+3) Review of use case to propose where the Identifiers Framework would fit, and what implementation or processes would be required of the adopting application (John E., Scott, Calixto once we receive #1)

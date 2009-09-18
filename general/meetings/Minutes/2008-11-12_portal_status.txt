@@ -1,0 +1,19 @@
+****************************************************************************
+* Meeting: 	caGrid Portal Status
+* Date: 	2008-11-12
+* Venue:	Teleconference
+* Attendees: 	Aynur Abdurazik, John Eisenschmidt, Manav Kher, 
+****************************************************************************
+
+Agenda
+------
+1) 2.1 LOEs
+2) Continuous QA
+
+Notes
+-----
+2) Aynur sent diagram and explained the process. Question about 2.1.1 point release that has additional functionality, no new use cases -> go through current regression. RC delivered to QA at the end of the month. 
+
+Action Items
+------------
+1) Manav will send to John

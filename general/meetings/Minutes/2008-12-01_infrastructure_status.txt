@@ -1,0 +1,36 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2008-12-01
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster
+****************************************************************************
+
+Agenda
+------
+1) SDK 4.1 
+2) caDSR Grid Service
+3) Deprecation Plan
+4) Installer
+5) Gforge RFE Tracker
+6) Model Registration
+7) CQL 2.0
+8) Introduce Upgrades
+9) GME Status
+10) Project Status and Schedule
+
+Notes
+-----
+1) Satish was on vacation, back today. David found another bug that he reported last week. 
+2) Received from Larry Hebel. Scott has started investigating and has shelled out the new service. Old service hacked against new caDSR seems to work. Still waiting for official external/official URL and timeline/dates.
+3) Draft posted to wiki (http://www.cagrid.org/wiki/CaGrid:1.3:DeprecationPlan).
+4) John sent a note to CVRG. Joshua is working with ONIX. Shannon has started executing on that plan. 
+5) Still waiting for Bob Wysong to process the fix.
+6) Still on John's plate (no progress).
+7) David sent a note last week to get status. Persistent asked for a meeting this Friday. David will schedule and include John, but we are planning to end preview (since it is now almost 6 weeks late).
+8) Shannon has finished the updaters for 1.1->1.3 and 1.2->1.3.
+9) Scott working on caDSR grid service first. No authorization yet to check updates/deletes -- implementation will depend on time/schedule. 
+
+Action Items
+------------
+3) John and Scott will review.
+10) John will join dev call on Thursday to update/review.

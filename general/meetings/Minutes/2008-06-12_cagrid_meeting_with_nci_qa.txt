@@ -1,0 +1,23 @@
+****************************************************************************
+* Meeting: 	caGrid meeting with NCI QA: Next Steps
+* Date: 	2008-06-12
+* Venue:	Teleconference
+* Attendees: 	Aynur Abdurazik, John Eisenschmidt, Scott Oster, Ye Wu, 
+****************************************************************************
+
+Agenda
+------
+1) Discuss next steps for NCI QA to test caGrid
+
+Notes
+-----
+1) Follow up from Scott's email with generic scenarios:
+   http://www.cagrid.org/wiki/CaGrid:TestingScenarios
+* How do we go from conceptual scenarios into actual test cases?
+* Ye: Additional support will be needed from caGrid once testing begins
+
+Action Items
+------------
+1a) In 2 weeks, Scott provide priority list of what we'd like seen done (must -> nice to have). 
+1b) Two weeks after that, QA will provide detailed test plan.
+1c) John will schedule a follow up meeting when above is completed.

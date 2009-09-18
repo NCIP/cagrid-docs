@@ -1,0 +1,25 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2009-05-04
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) Index Service
+2) ARCH/VCDE F2F
+3) Novartis Training
+4) Identifiers
+5) Globus Futures Meeting this afternoon
+
+Notes
+-----
+1) Index hung around 10:59am, first since caGrid 1.3. No apparent issue in logs. Will reboot and see if the issue recurs.
+2) Scott asked about F2F presenters. The only session involving tools is facilitated by Larry. John will nudge Larry to see what's up.
+3) Tentative June 8-12, Justin and Shannon as trainers. John sent draft outline to Scott for review.
+4) First meeting last week went well. John will schedule the next meeting. May need to review use cases in detail and enumerate the gap to our adopters (what Identifiers IS and IS NOT).
+5) caGrid Dev and KC continue to meet with Globus to discuss its future. 
+
+Action Items
+------------

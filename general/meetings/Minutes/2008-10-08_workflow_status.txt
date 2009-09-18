@@ -1,0 +1,34 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2008-10-08
+* Venue:	Teleconference
+* Attendees: 	Larry Brem, Bronwyn Gagne, John Eisenschmidt, Ravi Madduri
+****************************************************************************
+
+Agenda
+------
+1) Teragrid Cookbook Documentation Status
+2) Taverna Status
+  a) caGrid Workflow
+  b) Documentation
+  c) Collaboration with Carole (et al.)
+3) ARCH/VCDE F2F Meeting
+
+Notes
+-----
+2) 
+  a1) Integrate our test cases into Taverna's -- They use Hudson, had some issues checking out caGrid codebase using Hudson. 
+  a2) Paper on Workflow (compared ICR to BPEL) accepted to ICWS Conference in Beijing. Wei has been in China for that presentation.
+  a3) Taverna 2.0 still not out, still release candidates. Security APIs still in flux to make it more pluggable. No release date finalized. Ravi feels like it might be six months. Wei works on caGrid Plugin for Taverna. 
+  a4) Workflow Service (Dina) - still working on Ivy integration, waiting to commit code and test cases all at once. 
+  b1) Design Document - updated
+  b2) Install (Workflow Service will go into caGrid Install Guide, Taverna Client Install will stand alone) and User Guide (Taverna Authoring and Execution). 
+3) Ravi has a breakout session with Kiran and a panel discussion on Taverna and gRavi.
+
+Action Items
+------------
+1) Ravi will review final comments and make sure it's updated
+2)
+  a3) Larry needs to contact Carole and get a commitment on a release date for Taverna 2.0
+  b1) Ravi will check in so Larry can review
+  b2) Waiting on decision of Taverna 1.7 or 2.0

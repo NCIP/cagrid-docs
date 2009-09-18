@@ -1,0 +1,30 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2008-12-18
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster
+****************************************************************************
+
+Agenda
+------
+1) Code Freeze
+2) Post-Code Freeze
+2) Vacation Schedule
+
+Notes
+-----
+1) 	Index Service - still has blocking bugs (null points in Xindice), timing issue (which, when fixed, could affect performance). Not ready to roll out, may not be until January. Needs to be done pre-codefreeze. 
+	SDK 4.1 Issues - still no release, can't stabilize until then.
+	Service updates not done yet
+	Issues with Taverna 2 Plugin since T2 Release
+	Shannon working on Installer still
+	caDSR Grid Service (MMS) - pretty much done, no system test done yet. Not comprehensively tested yet but first cut is done. Need to move Introduce Extensions to use this service not existing (3-5 days remaining). 
+	GME semi-stable, authorization still not done (5 days remain). 
+2) Partner with KC to test deployment of 1.3 and work out deployment instructions. Start planning early January. 
+3) Scott out of the office for two weeks (until Jan 5th). 
+
+Action Items
+------------
+1) 	John will follow up with Satish on SDK 4.1.1 release date
+	Policy for when XSDs needs to be in GME (Gold Group? Mike and Brian?)
+	John will update ARC, send to Scott to review, then send to Systems. Ask if they can template the new VMs, clone 12x, setup DNS entries 

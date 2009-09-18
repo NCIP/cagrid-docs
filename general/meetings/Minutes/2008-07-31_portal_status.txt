@@ -1,0 +1,29 @@
+****************************************************************************
+* Meeting: 	caGrid Portal Status
+* Date: 	2008-07-31
+* Venue:	Teleconference
+* Attendees: 	Larry Brem, Ram Chilukuri, John Eisenschmidt, Manav Kher, 
+*		Joshua Phillips 
+****************************************************************************
+
+Agenda
+------
+1) caBIO Portlet
+2) Open Portal Bugs
+3) Meeting with Steve re:caGrid Security in Portal
+4) NCRI Meeting
+5) Portal 2.1 Scope
+
+Notes
+-----
+1) Ajax-based approach may not be the best way to move forward. 
+3) Five functions: request user proxy, check grouper membership, administer a grouper, request host certificates, and integrate with Credential Delegation Service (CDS)
+4) NCRI meeting tomorrow. Is it worthwhile to continue moving forward? NCRI took different approach to their portal: categorized by biological concepts which we don't currently support (but could). Perhaps backbone models as a starting point?
+5) Manav feels there should be an October release to support caBIO. Joshua feels it should be a minimal point release. Would be nice to avoid full release in October (QA, documentation, etc) if possible. 
+
+Action Items
+------------
+1) Joshua and Manav should discuss ideal reference approach and send to John in the next day or two. 
+2) Joshua and Manav should review and close.
+3) Steve wants some GAARDS-UI functionality in portal. Manav is mocking up screens for those five functions.
+5) John will check with Mike Keller if we need to curate updates to participant information. John will review scope documents and priorities and propose scope for next 2 portal releases.

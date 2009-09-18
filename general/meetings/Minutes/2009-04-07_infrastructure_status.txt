@@ -1,0 +1,21 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2009-04-07
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) Dev F2F
+2) CQL 2.0
+3) WebSSO
+
+Notes
+-----
+1) Travel budget is a concern, Scott would prefer to host. We should set a cutoff date for when we need to decide or not. In the mean time, check and see if the week of the 13th and 20th work. 
+2) We should proceed with implementation, possibly provide a public beta, but should not have another tech preview.
+3) We should review outstanding development work and work with Santhosh to prioritize. 
+
+Action Items
+------------

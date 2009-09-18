@@ -1,0 +1,30 @@
+****************************************************************************
+* Meeting: 	caGrid Portal Status
+* Date: 	2008-11-05
+* Venue:	Teleconference
+* Attendees: 	Aynur Abdurazik, John Eisenschmidt, Carolyn Klinger, 
+*               Manav Kher, Joshua Phillips
+****************************************************************************
+
+Agenda
+------
+1) 2.1 Release and Open Issues
+   a) Admin Theme needs to be redeployed
+   b) News Item
+   c) Calendar Update
+   d) Participants with Incomplete Addresses / Geocode Errors in logs
+   e) LSDB war incorrectly deployed in Prod
+   f) caBIO expanded to 2 columns
+   g) Performance (only using -server and -Xmx)
+2) Continuous QA
+3) 2.2 Release Planning
+
+Notes
+-----
+1) a/b/c should be done by COB Friday, almost all of d are done (except Persistent). 
+
+Action Items
+------------
+1g) John will work the config change to VMs and JVM up the tiers over the next week.
+2) Aynur will put together a plan by next Wed on how we should work with QA to send a monthly release candidate
+3) John will draft a project plan by next Wed, discuss in 11am meeting (Joshua sent ahead his wish list).
