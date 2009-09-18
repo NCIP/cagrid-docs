@@ -1,0 +1,26 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2009-09-21
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) October F2F Meeting
+2) 1.4 Scope/Schedule
+3) SDK/CSM
+4) ISO 20190 Architect
+5) SVN Repository Refactor
+6) caGrid 2.0 Vision Document
+7) Future of BPEL
+
+Notes
+-----
+1) 
+5) Done
+7) Ravi is getting estimates (labor and licensing) to keep BPEL by Wed 9/30. Larry and I will review with him then, and discuss with Avinash at the following Monday's meeting to get a decision. 
+
+Action Items
+------------
+1) 
