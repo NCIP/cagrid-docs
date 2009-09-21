@@ -17,10 +17,15 @@ Agenda
 
 Notes
 -----
-1) 
+1) Sent a note to Natasha, waiting to hear back. 
+2) Need to go through bugs and feature requests as appropriate for 1.4. GForge should be cleaned up within the next two weeks. 
+3) Dave's fixes to CQL are in the 1.3 branch, Satish can checkout and build from there. Also need to fix Introduce to support SDK 4.2 data services. CSM: Scott suggest the KC build what needs to be built before 1.4 and we'll incorporate it later. Should probably have a call with them to discuss future integration. 
+4) Scott volunteers to be the architect to assist the ISO 20191 project manager. 
 5) Done
+6) No progress yet
 7) Ravi is getting estimates (labor and licensing) to keep BPEL by Wed 9/30. Larry and I will review with him then, and discuss with Avinash at the following Monday's meeting to get a decision. 
 
 Action Items
 ------------
-1) 
+3) John will schedule a meeting with Scott, Satish, Justin, and David to discuss
+4) John will update Libby Prince
