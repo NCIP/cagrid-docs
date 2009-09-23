@@ -1,0 +1,26 @@
+****************************************************************************
+* Meeting: 	caGrid and SDK Team Meeting
+* Date: 	2009-09-23
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, David Ervin, Scott Oster, 
+*		Satish Patel, Justin Permar
+****************************************************************************
+
+Agenda
+------
+Forthcoming SDK 4.2 Integrated the caGrid 1.2 Query Process Jars, instead of the common CQL Project
+
+Notes
+-----
+1) Satish will build from 1.3 branch, add those jars to his local ivy repo, then perform SDK 4.2 integration testing
+2) When #1 is successful, Satish will send tag to Dave for verification
+3) Once all caGrid test cases passes, branch caGrid 1.3 to 1.3.0.2 and send to QA
+(next week or so)
+4) 1.3.0.2 release to incorporate into SDK 4.2 then we'll release a separate Data Service Style (Introduce update) for SDK 4.2
+5) Post-SDK 4.2, they will use the Common CQL Libs 
+6) Still issue with SDK 4.1.1, and might need to be a 4.1.2 fix (4.1.1 + query processor fix) for caBIO, caNano, caMOD
+
+Action Items
+------------
+1) John will contact Cliff about QA
+2) John will contact Sharon/Maki about pushing to latest release of 
