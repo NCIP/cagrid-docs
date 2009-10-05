@@ -1,0 +1,36 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2009-10-05
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) October F2F Meeting
+2) 1.4 Scope/Schedule
+3) SDK/CSM
+4) caGrid 2.0 Vision Document
+5) Spec for Identifiers
+6) Future of BPEL
+7) caGrid Installer
+
+Notes
+-----
+1) Arrive before lunch Tue, meet Tue before/at lunch, and afternoon on Thu until about 7pm. 
+	caGrid F2F Topics:
+	* Grid Grouper / Portal : 1-2 hour 
+	* Identifiers : 1 hour
+	* WebSSO  : 1 hour
+2) Scott took a complete pass of the trackers and classified RFEs as appropriate for 1.4 or 2.0, and edited priorities for bugs.  There’s not a convenient way to mark bugs as in scope for a particular release, but we should plan to at least address all the 3+ priority bugs for 1.4. John migrated the project schedule to Merlin and started creating talks in gforge. First pass is about half done. 
+3) Dave is still testing Satish's tag and building the new data service style to support 4.2
+4) Received, reviewed, sent to Larry for review
+5) Larry was sent the draft design document for Identifiers on 8/31 and is supposed to use ECCF template to build spec. 
+6) Scott thinks we should either do it right or stop pretending it. It no one uses it and no one cares about it, we're wasting resources maintaing it.
+7) There is quite a bit of work for the Installer on 1.4 and nobody to work on it (especially if we're going to change the tech stack). 
+
+Action Items
+------------
+1) John will follow up with Natasha about meeting space
+3) John will email Ye/Aynur to schedule QA. Should re-do same testing for 1.3.0.1 for 1.3.0.2 plus the SDK should add a test case with their QA to test the fix we delivered for 4.2 (class discriminator). Creating a data service with 4.2 should be a test case on caGrid side. 
+4/5/6) John will follow up with Larry. (Larry will review vision document today and comment. Larry is working on ECCF templates and will use Identifiers as first spec but no timeframe yet. Larry will send a note to Avinash about BPEL options based on the email Ravi sent). 
