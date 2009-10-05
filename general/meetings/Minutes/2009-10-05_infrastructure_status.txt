@@ -26,7 +26,7 @@ Notes
 3) Dave is still testing Satish's tag and building the new data service style to support 4.2
 4) Received, reviewed, sent to Larry for review
 5) Larry was sent the draft design document for Identifiers on 8/31 and is supposed to use ECCF template to build spec. 
-6) Scott thinks we should either do it right or stop pretending it. It no one uses it and no one cares about it, we're wasting resources maintaing it.
+6) Scott feels since resources are limited we should either support BPEL right or we should decommission. As discussed at the F2F, keeping the lights on should also mean CDS support in a BPEL 1.4 workflow service. 
 7) There is quite a bit of work for the Installer on 1.4 and nobody to work on it (especially if we're going to change the tech stack). 
 
 Action Items
