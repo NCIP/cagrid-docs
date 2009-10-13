@@ -1,0 +1,25 @@
+conops: 12-15 month vision for arra funding
+
+5 initiatives, 2 slides per: 1 notional arch, 1 implementation arch
+
+
+Charlie's Goals
+1) for elements that are clearly architectural, tech concepts should be represented in same manner as SAEAF
+2) expects anything that architecture designs is a technology viewpoint that makes all appropriate compromises to work in our environment (at Avinash and Frank's insistence)
+
+
+
+Initiatives (from the Technology ConOps)-----------The caBIG technology infrastructure and its operational model will be extended to provide integrated support for:1.	Use of behavioral semantics for service advertisement, discovery and choreography. [John/Scott & Shannon]2.	Tools for developing services that make use of the distributed federated metadata repositories and are compliant with CBIIT Enterprise Architecture and approved standards such as ISO 21090. [Sichen] wait for first draft before Scott/Shannon comment3.	Enterprise security requirements including support for attribute based access control (ABAC) and policy guidelines. [Braulio initially and then include Kunal or Steve]4.	Use of W3C service oriented architecture resources. [John/Joshua] - make sure one conops flows into the other, and if we're doing some collaboration work with w3c … how can we build a service that allows you to plug in your rds-based data? 5.	Assessment of Cloud environment for providing scalable service hosting facilities [Avinash]
+
+
+
+For Joshua:
+  1) (from the Technology ConOps) 
+	Initiative 4: This initiative is complementary to the initiative 4 in the “Semantics ConOps” and will focus on developing end user accessible tooling in support of the work carried out in the field of semantic web technologies on caGrid. The initiative will include: 
+	    * Development of services and end user tools to support the ontologically aware query capabilities on caGrid, dynamically leveraging ontologies stored in the semantic infrastructure
+	    * Collaboration with NCRI, W3C and other groups that are developing Grid to Grid semantic interoperation using semantic web standards.
+  2) Notionally and Pragmatically, in consideration of the Semantic ConOps/W3C/Semantic Web, how should we proceed? 
+
+For Scott/Shannon:
+  1) Use Scott's caGrid 2.0 Vision as a starting point
+  2) How does Technology ConOps #1 fit with visions of Semantic ConOps and Globus Crux?
