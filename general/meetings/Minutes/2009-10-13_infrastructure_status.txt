@@ -1,0 +1,28 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2009-10-13
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) October F2F Meeting
+2) 1.4 Scope/Schedule
+3) SDK/CSM
+4) Future of BPEL
+
+
+Notes
+-----
+1) Some schedule changes, may not make sense now to have Dev F2F
+2) John is still working on project schedule. Scott mentioned that SRI is primarily using Jira now. Still need to resolve gforge/bugzilla tech stack issue, and may make sense for John to put tasks in Jira instead of gforge. 
+3) David is still working out kinks with Data Service Style for SDK 4.2
+4) John spoke to Larry about Ravi's email, including Scott's feedback about ensuring that "keep the lights on" includes service update to caGrid 1.4 and adds CDS support. Larry agreed. Larry will be writing an email to Avinash and we'll await his decision. 
+
+
+Action Items
+------------
+1) John needs to take roll on the Developer portion of the F2F and we'll make a decision
+2) John needs to finish reviewing gforge and update the project schedule
+3) John needs to update Satish/Dave on when QA is available 
