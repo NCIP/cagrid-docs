@@ -1,0 +1,24 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2009-10-20
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) October F2F Meeting
+2) 1.4 Scope/Schedule
+3) SDK 4.2 Fix
+
+
+Notes
+-----
+1) Calixto won't be attending, so Scott will be presenting those slides. 
+2) John still working
+3) Waiting for update from Dave, then straight to QA and out the door. 
+
+
+Action Items
+------------
+1) 
