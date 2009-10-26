@@ -1,0 +1,25 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2009-10-27
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) October F2F Meeting
+2) 1.4 Scope/Schedule
+3) SDK 4.2 Fix
+4) Identifiers Meeting today about Specimen Identifiers. 
+
+
+Notes
+-----
+1) Scott is looking into RDF for Identifiers, and Dave is looking into schema items we discussed for CQL 2.0. Santhosh found a Java service provider for Shib, scheduling a meeting with Scot/Steve to demo.
+2) Scott: containers might be an issue, can support but might need to modify Globus code. Also, anything on Installer? Grid KC expressed some interest in updating.
+3) Satish had an issue and sent Dave a new tag, but Dave found a few more issues since and sent those to Satish. 
+4) TBPT meeting to determine if they want to use Grid Identifiers for Specimen Identifiers or not. 
+
+Action Items
+------------
+2) John needs to socialize 1.4 and 2.0 scope/schedule with other PMs. John will talk to Larry about Installer.
