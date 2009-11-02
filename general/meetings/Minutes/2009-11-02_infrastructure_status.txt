@@ -1,0 +1,26 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2009-11-02
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) SDK 4.2 Fix
+2) caGrid 1.4 Project Schedule
+3) Identifiers
+
+Notes
+-----
+1) Iterating back-and-forth with Satish. Still one outstanding bug with remote API that causes our automated tests to fail: Satish can't reproduce, Scott is going to try.
+2) Scott has made and checked-in some changes. Need to work out cross-product dependencies (Portal, Workflow, SDK). 
+3) Scott looked further into RFC2817 (http://tools.ietf.org/html/rfc2817) -- doesn't appear to be widely supported. Current Alpha code should be good enough for caDSR/LexEVS to integrate against.
+
+Action Items
+------------
+2) John will speak to Avinash, Mike, and Larry about the following decisions for caGrid 1.4: 
+  * Installer
+  * BPEL
+  * Dorian handling signing of host agreements
+  * Identifiers/CNRI ECCF spec
