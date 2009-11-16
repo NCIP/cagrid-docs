@@ -1,0 +1,27 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2009-11-16
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) caGrid 1.3.0.2 Status
+2) caGrid 1.4 Project Schedule
+3) Identifiers
+4) John's Meeting with Avinash
+
+Notes
+-----
+1) Still in QA. David sent instructions on Friday for downloading a tag without the SDK 4.2 data service style so Aynur can test updating Introduce before generating a 4.2-based data service.
+2) Ravi sent Tasks and LOEs for Workflow to John
+
+Action Items
+------------
+2) John will work Ravi's email into a Project Schedule and link to caGrid Core Project Schedule
+4) John will speak to Avinash, Mike, and Larry about the following decisions for caGrid 1.4: 
+  * Installer
+  * BPEL
+  * Dorian handling signing of host agreements
+  * Identifiers and caDSR/EVS support of their adoption
