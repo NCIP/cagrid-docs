@@ -1,0 +1,23 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2009-11-23
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) caGrid 1.3.0.2 Status
+2) caGrid 1.4 Project Schedule
+3) Identifiers
+
+Notes
+-----
+1) John opened App Support ticket to update Download Center and FTP Site. Once the FTP site is updated, Scott can test the installer before we make the download links live.
+2) Jira is a superset of what's in gforge. OSU is using the Green Hopper plugin for Jira to manage their sprints. 
+3) Meeting with Frank was a surprise, but should not be a concern. We'll move forward with our development and engage TBPT as a potential adopter (albeit one who won't be ready to use our software until after we release).
+
+Action Items
+------------
+1) John should close the loop on WebSSO Bugs 
+2) John will reconcile what's in gorge and Jira in the 1.4 Project Schedule. 
