@@ -1,0 +1,24 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2009-11-30
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) caGrid 1.3.0.2 Status
+2) caGrid 1.4 Project Schedule
+3) TBPT F2F Dec 8th
+
+Notes
+-----
+1) Need to publish the Introduce update and send a release announcement once Satish releases SDK 4.2.
+2) Installer - Avinash asked "if it's critical to adoption, why don't we expend resources on it?" Can either be done by Dev team (and schedule can slip) or the KC Team (Larry is checking). 
+	Prefix Authority uses HSQL DB (based on discontinued Hypersonic SQL product), will need to be backed up, should discuss with Systems before John submit's the arc. 
+	Deprecation Plan should be out by the end of next week (draft). Will propose removing BPEL then and allow a comment period. 
+
+Action Items
+------------
+2) John will ping the project team for estimates.
+3) John will ping Mike Keller to see if the schedule has been (or can be) adjusted. 
