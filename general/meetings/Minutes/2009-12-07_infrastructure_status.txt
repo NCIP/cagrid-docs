@@ -1,0 +1,27 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2009-12-07
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) SDK 4.2
+2) Semantic ConOps comment about caGrid
+
+Notes
+-----
+1) Still waiting on 4.2 release announcement to publish/announce new Data Service Style. 
+2) From Scott: "Josh pointed this out to me (emphasis mine):
+https://cabig-kc.nci.nih.gov/Vocab/KC/index.php/SI_Conop_Background#cite_note-0
+Notes
+
+   1. Currently, we compel developers to do a lot of work to register semantics because of the current design of caGrid which conflates semantic and syntactic concerns. The semantic and syntactic worlds are explicitly separated under ECCF, but their conflation is in our current caGrid semantics is one of the main causes of the two issues noted here.
+
+
+This is entirely inaccurate.  CaGrid (the software) makes no requirement on the existence semantics (most of the core services work just fine without it); it just facilitates their use on the grid, and this facilitation is based on caBIG’s program goals.  The current design can certainly accommodate a separation of those concerns.  I want to make sure caGrid software isn’t being blamed as the limitation which necessitates the ECCF.  I think I understand the intention of this comment (I believe it’s driven at "how we as a program view the grid"), but it reads like its a software problem."
+
+Action Items
+------------
+1) John will schedule meeting with Satish and Sichen to discuss next release. 
