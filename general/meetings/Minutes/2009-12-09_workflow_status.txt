@@ -1,0 +1,19 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2009-12-02
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Ravi Madduri
+****************************************************************************
+
+Agenda
+------
+1) Status
+2) Project Plan
+
+Notes
+-----
+1) Wei went home to China for vacation. Before he went, created a CVRG workflow that uses CDS integration (and works). Dina working with Alex and Stian to modify the security implementation to work with Workflow Service. New Workbench scheduled to release second week of December. Some API changes -- may need to realign some of our plug-ins with their new APIs. CVRG sent another workflow they would like implemented in Taverna, Wei is looking at it (will pick up when he gets back). Wei also upgraded all existing workflows for new Taverna Workbench, and split them up into 15-20 reusable components (instead of 3-4 monolithic workflows). Goal is to update them to the caGrid Portal once the Portlet is done. 
+2) Ravi will review (later: looks good).
+
+Action Items
+------------

@@ -1,0 +1,17 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2009-12-23
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Ravi Madduri
+****************************************************************************
+
+Agenda
+------
+1) Status
+
+Notes
+-----
+1) Wei updating existing workflows to work with new caArray 2.3 in Production. Taverna 2.1 Final version updated -- Wei is updating our extensions to work with that. Transfer Service integrated into trunk (has test cases). CDS Integrated into Taverna WF Service, not checked in b/c test cases aren't done. Ravi went to UK eScience all-hands meeting (OMMI-UK review); went very well, caBIG¨ recognized as a big user. How to do map reduce and hadoop inside of Taverna. Some WF development for CVRG. Viva Globus meeting went well. 
+
+Action Items
+------------
