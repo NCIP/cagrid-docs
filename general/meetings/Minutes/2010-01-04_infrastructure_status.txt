@@ -1,0 +1,25 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2010-01-04
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) SDK 4.2
+2) caGrid 1.4
+3) Containers for 1.4
+4) Deprecation Plan
+
+Notes
+-----
+1) Updates meeting notes from 12/8 per email exchange between Scott and Satish. Will need to cross-product coordinate if SDK 4.2.2 will include caGrid 1.4 jars.
+3) John reached out to Sichen last week. No response from Doug/Anand yet. 
+4) Scott hopes to have a draft this week. 
+
+Action Items
+------------
+1) John will talk to Satish about coordinating what needs to be done for SDK 4.2.2/caGrid 1.4
+2) John will update project schedule with completed tasks from OSU Jira. Need to flesh-out the Transition section of the project schedule.
+3) John will speak to Avinash next week and let him know we need to make a decision. We can always fix in a 1.4.1 point release later.
