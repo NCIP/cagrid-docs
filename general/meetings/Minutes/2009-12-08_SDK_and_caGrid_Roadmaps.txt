@@ -18,7 +18,7 @@ Agenda
 
 Notes
 -----
-1) SDK 4.2.1 will be released in January 2010; adds Postgres support, fixes bugs. There will be a point-release of SDK to support caGrid 1.4. Currently no features planned for 4.3 (may end up being 4.2.2)
+1) SDK 4.2.1 will be released in January 2010; adds Postgres support, Java 1.6, fixes bugs. 4.2.2 will be a point-release of SDK to support caGrid 1.4 (and include 1.4 jars). Currently no features planned for 4.3/5.0
 2) No desire to change versions of Spring or Hibernate. They will stay as-is unless we change supported containers. Satish will look at supporting Java 1.6 in bug fix release of SDK. 
 4) Satish has code changes he'd like to make to the current CQL Processor. We should target caGrid 2.0 and SDK 5.0 to move CQL into a shared library. CQL needs information from the hibernate factory. 
 
