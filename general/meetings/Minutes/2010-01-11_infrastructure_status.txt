@@ -1,0 +1,21 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2010-01-11
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) Project Schedule
+2) Deprecation Plan
+
+Notes
+-----
+1) Development: OSU Jira shows 58% completion, project schedule shows 38%. Current Sprint ends Jan 22nd. By the end of the following Sprint on Feb 12, we can freeze Introduce development and upgrade all services. Should be able to start DCQL2.0 implementation in FQP after that. 
+2) Scott still working on Deprecation plan, discovered that Transfer Service is not deployed with the FQP in Production
+
+Action Items
+------------
+1) Need to meet with Calixto and David to nail down milestone dates for Introduce feature freeze and code freeze. 
+2) Bill will write-up fix and deploy to Training. Once that's done, we can Aynur verify on QA then do a Change Request to push up to Stage and Prod. 
