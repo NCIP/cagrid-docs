@@ -1,0 +1,21 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2010-01-12
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, David Ervin, Scott Oster, Calixto Melean		
+****************************************************************************
+
+Agenda
+------
+1) Identifiers
+2) Data Services
+
+Notes
+-----
+1) Have a sense on what we want to do for security model, need to flesh out and implement. About 8 tasks left on Jira.
+2) Both CQL2/DCQL2 specs finalized. Prepping DS Infrastructure to support both, close there. New Metadata tells if the service has CQL2 QP and what extensions it supports/ FQP Engine changes are not significant, but the testing will take some time.
+
+Action Items
+------------
+1) Scott and Calixto will meet again next Tue to review/finalize what's left to do this
+2) Review after 1/22 Sprint Ends, may not be done by end of 2/12 Sprint.
