@@ -1,0 +1,20 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2010-02-03
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Ravi Madduri
+****************************************************************************
+
+Agenda
+------
+1) caGrid 1.4 Status
+2) CVRG
+
+Notes
+-----
+1) Still making process upgrading caGrid Plug-ins to 1.4. Blocker on CDS integration, working with David Ervin and Steve Langella. caGrid Transfer Integration with WF Service has a blocker, change in Taverna API and waiting to hear back from Stian. Target Feb-end/early-Mar for code freeze
+2) CVRG wants WF team to start working on a WF right away, even though the funding hasn't materialized yet
+
+Action Items
+------------
+1) Ravi will review project schedule and update. 
