@@ -1,0 +1,22 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2010-02-08
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) caDSR Hibernate Bug
+2) Security Document
+3) caGrid 1.4 Schedule
+
+Notes
+-----
+1) Bug in Hibernate 3.2 (fixed in 3.2.1): problem with counts of a class within a class hierarchy. Can be worked around in the CQL processor, but we inherit the Hibernate.jar from the SDK, and the SDK embeds its own CQL processor, so potentially either possible fix needs to be made there. caDSR asked for LOE to work around the bug, continuing to iterate back and forth with them.
+2) Briefed Scott on current state of affairs.
+
+Action Items
+------------
+1) John will loop Satish into this discussion with Scott and David. 
+3) John will update Transition section of schedule and any tasks from Jira/GForge since last update. Scott will try and tighten up the remaining LOE after Friday's sprint review.
