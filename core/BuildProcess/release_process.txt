@@ -19,7 +19,7 @@ create a branch based on the branch root tag   (cvs tag -b -r caGrid-1_3_release
 
 ----- prepare the release candidate -----
 get a working checkout of the release branch in a new directory (cvs -d:ext:{GFORGE_USERNAME}@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 co -P -r caGrid-1_3_release -d caGrid-1.3-release cagrid-1-0)
-do fixing or cleaning needed on the branch (setting versions (ant set-project-versions), default target grids (in caGrid/antfiles/target-grid.xml), set ivy publish status to "release" (in publish-artifacts macro of caGrid/antfiles/ivy/ivy-shared-targets.xml) etc)
+do fixing or cleaning needed on the branch (setting versions (ant set-project-versions), set the version in README.txt, default target grids (in caGrid/antfiles/target-grid.xml), set ivy publish status to "release" (in publish-artifacts macro of caGrid/antfiles/ivy/ivy-shared-targets.xml) etc)
 setup automated builds/tests for the branch
 tag a release candidate on our checkout of the branch (cvs tag caGrid-1_3_release_rc1)
 
