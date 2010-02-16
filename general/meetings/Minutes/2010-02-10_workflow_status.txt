@@ -1,0 +1,29 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2010-02-10
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Bronwyn Gagne, Ravi Madduri
+****************************************************************************
+
+Agenda
+------
+1) caGrid 1.4 Status
+2) NSF Proposal
+
+Notes
+-----
+1) Discussed code freeze schedule with Scott. Would be happy if it slips a couple weeks but 
+
+Taverna 2.1.1 being released "in a few days". APIs built under contract with us to support CDS have changed to support other use cases. Other changes in new year: using Java 1.6
+
+CDS integration issue is basically done. 
+
+Added a resource (Tom Howe) who is partially funded on the KC to meet the deliverable date. 
+
+2) [Ravi] Question: does John have metrics/notes from the Index Service and move to Xindice? NSF service registration work that ANL is bidding on. Our notes from the Index Service would be helpful on that. 
+
+
+Action Items
+------------
+1) Ravi will review project schedule and update. 
+2) John will send notes from Index Service and ping Avinash about letter of recommendation. 

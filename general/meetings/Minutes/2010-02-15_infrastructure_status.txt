@@ -1,0 +1,21 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2010-02-15
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) caDSR Hibernate Bug
+2) caGrid 1.4 Schedule
+
+Notes
+-----
+1) Satish would like to just fix the CQL query processor. Scott suggests a comprehensive impact analysis. A fixed JAR can be made available on the bug report to 
+2) Sprint review on Friday. Major development for Data Services is mostly done, still lots of testing to be done (unit and integration). Likewise with Identifiers, just needs testing. 
+
+Action Items
+------------
+1) John will setup a call to discuss. 
+2) John will update Transition section of schedule and any tasks from Jira/GForge since last update. 
