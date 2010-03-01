@@ -1,0 +1,24 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2010-03-01
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) ISO 21090
+2) Globus World
+3) In-silico
+4) caGrid 1.4 Schedule
+5) Identifiers/ECCF
+
+Notes
+-----
+1) In progress
+2) Scott there Tue/Wed. Presenting caGrid 1.4 overview/roadmap. 
+3) Scott there Thu/Fri. Presenting caGrid 1.4 overview/roadmap. 
+
+Action Items
+------------
+1) Approach: use what we have unless we need to modify
