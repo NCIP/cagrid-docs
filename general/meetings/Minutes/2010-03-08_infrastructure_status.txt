@@ -1,0 +1,19 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2010-03-08
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) ISO 21090
+
+
+Notes
+-----
+1) In progress
+
+Action Items
+------------
+

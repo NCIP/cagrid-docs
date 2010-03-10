@@ -1,0 +1,19 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2010-03-10
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Bronwyn Gagne, Ravi Madduri
+****************************************************************************
+
+Agenda
+------
+1) Vacation
+2) caGrid 1.4 Status
+
+Notes
+-----
+1) Ravi on vacation 3/12 through 4/11
+2) Code frozen, bug fixes in progress. Should be ready when the release date is announced. Some bugs in Taverna 2.1 will be supported in Taverna 2.1.1. Ravi had a call with Raghu about potential support of Workflows in future Semantic Infrastructure. 
+
+Action Items
+------------
