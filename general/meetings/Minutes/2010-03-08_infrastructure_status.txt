@@ -1,6 +1,6 @@
 ****************************************************************************
 * Meeting: 	caGrid Infrastructure Status
-* Date: 	2010-03-08
+* Date: 	2010-03-15
 * Venue:	Teleconference
 * Attendees: 	John Eisenschmidt, Scott Oster		
 ****************************************************************************
@@ -8,12 +8,15 @@
 Agenda
 ------
 1) ISO 21090
+2) April Systems Team Deployments
 
 
 Notes
 -----
-1) In progress
+1) In progress. Meeting later today to discuss JAXB and tomorrow morning to review Hibernate mappings. 
+2) None expected
 
 Action Items
 ------------
+2) John will follow up with Sichen on the review status of short/long-term scope documents
 
