@@ -1,0 +1,21 @@
+****************************************************************************
+* Meeting: 	caGrid Infrastructure Status
+* Date: 	2010-03-29
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Scott Oster		
+****************************************************************************
+
+Agenda
+------
+1) caGrid Transition with OSU
+2) ISO 21090
+
+
+Notes
+-----
+1) Still unknown
+2) Issues with Domain Model Conversion tool and Query Writing
+
+Action Items
+------------
+
