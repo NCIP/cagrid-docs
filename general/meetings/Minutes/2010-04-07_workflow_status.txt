@@ -1,0 +1,17 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2010-04-07
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Ravi Madduri
+****************************************************************************
+
+Agenda
+------
+1) Project Status
+
+Notes
+-----
+1) Meeting with WF Development team today to get status. New Taverna release 2.1.2, working to get into our test harness. 
+
+Action Items
+------------
