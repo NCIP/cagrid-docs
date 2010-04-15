@@ -1,0 +1,20 @@
+On behalf of the entire caGrid team, I am pleased to announce the release of caGrid version 1.3. All the release artifacts can be accessed at https://cabig.nci.nih.gov/workspaces/Architecture/caGrid
+
+Some of the key enhancements for the release include:
+
+* Continuous Integration: caGrid 1.3 enhances support for the latest releases (version 4.1.1) of the <a href="http://ncicb.nci.nih.gov/NCICB/infrastructure/cacoresdk" target="_blank">caCORE Software Development Kit</a> (SDK) and <a href="http://ncicb.nci.nih.gov/NCICB/infrastructure/cacore_overview/csm" target="_blank">Common Security Module</a> (CSM). caGrid and the caCORE SDK now share a common code base for CQL. In addition, caGrid 1.3 supports the most recent web services containers in the NCI CBIIT Technology Stack (Tomcat 5.5 and JBoss 4.0.5).
+
+* Data Services: Significant enhancements to the Federated Query Processor (FQP), allowing a single, semantic query to execute across multiple caGrid services and return a single result set. FQP now supports WS-Notification, querying secure grid services via the caGrid Credential Delegation Service (CDS), configurable query execution parameters to allow only partial results to be returned, and out-of-band results using the caGrid Transfer Service and WS-Enumeration.
+
+* Introduce Toolkit: The Introduce Toolkit has a number of security-related enhancements, adding fine-grain control over authorization using the caCORE Common Security Module (CSM) and Grid Grouper. Introduce also includes service updaters, allowing service developers to easily update-to and leverage caGrid 1.3.
+
+* Metadata Services: The Mobius Global Model Exchange (GME) has been entirely rewritten for caGrid 1.3 to support the Semantic requirements of caBIG&reg; software developers. The caGrid-developed caDSR grid service, based on the caCORE 3.1 API, has been deprecated, It has been replaced by the caDSR 4.0 data service (maintained by the caDSR team), and a new caGrid Metadata Model Service (MMS), whose purpose is creation and semantic annotation of caGrid metadata models using caDSR-derived data.
+
+* Security: Enhancements to the GAARDS infrastructure include support for multiple authentication profiles, including one-time passwords. Trusted Identity Providers can now be discovered programmatically, allowing full realization of federated authentication use cases. Auditing support has also been added to Dorian, giving systems administrators the degree of control they have requested.
+
+* Taverna Workflow: Orchestration of caGrid services is supported in this release though joint development with the <a href="http://taverna.sourceforge.net/" target="_blank">Taverna project</a>. The caGrid plug-in for the Taverna 2.0 workbench allows development of workflows using their rich user interface.
+
+
+Feel free to contact us if you have questions or suggestions.
+
+Thank you for your continued interest in caGrid!

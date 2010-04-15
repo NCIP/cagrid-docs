@@ -1,0 +1,36 @@
+On behalf of the caGrid team, I am pleased to announce the release of caGrid Portal version 2.2. 
+
+Enhancements in this release include:
+   * Enabled aggressive information caching and tuned the database to improve overall performance.
+   * Upgraded Liferay Portal to 5.0.1 to correct several bugs and reduce page-load times. 
+   * Added a "Sign in" and "Register" link to all pages.
+   * Implemented recommendations for Section 508 compliance.
+
+We invite you to visit the updated caGrid Portal: 
+  http://cagrid-portal.nci.nih.gov
+
+A complete list of new features, remediated defects, and known issues can be found in the release notes: 
+  https://gforge.nci.nih.gov/plugins/scmcvs/cvsweb.php/cagrid-1-0/Applications/cagrid-portal/RELEASE_NOTES.txt?rev=1.2.14.2;content-type=text%2Fplain;cvsroot=cagrid-1-0
+
+Updated documentation is available on gforge: 
+  https://gforge.nci.nih.gov/docman/index.php?group_id=25&selected_doc_group_id=4678&language_id=1
+
+Those wishing to deploy their own caGrid Portal can download the distribution: 
+  https://gforge.nci.nih.gov/docman/view.php/25/16750/cagrid-portal-2.2.zip
+
+Additional caGrid Portal information can be found on the caGrid wiki:
+  http://www.cagrid.org/mwiki/index.php?title=Portal:Portal
+
+
+There are several ways to get assistance with, and provide feedback on, the caGrid Portal project:
+*  To view existing requests for enhancement and defects, join the caGrid gforge Project: 
+     http://gforge.nci.nih.gov/projects/cagrid-1-0/
+*  Post questions to the caGrid Knowledge Center Forums: 
+     https://cabig-kc.nci.nih.gov/CaGrid/forums/
+*  Attend monthly caGrid User Group Meetings: 
+     http://www.cagrid.org/wiki/CaGrid:FAQ#Is_there_a_user_community_for_caGrid.3F
+*  Contact NCI CBIIT Application Support at ncicb@pop.nci.nih.gov
+*  Additional support information (from the caGrid wiki): 
+     http://www.cagrid.org/mwiki/index.php?title=CaGrid:FAQ#How_can_I_get_support.3F
+
+We appreciate your continued interest in caGrid!

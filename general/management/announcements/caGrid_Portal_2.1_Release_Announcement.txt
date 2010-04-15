@@ -1,0 +1,41 @@
+On behalf of the caGrid team, I am pleased to announce the release of caGrid Portal version 2.1. Enhancements in this release focus on presentation and diagnosis of discovered services, and support for community developed portlets. 
+
+New functionality includes:
+*  Support for Community-developed Portlets [RFE 15949], featuring the caBIO 0.5 Portlet:
+  ** The caBIO 0.5 portlet (http://cagrid-portal.nci.nih.gov/web/guest/community) provides 
+     a user-friendly interface for scientific researchers that allows for easy and intuitive 
+     browsing of data within the caBIO system.  For more information about caBIO, please see 
+     https://wiki.nci.nih.gov/display/ICR/caBIO. 
+*  Better Sorting/Visibility of Active and Inactive Services [RFE 16305]
+*  Discovery Results show research center information [RFE 16211]
+*  Service Status highlighted for non Active Services in the Portal [RFE 16160]
+*  A Service Diagnostics Portlet [RFE 15952]
+
+We invite you to view these exciting enhancements at: 
+  http://cagrid-portal.nci.nih.gov
+
+A complete list of new features, remediated defects, and known issues can be found in the release notes: 
+  http://gforge.nci.nih.gov/docman/view.php/25/14004/RELEASE_NOTES.txt
+
+Updated Administrator, Installation, and User Guides are available on gforge: 
+  http://gforge.nci.nih.gov/docman/index.php?group_id=25&selected_doc_group_id=3952&language_id=1
+
+Those wishing to deploy their own caGrid Portal can download the distribution: 
+  http://gforge.nci.nih.gov/docman/view.php/25/14003/cagrid-portal%202.1%20final.zip
+
+Additional caGrid Portal information can be found on the caGrid wiki:
+  http://www.cagrid.org/mwiki/index.php?title=Portal:Portal
+
+
+There are several ways to get assistance with, and provide feedback on, the caGrid Portal project:
+*  To view existing requests for enhancement and defects, join the caGrid GForge Project: 
+     http://gforge.nci.nih.gov/projects/cagrid-1-0/
+*  Post questions to the caGrid_Users-L listserv: 
+     https://list.nih.gov/cgi-bin/wa?SUBED1=cagrid_users-l&A=1
+*  Attend monthly caGrid User Group Meetings: 
+     http://www.cagrid.org/wiki/CaGrid:FAQ#Is_there_a_user_community_for_caGrid.3F
+*  Contact NCI CBIIT Application Support at ncicb@pop.nci.nih.gov
+*  Additional support information (from the caGrid wiki): 
+     http://www.cagrid.org/mwiki/index.php?title=CaGrid:FAQ#How_can_I_get_support.3F
+
+We appreciate your interest in caGrid!
