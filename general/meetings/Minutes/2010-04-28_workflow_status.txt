@@ -1,0 +1,22 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2010-04-28
+* Venue:	Teleconference
+* Attendees: 	Larry Brem, John Eisenschmidt, Bronwyn Gagne, 
+* 		Ravi Madduri, Sreenath Nampally
+****************************************************************************
+
+Agenda
+------
+1) caGrid 1.4 Project Status
+2) BPMN Whitepaper
+
+
+Notes
+-----
+1) Have frozen codebase (2 weeks ago), now testing and fixing bugs. Found 1 bug in Taverna that they are working on. Documentation under review, being updated, should hopefully be ready for Brownwyn to look at after the end of this week. Want to be done with QA and Staging as soon as possible. 
+2) First draft circulated. Short on technical details. Would like to wrap 1.4 up so they can focus on some technical work around this evolving white paper. Some technical papers that Wei and Dina are working on that are similar to this. Looking to inventory existing services and figure out some semantically meaningful workflows from there. Larry: good start, would like to dig in to use case of where it could help in this community. Focus on a specific use case that could evolve into a prototype. Larry: orchestration vs choreography - with orchestration comes back to central sources, but with choreography does not. Some use cases where one will make sense and one doesn't (Ravi: choreography seems to make more sense in clinical workflows). Taverna/SCUFL are built around orchestration, so how do we support choreography? 
+
+Action Items
+------------
+1) John will reach out to QA and let them know that Worflow will be ready to test in the next week or two. When it is, Ravi will let John know and we'll move forward. 
