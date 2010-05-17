@@ -1,0 +1,24 @@
+****************************************************************************
+* Meeting: 	ISO Documentation Status
+* Date: 	2010-05-17
+* Venue:	Teleconference
+* Attendees: 	Carolyn Klinger, John Eisenschmidt
+****************************************************************************
+
+Agenda
+------
+1) caAdapter
+2) SDK Workbench
+3) caGrid Analytical and Data Service Guides
+
+Notes
+-----
+1) Only ISO section of caAdapter Guide will go on wiki. 
+2) Guide needs to be converted to wiki. Waiting on Dan to review (worked with Bronwyn).
+3) May not need much editing. 
+
+
+Action Items
+------------
+1) Once Eugene approves, Carolyn will extract and move ISO Section to wiki
+2) PDF ready to be posted to gforge. Carolyn will check with Dan to see if they want to move the guide to wiki now or perhaps in the future. 
