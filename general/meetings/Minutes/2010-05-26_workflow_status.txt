@@ -1,0 +1,27 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2010-05-26
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Ravi Madduri
+****************************************************************************
+
+Agenda
+------
+1) Workflow Portlet
+2) Changes to 1.3 Workflow Service
+3) caGrid 1.4 Project Status
+4) BPMN Whitepaper
+5) NHIN Direct
+
+
+Notes
+-----
+1) Significant effort, deployed to Training Portal. Will get an update from Dina and send in email. 
+2) No status to report. 
+3) No status to report. 
+4) No status to report. 
+5) Ravi is working with George regularly about strategy for NHIN Direct. 
+
+Action Items
+------------
+1) 
