@@ -1,0 +1,21 @@
+****************************************************************************
+* Meeting: 	Re-scoping caGrid 1.4
+* Date: 	2010-06-16
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, David Ervin, Justin Permar
+****************************************************************************
+
+Agenda
+------
+1) Wrap up what was in-flight prior to ISO
+2) List of varying beefs and/or bugs since then
+3) ISO 21090 into 1.4 (D)CQL2
+
+Notes
+-----
+2) John thinks we should look at new bugs but not RFEs
+3) David thinks this will be a monumental effort, but needs to investigate more to develop LOE
+
+Action Items
+------------
+Justin and David will re-group and follow up Friday afternoon. 

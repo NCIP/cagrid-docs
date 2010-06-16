@@ -1,0 +1,28 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2010-06-16
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Ravi Madduri
+****************************************************************************
+
+Agenda
+------
+1) Workflow Portlet
+2) Changes to 1.3 Workflow Service
+3) SAIF Effects on WF White Paper
+4) BPMN White paper
+5) Bioinformatics Journal
+6) NHIN Direct
+
+
+Notes
+-----
+1 & 2) Lymphoma workflow portlet still in progress. Mismatch between versions of Taverna and capabilities. (caGrid 1.3 uses Taverna 2.0, LPWF used Taverna 2.1 beta). Changes to 1.3 WF service are higher priority than WF portlet (since Portlet will need changed WF service), 
+3) Finished on Monday. Corresponding with Natasha and heavily involves Wei.
+4) Updated draft sent to Charlie, no feedback. 
+5) Wei is working on a paper for that, ongoing.
+6) Ravi went to NHIN Direct F2F in Seattle last Friday.
+
+Action Items
+------------
+1 & 2) Ravi will manage more directly over next few days to get clarity. 
