@@ -58,7 +58,7 @@
     4.0 Bug fixes Since Last Release
 ==============================================================================
 
-Bug		Description
+Bug	Description
 ------------------------------------------------------------------------------
 N/A     N/A
 
@@ -74,7 +74,7 @@ N/A     N/A
     section of the project's gforge site:
     http://gforge.nci.nih.gov/tracker/?group_id=25
 
-Bug		Description
+Bug	Description
 ------------------------------------------------------------------------------
 28747   Unable to search certain mapping scenarios of ISO 21090 AD datatype
 28778   Unable to query ISO 21090 CD datatype using Oracle Database
@@ -83,18 +83,18 @@ Bug		Description
 ==============================================================================
     6.0 Bug Reports and Support
 ==============================================================================
-	The preferred approach is to first search the Gforge Tracker and caGrid 
-	Knowledge Center forums for your problem, then post your question to the 
-	forum. Bugs may be entered on the Fforge project page.
+    The preferred approach is to first search the Gforge Tracker and caGrid 
+    Knowledge Center forums for your problem, then post your question to the 
+    forum. Bugs may be entered on the Fforge project page.
 	
-	Knowledge Center Forums:
-	https://cabig-kc.nci.nih.gov/CaGrid/forums/
+    Knowledge Center Forums:
+    https://cabig-kc.nci.nih.gov/CaGrid/forums/
 
-	GForge Project Page:
-	http://gforge.nci.nih.gov/projects/cagrid-1-0/
+    GForge Project Page:
+    http://gforge.nci.nih.gov/projects/cagrid-1-0/
 	
-	Submit Bug:
-	http://gforge.nci.nih.gov/tracker/?func=add&group_id=25&atid=174
+    Submit Bug:
+    http://gforge.nci.nih.gov/tracker/?func=add&group_id=25&atid=174
 	
 ==============================================================================
     7.0 Documentation
