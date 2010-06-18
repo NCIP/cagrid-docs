@@ -100,9 +100,9 @@ Bug	Description
     7.0 Documentation
 ==============================================================================
 
-	The release documentation, and component design documentation
-	can be found on the project's wiki:
-	http://cagrid.org/display/iso21090/Documentation
+    The release documentation, and component design documentation can be 
+    found on the project's wiki:
+    http://cagrid.org/display/iso21090/Documentation
 
 ==============================================================================
     8.0 References
