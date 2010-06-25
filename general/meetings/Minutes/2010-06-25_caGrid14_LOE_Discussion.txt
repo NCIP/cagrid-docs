@@ -1,0 +1,22 @@
+****************************************************************************
+* Meeting: 	caGrid 1.4 LOE Discussion
+* Date: 	2010-06-25
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, David Ervin, Justin Permar
+****************************************************************************
+
+Agenda
+------
+1) Proposed caGrid 1.4 Schedule
+2) ISO 21090 Support in caGrid 1.4
+3) Next SDK Release
+
+Notes
+-----
+1) 2 sprints, ending Jul 16th, targeting a first RC around then. Weeks of 19th and 26 will be internally focused on QA and Training Grid. Update tutorials, using new installer. When the training grid is good-to-go, first-half of August will be with CBIIT QA to upgrade/deploy on QA grid. Final RC Aug 13th and release to Stage Aug 16 and Prod Aug 23. If we can test and QA services as verified on the training grid would be ideal. 
+2) ISO 21090 work for 1.3.0.2 is in the 1.4 trunk. Support in CQL 2.0 is in the trunk and nearly complete (some issues left with association population feature in CQL2 knowing how to handle ISO data types). 
+
+Action Items
+------------
+1) John will update the project schedule, build a calendar for QA and send, and the ARC and submit.
+3) Satish had requested our schedule and a meeting to discuss the next SDK release. John will inquire who are the users for CQL in the SDK?
