@@ -1,0 +1,22 @@
+****************************************************************************
+* Meeting: 	Workflow QA Kickoff
+* Date: 	2010-07-07
+* Venue:	Teleconference
+* Attendees: 	Aynur Aburazika, John Eisenschmidt, Ravi Madduri, 
+*               Dina Sulakhe
+****************************************************************************
+
+Agenda
+------
+1) Changes to 1.3 Workflow Service 
+2) Workflow Portlet
+
+Notes
+-----
+1) New svn branch for 1.3 changes
+2) Portlet code is also in the same branch in the svn and tested in the Demo portal
+
+Action Items
+------------
+1) Dina will send a link to svn branch and wiki instructions to Aynur
+2) Dina will send instructions for Portlet to Aynur
