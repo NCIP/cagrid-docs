@@ -1,0 +1,22 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2010-07-14
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Ravi Madduri
+****************************************************************************
+
+Agenda
+------
+1) QA Status
+2) ICWS Conference
+3) Bioinformatics Journal
+
+Notes
+-----
+1) No news (is hopefully good news). Once is done, need to take a final pass over documentation. 
+2) Wei proposed a tutorial using Taverna for caBIG workflows, accepted, went to Miami last week and presented. Ian also gave a keynote in conference, highlighted the work was done in caBIG. 
+3) Wei working on a paper highlighting Taverna work for caBIG and CVRG
+
+Action Items
+------------
+1)
