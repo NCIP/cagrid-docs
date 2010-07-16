@@ -1,0 +1,23 @@
+****************************************************************************
+* Meeting: 	Next caGrid and SDK Releases
+* Date: 	2010-07-15
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, David Ervin, Satish Patel, 
+*		Justin Permar, Greg Raley
+****************************************************************************
+
+Agenda
+------
+1) Known SDK touch points within caGrid (to orient Greg and Sree)
+2) CQL2 Data Services support for SDK-generated systems using 4.3
+3) Other caGrid touch points within SDK (e.g. consumption of grid credentials for authentication) 
+
+Notes
+-----
+1) a) Use Grid jars to support consumption of Grid Credentials. b) CQL query interface. c) Remote API as input, Data Service as output d) Introduce uses SDK to generate beans
+2) Grid team proposes the SDK deprecate CQL support within SDK, continue to bundle CQL1 jars during deprecation period, and CQL2 support only provided through a grid data service. SDK team proposes to bundle CQL2 support, which will not be trivial given implementation.
+3) Some question about need for use case (support of Grid authentication within SDK). Bundled 1.3 JARs should continue to work with 1.4 security services (refer to Deprecation Plan). A future SDK release can include the caGrid 1.4 JARs. 
+
+Action Items
+------------
+* John will summarize issues and send a follow up email. 
