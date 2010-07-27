@@ -1,0 +1,94 @@
+The SVN trunk will be where active development occurs, and we will create a branch to maintain the release.
+Users/Developers wanting to checkout the "release" will use a provided tag.
+
+The release will have a "release engineer" who is responsible for the steps below, and should review all commits
+(and reject any in appropriate changes) to the release branch.  Any planned development on the branch should
+first be ok'd by the release engineer.
+
+In the current process (for 1.3 and 1.4; not true in the past), only the "caGrid" module is being formally released.
+However, all "release" tags and branches should be performed against the full repository.
+For example, while the system/integration tests (tests module), are not released, they are run against a given release and so must be branched with the core release.  
+
+RELEASE PROCESS
+====================
+----- prepare the release branch -----
+send email to the development mailing list announcing a version control freeze
+tag a branch root from the cagrid trunk (svn copy https://ncisvn.nci.nih.gov/svn/cagrid/trunk/cagrid/ https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_root)
+create a branch based on the branch root tag  (svn copy https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_root https://ncisvn.nci.nih.gov/svn/cagrid/branches/caGrid-1_4_release/)
+
+----- prepare the release candidate -----
+get a working checkout of the release branch in a new directory (svn checkout --username {GFORGE_USERNAME} https://ncisvn.nci.nih.gov/svn/cagrid/branches/caGrid-1_4_release/)
+do fixing or cleaning needed on the branch (setting versions (ant set-project-versions), set the version in README.txt, default target grids (in caGrid/antfiles/target-grid.xml), set ivy publish status to "release" (in publish-artifacts macro of caGrid/antfiles/ivy/ivy-shared-targets.xml) etc)
+cleanup / edit service metadata of core services to reflect the new version name 1.4 instead of 1.4-dev
+setup automated builds/tests for the branch (copy existing hudson builds for continuous and system tests, change the SVN repository location it pulls from to the new branch)
+tag a release candidate of the branch (svn copy https://ncisvn.nci.nih.gov/svn/cagrid/branches/caGrid-1_4_release/ https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_rc1/)
+
+-----  make a release candidate package -----
+export the svn repository to clean out .svn dirs (svn export https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_rc1/)
+zip up, or whatever is needed for the release, the directory created {dir for checkout}
+execute a build, upload the ivy artifacts from Software/core/caGrid/integration-repository to software.cagrid.org.  Create a new dir for them following the naming convention for 1.3 artifacts.  When the release is complete, change the symlink for "repository" from the 1.3 location to 1.4
+
+----- address any issues with the candidate -----
+*** if bug fixes
+  create JIRA or GForge issue
+  commit the fixes to our local branch checkout (svn commit, comment link to relevant JIRA / GForge issue)
+  tag a bug fix tag off the branch (svn copy https://ncisvn.nci.nih.gov/svn/cagrid/branches/caGrid-1_4_release/ https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_rc1_bugfix-{JIRA-ISSUE-ID}/)
+  merge bug fix into trunk as appropriate
+  rinse and repeat... tag a new release candidate (svn copy https://ncisvn.nci.nih.gov/svn/cagrid/branches/caGrid-1_4_release/ https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_rc2)
+
+-----  finalize the release (after validation of last RC; this should just be retagging the last RC as the final)-----
+tag the release on the branch (svn copy https://ncisvn.nci.nih.gov/svn/cagrid/branches/caGrid-1_4_release/ https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_final)
+  --OR if a release was already made from an RC, move the last RC to be the final in SVN: (svn move https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_rcN/ https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_final)
+create the release (see "make a release candidate package")
+
+----- prepare the trunk for new development -----
+*fix items in the HEAD (e.g. project versions, service metadata, extension version numbers) to indicate it is the next release (when next release is known) 
+
+
+
+INSTALLER RELEASE
+====================
+
+Create file release on gforge
+
+----- get checkouts -----
+mkdir <directory for release>
+cd <directory for release>
+cvs -d :ext:anonymous@cbiocvs2.nci.nih.gov:/share/content/gforge/cagrid-1-0 export -r <release tag> cagrid-1-0/caGrid
+
+----- create caGrid source release -----
+cd cagrid-1-0
+zip -r caGrid-1.3.zip caGrid
+mv  caGrid-1.3.zip <directory for release>
+md5 <directory for release>/caGrid-1.3.zip > <directory for release>/caGrid-1.3.zip.md5sum
+
+----- verify the build/test -----
+cd caGrid
+ant all test
+
+----- upload caGrid release -----
+Upload to gforge, <directory for release>/caGrid-1.3.zip 
+Copy the URL to this release (caGrid-1.3.zip) for use in the installer below, refer to this as <CAGRID URL>
+Copy the md5 value from caGrid-1.3.zip.md5sum, and refer to this as <CAGRID MD5>
+Obtain URL of where the installer properties (cagrid.installer.properties) will be stored, refer to this as <PROPS URL>
+
+----- create installer release -----
+cd projects/installer
+#NOTE: if you cannot provide these values yet, you can use placeholders, and then edit: <directory for release>/cagrid.installer.properties
+#  the download.properties.url is the only property value that is actually built into the created installer zip
+#  so it is strongly encouraged you know the value of that before hand (as to change it you must edit the value
+#  in the download.properties file, inside the caGrid-installer-1.3.jar, inside the caGrid-1.3.zip)
+#  For release candidates, you can run this command once to create the properties file, upload it to gforge (get the URL), then run it again passing the properties URL in
+ant -Ddownload.properties.url=<PROPS URL> \
+  -Dcagrid.download.url=<CAGRID URL>/caGrid-1.3.zip \
+  clean dist-installer
+mv build/caGrid-installer-1.3.zip <directory for release>
+mv build/cagrid.installer.properties <directory for release>
+#uncomment and edit the value of the cagrid.md5.checksum property in <directory for release>/cagrid.installer.properties to be that of the value of <CAGRID MD5> 
+
+----- upload installer -----
+Verify correctness of <directory for release>/cagrid.installer.properties
+Upload <directory for release>/cagrid.installer.properties to <PROPS URL>
+Upload <directory for release>/caGrid-1.3-installer.zip to gforge
+
+
