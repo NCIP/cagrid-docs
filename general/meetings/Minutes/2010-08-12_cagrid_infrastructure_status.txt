@@ -1,0 +1,28 @@
+****************************************************************************
+* Meeting: 	caGrid Core Infrastructure Status
+* Date: 	2010-08-12
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, David Ervin, Joe George, Justin Permar, 
+*		Gary Sabel, Bill Stephens
+****************************************************************************
+
+Agenda
+------
+1) Status of 1.4 artifacts (code, documentation)
+2) 1.4 deployment (includes: training, configuration of NCI grids requested
+by Bill, ARC/tech stack)
+3) Issue with 1.4 grouper and backwards compatibility (this KC thread)
+4) WebSSO (includes: documentation, error with 1.4 CDS, NPE for invalid
+password, and UAMS's firewalled AuthN service)
+
+Notes
+-----
+1) Tutorials: Analytical/Data Service/Stock Ticker. Docs will take another week (start 8/23).
+2) Training Grid - to-do: Dorian and Grouper redeployment (tomorrow). Bug found in Identifiers Webapp (small fix that still needs to be made)
+3) Some schema changes to support published/unpublished IdPs, changes make extra calls using old service interface to continue using older/compatible schema. 
+4) John is working to get approval for Santhosh's time to work on WebSSO. 
+
+Action Items
+------------
+1) John needs to submit deployment requests to upgrade VMs to Java 1.6, provision new VMs, create new db schemas. John will check with Aynur to see if she wants a kickoff tcon Tue 8/16?
+
