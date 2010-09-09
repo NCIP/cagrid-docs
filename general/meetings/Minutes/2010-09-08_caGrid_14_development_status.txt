@@ -1,0 +1,31 @@
+****************************************************************************
+* Meeting: 	caGrid 1.4 Development Status
+* Date: 	2010-09-08
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, David Ervin, Justin Permar, Bill Stephens
+****************************************************************************
+
+Agenda
+------
+1) QA
+2) Three of interest: 
+   a) CSM 3.2/Authentication Service 
+   b) Installer issue with Windows XP SP3 
+   c) Grid Grouper
+
+Notes
+-----
+1) Deployment of RC1 still in progress. Need 2 containers for Identifiers NA, HTTP500 from Identifiers Admin WebApp; Redeploy FQP 1.4 RC3 in QA. Just need to redeploy overtop with nightly installer (step 6), should not need to redeploy Transfer. 
+2) a) wrote and delivered our own fix, not certain CSM team's fix resolves our issue. Trying to test and verify at OSUMC. 
+   b) Edge case where install fails at 80% when deploying a container from Installer, commands-themselves work fine. May be Java related, may be Install code related. 
+   c) Tested a fix: changed collation type of the column that containers grid ids to be case sensitive. 
+
+Action Items
+------------
+1) John needs to update ARC and PTE for Systems Team [done]. 
+   John will reach out to Aynur to update FQP service. 
+   Need to additional test cases to Aynur that verify issues have been resolved:
+   (New Test Cases: searching for users in Dorian forced a redeployment, test by launching 1.3 GAARDS UI. Grid Grouper test for case sensitivity). 
+2) a) Need to verify this fix and sync up with CSM team
+   b) Continuing to investigate.
+   c) Joe will determine if this fix should be delivered by an ant target or just a script (likely latter), and send to John to propagate up tiers. 
