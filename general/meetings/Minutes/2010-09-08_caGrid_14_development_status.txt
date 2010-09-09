@@ -12,6 +12,7 @@ Agenda
    a) CSM 3.2/Authentication Service 
    b) Installer issue with Windows XP SP3 
    c) Grid Grouper
+3) Schedule
 
 Notes
 -----
@@ -19,6 +20,9 @@ Notes
 2) a) wrote and delivered our own fix, not certain CSM team's fix resolves our issue. Trying to test and verify at OSUMC. 
    b) Edge case where install fails at 80% when deploying a container from Installer, commands-themselves work fine. May be Java related, may be Install code related. 
    c) Tested a fix: changed collation type of the column that containers grid ids to be case sensitive. 
+3) Adjusted schedule is now (though subject to change):
+   Stage: 9/20/2010
+   Production: 9/27/2010
 
 Action Items
 ------------
