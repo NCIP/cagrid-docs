@@ -1,0 +1,437 @@
+    
+                            caGrid
+                          Version 1.4
+                        October xx, 2010 
+
+
+================================================================
+                            Contents
+================================================================
+    
+1.0 caGrid Introduction
+2.0 Release History
+3.0 New Features and Updates
+4.0 Bug fixes since last release
+5.0 Known Issues/Defects
+6.0 Bug Reports and Support
+7.0 Documentation
+8.0 References
+
+================================================================
+                      1.0 caGrid Introduction
+================================================================
+
+    This document contains the release notes for the caGrid 1.4
+    release.  
+
+    caGrid 1.4 is a point release of the caGrid 1.x stream.  It
+    is generally backwards compatible with the service
+    interfaces of caGrid 1.0, 1.1, 1.2, and 1.3 That is, services 
+    and applications developed against the caGrid 1.0 - 1.3
+    release, will continue to function against caGrid 1.4
+    versions of those services (including the production grid).
+    More details on backwards compatibility can be found here:
+    http://cagrid.org/display/caGrid14/Deprecation%20Plan
+
+    This release of caGrid supports caBIG compatibility level gold.
+
+    https://cabig.nci.nih.gov/workspaces/Architecture/caGrid
+    http://cagrid.org
+
+================================================================
+                      2.0 Release History
+================================================================
+
+caGrid 0.5 was released on 31st August 2005
+caGrid 0.5.1 was released on 7th October 2005
+caGrid 0.5.2 was released on 15th November 2005
+caGrid 0.5.3 was released on 25th January 2006
+caGrid 0.5.4 was released on 12th May 2006
+caGrid 1.0 Beta was released on 17th July 2006
+caGrid 1.0 was released on 15th December 2006
+caGrid 1.1 was released on 17th September 2007
+caGrid 1.2 was released on 31st March 2008
+caGrid 1.3 was released on 31st March 2009
+caGrid 1.3.0.2 was released on 23rd November 2009
+ 
+
+================================================================
+                      3.0 New Features and Updates
+================================================================
+
+ RFE	Description
+------------------------------------------------------------
+19990	Specify additional allowable CQL Predicate value datatypes
+19991	caDSR to Store XML Namespace Binding Information
+20088	Grid Grouper integration test is brittle
+20091	GTS needs integration tests
+20093	Dorian IDP registration needs metadata or operation to indicate registration requirements
+20094	Grid Grouper to allow &quot;read only&quot; view of groups containing a specific user
+20102	Installer should support downloading and using target grids that aren't packaged with caGrid
+20106	Update Documentation
+20107	Update Build Process
+20109	Update the Sample Application
+20112	Dorian's main page on the wiki is outdated; doesn't mention host identity management
+20190	GME should provide a validate capability to validate a given XML document conforms to schemas that are stored in the GME
+20192	WebSSO's GridCredentialDelegatorImpl should provide a way to specify the issuedCredentialPathLength
+20198	Add mechanism to update delgation path length from CDS
+20199	Enhanced project to allow for deployment to Tomcat 5.5+
+20200	Query history tab should be more intuitive for running queries
+20201	Improve load time of homepage
+20204	Use of multiple Dorian and multiple authentication services should be easy
+20205	Integration with new version of Dorian and the Authentication Service
+20209	Support out-of-box integration with Liferay (caGrid Portal 2.x)
+20210	Enhance existing documentation
+20214	Acegi client
+20223	CQL/CQL2  Integration in SDK
+20237	Add support to resource property helper for client side authorization.
+20238	Websso configuration files should be better templated
+20248	Review / Clarify GAARDS Error Messages
+20253	Users grid identity should be available in Application Scope
+20254	Allow sorting of directory view columns
+20255	Allow filtering of inactive services
+20257	Session timeout throws non descriptive error in DWR
+20262	Utility for help with registration problems
+20263	WebSSO Integration
+20270	Notification Framework 
+20275	Provide interface to make participant information update requests.
+20278	Portal should provide better error messages for common service errors.
+20284	Remove unique email address requirement for portal accounts.
+20286	Introduce Metadata Editor should allow editing of grid service version
+20322	Make gov.nih.nci.cagrid.common.FaultHelper more usable (ref: cagrid-1-2\caGrid\projects\core)
+20370	Upgrade to Ivy 2.0 final
+20416	Enable independent  logging for deployed portlets/webapps
+20527	Data Services to support a standard Query and return via caGrid Transfer
+20564	Diagnostics portlet should link to new cagrid wiki 
+20566	Diagnostics should automatically run when requested from Service details view
+20691	Admin utility to get a  list of invisible services
+20763	Dorian should validate emails for new registrations
+20871	Fix Installer Zip File
+22930	Users should be able to log onto the portal using there identity provider credentials
+22958	Websso ivy artifacts should be more granular
+22973	Catalog browsing should save state.
+22979	caGrid Portal: Data types overview
+22980	caGrid Portal: front-page scrolling
+22988	caGrid Portal: Change Search Results heading.
+22990	caGrid Portal: communities feedback
+22994	caGrid Portal: catalog search feedback
+23637	Copy lib files based on caCORE API Type
+24288	Implement Sort By Rating on Browse Page
+24368	Liquibase changelog breaks with InnoDB engine
+24372	Use caCORE Model Properties
+25457	Make &quot;Add Related Item&quot; Window scrollable
+25800	Portal 3.0: Login text
+25803	Portal 3.0: Comments tab message
+25804	Portal 3.0: Remove Other Info Tab
+26423	Provide Introduce with the ability to choose which JDK to use
+CAGRID-112	Grid Grouper Tree Loading is to slow it needs to be done more efficiently
+CAGRID-134	[#20190] GME should provide a validate capability to validate a given XML document conforms to schemas that are stored in the GME
+CAGRID-147	Allow users to renew host certificates.
+CAGRID-167	Support administration of publish property for Dorian Trusted Identity Providers
+CAGRID-198	Allow owners to renew their host certificates in the GAARDS UI
+CAGRID-216	[#20237] Add support to resource property helper for client side authorization.
+CAGRID-217	[#20087] SyncGTS needs to use service property for sync description
+CAGRID-222	Refactor FQP to support DCQL2
+CAGRID-224	Data Service Infrastructure needs to support CQL2
+CAGRID-278	Transfer Introduce Extension needs an upgrader to 1.4
+CAGRID-279	Update FQP dev-build.xml to fail if Transfer hasn't been deployed, and update the documentation to indicate as much
+CAGRID-289	Add cagrid_metadata extension to NA grid service
+CAGRID-303	Introduce to save a copy of the upgrade log
+CAGRID-314	Support ISO21090 Datatypes in caGrid 1.4
+CAGRID-33	Add Publish Property to Dorian Identity Providers
+CAGRID-41	Fix Java 6 system test build
+CAGRID-477	Add Community Search to Account Management menu
+CAGRID-49	Enable GAARDS UI to manage and switch target Grids
+CAGRID-52	Dorian should validate emails for new registrations
+CAGRID-55	Review / Clarify Error Messages
+CAGRID-56	GridGrouper should provide a way for a user to request to be added to a (non-opt in) group
+CAGRID-59	Grid Grouper to allow "read only" view of groups containing a specific user
+CAGRID-60	Dorian IDP registration needs metadata or operation to indicate registration requirements
+CAGRID-65	Enable users with Dorian IdP account to edit their information
+CAGRID-66	Support publicly searching for users based on user attributes.
+CAGRID-84	Modify GAARDS UI to support Dorian User Searching and Host Searching Capability.
+CAGRID-85	Support publicly searching for hosts based on host attributes.
+
+
+The complete list of new features and additional details can be found 
+on the project GForge Tracker and the CITIH Jira tracker:
+	http://gforge.nci.nih.gov/tracker/?atid=2252&group_id=25&func=browse
+	https://jira.citih.osumc.edu/secure/IssueNavigator.jspa?mode=hide&requestId=10530
+	
+    
+Specific highlighted improvements in caGrid 1.4 include:
+* Continuous Integration:
+  caGrid 1.4 enhances support for the latest releases (versions 4.2 and 4.3) of the caCORE 
+  Software Development Kit (SDK) and Common Security Module (CSM).
+* Data Services:
+  Data services in caGrid 1.4 now support CQL 2, the successor query language to CQL.  CQL 2 adds numerous
+  features frequently requested by the community, including associated object retrieval.  Data services also
+  provide optional support for the use of caGrid Transfer to retrieve results, which can significantly
+  reduce the overhead of moving large results from the server to the client.
+* Introduce Toolkit
+  Introduce includes service upgraders, allowing service developers to easily update to and leverage caGrid 1.4.
+* Identifiers
+  An all new system and grid services have been created for caGrid 1.4 which enable an identifiers framework
+  for uniquely identifying instances of data on caGrid. (http://cagrid.org/display/identifiers/Home)
+
+================================================================
+                      4.0 Bug fixes Since Last Release
+================================================================
+
+Bug		Description
+------------------------------------------------------------   
+14491	CQL QueryModifier with single, non-distinct attribute fails when run against caCORE SDK 4.0
+15611	GAARDS generates error if certificate is not selected for viewing
+17628	training grid syncgts URLs need to be updated
+18247	SDK 4.0 query processor can return duplicate object results
+18649	Certain types of Hibernate database tables for subclasses are not supported by Data Services with SDK 4.0 and 4.1
+19045	Introduce generated WSDL breaks unique key contraint of WSDL XSD
+19306	Introduce grid service path cannot contain spaces
+19397	Problem with QA Dorian service
+20171	websso packages sync description file
+20196	Installer overwrites the installed credentials if already installed credentials are selected
+20375	Incorrect exception handling when deleting non-existant file
+20481	Installer not correctly setting the Tomcat shutdown port or insecure connector port
+20520	Introduce gives no indication of a problem if an imported method's operation cannot be found in the imported WSDL
+20531	GAARDS UI hangs when administrator attempts changing user password
+20563	Data Services backed by SDK system using a non-default namespace doesn't correctly fix castor mapping file's namespaces
+20634	JBoss logging throws exception with multiple log4j.jar files
+20679	Cannot select update patch after clicking &quot;Look for Updates&quot; for custom update site
+20774	WebSSO not allowing AuthenticationProviders urls to be null
+20794	Introduce generates *-security-desc.xml files with inconsistent line breaks
+20921	caCORE SDK 4.0 Query Processor does not support queries against attributes of type java.lang.Float
+21012	Query portlet does not validate Queries
+21065	Infinite loop in Introduce updater
+21502	SDK 4.0 data service wizard doesn't correctly set domain model from caDSR
+21704	Domain models generated from XMI for caCore SDK 4.x don't preserve caDSR IDs on Attributes
+21983	SDK 4.1 backed data services using Local API use the &quot;wrong&quot; bean proxy implementation
+22096	Introduce disallows hyphenated last names for Point of Contact
+22275	caGrid installer doesn't check Apache Tomcat version properly on Windows
+22321	The Transfer service intermittently and randomly loses callbacks on transfer contexts
+22446	Dorian appears to be publishing a CRL to GTS twice when a new account is created
+22515	Introduce GUI can be used to add multiple exceptions of the same type to operations
+22804	Introduce add/remove types schema file selection bug
+22807	GAARDS UI does not display the 'Set As Default' button after authenticating
+22815	Installer not setting connector redirect ports correctly when using custom https port
+22830	webSSO login does not work with CBIIT Authentication service
+22891	Missing XML prolog on schemas causes SyncGTS exception in JBoss
+23024	CQL queries making use of EQUAL_TO as the default predicate value will fail
+23025	DQL queries making use of schema-specified default values may cause errors
+23029	MMS UMLAssociationExclude wildcard character as default value not honored 
+23044	Null pointer exception in GAARDS-UI
+23120	secure service deployed on port 443 has a connect bug (connects to port 8443)
+23169	Tools link in the Tools tab is not obvious 
+23252	SDK41QueryProcessor does not set the password for non-static logins
+23264	Introduce extension loader is reloading the grape configuration from disk too often
+23362	FQP erroneously indicates &quot;COMPLETE_WITH_ERROR&quot; state when a target data service returns no results.
+23504	Setting namespace replacement policy has no effect until Introduce is restarted
+23778	WSDL Import dialog errors that prevent successful WSDL method import
+24270	Incomplete authentication issue
+24428	SDK 4 query processor throws NPE when a single attribute value is retrieved with a null value
+24466	The GTS schema illegally specifies minOccurs and maxOccurs on global elements
+25088	Deletes not propagated to SOLR index.
+26343	Cannot update CRL for certificate authority managed by the GTS using the GAARDS UI. 
+26604	gov.nih.nci.cagrid.gridgrouper.service.GridGrouper does not check for the MemberFilter instance to be null.
+26610	gridgrouper and concurrency
+26779	CRLs cannot exceed 65k in length
+27119	User can view members of a group without read permissions
+27464	Date Validation in a CQL Query
+28474	ISO datatype analytical service test: runtime exception for using useablePeriod class variable in Ad
+28620	Unable to query DSETTEL datatype
+28621	Unable to query AD datatype
+28622	unable to query NullFlavor
+28629	Unable to query REAL datattype
+28667	unable to query IVL datatype
+28668	Inconsistence between domainmodel and CQL
+28743	Unable to search IVLTS data type based on a criterion of width
+28744	Unable to query SC datatype in sample project with search criteria based on value2-&gt;code-&gt;codeSystem
+28745	Unable to query II data type based on attribute root
+28746	Unable to query ISO 21090 BlNonNull datatype based on its value attribute
+28752	Unable to search PQ based on the unit
+28773	Unable to query ISO 21090 REAL datattype with search criteria
+28803	Problem querying ISO 21090 CD datatype using Mysql Database
+28808	Unable to query DsetCD with criteria involves originalText
+28858	Unable to query IVL datatype based on lowClosed and highClosed attribute
+29359	SyncGTS HistoryManager fails to truncate history logs in .cagrid/syncgts/history
+CAGRID-100	Fix issue with Transfer losing callbacks
+CAGRID-109	Introduce Metadata Editor should allow editing of grid service version
+CAGRID-137	[#23120] secure service deployed on port 443 has a connect bug (connects to port 8443)
+CAGRID-138	[#19045] Introduce generated WSDL breaks unique key contraint of WSDL XSD
+CAGRID-140	[#22308] Introduce-generated services create EPRs with an incorrect hostname
+CAGRID-155	[#24157] gridtrustreport NPEs when there are unexpected files in the Globus trust dir
+CAGRID-156	[#23778] WSDL Import dialog errors that prevent successful WSDL method import
+CAGRID-200	The tomcat container tests fail if there is no external network available
+CAGRID-209	[#20375] Incorrect exception handling when deleting non-existant file
+CAGRID-230	Investigate Gaards UI Logging
+CAGRID-235	Credential Cannot be Imported
+CAGRID-310	gov.nih.nci.cagrid.gridgrouper.service.GridGrouper does not check for the MemberFilter instance to be null
+CAGRID-327	[#26779] CRLs cannot exceed 65k in length
+CAGRID-352	[27119] User can view members of a group without read permissions
+CAGRID-404	Installers freezes on Windows when installing a container
+CAGRID-405	Introduce stub generation for ISO INT datatype is broken
+CAGRID-412	Introduce upgraders from 1.2 -> 1.4 not working as expected
+CAGRID-426	WebSSO throws an NPE when attempting to connect to an unreachable Auth Service
+CAGRID-460	update naming authority configuration schema to match code
+CAGRID-469	Default behavior of the userSearch, hostSearch, and updateAccountProfile operations are too permissive
+CAGRID-472	GAARDS 1.4 cannot add an authentication service to Dorian 1.3
+CAGRID-473	GAARDS 1.3 does not work with GridGrouper 1.4
+CAGRID-479	Identifiers Naming Authority is hard coded to use TRIAD index service
+CAGRID-480	Identifiers Web app does not correctly handle URLs passed as Get requests
+CAGRID-481	SyncGTS HistoryManager fails to truncate history logs in .cagrid/syncgts/history
+CAGRID-483	Target grids contain NCI-Dev grid for 1.4
+CAGRID-486	Incorporate patched CSM 3.2 jar into 1.4 branch before final release to fix AuthenticationService lockout time issue
+CAGRID-488	CQL 1 to CQL 2 converter doesn't default null predicate to EQUAL_TO
+CAGRID-489	DCQL 1 to 2 converter doesn't handle multiple date formats
+CAGRID-490	Domain Model Validator can incorrectly invalidate associations depending on their order in the domain model
+CAGRID-50	Dorian appears to be publishing a CRL to GTS twice when a new account is created
+CAGRID-73	Figure out why ant all (in integration tests) is running out of memory on trunk
+CAGRID-79	Remove BDT from data project
+
+
+The complete fixed bug list and additional details can be found on the 
+project Gforge Tracker and CITIH Jira tracker:
+  http://gforge.nci.nih.gov/tracker/index.php?group_id=25&atid=174
+  https://jira.citih.osumc.edu/secure/IssueNavigator.jspa?mode=hide&requestId=10531
+
+================================================================
+                     5.0 Known Issues Not Yet Fixed
+================================================================
+
+Updated bug reports and feature requests can be found on the tracker section
+of the project's gforge site, and the CITIH Jira site:
+  http://gforge.nci.nih.gov/tracker/?group_id=25
+  https://jira.citih.osumc.edu/browse/CAGRID
+
+----------
+ISSUE:
+	Bug #29723 caGrid 1.4 Identifiers Prefix Authority Service: missing images in some pages
+DETAILS:
+	http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=29723&group_id=25&atid=174
+IMPACT:
+	Cosmetic only; some images on the prefix authority administrative pages don't display
+WORKAROUND:
+	Detaild in GForge tracker post.
+----------
+
+----------
+ISSUE:
+	Bug #23957 Long classpaths break builds on Windows platforms
+DETAILS:
+	http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=23957&group_id=25&atid=174
+IMPACT:
+	When many extensions are installed into Introduce, and Introduce resides in a deeply nested directory structure,
+	the JVM will exit with an error when the user attempts to start Introduce
+WORKAROUND:
+	Move the introduce directory to a less deeply nested location on the file system (i.e. c:/grid/Introduce)
+----------
+
+---------
+ISSUE:
+	Bug #13529 Spaces in GLOBUS_LOCATION or ANT_HOME causing errors on deployment for Introduce created services
+DETAILS:
+	http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=13529&group_id=25&atid=174
+IMPACT:
+	$GLOBUS_LOCATION and $ANT_HOME are not allowed to have spaces in their directory names
+WORKAROUND:
+	Install globus and ant to directories without spaces in their names
+----------
+
+----------
+ISSUE:
+	Bug #23765 Introduce NPE when removing a duplicate operation
+DETAILS:
+	http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=23765&group_id=25&atid=174
+IMPACT:
+	Service developers might have to roll back their service to remedy this problem
+WORKAROUND:
+	Service developers should avoid adding methods with duplicate names
+----------
+
+---------
+ISSUE:
+	Bug #18252 Introduce is not currently supporting GetCurrentMessage of the WS-Notification
+DETAILS:
+	http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=18252&group_id=25&atid=174
+IMPACT:
+	Clients may not be able to utilize the GetCurrentMessage feature of WS-Notification
+WORKAROUND:
+	None within WS-Notification; retrieve the resource property directly to obtain the current message
+----------
+
+----------
+ISSUE:
+	Bug #26600 / CAGRID-309 Introduce Clients dont support client side authorization configuration for secure conversation and secure transport
+DETAILS:
+	http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=26600&group_id=25&atid=174
+	https://jira.citih.osumc.edu/browse/CAGRID-309
+IMPACT:
+	Client side APIs of Introduce generated services cannot make use of WSSecureConversation or WSSecureMessage with client side authorization
+WORKAROUND:
+	Changes can be manually made to the client API to support these scenarios, as detailed in the corresponding JIRA issue.
+----------
+
+----------
+ISSUE:
+	Bug #14007 Multiple services using WS-Enumeration cannot run in same container
+DETAILS:
+	http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=14007&group_id=25&atid=174
+IMPACT:
+	Users attempting to deploy multiple services using WS-Enum in the same container
+WORKAROUND:
+	Deploy services to a separate container, or see configuration changes described in bug report
+----------
+
+----------
+ISSUE:
+	Bug #18966 JVM shutdown hooks sometimes don't run to completion under Tomcat
+DETAILS:
+	http://gforge.nci.nih.gov/tracker/index.php?func=detail&aid=18966&group_id=25&atid=174
+IMPACT:
+	Things like service unregistration may not occur immediately.
+WORKAROUND:
+	None; registrations will expire.
+----------
+
+================================================================
+                	6.0 Bug Reports and Support
+================================================================
+	The preferred approach is to first search the knowledge center
+	forums for your problem, then post your question to the forum.
+	Bugs can also be entered on the gforge project page.
+	
+	Knowledge Center Forums:
+	https://cabig-kc.nci.nih.gov/CaGrid/forums/
+
+	GForge Project Page:
+	http://gforge.nci.nih.gov/projects/cagrid-1-0/
+	
+	Submit Bug:
+	http://gforge.nci.nih.gov/tracker/?func=add&group_id=25&atid=174
+	
+================================================================
+                     	7.0 Documentation
+================================================================
+
+	The release documentation, and component design documentation
+	can be found on the project's wiki:
+	http://cagrid.org/display/caGrid14/Home
+
+================================================================
+                    	8.0 References
+================================================================
+    
+The following URLs access web pages relevant to caGrid.
+
+    caBIG Home Page
+    --  http://cabig.nci.nih.gov/
+    
+    NCICB Download Center
+    --  http://ncicb.nci.nih.gov/download/
+
+    caGrid
+    -- http://cagrid.org
+    -- https://cabig-kc.nci.nih.gov/CaGrid/KC
+    -- https://cabig.nci.nih.gov/workspaces/Architecture/caGrid/
+    -- http://gforge.nci.nih.gov/projects/cagrid-1-0/
+    -- https://ncisvn.nci.nih.gov/svn/cagrid/
+
