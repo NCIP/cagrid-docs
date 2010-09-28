@@ -69,12 +69,14 @@ ant all test
 Upload to gforge, <directory for release>/caGrid-1.4.zip
 	Specify the release name as "caGrid-1.4"
 Copy the URL to this release (caGrid-1.4.zip) from GForge's file release system for use in the installer below, refer to this as <CAGRID URL>
+	!!!NOTE!!! If the URL starts with https://, change it to http:// or it WON'T WORK
 Copy the md5 value from caGrid-1.4.zip.md5sum, and refer to this as <CAGRID MD5>
 
 ----- create installer properties file -----
 Edit the <directory for release>/Software/core/caGrid/projects/installer/cagrid.installer.properties file to reference the caGrid-1.4.zip uploaded to <CAGRID URL>
 Also uncomment edit the cagrid.md5.checksum to reference <CAGRID MD5>
 Upload to gforge the cagrid.installer.properties file, refer to this as <PROPS URL>
+	!!!NOTE!!! If the URL starts with https://, change it to http:// or it WON'T WORK
 	Click "Edit Releases" on the caGrid-1.4 package
 	Click "Edit" next to the "caGrid-1.4" release name
 	Scroll down to "add files..."
