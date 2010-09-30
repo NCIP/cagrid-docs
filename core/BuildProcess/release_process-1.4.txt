@@ -21,10 +21,10 @@ get a working checkout of the release branch in a new directory (svn checkout --
 do fixing or cleaning needed on the branch (setting versions (ant set-project-versions), set the version in README.txt, default target grids (in caGrid/antfiles/target-grid.xml), set ivy publish status to "release" (in publish-artifacts macro of caGrid/antfiles/ivy/ivy-shared-targets.xml) etc)
 cleanup / edit service metadata of core services to reflect the new version name 1.4 instead of 1.4-dev
 setup automated builds/tests for the branch (copy existing hudson builds for continuous and system tests, change the SVN repository location it pulls from to the new branch)
-tag a release candidate of the branch (svn copy https://ncisvn.nci.nih.gov/svn/cagrid/branches/caGrid-1_4_release/ https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_rc1/)
+tag a release candidate of the branch (svn copy https://ncisvn.nci.nih.gov/svn/cagrid/branches/caGrid-1_4_release/ https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_rcX/)
 
 -----  make a release candidate package -----
-export the svn repository to clean out .svn dirs (svn export https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_rc3/)
+export the svn repository to clean out .svn dirs (svn export https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_rcX/)
 zip up, or whatever is needed for the release, the directory created {dir for checkout}
 execute a build, upload the ivy artifacts from Software/core/caGrid/integration-repository to software.cagrid.org.  Create a new dir for them following the naming convention for 1.3 artifacts.  When the release is complete, change the symlink for "repository" from the 1.3 location to 1.4
 
@@ -32,22 +32,23 @@ execute a build, upload the ivy artifacts from Software/core/caGrid/integration-
 *** if bug fixes
   create JIRA or GForge issue
   commit the fixes to our local branch checkout (svn commit, comment link to relevant JIRA / GForge issue)
-  tag a bug fix tag off the branch (svn copy https://ncisvn.nci.nih.gov/svn/cagrid/branches/caGrid-1_4_release/ https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_rc1_bugfix-{JIRA-ISSUE-ID}/)
+  tag a bug fix tag off the branch (svn copy https://ncisvn.nci.nih.gov/svn/cagrid/branches/caGrid-1_4_release/ https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_rcX_bugfix-{JIRA-ISSUE-ID}/)
   merge bug fix into trunk as appropriate
-  rinse and repeat... tag a new release candidate (svn copy https://ncisvn.nci.nih.gov/svn/cagrid/branches/caGrid-1_4_release/ https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_rc2)
+  rinse and repeat... tag a new release candidate (svn copy https://ncisvn.nci.nih.gov/svn/cagrid/branches/caGrid-1_4_release/ https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_rcX+1)
 
 -----  finalize the release (after validation of last RC; this should just be retagging the last RC as the final)-----
 tag the release on the branch (svn copy https://ncisvn.nci.nih.gov/svn/cagrid/branches/caGrid-1_4_release/ https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_final)
-  --OR if a release was already made from an RC, move the last RC to be the final in SVN: (svn move https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_rcN/ https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_final)
+  --OR if a release was already made from an RC, move the last RC to be the final in SVN: (svn move https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_rcX https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_final)
 create the release (see "make a release candidate package")
 
 ----- prepare the trunk for new development -----
-*fix items in the trunk (e.g. project versions, service metadata, extension version numbers) to indicate it is the next release (when next release is known) 
+fix items in the trunk (e.g. project versions, service metadata, extension version numbers) to indicate it is the next release (when next release is known)
+  -- Typically this means changing the version to 1.N-dev to indicate it's a development version
+ 
 
 
 INSTALLER RELEASE
 ====================
-
 Create file release on gforge - make this a hidden release if you're just testing the process!
 
 ----- get checkouts -----
@@ -73,13 +74,16 @@ Copy the URL to this release (caGrid-1.4.zip) from GForge's file release system 
 Copy the md5 value from caGrid-1.4.zip.md5sum, and refer to this as <CAGRID MD5>
 
 ----- create installer properties file -----
-Edit the <directory for release>/Software/core/caGrid/projects/installer/cagrid.installer.properties file to reference the caGrid-1.4.zip uploaded to <CAGRID URL>
+Obtain a checkout of the installer properties section of the SVN repository
+	svn co https://ncisvn.nci.nih.gov/svn/cagrid/branches/caGrid-1_4_release/Software/core/installer/properties/
+Copy the cagrid.installer.properties file from <directory for release>/Software/core/caGrid/projects/installer/cagrid.installer.properties to the checkout of the properties directory and name it caGrid-1.4.installer.properties
+	This will be referred to as <INSTALLER PROPERTIES FILE> 
+Edit the <INSTALLER PROPERTIES FILE> file to reference the caGrid-1.4.zip uploaded to <CAGRID URL>
 Also uncomment edit the cagrid.md5.checksum to reference <CAGRID MD5>
+Also set the cagrid.version property as needed; 1.4 in this case
+Commit this properties file to the SVN repository.  Refer to this as <PROPS URL 
 Upload to gforge the cagrid.installer.properties file, refer to this as <PROPS URL>
-	!!!NOTE!!! If the URL starts with https://, change it to http:// or it WON'T WORK
-	Click "Edit Releases" on the caGrid-1.4 package
-	Click "Edit" next to the "caGrid-1.4" release name
-	Scroll down to "add files..."
+	For this release, this will be https://ncisvn.nci.nih.gov/svn/cagrid/branches/caGrid-1_4_release/Software/core/installer/properties/cagrid-1.4.installer.properties
 
 ----- create installer release -----
 cd <directory for release>/Software/core/caGrid/projects/installer
@@ -103,5 +107,5 @@ POST RELEASE
 Download the zip from GForge, run the installer
 
 ----- community announcements -----
-coordinate with project manager (i.e. John Eisenschmidt) to make official release announcement on caGrid users and dev lists, KC forums, etc.
+coordinate with project manager (i.e. John Eisenschmidt) to make official release announcement on caGrid users and dev lists, KC forums, cagrid.org news, etc.
 	Be sure to post links to the installer
