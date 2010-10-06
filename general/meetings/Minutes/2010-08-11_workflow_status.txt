@@ -1,0 +1,22 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2010-08-11
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Bronwyn Gagne, Ravi Madduri
+****************************************************************************
+
+Agenda
+------
+1) 1.3 Workflow Update 
+2) 1.4 Release
+3) Roadmap Activity
+
+Notes
+-----
+1) VMs upgraded. Ready for deployment
+2) Bills email was strong, working to resolve that. Documentation progress good (should be done this week). 
+3) All-consuming, went to Columbus to meet with Scott/Steve. Lots of documentation updates to deliver. 
+
+Action Items
+------------
+1) Ravi will check with Wei to see if Java heap size needs to change before deployment (they do not), after which John will submit a deployment request. 
