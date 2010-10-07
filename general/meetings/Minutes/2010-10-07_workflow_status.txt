@@ -1,0 +1,27 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2010-10-07
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Bronwyn Gagne, Ravi Madduri, 
+*		Dina Sulakhe, Wei Tan
+****************************************************************************
+
+Agenda
+------
+1) Outstanding caGrid 1.3 Tasks
+2) 1.4 Release 
+3) Portlet Status
+4) ActiveBPEL missing ZIP
+
+Notes
+-----
+1) WF Services deployed in Stage/Prod. Documentation/QA done. 
+2) Naming issue needs to be resolved, after which documentation needs updating. Blocking issue getting access to caTissue at Yale for testing (needs to be a secure data service). 
+3) Portlet configuration changes made (per Manav's suggestion). Current Portlet packages caGrid 1.3-compatible workflows inside the WAR. ANL sees Portlet as a very important resource for users, feels it should be a first-class project with a different delivery schedule than caGrid or the Portal. Many new features available through the new 1.4 WF Services (e.g. CDS, Transfer), would be nice to bring these features to the Portlet. Also would be nice to hook into myExperiment through their REST API (those that would be useful to the user community). 
+4) Ravi has old copy of the ZIP file, will send to John
+
+Action Items
+------------
+2) Ravi will check with Carole to get approval to use the Taverna name in existing WF product names (caGrid Taverna Workflow service, caGrid Taverna Portlet, caGrid Taverna Toolkit). Assuming she approves, ANL will update documentation to reflect those changes. 
+3) Dina will upgrade the workflows within the Portlet to be caGrid Taverna WF 1.4 compatible. Dina will then update the deployment instructions and send to John. John will notify the Portal team of this change and notify QA to include this in the Portal's QA testing for their next release. 
+4) Ravi will send the ZIP file to John. John will have the KC post to software.cagrid.org and will have the KC modify the caGrid 1.2 installer to use the new location. 

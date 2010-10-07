@@ -1,0 +1,27 @@
+****************************************************************************
+* Meeting: 	caGrid Core Infrastructure Status
+* Date: 	2010-10-06
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, David Ervin
+****************************************************************************
+
+Agenda
+------
+1) caGrid 1.4 Status
+2) CSM 3.2 API / Authentication Service lockout issue
+3) GAARDS transition to SHA2
+4) SDK 4.4
+
+Notes
+-----
+1) Waiting for QA to finish their process. Compared repo to trunk, basically everything is in there (some minor bug fixes). Going to tag as RC4 and that will be final RC unless any changes. Sense is that documentation is good. Need to sanity check 1.4 docs to ensure screen shots etc are correct. Talking to UAB about performance enhancements for FQP that we may want to roll into a future release (possibly with SHA2 change). 
+2) Behaving as expected using our patch, theirs may not have been as comprehensive. CSM provided an svn tag, we discussed on September 9th testing and committed to test/deliver by the following week, but did not. Need to recommit to Greg when we will be able to deliver that. 
+3) Tahsin less than 10% as security architect. Avinash requires weekly reports on this issue, he has committed to giving Braulio weekly updates. From a host-cert perspective: CA will have to change or cert will be untrusted, may not be able to run both. Possible impact in deployment with CVRG and non-NCI grids. CBIIT made aware of this requirement 9/17/2010, must be remediated by 12/31/2010. 
+4) SDK 4.4 release imminent; non-zero chance that SDK team may not be under contract after 10/20/2010. Should do best to test an ensure that no further development is needed to support caGrid should their contract extension fail to go through. SDK 4.3 documentation incorrect, copied over from 4.2. Not affecting our users yet but may in the future. SDK documentation 
+
+Action Items
+------------
+1) None
+2) David will check with dev team today and get back to John by COB with a delivery estimate for when the CSM team's patch will be tested
+3) David will sync up with Justin and Tahsin
+4) David will look to see how much testing with the new SDK release is possible. John 
