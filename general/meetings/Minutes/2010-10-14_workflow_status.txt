@@ -1,0 +1,24 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2010-10-14
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Bronwyn Gagne, Ravi Madduri, Wei Tan
+****************************************************************************
+
+Agenda
+------
+1) 1.4 Release 
+2) Portlet Status
+3) ActiveBPEL missing ZIP
+
+Notes
+-----
+1) Wei sent the plug-ins that need to be update on software.cagrid.org. Bronwyn has update screen shots from Wei, and should be done with formatting/cleanup today. User and admin guide almost finished. Yale sent a note to Wei that they will be sending the user agreement today, keeping Anna Fernandez/WashU demo instance as a backup plan.
+2) Dina absent 
+3) Ravi sent the ActiveBPEL this morning. 
+
+Action Items
+------------
+1) John will work with the KC to get those posted to software.cagrid.org
+2) Ravi will get status and send by email
+3) John will work to get that posted to software.cagrid.org and work with the KC to update the installer. 
