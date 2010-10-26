@@ -1,0 +1,22 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2010-10-28
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Bronwyn Gagne, Ravi Madduri, Wei Tan
+****************************************************************************
+
+Agenda
+------
+1) 1.4 Release 
+2) Portlet Status
+3) caBIG Secure Services
+
+Notes
+-----
+1) Issue with Taverna workbench and unknown trust fabrics not yet resolved. Wei is working with Aynur to troubleshoot. May require a code change and retesting, which could be submitted to QA by next Monday
+2) Issue with Lymphoma Workflow stopping mid-execution. Dina still investigating.
+3) WashU-hosted instance of caTissue is suitable for testing/documentation of secure services, however it's host certificate is not valid. Good test case to address that issue, but should be fixed once that is done. 
+
+Action Items
+------------
+1) Wei and Dina will apply for NIH accounts and VPN credentials. 
