@@ -1,0 +1,23 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2010-11-02
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Ravi Madduri, Wei Tan
+****************************************************************************
+
+Agenda
+------
+1) 1.4 Release 
+2) Portlet Status
+3) caBIG Secure Services
+
+Notes
+-----
+1) Wei still trying to get his NIH VPN account working. NIH Helpdesk is aware and still working on it. Aynur still cannot submit a secure workflow to a service on the QA grid, but it works on the Training Grid. Changes needed will be localized to the Taverna plug-ins. 
+2) A lower priority than the release. Lyphoma Workflow works fine from Workbench every time, but stops executing once submitted to the WF Service. No information in the logs that reveal why it stops. Will work with Taverna core developers to investigate.
+
+Action Items
+------------
+1) Can proceed to Stage deployment, can update the plug-ins on software.cagrid.org separately. John will ask Aynur to complete the userland testing using the Training Grid to validate the WF Service functionality, and will reverify the plugins later. 
+
+Ravi's plan is to closely monitor both of these and keep me updated.
