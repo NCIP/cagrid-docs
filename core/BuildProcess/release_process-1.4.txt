@@ -24,7 +24,7 @@ setup automated builds/tests for the branch (copy existing hudson builds for con
 tag a release candidate of the branch (svn copy https://ncisvn.nci.nih.gov/svn/cagrid/branches/caGrid-1_4_release/ https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_rcX/)
 
 -----  make a release candidate package -----
-export the svn repository to clean out .svn dirs (svn export https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_rcX/)
+export the svn repository to clean out .svn dirs (svn export https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_final/)
 zip up, or whatever is needed for the release, the directory created {dir for checkout}
 execute a build, upload the ivy artifacts from Software/core/caGrid/integration-repository to software.cagrid.org.  Create a new dir for them following the naming convention for 1.3 artifacts.  When the release is complete, change the symlink for "repository" from the 1.3 location to 1.4
 
