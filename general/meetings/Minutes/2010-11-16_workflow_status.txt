@@ -1,0 +1,20 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2010-11-16
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Bronwyn Gagne, Dina Sulakhe, Wei Tan
+****************************************************************************
+
+Agenda
+------
+1) 1.4 Release 
+2) Portlet Status
+
+Notes
+-----
+1) Wei: Unknown CA error from Taverna plug-ins has been resolved. Aynur has completed the run-through of the user guide and verified it is complete. Dina: fixed LOG4J problem with WF service. Checked into trunk and merged into the branch. David is adding to RC6 and is ready for testing. Also an instance of the new service hosted on UC's CI tier, tested and verified. No changes to testing process. Change that test client won't execute until all JARs are downloaded the first time (10-15 seconds). Also changed queueing mechanism in WF service, moved the number of active jobs before queue builds out to a property file instead of being wired into the service. 
+2) With Lymphoma Workflow fixed, Portlet should not be blocked. Dina will resume work on that this week. Inquired on a test instance to work with, he should contact Manav about deploying on the NCI DEV tier. 
+
+Action Items
+------------
+1) Wei needs to add a small section to the guide to note how to add credentials to untrusted grids. 
