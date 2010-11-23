@@ -1,0 +1,21 @@
+****************************************************************************
+* Meeting: 	Workflow Status
+* Date: 	2010-11-23
+* Venue:	Teleconference
+* Attendees: 	John Eisenschmidt, Bronwyn Gagne, Dina Sulakhe, Wei Tan
+****************************************************************************
+
+Agenda
+------
+1) 1.4 Release 
+2) Portlet Status
+
+Notes
+-----
+1) Aynur is back and completed all sections in the users guide. Plug-ins have been tested, WF has not been. 
+2) Dina worked on last week. Updated portlet code for 1.4 release, including all jars (now using IVY). Build successfully, but when deployed into Portal it shows a Java version mismatch (Dina is using an old version of Portal). 
+
+Action Items
+------------
+1) Dina will send Aynur the lymphoma workflow to test the update WF service with. Brownwyn will link from the WF admin guide to the upgrade guide and ask Bill Stephens to review the updated docs and ensure everything relevant from our documentation is reflected in his. 
+2) John will send a note to Musharaf/Manav and ask about Java versions supported in the Portal. 
