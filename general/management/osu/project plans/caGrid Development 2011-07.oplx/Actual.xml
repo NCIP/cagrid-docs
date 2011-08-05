@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="jPOGB-28JDn">
+  <granularity>days</granularity>
+  <prototype-task>
+    <task id="t-2">
+      <title>Task 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-3">
+      <title>Milestone 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-4">
+      <title>Group 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r-2">
+      <name>Resource 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-3">
+      <name>Equipment 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-4">
+      <name>Material 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-5">
+      <name>Group 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <type>Group</type>
+    <child-resource idref="r1"/>
+  </resource>
+  <resource id="r1">
+    <name>Resource 1</name>
+    <type>Staff</type>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t2"/>
+    <child-task idref="t10"/>
+  </task>
+  <task id="t2">
+    <title>Next Release with SHA 2 Support</title>
+    <type>group</type>
+    <child-task idref="t5"/>
+    <child-task idref="t6"/>
+    <child-task idref="t7"/>
+    <child-task idref="t8"/>
+    <child-task idref="t28"/>
+    <child-task idref="t9"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>The release formerly known as caGrid 1.4.1, or 1.4 w/ SHA 2</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-540</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t5">
+    <title>Upgrade Documentation</title>
+    <effort>216000</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-516</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t6">
+    <title>New Install Documentation</title>
+    <effort>86400</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-517</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t7">
+    <title>Identify Owners of Secure Services on Training Grid</title>
+    <effort>14400</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-600</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t8">
+    <title>Identify Owners of Secure Services on Production Grid</title>
+    <effort>28800</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-601</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+    <style>
+      <value key="font-weight">5</value>
+    </style>
+  </task>
+  <task id="t9">
+    <title>Introduce Upgraders</title>
+    <type>group</type>
+    <child-task idref="t15"/>
+    <child-task idref="t18"/>
+    <child-task idref="t21"/>
+    <child-task idref="t25"/>
+    <child-task idref="t33"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-640</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t10">
+    <title>Continued Development</title>
+    <type>group</type>
+    <child-task idref="t13"/>
+    <child-task idref="t17"/>
+    <child-task idref="t30"/>
+    <child-task idref="t34"/>
+    <child-task idref="t41"/>
+    <child-task idref="t42"/>
+    <child-task idref="t43"/>
+    <child-task idref="t44"/>
+    <child-task idref="t46"/>
+    <child-task idref="t47"/>
+    <child-task idref="t48"/>
+    <child-task idref="t49"/>
+    <child-task idref="t50"/>
+    <child-task idref="t51"/>
+    <child-task idref="t52"/>
+    <child-task idref="t14"/>
+    <child-task idref="t35"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>The release following the SHA 2 release, currently known as 1.6</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+    <style>
+      <value key="font-weight">9</value>
+    </style>
+  </task>
+  <task id="t13">
+    <title>Fix service build problems with spaces in the path</title>
+    <effort>288000</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-161</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t14">
+    <title>Introduce Upgraders</title>
+    <type>group</type>
+    <child-task idref="t16"/>
+    <child-task idref="t20"/>
+    <child-task idref="t22"/>
+    <child-task idref="t26"/>
+    <child-task idref="t31"/>
+    <style>
+      <value key="font-weight">9</value>
+    </style>
+  </task>
+  <task id="t15">
+    <title>CaGrid Metadata Extension Upgrader</title>
+    <effort>28800</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-758</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t16">
+    <title>CaGrid Metadata Extension Upgrader</title>
+    <effort>28800</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-758</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t17">
+    <title>Client Tool for Service Identities</title>
+    <effort>28800</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-619</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t18">
+    <title>Data Service with SDK 4.2 Upgraders from 1.3 and 1.4</title>
+    <effort>86400</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-752</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t20">
+    <title>Data Service with SDK 4.2 Upgraders from 1.4 and 1.5</title>
+    <effort>86400</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-752</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t21">
+    <title>Data Service with SDK 4.3 Upgraders from 1.3 and 1.4</title>
+    <effort>86400</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-753</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t22">
+    <title>Data Service with SDK 4.3 Upgraders from 1.4 and 1.5</title>
+    <effort>86400</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-753</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t25">
+    <title>Data Service with SDK 4.4 Upgraders from 1.4</title>
+    <effort>86400</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-754</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t26">
+    <title>Data Service with SDK 4.4 Upgraders from 1.4 and 1.5</title>
+    <effort>86400</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-754</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t28">
+    <title>Merge caCORE SDK 4.4 data service style</title>
+    <effort>57600</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-755</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t30">
+    <title>Merge caCORE SDK 4.4 data service style</title>
+    <effort>57600</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-755</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t31">
+    <title>WS-Enumeration Upgrader</title>
+    <effort>28800</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-767</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t33">
+    <title>WS-Enumeration Upgrader</title>
+    <effort>28800</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-766</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t34">
+    <title>Migrate XMI Datatypes Browser to SDK 4.3 or newer</title>
+    <effort>144000</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-90</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t35">
+    <title>Tech Stack Upgrades</title>
+    <type>group</type>
+    <child-task idref="t36"/>
+    <child-task idref="t38"/>
+    <child-task idref="t40"/>
+    <child-task idref="t45"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-83</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+    <style>
+      <value key="font-weight">9</value>
+    </style>
+  </task>
+  <task id="t36">
+    <title>Tomcat 6 Support</title>
+    <effort>86400</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-104</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-110</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t38">
+    <title>JBoss 5.1 support</title>
+    <effort>216000</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-103</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-768</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t40">
+    <title>MySQL 5.1.x support</title>
+    <effort>28800</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-108</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t41">
+    <title>Discoverable Target Grids</title>
+    <effort>57600</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-141</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t42">
+    <title>Break WS-Core Ivy module into more granular components</title>
+    <effort>3600</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-173</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t43">
+    <title>Remove dependency on GLOBUS_LOCATION</title>
+    <effort>86400</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-677</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t44">
+    <title>Dorian Users Password Reset Mechanism</title>
+    <effort>144000</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-357</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t45">
+    <title>Ant 1.8.x support</title>
+    <effort>86400</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-372</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t46">
+    <title>New Resource Property to indicate Semantic Annotation Source</title>
+    <effort>57600</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-380</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t47">
+    <title>Introduce Advanced Deployment Option</title>
+    <effort>14400</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-393</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t48">
+    <title>Rework GAARDS-UI&apos;s target grid configuration</title>
+    <effort>86400</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-633</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t49">
+    <title>FQP performance and scalability</title>
+    <effort>288000</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-646</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t50">
+    <title>SDK Data Services under OpenJDK</title>
+    <effort>28800</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-673</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t51">
+    <title>Introduce Update and Version Coordination</title>
+    <effort>14400</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-679</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <task id="t52">
+    <title>Dynamic Data Type creation with FQP</title>
+    <effort>288000</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-685</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+  </task>
+  <critical-path root="-1" enabled="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>
