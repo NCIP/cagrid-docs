@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.0</version>
+  <task-change-set user="David Ervin" date="2011-08-05T15:31:22.751Z" timestamp="2011-08-05T15:31:22.751Z">
+    <change idref="t1" from="t-1" from-position="0" resolved="yes">
+      <change idref="t1" attribute="title" type="string" to="Task 1"/>
+    </change>
+    <change idref="t2" to="t-1" to-position="0" resolved="yes">
+      <change idref="t2" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t2" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBUaGUgcmVsZWFzZSBmb3JtZXJseSBrbm93biBhcyBjYUdyaWQgMS40LjEsIG9yIDEuNCB3LyBTSEEgMlwKaHR0cHM6Ly90cmFja2VyLm5jaS5uaWguZ292L2Jyb3dzZS9DQUdSSUQtNTQwfQ=="/>
+      <change idref="t2" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t2" attribute="title" type="string" to="Next Release with SHA 2 Support"/>
+    </change>
+    <change idref="t5" to="t2" to-position="0" resolved="yes">
+      <change idref="t5" attribute="effort" type="real" from="28800" to="216000"/>
+      <change idref="t5" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC01MTZ9"/>
+      <change idref="t5" attribute="title" type="string" to="Upgrade Documentation"/>
+    </change>
+    <change idref="t6" to="t2" to-position="1" resolved="yes">
+      <change idref="t6" attribute="effort" type="real" from="28800" to="86400"/>
+      <change idref="t6" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC01MTd9"/>
+      <change idref="t6" attribute="title" type="string" to="New Install Documentation"/>
+    </change>
+    <change idref="t7" to="t2" to-position="2" resolved="yes">
+      <change idref="t7" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t7" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC02MDB9"/>
+      <change idref="t7" attribute="title" type="string" to="Identify All Secure Services on Training"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-08-05T15:33:25.100Z" timestamp="2011-08-05T15:33:25.100Z">
+    <change idref="t8" to="t2" to-position="3" resolved="yes">
+      <change idref="t8" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC02MDF9"/>
+      <change idref="t8" attribute="title" type="string" to="Identify Owners of Secure Services on Production Grid"/>
+    </change>
+    <change idref="t9" to="t2" to-position="4" resolved="yes">
+      <change idref="t9" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t7" attribute="title" type="string" from="Identify All Secure Services on Training" to="Identify Owners of Secure Services on Training Grid" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-08-05T15:39:11.888Z" timestamp="2011-08-05T15:39:11.888Z">
+    <change idref="t8" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t8" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t8" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t8" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t8" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t8" attribute="effort" type="real" from="28800" resolved="yes"/>
+    <change idref="t8" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t8" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t8" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t8" attribute="styleDict" type="dict" to="{
+    &quot;font-weight&quot; = 5;
+}" resolved="yes"/>
+    <change idref="t8" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t8" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t9" attribute="title" type="string" from="" to="Introduce Upgraders" resolved="yes"/>
+    <change idref="t9" attribute="effort" type="real" from="28800" to="0" resolved="yes"/>
+    <change idref="t9" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC02NDB9" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-08-05T16:03:58.561Z" timestamp="2011-08-05T16:03:58.561Z">
+    <change idref="t10" to="t-1" to-position="1" resolved="yes">
+      <change idref="t10" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t10" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBUaGUgcmVsZWFzZSBmb2xsb3dpbmcgdGhlIFNIQSAyIHJlbGVhc2UsIGN1cnJlbnRseSBrbm93biBhcyAxLjZ9"/>
+      <change idref="t10" attribute="styleDict" type="dict" to="{
+    &quot;font-weight&quot; = 9;
+}"/>
+      <change idref="t10" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t10" attribute="title" type="string" to="Continued Development"/>
+    </change>
+    <change idref="t8" attribute="isGroup" type="real" from="1" to="0" resolved="yes"/>
+    <change idref="t8" attribute="taskType" type="real" from="2" to="0" resolved="yes"/>
+    <change idref="t8" attribute="isSplittableTask" type="real" to="1" resolved="yes"/>
+    <change idref="t8" attribute="resourceAssignmentType" type="real" to="0" resolved="yes"/>
+    <change idref="t8" attribute="staticCost" type="real" to="0" resolved="yes"/>
+    <change idref="t8" attribute="effort" type="real" to="28800" resolved="yes"/>
+    <change idref="t8" attribute="isSplitChunk" type="real" to="0" resolved="yes"/>
+    <change idref="t8" attribute="scheduleType" type="real" to="0" resolved="yes"/>
+    <change idref="t8" attribute="internalAssignments" type="string" to="" resolved="yes"/>
+    <change idref="t8" attribute="isSplitTask" type="real" to="0" resolved="yes"/>
+    <change idref="t8" attribute="internalEffortDone" type="real" to="0" resolved="yes"/>
+    <change idref="t9" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t9" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t9" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t9" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t9" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t9" attribute="effort" type="real" from="0" resolved="yes"/>
+    <change idref="t9" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t9" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t9" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t9" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t9" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t15" to="t9" to-position="0" resolved="yes">
+      <change idref="t15" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC03NTh9"/>
+      <change idref="t15" attribute="title" type="string" to="CaGrid Metadata Extension Upgrader"/>
+    </change>
+    <change idref="t16" to="t14" to-position="0" resolved="yes">
+      <change idref="t16" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC03NTh9"/>
+      <change idref="t16" attribute="title" type="string" to="CaGrid Metadata Extension Upgrader"/>
+    </change>
+    <change idref="t13" to="t10" to-position="0" resolved="yes">
+      <change idref="t13" attribute="effort" type="real" from="28800" to="288000"/>
+      <change idref="t13" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC0xNjF9"/>
+      <change idref="t13" attribute="title" type="string" to="Fix service build problems with spaces in the path"/>
+    </change>
+    <change idref="t14" to="t10" to-position="1" resolved="yes">
+      <change idref="t14" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t14" attribute="styleDict" type="dict" to="{
+    &quot;font-weight&quot; = 9;
+}"/>
+      <change idref="t14" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t14" attribute="title" type="string" to="Introduce Upgraders"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-08-05T16:14:51.190Z" timestamp="2011-08-05T16:14:51.190Z">
+    <change idref="t18" to="t9" to-position="1" resolved="yes">
+      <change idref="t18" attribute="effort" type="real" from="28800" to="86400"/>
+      <change idref="t18" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC03NTJ9"/>
+      <change idref="t18" attribute="title" type="string" to="Data Service with SDK 4.2 Upgraders from 1.3 and 1.4"/>
+    </change>
+    <change idref="t21" to="t9" to-position="2" resolved="yes">
+      <change idref="t21" attribute="effort" type="real" from="28800" to="86400"/>
+      <change idref="t21" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC03NTN9"/>
+      <change idref="t21" attribute="title" type="string" to="Data Service with SDK 4.3 Upgraders from 1.3 and 1.4"/>
+    </change>
+    <change idref="t17" to="t10" to-position="1" resolved="yes">
+      <change idref="t17" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC02MTl9"/>
+      <change idref="t17" attribute="title" type="string" to="Client Tool for Service Identities"/>
+    </change>
+    <change idref="t20" to="t14" to-position="1" resolved="yes">
+      <change idref="t20" attribute="effort" type="real" from="28800" to="86400"/>
+      <change idref="t20" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC03NTJ9"/>
+      <change idref="t20" attribute="title" type="string" to="Data Service with SDK 4.2 Upgraders from 1.4 and 1.5"/>
+    </change>
+    <change idref="t22" to="t14" to-position="2" resolved="yes">
+      <change idref="t22" attribute="effort" type="real" from="28800" to="86400"/>
+      <change idref="t22" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC03NTN9"/>
+      <change idref="t22" attribute="title" type="string" to="Data Service with SDK 4.3 Upgraders from 1.4 and 1.5"/>
+    </change>
+    <change idref="t16" attribute="notesAllowingNil" type="textdata" from="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC03NThcCn0=" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC03NTh9" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-08-05T16:16:25.527Z" timestamp="2011-08-05T16:16:25.527Z">
+    <change idref="t25" to="t9" to-position="3" resolved="yes">
+      <change idref="t25" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC03NTR9"/>
+      <change idref="t25" attribute="title" type="string" to="Data Service with SDK 4.4 Upgraders from 1.3 and 1.4"/>
+    </change>
+    <change idref="t26" to="t14" to-position="3" resolved="yes">
+      <change idref="t26" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC03NTR9"/>
+      <change idref="t26" attribute="title" type="string" to="Data Service with SDK 4.4 Upgraders from 1.4 and 1.5"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-08-05T16:18:16.750Z" timestamp="2011-08-05T16:18:16.750Z">
+    <change idref="t28" to="t2" to-position="4" resolved="yes">
+      <change idref="t28" attribute="effort" type="real" from="28800" to="57600"/>
+      <change idref="t28" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC03NTV9"/>
+      <change idref="t28" attribute="title" type="string" to="Merge caCORE SDK 4.4 data service style"/>
+    </change>
+    <change idref="t30" to="t10" to-position="2" resolved="yes">
+      <change idref="t30" attribute="effort" type="real" from="28800" to="57600"/>
+      <change idref="t30" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC03NTV9"/>
+      <change idref="t30" attribute="title" type="string" to="Merge caCORE SDK 4.4 data service style"/>
+    </change>
+    <change idref="t25" attribute="title" type="string" from="Data Service with SDK 4.4 Upgraders from 1.3 and 1.4" to="Data Service with SDK 4.4 Upgraders from 1.4" resolved="yes"/>
+    <change idref="t25" attribute="effort" type="real" from="28800" to="86400" resolved="yes"/>
+    <change idref="t26" attribute="effort" type="real" from="28800" to="86400" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-08-05T16:21:35.235Z" timestamp="2011-08-05T16:21:35.235Z">
+    <change idref="t33" to="t9" to-position="4" resolved="yes">
+      <change idref="t33" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC03NjZ9"/>
+      <change idref="t33" attribute="title" type="string" to="WS-Enumeration Upgrader"/>
+    </change>
+    <change idref="t31" to="t14" to-position="4" resolved="yes">
+      <change idref="t31" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC03Njd9"/>
+      <change idref="t31" attribute="title" type="string" to="WS-Enumeration Upgrader"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-08-05T16:25:43.877Z" timestamp="2011-08-05T16:25:43.877Z">
+    <change idref="t34" to="t10" to-position="3" resolved="yes">
+      <change idref="t34" attribute="effort" type="real" from="28800" to="144000"/>
+      <change idref="t34" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC05MH0="/>
+      <change idref="t34" attribute="title" type="string" to="Migrate XMI Datatypes Browser to SDK 4.3 or newer"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-08-05T16:26:45.322Z" timestamp="2011-08-05T16:26:45.322Z">
+    <change idref="t35" to="t10" to-position="5" resolved="yes">
+      <change idref="t35" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t35" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC04M30="/>
+      <change idref="t35" attribute="styleDict" type="dict" to="{
+    &quot;font-weight&quot; = 9;
+}"/>
+      <change idref="t35" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t35" attribute="title" type="string" to="Tech Stack Upgrades"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-08-05T16:31:51.971Z" timestamp="2011-08-05T16:31:51.971Z">
+    <change idref="t36" to="t35" to-position="0" resolved="yes">
+      <change idref="t36" attribute="effort" type="real" from="28800" to="86400"/>
+      <change idref="t36" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC0xMDRcCmh0dHBzOi8vdHJhY2tlci5uY2kubmloLmdvdi9icm93c2UvQ0FHUklELTExMH0="/>
+      <change idref="t36" attribute="title" type="string" to="Tomcat 6 Support"/>
+    </change>
+    <change idref="t38" to="t35" to-position="1" resolved="yes">
+      <change idref="t38" attribute="effort" type="real" from="28800" to="216000"/>
+      <change idref="t38" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC0xMDNcCmh0dHBzOi8vdHJhY2tlci5uY2kubmloLmdvdi9icm93c2UvQ0FHUklELTc2OH0="/>
+      <change idref="t38" attribute="title" type="string" to="JBoss 5.1 support"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-08-05T16:37:34.089Z" timestamp="2011-08-05T16:37:34.089Z">
+    <change idref="t41" to="t10" to-position="4" resolved="yes">
+      <change idref="t41" attribute="effort" type="real" from="28800" to="57600"/>
+      <change idref="t41" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC0xNDF9"/>
+      <change idref="t41" attribute="title" type="string" to="Discoverable Target Grids"/>
+    </change>
+    <change idref="t42" to="t10" to-position="5" resolved="yes">
+      <change idref="t42" attribute="effort" type="real" from="28800" to="3600"/>
+      <change idref="t42" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC0xNzN9"/>
+      <change idref="t42" attribute="title" type="string" to="Break WS-Core Ivy module into more granular components"/>
+    </change>
+    <change idref="t43" to="t10" to-position="6" resolved="yes">
+      <change idref="t43" attribute="effort" type="real" from="28800" to="86400"/>
+      <change idref="t43" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC02Nzd9"/>
+      <change idref="t43" attribute="title" type="string" to="Remove dependency on GLOBUS_LOCATION"/>
+    </change>
+    <change idref="t40" to="t35" to-position="2" resolved="yes">
+      <change idref="t40" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC0xMDh9"/>
+      <change idref="t40" attribute="title" type="string" to="MySQL 5.1.x support"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-08-05T16:40:44.293Z" timestamp="2011-08-05T16:40:44.293Z">
+    <change idref="t44" to="t10" to-position="7" resolved="yes">
+      <change idref="t44" attribute="effort" type="real" from="28800" to="144000"/>
+      <change idref="t44" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC0zNTd9"/>
+      <change idref="t44" attribute="title" type="string" to="Dorian Users Password Reset Mechanism"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-08-05T16:43:16.298Z" timestamp="2011-08-05T16:43:16.298Z">
+    <change idref="t46" to="t10" to-position="8" resolved="yes">
+      <change idref="t46" attribute="effort" type="real" from="28800" to="57600"/>
+      <change idref="t46" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC0zODB9"/>
+      <change idref="t46" attribute="title" type="string" to="New Resource Property to indicate Semantic Annotation Source"/>
+    </change>
+    <change idref="t45" to="t35" to-position="3" resolved="yes">
+      <change idref="t45" attribute="effort" type="real" from="28800" to="86400"/>
+      <change idref="t45" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC0zNzJ9"/>
+      <change idref="t45" attribute="title" type="string" to="Ant 1.8.x support"/>
+    </change>
+    <change idref="t40" attribute="notesAllowingNil" type="textdata" from="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC0xMDhcCn0=" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC0xMDh9" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-08-05T16:56:16.777Z" timestamp="2011-08-05T16:56:16.777Z">
+    <change idref="t47" to="t10" to-position="9" resolved="yes">
+      <change idref="t47" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t47" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC0zOTN9"/>
+      <change idref="t47" attribute="title" type="string" to="Introduce Advanced Deployment Option"/>
+    </change>
+    <change idref="t48" to="t10" to-position="10" resolved="yes">
+      <change idref="t48" attribute="effort" type="real" from="28800" to="86400"/>
+      <change idref="t48" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC02MzN9"/>
+      <change idref="t48" attribute="title" type="string" to="Rework GAARDS-UI&apos;s target grid configuration"/>
+    </change>
+    <change idref="t49" to="t10" to-position="11" resolved="yes">
+      <change idref="t49" attribute="effort" type="real" from="28800" to="288000"/>
+      <change idref="t49" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC02NDZ9"/>
+      <change idref="t49" attribute="title" type="string" to="FQP performance and scalability"/>
+    </change>
+    <change idref="t50" to="t10" to-position="12" resolved="yes">
+      <change idref="t50" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC02NzN9"/>
+      <change idref="t50" attribute="title" type="string" to="SDK Data Services under OpenJDK"/>
+    </change>
+    <change idref="t51" to="t10" to-position="13" resolved="yes">
+      <change idref="t51" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t51" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC02Nzl9"/>
+      <change idref="t51" attribute="title" type="string" to="Introduce Update and Version Coordination"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-08-05T16:57:16.773Z" timestamp="2011-08-05T16:57:16.773Z">
+    <change idref="t52" to="t10" to-position="14" resolved="yes">
+      <change idref="t52" attribute="effort" type="real" from="28800" to="288000"/>
+      <change idref="t52" attribute="notesAllowingNil" type="textdata" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC02ODV9"/>
+      <change idref="t52" attribute="title" type="string" to="Dynamic Data Type creation with FQP"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-08-05T17:01:37.183Z" timestamp="2011-08-05T17:01:37.183Z">
+    <change idref="t15" attribute="notesAllowingNil" type="textdata" from="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC03NThcCn0=" to="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxMDM4XGNvY29hc3VicnRmMzUwCntcZm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQwIEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQ4NVxncmVlbjg1XGJsdWU4NTt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgyMjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAwXHR4NjE2MFx0eDY3MjBccWxccW5hdHVyYWxccGFyZGlybmF0dXJhbAoKXGYwXGZzMjIgXGNmMiBcdXAwIFxub3N1cGVyc3ViIFx1bG5vbmUgXG9ibGlxdWVuZXNzMCBcZXhwYW5zaW9uMCBodHRwczovL3RyYWNrZXIubmNpLm5paC5nb3YvYnJvd3NlL0NBR1JJRC03NTh9" resolved="yes"/>
+  </task-change-set>
+  <metadata-change-set user="David Ervin" date="2011-08-05T15:31:22.751Z" timestamp="2011-08-05T15:31:22.751Z">
+    <change idref="m1" attribute="scheduleGranularity" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="m1" attribute="projectTitle" type="string" to="caGrid Development" resolved="yes"/>
+  </metadata-change-set>
+</changelog>
