@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.0</version>
+  <task-change-set user="David Ervin" date="2011-10-06T18:19:49.607Z" timestamp="2011-10-06T18:19:49.607Z">
+    <change idref="t13" attribute="internalEffortDone" type="real" from="0" to="288000" resolved="yes"/>
+    <change idref="t25" attribute="internalEffortDone" type="real" from="0" to="86400" resolved="yes"/>
+    <change idref="t28" attribute="internalEffortDone" type="real" from="0" to="57600" resolved="yes"/>
+    <change idref="t30" attribute="internalEffortDone" type="real" from="0" to="57600" resolved="yes"/>
+    <change idref="t49" attribute="internalEffortDone" type="real" from="43058.82421875" to="201600" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-10-06T18:20:29.152Z" timestamp="2011-10-06T18:20:29.152Z">
+    <change idref="t22" attribute="internalEffortDone" type="real" from="26047.05859375" to="57600" resolved="yes"/>
+    <change idref="t26" attribute="internalEffortDone" type="real" from="0" to="57600" resolved="yes"/>
+    <change idref="t45" attribute="internalEffortDone" type="real" from="0" to="86400" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-10-06T18:25:20.102Z" timestamp="2011-10-06T18:25:20.102Z">
+    <change idref="t5" attribute="internalEffortDone" type="real" from="54529.41015625" to="86400" resolved="yes"/>
+    <change idref="t7" attribute="internalEffortDone" type="real" from="0" to="7164.705882352941" resolved="yes"/>
+  </task-change-set>
+</changelog>
