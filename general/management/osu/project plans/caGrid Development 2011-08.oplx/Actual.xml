@@ -87,6 +87,7 @@
   <task id="t5">
     <title>Upgrade Documentation</title>
     <effort>216000</effort>
+    <effort-done>54529.4117647059</effort-done>
     <note>
       <text>
         <p>
@@ -138,6 +139,7 @@
     <style>
       <value key="font-weight">5</value>
     </style>
+    <prerequisite-task idref="t7"/>
   </task>
   <task id="t9">
     <title>Introduce Upgraders</title>
@@ -218,6 +220,8 @@
   <task id="t15">
     <title>CaGrid Metadata Extension Upgrader</title>
     <effort>28800</effort>
+    <effort-done>17294.1176470588</effort-done>
+    <start-constraint-date>2001-01-01T13:00:00.000Z</start-constraint-date>
     <note>
       <text>
         <p>
@@ -231,6 +235,7 @@
   <task id="t16">
     <title>CaGrid Metadata Extension Upgrader</title>
     <effort>28800</effort>
+    <effort-done>14470.5882352941</effort-done>
     <note>
       <text>
         <p>
@@ -244,6 +249,7 @@
   <task id="t17">
     <title>Client Tool for Service Identities</title>
     <effort>28800</effort>
+    <effort-done>28800</effort-done>
     <note>
       <text>
         <p>
@@ -257,6 +263,7 @@
   <task id="t18">
     <title>Data Service with SDK 4.2 Upgraders from 1.3 and 1.4</title>
     <effort>86400</effort>
+    <effort-done>86400</effort-done>
     <note>
       <text>
         <p>
@@ -270,6 +277,7 @@
   <task id="t20">
     <title>Data Service with SDK 4.2 Upgraders from 1.4 and 1.5</title>
     <effort>86400</effort>
+    <effort-done>34941.1764705882</effort-done>
     <note>
       <text>
         <p>
@@ -283,6 +291,7 @@
   <task id="t21">
     <title>Data Service with SDK 4.3 Upgraders from 1.3 and 1.4</title>
     <effort>86400</effort>
+    <effort-done>86400</effort-done>
     <note>
       <text>
         <p>
@@ -296,6 +305,7 @@
   <task id="t22">
     <title>Data Service with SDK 4.3 Upgraders from 1.4 and 1.5</title>
     <effort>86400</effort>
+    <effort-done>26047.0588235294</effort-done>
     <note>
       <text>
         <p>
@@ -318,6 +328,7 @@
         </p>
       </text>
     </note>
+    <prerequisite-task idref="t30"/>
   </task>
   <task id="t26">
     <title>Data Service with SDK 4.4 Upgraders from 1.4 and 1.5</title>
@@ -357,10 +368,12 @@
         </p>
       </text>
     </note>
+    <prerequisite-task idref="t28"/>
   </task>
   <task id="t31">
     <title>WS-Enumeration Upgrader</title>
     <effort>28800</effort>
+    <effort-done>14470.5882352941</effort-done>
     <note>
       <text>
         <p>
@@ -374,6 +387,7 @@
   <task id="t33">
     <title>WS-Enumeration Upgrader</title>
     <effort>28800</effort>
+    <effort-done>14470.5882352941</effort-done>
     <note>
       <text>
         <p>
@@ -420,6 +434,7 @@
   <task id="t36">
     <title>Tomcat 6 Support</title>
     <effort>86400</effort>
+    <effort-done>82079.9989700317</effort-done>
     <note>
       <text>
         <p>
@@ -438,6 +453,7 @@
   <task id="t38">
     <title>JBoss 5.1 support</title>
     <effort>216000</effort>
+    <effort-done>20647.0588235294</effort-done>
     <note>
       <text>
         <p>
@@ -452,10 +468,12 @@
         </p>
       </text>
     </note>
+    <prerequisite-task idref="t36"/>
   </task>
   <task id="t40">
     <title>MySQL 5.1.x support</title>
     <effort>28800</effort>
+    <effort-done>14329.4117647059</effort-done>
     <note>
       <text>
         <p>
@@ -491,6 +509,7 @@
         </p>
       </text>
     </note>
+    <prerequisite-task idref="t43"/>
   </task>
   <task id="t43">
     <title>Remove dependency on GLOBUS_LOCATION</title>
@@ -573,6 +592,7 @@
   <task id="t49">
     <title>FQP performance and scalability</title>
     <effort>288000</effort>
+    <effort-done>43058.8235294118</effort-done>
     <note>
       <text>
         <p>
@@ -599,6 +619,7 @@
   <task id="t51">
     <title>Introduce Update and Version Coordination</title>
     <effort>14400</effort>
+    <effort-done>4270.58823529412</effort-done>
     <note>
       <text>
         <p>
@@ -612,6 +633,7 @@
   <task id="t52">
     <title>Dynamic Data Type creation with FQP</title>
     <effort>288000</effort>
+    <effort-done>58588.2352941176</effort-done>
     <note>
       <text>
         <p>

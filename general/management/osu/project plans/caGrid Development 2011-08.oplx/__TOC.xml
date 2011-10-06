@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <omniplan xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
-  <window x="0" y="0" w="1601" h="1028">
+  <window x="0" y="0" w="1607" h="1028">
     <editing-scenario>jPOGB-28JDn</editing-scenario>
     <view>task</view>
     <change-tracking/>
@@ -8,16 +8,16 @@
     <status-display>basic</status-display>
     <task-view>
       <split-view-divider-position>458</split-view-divider-position>
-      <outline x="0" y="0" w="458" h="909">
+      <outline x="0" y="496" w="458" h="909">
         <column name="Violations" width="20"/>
         <column name="Notes" width="20"/>
         <column name="Title" width="343"/>
         <column name="Effort" width="70"/>
-        <expanded-items idrefs="t2 t10 t14 t35 t9"/>
-        <expanded-item-notes idrefs="t7 t26 t45 t8 t13 t51 t9 t46 t33 t52 t20 t28 t47 t15 t34 t21 t40 t48 t16 t35 t22 t41 t49 t17 t36 t2 t42 t10 t18 t43 t30 t38 t5 t25 t44 t6 t31 t50"/>
-        <selected-items-at-filter-time idrefs="t7 t45 t8 t13 t32 t51 t9 t27 t46 t14 t33 t52 t28 t47 t15 t34 t21 t29 t40 t48 t16 t35 t41 t49 t17 t36 t23 t2 t42 t10 t18 t3 t37 t24 t4 t43 t11 t19 t38 t5 t25 t44 t12 t6 t31 t39 t50"/>
+        <expanded-items idrefs="t35 t10 t14 t9 t2"/>
+        <expanded-item-notes idrefs="t50 t26 t45 t13 t8 t51 t9 t46 t33 t52 t20 t28 t47 t15 t34 t21 t40 t48 t16 t35 t22 t41 t49 t17 t36 t2 t42 t10 t18 t43 t30 t5 t38 t25 t6 t44 t31 t7"/>
+        <selected-items-at-filter-time idrefs="t50 t45 t13 t8 t51 t9 t46 t14 t33 t52 t28 t47 t15 t34 t53 t21 t40 t48 t16 t35 t41 t49 t17 t36 t2 t42 t10 t18 t43 t5 t38 t25 t6 t44 t31 t7"/>
       </outline>
-      <gantt-view x="-39" y="0" w="1127" h="909">
+      <gantt-view x="-39" y="496" w="1133" h="909">
         <view-mode>actual</view-mode>
         <dependency-lines/>
         <constraints/>
@@ -62,14 +62,14 @@
     </task-view>
     <resource-view>
       <split-view-divider-position>306</split-view-divider-position>
-      <outline x="0" y="0" w="291" h="511">
+      <outline x="0" y="0" w="291" h="909">
         <column name="IM" width="20"/>
         <column name="Notes" width="20"/>
         <column name="Type" width="49"/>
         <column name="Resource" width="121"/>
         <column name="#" width="75"/>
       </outline>
-      <timeline x="-426" y="0" w="549" h="511">
+      <timeline x="-426" y="0" w="1251" h="909">
         <task-bar-label task-type="group" position="left">
           <key>Title</key>
         </task-bar-label>
@@ -111,7 +111,7 @@
     </resource-view>
     <calendar>
       <split-view-divider-position>290</split-view-divider-position>
-      <outline x="0" y="0" w="275" h="476">
+      <outline x="0" y="0" w="275" h="874">
         <column name="IM" width="20"/>
         <column name="Notes" width="20"/>
         <column name="Type" width="49"/>
@@ -123,7 +123,7 @@
   </window>
   <project>
     <title>caGrid Development</title>
-    <next-task-id>53</next-task-id>
+    <next-task-id>54</next-task-id>
     <next-resource-id>2</next-resource-id>
     <scenario id="jPOGB-28JDn" name="Actual" filename="Actual.xml"/>
     <date-display dates="true" times="false" seconds="false"/>
