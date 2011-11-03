@@ -409,6 +409,49 @@
     <change idref="t75" attribute="internalPrerequisitesString" type="string" to="76FS" resolved="yes"/>
     <change idref="t156" attribute="effort" type="real" from="28800" to="57600" resolved="yes"/>
   </task-change-set>
+  <task-change-set user="David Ervin" date="2011-11-03T19:41:34.586Z" timestamp="2011-11-03T19:41:34.586Z">
+    <change idref="t55" attribute="resourceLeveledDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t56" attribute="resourceLeveledDate" type="date" to="2011-11-09T15:40:06.000Z" resolved="yes"/>
+    <change idref="t57" attribute="resourceLeveledDate" type="date" to="2011-11-09T15:40:06.000Z" resolved="yes"/>
+    <change idref="t58" attribute="resourceLeveledDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t59" attribute="resourceLeveledDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t60" attribute="resourceLeveledDate" type="date" to="2011-11-11T20:40:08.000Z" resolved="yes"/>
+    <change idref="t61" attribute="resourceLeveledDate" type="date" to="2011-11-11T20:40:08.000Z" resolved="yes"/>
+    <change idref="t64" attribute="resourceLeveledDate" type="date" to="2011-11-21T19:20:19.000Z" resolved="yes"/>
+    <change idref="t66" attribute="resourceLeveledDate" type="date" to="2011-11-29T21:20:24.000Z" resolved="yes"/>
+    <change idref="t67" attribute="resourceLeveledDate" type="date" to="2011-12-06T13:40:28.000Z" resolved="yes"/>
+    <change idref="t73" attribute="resourceLeveledDate" type="date" to="2011-11-17T14:20:14.000Z" resolved="yes"/>
+    <change idref="t75" attribute="resourceLeveledDate" type="date" to="2011-12-12T15:00:31.000Z" resolved="yes"/>
+    <change idref="t82" attribute="internalPrerequisitesString" type="string" to="53FS" resolved="yes"/>
+    <change idref="t84" attribute="resourceLeveledDate" type="date" to="2011-12-14T20:00:33.000Z" resolved="yes"/>
+    <change idref="t86" attribute="resourceLeveledDate" type="date" to="2012-01-06T16:21:01.000Z" resolved="yes"/>
+    <change idref="t89" attribute="resourceLeveledDate" type="date" to="2012-01-09T15:01:02.000Z" resolved="yes"/>
+    <change idref="t92" attribute="resourceLeveledDate" type="date" to="2012-01-24T18:01:16.000Z" resolved="yes"/>
+    <change idref="t93" attribute="resourceLeveledDate" type="date" to="2011-12-14T20:00:33.000Z" resolved="yes"/>
+    <change idref="t106" attribute="internalPrerequisitesString" type="string" to="82FS" resolved="yes"/>
+    <change idref="t158" attribute="resourceLeveledDate" type="date" to="2012-01-17T18:01:07.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-11-03T19:43:37.262Z" timestamp="2011-11-03T19:43:37.262Z">
+    <change idref="t58" attribute="internalPrerequisitesString" type="string" to="60FS" resolved="yes"/>
+    <change idref="t68" attribute="internalPrerequisitesString" type="string" to="65FS" resolved="yes"/>
+    <change idref="t69" attribute="internalPrerequisitesString" type="string" to="68FS" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-11-03T19:44:17.502Z" timestamp="2011-11-03T19:44:17.502Z">
+    <change idref="t58" attribute="resourceLeveledDate" type="date" from="2011-11-04T12:00:00.000Z" to="2011-11-09T20:00:08.000Z" resolved="yes"/>
+    <change idref="t60" attribute="resourceLeveledDate" type="date" from="2011-11-11T20:40:08.000Z" to="2011-11-04T19:40:01.000Z" resolved="yes"/>
+    <change idref="t61" attribute="resourceLeveledDate" type="date" from="2011-11-11T20:40:08.000Z" to="2011-11-21T19:20:19.000Z" resolved="yes"/>
+    <change idref="t64" attribute="resourceLeveledDate" type="date" from="2011-11-21T19:20:19.000Z" to="2011-11-25T13:00:26.000Z" resolved="yes"/>
+    <change idref="t66" attribute="resourceLeveledDate" type="date" from="2011-11-29T21:20:24.000Z" to="2011-12-05T15:00:31.000Z" resolved="yes"/>
+    <change idref="t67" attribute="resourceLeveledDate" type="date" from="2011-12-06T13:40:28.000Z" to="2011-12-09T16:20:35.000Z" resolved="yes"/>
+    <change idref="t73" attribute="resourceLeveledDate" type="date" from="2011-11-17T14:20:14.000Z" to="2011-12-30T13:40:41.000Z" resolved="yes"/>
+    <change idref="t75" attribute="resourceLeveledDate" type="date" from="2011-12-12T15:00:31.000Z" to="2011-12-16T18:40:39.000Z" resolved="yes"/>
+    <change idref="t84" attribute="resourceLeveledDate" type="date" from="2011-12-14T20:00:33.000Z" to="2011-12-30T21:20:42.000Z" resolved="yes"/>
+    <change idref="t86" attribute="resourceLeveledDate" type="date" from="2012-01-06T16:21:01.000Z" to="2012-01-24T18:41:11.000Z" resolved="yes"/>
+    <change idref="t89" attribute="resourceLeveledDate" type="date" from="2012-01-09T15:01:02.000Z" to="2012-01-25T16:21:12.000Z" resolved="yes"/>
+    <change idref="t92" attribute="resourceLeveledDate" type="date" from="2012-01-24T18:01:16.000Z" to="2012-02-09T19:21:26.000Z" resolved="yes"/>
+    <change idref="t93" attribute="resourceLeveledDate" type="date" from="2011-12-14T20:00:33.000Z" to="2011-12-30T21:20:42.000Z" resolved="yes"/>
+    <change idref="t158" attribute="resourceLeveledDate" type="date" from="2012-01-17T18:01:07.000Z" to="2012-02-02T19:21:17.000Z" resolved="yes"/>
+  </task-change-set>
   <resource-change-set user="David Ervin" date="2011-11-03T18:43:28.822Z" timestamp="2011-11-03T18:43:28.822Z">
     <change idref="r2" attribute="name" type="string" from="Dave Erwin" to="David Ervin" resolved="yes"/>
   </resource-change-set>

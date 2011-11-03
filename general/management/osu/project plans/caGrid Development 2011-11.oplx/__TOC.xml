@@ -13,7 +13,7 @@
         <column name="Notes" width="20"/>
         <column name="Title" width="592"/>
         <column name="Effort" width="70"/>
-        <expanded-items idrefs="t83 t99 t69 t53 t95 t82 t65 t54 t91 t68 t63 t10 t88"/>
+        <expanded-items idrefs="t83 t99 t69 t53 t95 t82 t65 t54 t107 t91 t68 t63 t10 t88"/>
         <selected-items-at-filter-time idrefs="t158 t163"/>
       </outline>
       <gantt-view x="-39" y="0" w="1124" h="1060">
@@ -69,7 +69,7 @@
         <column name="#" width="75"/>
         <selected-items-at-filter-time idrefs="r3"/>
       </outline>
-      <timeline x="-644" y="0" w="1497" h="1060">
+      <timeline x="-336" y="0" w="1497" h="1060">
         <task-bar-label task-type="group" position="left">
           <key>Title</key>
         </task-bar-label>
