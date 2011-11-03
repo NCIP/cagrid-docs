@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.0</version>
+  <task-change-set user="David Ervin" date="2011-11-03T18:43:28.826Z" timestamp="2011-11-03T18:43:28.826Z">
+    <change idref="t55" attribute="effort" type="real" from="28800" to="57600" resolved="yes"/>
+    <change idref="t55" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-11-03T18:45:32.460Z" timestamp="2011-11-03T18:45:32.460Z">
+    <change idref="t56" attribute="effort" type="real" from="28800" to="86400" resolved="yes"/>
+    <change idref="t56" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t57" attribute="effort" type="real" from="28800" to="144000" resolved="yes"/>
+    <change idref="t57" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t57" attribute="internalEffortDone" type="real" from="0" to="115200" resolved="yes"/>
+    <change idref="t58" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t59" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t60" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t61" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t64" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t66" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t67" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t71" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t72" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t73" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t75" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t76" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t84" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t85" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t86" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t89" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t92" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t93" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t96" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t97" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t100" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t101" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t102" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t113" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t116" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t117" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t120" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t121" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t124" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t125" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t126" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t134" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t135" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t136" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t137" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t138" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t139" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t140" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t141" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t142" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t143" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t144" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t145" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t146" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t147" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t148" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t149" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t150" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t151" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t152" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t153" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t154" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t155" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t156" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+    <change idref="t157" attribute="internalAssignments" type="string" from="2" to="" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-11-03T18:47:37.839Z" timestamp="2011-11-03T18:47:37.839Z">
+    <change idref="t111" from="t-1" from-position="26" resolved="yes">
+      <change idref="t111" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t111" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t132" from="t-1" from-position="25" resolved="yes">
+      <change idref="t132" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t132" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t131" from="t-1" from-position="24" resolved="yes">
+      <change idref="t131" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t131" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t130" from="t-1" from-position="23" resolved="yes">
+      <change idref="t130" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t130" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t129" from="t-1" from-position="22" resolved="yes">
+      <change idref="t129" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t129" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t128" from="t-1" from-position="21" resolved="yes">
+      <change idref="t128" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t128" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t127" from="t-1" from-position="20" resolved="yes">
+      <change idref="t127" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t127" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t122" from="t-1" from-position="19" resolved="yes">
+      <change idref="t122" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t122" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t118" from="t-1" from-position="18" resolved="yes">
+      <change idref="t118" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t118" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t114" from="t-1" from-position="17" resolved="yes">
+      <change idref="t114" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t114" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t133" from="t-1" from-position="16" resolved="yes">
+      <change idref="t133" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t133" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t103" from="t-1" from-position="15" resolved="yes">
+      <change idref="t103" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t103" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t104" from="t-1" from-position="14" resolved="yes">
+      <change idref="t104" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t104" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t105" from="t-1" from-position="13" resolved="yes">
+      <change idref="t105" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t105" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t98" from="t-1" from-position="12" resolved="yes">
+      <change idref="t98" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t98" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t94" from="t-1" from-position="11" resolved="yes">
+      <change idref="t94" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t94" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t90" from="t-1" from-position="10" resolved="yes">
+      <change idref="t90" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t90" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t87" from="t-1" from-position="9" resolved="yes">
+      <change idref="t87" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t87" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t79" from="t-1" from-position="8" resolved="yes">
+      <change idref="t79" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t79" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t80" from="t-1" from-position="7" resolved="yes">
+      <change idref="t80" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t80" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t81" from="t-1" from-position="6" resolved="yes">
+      <change idref="t81" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t81" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t77" from="t-1" from-position="5" resolved="yes">
+      <change idref="t77" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t77" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t74" from="t-1" from-position="4" resolved="yes">
+      <change idref="t74" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t74" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t70" from="t-1" from-position="3" resolved="yes">
+      <change idref="t70" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t70" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t62" from="t-1" from-position="2" resolved="yes">
+      <change idref="t62" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t62" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t78" from="t-1" from-position="1" resolved="yes">
+      <change idref="t78" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t78" attribute="title" type="string" to=""/>
+    </change>
+    <change idref="t58" attribute="effort" type="real" from="28800" to="57600" resolved="yes"/>
+    <change idref="t58" attribute="internalEffortDone" type="real" from="0" to="36000" resolved="yes"/>
+    <change idref="t59" attribute="effort" type="real" from="28800" to="14400" resolved="yes"/>
+    <change idref="t64" attribute="effort" type="real" from="28800" to="216000" resolved="yes"/>
+    <change idref="t66" attribute="effort" type="real" from="28800" to="144000" resolved="yes"/>
+    <change idref="t67" attribute="effort" type="real" from="28800" to="144000" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-11-03T18:49:40.457Z" timestamp="2011-11-03T18:49:40.457Z">
+    <change idref="t84" attribute="effort" type="real" from="28800" to="288000" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-11-03T18:52:23.178Z" timestamp="2011-11-03T18:52:23.178Z">
+    <change idref="t158" to="t88" to-position="1" resolved="yes">
+      <change idref="t158" attribute="effort" type="real" from="28800" to="86400"/>
+      <change idref="t158" attribute="startConstraintDate" type="date" to="2011-11-03T12:00:00.000Z"/>
+      <change idref="t158" attribute="title" type="string" to="Create new install documentation"/>
+    </change>
+    <change idref="t89" attribute="effort" type="real" from="28800" to="216000" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-11-03T18:53:33.359Z" timestamp="2011-11-03T18:53:33.359Z">
+    <change idref="t55" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t56" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t57" attribute="isSplitTask" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t161" to="t57" to-position="0" resolved="yes">
+      <change idref="t161" attribute="effort" type="real" from="28800" to="115200"/>
+      <change idref="t161" attribute="internalEffortDone" type="real" from="0" to="115200"/>
+      <change idref="t161" attribute="isSplitChunk" type="real" from="0" to="1"/>
+      <change idref="t161" attribute="resourceLeveledDate" type="date" to="2001-01-01T13:00:00.000Z"/>
+      <change idref="t161" attribute="title" type="string" to="Update authentication Service to include configurable lockout settings #1"/>
+    </change>
+    <change idref="t162" to="t57" to-position="1" resolved="yes">
+      <change idref="t162" attribute="isSplitChunk" type="real" from="0" to="1"/>
+      <change idref="t162" attribute="resourceLeveledDate" type="date" to="2001-01-01T13:00:00.000Z"/>
+      <change idref="t162" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z"/>
+      <change idref="t162" attribute="title" type="string" to="Update authentication Service to include configurable lockout settings #2"/>
+    </change>
+    <change idref="t58" attribute="isSplitTask" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t159" to="t58" to-position="0" resolved="yes">
+      <change idref="t159" attribute="effort" type="real" from="28800" to="36000"/>
+      <change idref="t159" attribute="internalEffortDone" type="real" from="0" to="36000"/>
+      <change idref="t159" attribute="isSplitChunk" type="real" from="0" to="1"/>
+      <change idref="t159" attribute="resourceLeveledDate" type="date" to="2001-01-01T13:00:00.000Z"/>
+      <change idref="t159" attribute="title" type="string" to="Merge caCORE SDK 4.4 data service style project into caGrid 1.5 and trunk  #1"/>
+    </change>
+    <change idref="t160" to="t58" to-position="1" resolved="yes">
+      <change idref="t160" attribute="effort" type="real" from="28800" to="21600"/>
+      <change idref="t160" attribute="isSplitChunk" type="real" from="0" to="1"/>
+      <change idref="t160" attribute="resourceLeveledDate" type="date" to="2001-01-01T13:00:00.000Z"/>
+      <change idref="t160" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z"/>
+      <change idref="t160" attribute="title" type="string" to="Merge caCORE SDK 4.4 data service style project into caGrid 1.5 and trunk  #2"/>
+    </change>
+    <change idref="t59" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t60" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t61" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t64" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t66" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t67" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t71" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t72" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t73" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t75" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t76" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t84" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t85" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t86" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t89" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t92" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t93" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t96" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t97" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t100" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t101" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t102" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t113" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t116" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t117" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t120" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t121" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t124" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t125" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t126" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t134" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t135" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t136" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t137" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t138" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t139" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t140" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t141" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t142" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t143" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t144" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t145" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t146" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t147" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t148" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t149" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t150" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t151" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t152" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t153" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t154" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t155" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t156" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t157" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+    <change idref="t158" attribute="startConstraintDate" type="date" from="2011-11-03T12:00:00.000Z" to="2011-11-04T12:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-11-03T18:54:57.818Z" timestamp="2011-11-03T18:54:57.818Z">
+    <change idref="t57" attribute="isSplitTask" type="real" from="1" to="0" resolved="yes"/>
+    <change idref="t162" from="t57" from-position="1" resolved="yes">
+      <change idref="t162" attribute="isSplitChunk" type="real" from="0" to="1"/>
+      <change idref="t162" attribute="resourceLeveledDate" type="date" to="2001-01-01T13:00:00.000Z"/>
+      <change idref="t162" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z"/>
+      <change idref="t162" attribute="title" type="string" to="Update authentication Service to include configurable lockout settings #2"/>
+    </change>
+    <change idref="t161" from="t57" from-position="0" resolved="yes">
+      <change idref="t161" attribute="effort" type="real" from="28800" to="115200"/>
+      <change idref="t161" attribute="internalEffortDone" type="real" from="0" to="115200"/>
+      <change idref="t161" attribute="isSplitChunk" type="real" from="0" to="1"/>
+      <change idref="t161" attribute="resourceLeveledDate" type="date" to="2001-01-01T13:00:00.000Z"/>
+      <change idref="t161" attribute="title" type="string" to="Update authentication Service to include configurable lockout settings #1"/>
+    </change>
+    <change idref="t58" attribute="isSplitTask" type="real" from="1" to="0" resolved="yes"/>
+    <change idref="t160" from="t58" from-position="1" resolved="yes">
+      <change idref="t160" attribute="effort" type="real" from="28800" to="21600"/>
+      <change idref="t160" attribute="isSplitChunk" type="real" from="0" to="1"/>
+      <change idref="t160" attribute="resourceLeveledDate" type="date" to="2001-01-01T13:00:00.000Z"/>
+      <change idref="t160" attribute="startConstraintDate" type="date" to="2011-11-04T12:00:00.000Z"/>
+      <change idref="t160" attribute="title" type="string" to="Merge caCORE SDK 4.4 data service style project into caGrid 1.5 and trunk  #2"/>
+    </change>
+    <change idref="t159" from="t58" from-position="0" resolved="yes">
+      <change idref="t159" attribute="effort" type="real" from="28800" to="36000"/>
+      <change idref="t159" attribute="internalEffortDone" type="real" from="0" to="36000"/>
+      <change idref="t159" attribute="isSplitChunk" type="real" from="0" to="1"/>
+      <change idref="t159" attribute="resourceLeveledDate" type="date" to="2001-01-01T13:00:00.000Z"/>
+      <change idref="t159" attribute="title" type="string" to="Merge caCORE SDK 4.4 data service style project into caGrid 1.5 and trunk  #1"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-11-03T19:18:45.761Z" timestamp="2011-11-03T19:18:45.761Z">
+    <change idref="t55" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t56" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t57" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t57" attribute="internalPrerequisitesString" type="string" to="55FS" resolved="yes"/>
+    <change idref="t58" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t59" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t60" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t61" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t64" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t66" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t67" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t71" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t72" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t73" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t75" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t76" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t84" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t85" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t86" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t89" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t92" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t93" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t96" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t97" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t100" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t101" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t102" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t113" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t116" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t117" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t120" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t121" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t124" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t125" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t126" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t134" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t135" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t136" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t137" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t138" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t139" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t140" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t141" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t142" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t143" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t144" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t145" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t146" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t147" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t148" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t149" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t150" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t151" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t152" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t153" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t154" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t155" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t156" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="t157" attribute="resourceLeveledDate" type="date" from="2001-01-01T13:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-11-03T19:21:05.427Z" timestamp="2011-11-03T19:21:05.427Z">
+    <change idref="t55" attribute="internalAssignments" type="string" from="" to="1 {0.6}" resolved="yes"/>
+    <change idref="t57" attribute="internalPrerequisitesString" type="string" from="55FS" resolved="yes"/>
+    <change idref="t57" attribute="internalAssignments" type="string" from="" to="2 {0.3}; 1 {0.3}" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-11-03T19:23:31.193Z" timestamp="2011-11-03T19:23:31.193Z">
+    <change idref="t58" attribute="internalAssignments" type="string" from="" to="2 {0.6}" resolved="yes"/>
+    <change idref="t59" attribute="internalAssignments" type="string" from="" to="2 {0.6}" resolved="yes"/>
+    <change idref="t60" attribute="internalAssignments" type="string" from="" to="2 {0.6}" resolved="yes"/>
+    <change idref="t61" attribute="effort" type="real" from="28800" to="57600" resolved="yes"/>
+    <change idref="t61" attribute="internalAssignments" type="string" from="" to="1 {0.6}" resolved="yes"/>
+    <change idref="t64" attribute="internalAssignments" type="string" from="" to="1 {0.6}; 2 {0.6}" resolved="yes"/>
+    <change idref="t66" attribute="internalAssignments" type="string" from="" to="1 {0.6}; 2 {0.6}" resolved="yes"/>
+    <change idref="t67" attribute="internalAssignments" type="string" from="" to="1 {0.6}; 2 {0.6}" resolved="yes"/>
+    <change idref="t73" attribute="internalAssignments" type="string" from="" to="1 {0.6}; 2 {0.6}" resolved="yes"/>
+    <change idref="t75" attribute="effort" type="real" from="28800" to="86400" resolved="yes"/>
+    <change idref="t75" attribute="internalAssignments" type="string" from="" to="1 {0.6}; 2 {0.6}" resolved="yes"/>
+    <change idref="t84" attribute="internalAssignments" type="string" from="" to="1 {0.6}" resolved="yes"/>
+    <change idref="t86" attribute="internalAssignments" type="string" from="" to="2 {0.6}; 1 {0.6}" resolved="yes"/>
+    <change idref="t89" attribute="internalAssignments" type="string" from="" to="1 {0.6}; 2 {0.6}" resolved="yes"/>
+    <change idref="t92" attribute="effort" type="real" from="28800" to="144000" resolved="yes"/>
+    <change idref="t92" attribute="internalAssignments" type="string" from="" to="1 {0.6}" resolved="yes"/>
+    <change idref="t93" attribute="effort" type="real" from="28800" to="144000" resolved="yes"/>
+    <change idref="t93" attribute="internalAssignments" type="string" from="" to="2 {0.6}" resolved="yes"/>
+    <change idref="t158" attribute="internalAssignments" type="string" from="" to="1 {0.6}" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="David Ervin" date="2011-11-03T19:26:18.626Z" timestamp="2011-11-03T19:26:18.626Z">
+    <change idref="t56" attribute="internalAssignments" type="string" from="" to="2 {0.6}; 1 {0.6}" resolved="yes"/>
+    <change idref="t57" attribute="internalPrerequisitesString" type="string" to="55FS" resolved="yes"/>
+    <change idref="t60" attribute="internalPrerequisitesString" type="string" to="59FS" resolved="yes"/>
+    <change idref="t61" attribute="internalPrerequisitesString" type="string" to="58FS" resolved="yes"/>
+    <change idref="t71" attribute="effort" type="real" from="28800" to="86400" resolved="yes"/>
+    <change idref="t71" attribute="internalPrerequisitesString" type="string" to="156FS" resolved="yes"/>
+    <change idref="t72" attribute="effort" type="real" from="28800" to="57600" resolved="yes"/>
+    <change idref="t72" attribute="internalPrerequisitesString" type="string" to="71FS" resolved="yes"/>
+    <change idref="t73" attribute="internalPrerequisitesString" type="string" to="72FS" resolved="yes"/>
+    <change idref="t75" attribute="internalPrerequisitesString" type="string" to="76FS" resolved="yes"/>
+    <change idref="t156" attribute="effort" type="real" from="28800" to="57600" resolved="yes"/>
+  </task-change-set>
+  <resource-change-set user="David Ervin" date="2011-11-03T18:43:28.822Z" timestamp="2011-11-03T18:43:28.822Z">
+    <change idref="r2" attribute="name" type="string" from="Dave Erwin" to="David Ervin" resolved="yes"/>
+  </resource-change-set>
+  <resource-change-set user="David Ervin" date="2011-11-03T19:21:05.425Z" timestamp="2011-11-03T19:21:05.425Z">
+    <change idref="r1" attribute="unitsAvailable" type="real" from="1" to="0.5999999642372131" resolved="yes"/>
+    <change idref="r1" attribute="name" type="string" from="Resource 1" to="Joe George" resolved="yes"/>
+    <change idref="r2" attribute="unitsAvailable" type="real" from="1" to="0.5999999642372131" resolved="yes"/>
+  </resource-change-set>
+  <metadata-change-set user="David Ervin" date="2011-11-03T18:25:52.775Z" timestamp="2011-11-03T18:25:52.775Z">
+    <change idref="m1" attribute="flatNumbering" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="m1" attribute="fixedDate" type="date" to="2001-01-01T13:00:00.000Z" resolved="yes"/>
+    <change idref="m1" attribute="projectTitle" type="string" to="caGrid Development" resolved="yes"/>
+  </metadata-change-set>
+  <metadata-change-set user="David Ervin" date="2011-11-03T18:54:57.815Z" timestamp="2011-11-03T18:54:57.815Z">
+    <change idref="m1" attribute="fixedDate" type="date" from="2001-01-01T13:00:00.000Z" to="2011-11-04T04:00:00.000Z" resolved="yes"/>
+  </metadata-change-set>
+  <metadata-change-set user="David Ervin" date="2011-11-03T19:16:45.462Z" timestamp="2011-11-03T19:16:45.462Z">
+    <change idref="m1" attribute="baselineInfo" type="dict" from="{
+    info =     (
+    );
+}" to="{
+    info =     (
+                {
+            name = &quot;Baseline 11/3/11&quot;;
+            uuid = d3k5a8DFzSn;
+        }
+    );
+}" resolved="yes"/>
+  </metadata-change-set>
+  <metadata-change-set user="David Ervin" date="2011-11-03T19:18:45.759Z" timestamp="2011-11-03T19:18:45.759Z">
+    <change idref="m1" attribute="baselineInfo" type="dict" from="{
+    info =     (
+                {
+            name = &quot;Baseline 11/3/11&quot;;
+            uuid = d3k5a8DFzSn;
+        }
+    );
+}" to="{
+    info =     (
+    );
+}" resolved="yes"/>
+  </metadata-change-set>
+</changelog>

@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="mU5lNGcIFjB">
+  <start-date>2011-11-04T04:00:00.000Z</start-date>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <type>Group</type>
+    <schedule>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <calendar name="Time Off" editable="yes" overtime="no"/>
+      <calendar name="Overtime" editable="yes" overtime="yes"/>
+    </schedule>
+    <child-resource idref="r1"/>
+    <child-resource idref="r2"/>
+  </resource>
+  <resource id="r1">
+    <name>Joe George</name>
+    <type>Staff</type>
+    <units-available>0.599999964237213</units-available>
+  </resource>
+  <resource id="r2">
+    <name>David Ervin</name>
+    <type>Staff</type>
+    <units-available>0.599999964237213</units-available>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t10"/>
+  </task>
+  <task id="t10">
+    <title>caGrid Release Plan</title>
+    <type>group</type>
+    <leveled-start>2001-01-01T13:00:00.000Z</leveled-start>
+    <child-task idref="t53"/>
+    <child-task idref="t82"/>
+    <child-task idref="t106"/>
+    <note>
+      <text>
+        <p>
+          <run>
+            <style>
+              <value key="font-family">Arial</value>
+              <value key="font-fill">
+                <color w="0"/>
+              </value>
+              <value key="font-size">8</value>
+              <value key="paragraph-base-writing-direction">left-to-right</value>
+              <value key="paragraph-tab-stop-interval">36</value>
+              <value key="paragraph-tab-stops"></value>
+            </style>
+            <lit>The release following the SHA 2 release, currently known as 1.6</lit>
+          </run>
+        </p>
+        <p/>
+      </text>
+    </note>
+  </task>
+  <task id="t53">
+    <title>Iteration 1</title>
+    <type>group</type>
+    <leveled-start>2001-01-01T13:00:00.000Z</leveled-start>
+    <child-task idref="t54"/>
+    <child-task idref="t63"/>
+    <child-task idref="t65"/>
+    <child-task idref="t68"/>
+    <child-task idref="t69"/>
+  </task>
+  <task id="t54">
+    <title>Bug Fixes</title>
+    <type>group</type>
+    <leveled-start>2001-01-01T13:00:00.000Z</leveled-start>
+    <child-task idref="t55"/>
+    <child-task idref="t57"/>
+    <child-task idref="t56"/>
+    <child-task idref="t58"/>
+    <child-task idref="t59"/>
+    <child-task idref="t60"/>
+    <child-task idref="t61"/>
+  </task>
+  <task id="t55">
+    <title>NCI Production LDAP Authentication Service allows user IDs with garbage appended </title>
+    <effort>57600</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <assignment idref="r1" units="0.599999964237213"/>
+  </task>
+  <task id="t56">
+    <title>Data Service Upgrader for 1.4 and 1.5 to 1.6 </title>
+    <effort>86400</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <assignment idref="r2" units="0.599999964237213"/>
+    <assignment idref="r1" units="0.599999964237213"/>
+  </task>
+  <task id="t57">
+    <title>Update authentication Service to include configurable lockout settings</title>
+    <effort>144000</effort>
+    <effort-done>115200</effort-done>
+    <prerequisite-task idref="t55"/>
+    <assignment idref="r2" units="0.299999982118607"/>
+    <assignment idref="r1" units="0.299999982118607"/>
+  </task>
+  <task id="t58">
+    <title>Merge caCORE SDK 4.4 data service style project into caGrid 1.5 and trunk </title>
+    <effort>57600</effort>
+    <effort-done>36000</effort-done>
+    <assignment idref="r2" units="0.599999964237213"/>
+  </task>
+  <task id="t59">
+    <title>Technical Status Report for October 2011 </title>
+    <effort>14400</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <assignment idref="r2" units="0.599999964237213"/>
+  </task>
+  <task id="t60">
+    <title>Technical Project Plan Update for October 2011 </title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t59"/>
+    <assignment idref="r2" units="0.599999964237213"/>
+  </task>
+  <task id="t61">
+    <title>caCore SDK 4.x data service styles need upgraders to handle swapping out Spring versions for SHA2 support </title>
+    <effort>57600</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t58"/>
+    <assignment idref="r1" units="0.599999964237213"/>
+  </task>
+  <task id="t63">
+    <title>Documentation</title>
+    <type>group</type>
+    <leveled-start>2001-01-01T13:00:00.000Z</leveled-start>
+    <child-task idref="t64"/>
+  </task>
+  <task id="t64">
+    <title>Update all necessary documentation and guides</title>
+    <effort>216000</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <assignment idref="r1" units="0.599999964237213"/>
+    <assignment idref="r2" units="0.599999964237213"/>
+  </task>
+  <task id="t65">
+    <title>Testing</title>
+    <type>group</type>
+    <leveled-start>2001-01-01T13:00:00.000Z</leveled-start>
+    <child-task idref="t66"/>
+    <child-task idref="t67"/>
+  </task>
+  <task id="t66">
+    <title>Unit Testing</title>
+    <effort>144000</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <assignment idref="r1" units="0.599999964237213"/>
+    <assignment idref="r2" units="0.599999964237213"/>
+  </task>
+  <task id="t67">
+    <title>Integration Testing</title>
+    <effort>144000</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <assignment idref="r1" units="0.599999964237213"/>
+    <assignment idref="r2" units="0.599999964237213"/>
+  </task>
+  <task id="t68">
+    <title>App Scan</title>
+    <type>group</type>
+    <leveled-start>2001-01-01T13:00:00.000Z</leveled-start>
+    <child-task idref="t76"/>
+    <child-task idref="t75"/>
+  </task>
+  <task id="t69">
+    <title>Deployment</title>
+    <type>group</type>
+    <leveled-start>2001-01-01T13:00:00.000Z</leveled-start>
+    <child-task idref="t156"/>
+    <child-task idref="t71"/>
+    <child-task idref="t72"/>
+    <child-task idref="t73"/>
+  </task>
+  <task id="t71">
+    <title>Move to QA and test</title>
+    <effort>86400</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t156"/>
+  </task>
+  <task id="t72">
+    <title>Move to Stage and test</title>
+    <effort>57600</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t71"/>
+  </task>
+  <task id="t73">
+    <title>Move to Prod and test</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t72"/>
+    <assignment idref="r1" units="0.599999964237213"/>
+    <assignment idref="r2" units="0.599999964237213"/>
+  </task>
+  <task id="t75">
+    <title>Fix App Scan issues</title>
+    <effort>86400</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t76"/>
+    <assignment idref="r1" units="0.599999964237213"/>
+    <assignment idref="r2" units="0.599999964237213"/>
+  </task>
+  <task id="t76">
+    <title>Perform App Scan Process</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t82">
+    <title>Iteration 2</title>
+    <type>group</type>
+    <leveled-start>2001-01-01T13:00:00.000Z</leveled-start>
+    <child-task idref="t83"/>
+    <child-task idref="t88"/>
+    <child-task idref="t91"/>
+    <child-task idref="t95"/>
+    <child-task idref="t99"/>
+  </task>
+  <task id="t83">
+    <title>Bug Fixes</title>
+    <type>group</type>
+    <leveled-start>2001-01-01T13:00:00.000Z</leveled-start>
+    <child-task idref="t84"/>
+    <child-task idref="t85"/>
+    <child-task idref="t86"/>
+  </task>
+  <task id="t84">
+    <title>caGrid w/ SHA2 release</title>
+    <effort>288000</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <assignment idref="r1" units="0.599999964237213"/>
+  </task>
+  <task id="t85">
+    <title>SHA-2 support</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t86">
+    <title>Begin 1.5 Production Install </title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <assignment idref="r2" units="0.599999964237213"/>
+    <assignment idref="r1" units="0.599999964237213"/>
+  </task>
+  <task id="t88">
+    <title>Documentation</title>
+    <type>group</type>
+    <leveled-start>2001-01-01T13:00:00.000Z</leveled-start>
+    <child-task idref="t89"/>
+    <child-task idref="t158"/>
+  </task>
+  <task id="t89">
+    <title>Update all necessary documentation and guides</title>
+    <effort>216000</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <assignment idref="r1" units="0.599999964237213"/>
+    <assignment idref="r2" units="0.599999964237213"/>
+  </task>
+  <task id="t91">
+    <title>Testing</title>
+    <type>group</type>
+    <leveled-start>2001-01-01T13:00:00.000Z</leveled-start>
+    <child-task idref="t92"/>
+    <child-task idref="t93"/>
+  </task>
+  <task id="t92">
+    <title>Unit Testing</title>
+    <effort>144000</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <assignment idref="r1" units="0.599999964237213"/>
+  </task>
+  <task id="t93">
+    <title>Integration Testing</title>
+    <effort>144000</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <assignment idref="r2" units="0.599999964237213"/>
+  </task>
+  <task id="t95">
+    <title>App Scan</title>
+    <type>group</type>
+    <leveled-start>2001-01-01T13:00:00.000Z</leveled-start>
+    <child-task idref="t96"/>
+    <child-task idref="t97"/>
+  </task>
+  <task id="t96">
+    <title>Perform App Scan Process</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t97">
+    <title>Fix App Scan issues</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t99">
+    <title>Deployment</title>
+    <type>group</type>
+    <leveled-start>2001-01-01T13:00:00.000Z</leveled-start>
+    <child-task idref="t155"/>
+    <child-task idref="t100"/>
+    <child-task idref="t101"/>
+    <child-task idref="t102"/>
+  </task>
+  <task id="t100">
+    <title>Move to QA and test</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t101">
+    <title>Move to Stage and test</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t102">
+    <title>Move to Prod and test</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t106">
+    <title>Iteration 3</title>
+    <type>group</type>
+    <leveled-start>2001-01-01T13:00:00.000Z</leveled-start>
+    <child-task idref="t107"/>
+    <child-task idref="t112"/>
+    <child-task idref="t115"/>
+    <child-task idref="t119"/>
+    <child-task idref="t123"/>
+  </task>
+  <task id="t107">
+    <title>Bug Fixes</title>
+    <type>group</type>
+    <leveled-start>2001-01-01T13:00:00.000Z</leveled-start>
+    <child-task idref="t154"/>
+    <child-task idref="t153"/>
+    <child-task idref="t152"/>
+    <child-task idref="t151"/>
+    <child-task idref="t150"/>
+    <child-task idref="t149"/>
+    <child-task idref="t148"/>
+    <child-task idref="t147"/>
+    <child-task idref="t146"/>
+    <child-task idref="t145"/>
+    <child-task idref="t144"/>
+    <child-task idref="t143"/>
+    <child-task idref="t142"/>
+    <child-task idref="t141"/>
+    <child-task idref="t140"/>
+    <child-task idref="t139"/>
+    <child-task idref="t138"/>
+    <child-task idref="t137"/>
+    <child-task idref="t136"/>
+    <child-task idref="t135"/>
+    <child-task idref="t134"/>
+  </task>
+  <task id="t112">
+    <title>Documentation</title>
+    <type>group</type>
+    <leveled-start>2001-01-01T13:00:00.000Z</leveled-start>
+    <child-task idref="t113"/>
+  </task>
+  <task id="t113">
+    <title>Update all necessary documentation and guides</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t115">
+    <title>Testing</title>
+    <type>group</type>
+    <leveled-start>2001-01-01T13:00:00.000Z</leveled-start>
+    <child-task idref="t116"/>
+    <child-task idref="t117"/>
+  </task>
+  <task id="t116">
+    <title>Unit Testing</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t117">
+    <title>Integration Testing</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t119">
+    <title>App Scan</title>
+    <type>group</type>
+    <leveled-start>2001-01-01T13:00:00.000Z</leveled-start>
+    <child-task idref="t120"/>
+    <child-task idref="t121"/>
+  </task>
+  <task id="t120">
+    <title>Perform App Scan Process</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t121">
+    <title>Fix App Scan issues</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t123">
+    <title>Deployment</title>
+    <type>group</type>
+    <leveled-start>2001-01-01T13:00:00.000Z</leveled-start>
+    <child-task idref="t157"/>
+    <child-task idref="t124"/>
+    <child-task idref="t125"/>
+    <child-task idref="t126"/>
+  </task>
+  <task id="t124">
+    <title>Move to QA and test</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t125">
+    <title>Move to Stage and test</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t126">
+    <title>Move to Prod and test</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t134">
+    <title>Add support in installer to work with a list of supported target grid repositories</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t135">
+    <title>Modify build to have a resolver chain specific for target grids, and allow working with external grids</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t136">
+    <title>Implement support for viewing and digitally signing host policy agreement during host certificate request</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t137">
+    <title>Support Viewing/Signing Host Certificate Policies in GAARDS UI</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t138">
+    <title>Breakup the ws-core ivy module to have finer grain configurations</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t139">
+    <title>Inconsistent user and host search operation behavior</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t140">
+    <title>Create upgrade documentation</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t141">
+    <title>Create new installation documentation</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t142">
+    <title>A way to add new target grids to the top-level configure target</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t143">
+    <title>Identify all secure services on the Training Grid</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t144">
+    <title>Identify all secure services on the Production Grid</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t145">
+    <title>Error connecting to GridGrouper with an authenticated account</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t146">
+    <title>GAARDS UI Target Grid selector needs completely redone</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t147">
+    <title>Possible bug: Missing jars when producing caCORE SDK 4.1 backed local grid services</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t148">
+    <title>FQP performance and scalability enhancements</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t149">
+    <title>Figure out at what point the SDK data service is failing to serialize results</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t150">
+    <title>Fix projects in caGrid to use WS-Core artifacts from Ivy rather than relying on GLOBUS_LOCATION</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t151">
+    <title>Plan for a 1.4.1 release to follow 1.4 that adds Tomcat 6 &amp; JBoss 5 support</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t152">
+    <title>Technical Project Plan</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t153">
+    <title>Technical Status Report</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t154">
+    <title>Upgraders for SDK 4.3 data services from 1.5 and 1.4 to 1.6</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t155">
+    <title>Move to Training and test</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t156">
+    <title>Move to Training and test</title>
+    <effort>57600</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t157">
+    <title>Move to Training and test</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t158">
+    <title>Create new install documentation</title>
+    <effort>86400</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <assignment idref="r1" units="0.599999964237213"/>
+  </task>
+  <critical-path root="-1" enabled="true">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>
