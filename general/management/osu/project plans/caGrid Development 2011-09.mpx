@@ -1,0 +1,122 @@
+MPX,OmniPlan,4.0,ANSI
+10,$,1,2,",",.
+11,2,0,1,8.0,40.0,$0.00/h,$0.00/h,1,1
+12,1,1,480,/,:,,,0
+20,Standard,0,1,1,1,1,1,0
+25,2,8:00,12:00,13:00,17:00
+25,3,8:00,12:00,13:00,17:00
+25,4,8:00,12:00,13:00,17:00
+25,5,8:00,12:00,13:00,17:00
+25,6,8:00,12:00,13:00,17:00
+30,caGrid Development,,,Standard,01/01/01 08:00,15/01/01 17:00,0,,,,,,,,,,,,,,NA,NA,NA,NA,,,,,
+40,ID,Unique ID,Name,Standard Rate,Cost Per Use,Max Units,Group
+41,40,49,1,42,44,41,3
+50,1,1,Resource 1,,$0.00,1.00,
+55,Standard,2,2,2,2,2,2,2
+60,ID,Unique ID,Name,Work,Duration,Start,Finish,Actual Start,Actual Finish,% Complete,% Work Complete,Outline Level,Predecessors,Constraint Date,Constraint Type,Delay,Baseline Start,Baseline Finish
+61,90,98,1,20,40,50,51,58,59,44,25,3,70,68,91,92,56,57
+70,1,2,Next Release with SHA 2 Support,200.00h,64.00h,01/01/01 08:00,,01/01/01 08:00,,61.41%,61.41%,1,,,,,,
+71,"The release formerly known as caGrid 1.4.1, or 1.4 w/ SHA 2https://tracker.nci.nih.gov/browse/CAGRID-540"
+75,0,1.00,64.00h,39.30h,39.30h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,10/01/01 17:00,0,-65535
+70,2,5,Upgrade Documentation,60.00h,60.00h,01/01/01 08:00,,01/01/01 08:00,,40.00%,40.00%,2,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-516
+75,0,1.00,60.00h,24.00h,24.00h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,10/01/01 17:00,0,-65535
+70,3,6,New Install Documentation,24.00h,24.00h,01/01/01 08:00,,01/01/01 08:00,,0.00%,0.00%,2,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-517
+70,4,7,Identify Owners of Secure Services on Training Grid,4.00h,4.00h,01/01/01 08:00,,01/01/01 08:00,,49.75%,49.75%,2,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-600
+75,0,1.00,4.00h,1.99h,1.99h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,01/01/01 17:00,0,-65535
+70,5,8,Identify Owners of Secure Services on Production Grid,8.00h,8.00h,02/01/01 08:00,,02/01/01 08:00,,0.00%,0.00%,2,4FS,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-601
+70,6,28,Merge caCORE SDK 4.4 data service style,16.00h,16.00h,01/01/01 08:00,,01/01/01 08:00,,100.00%,100.00%,2,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-755
+75,0,1.00,16.00h,16.00h,16.00h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,02/01/01 17:00,0,-65535
+70,7,9,Introduce Upgraders,88.00h,56.00h,01/01/01 08:00,,01/01/01 08:00,,91.84%,91.84%,2,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-640
+75,0,1.00,56.00h,51.43h,51.43h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,09/01/01 17:00,0,-65535
+70,8,15,CaGrid Metadata Extension Upgrader,8.00h,8.00h,01/01/01 08:00,,01/01/01 08:00,,60.05%,60.05%,3,,01/01/01 08:00,Start No Earlier Than,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-758
+75,0,1.00,8.00h,4.80h,4.80h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,01/01/01 17:00,0,-65535
+70,9,18,Data Service with SDK 4.2 Upgraders from 1.3 and 1.4,24.00h,24.00h,01/01/01 08:00,,01/01/01 08:00,,100.00%,100.00%,3,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-752
+75,0,1.00,24.00h,24.00h,24.00h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,03/01/01 17:00,0,-65535
+70,10,21,Data Service with SDK 4.3 Upgraders from 1.3 and 1.4,24.00h,24.00h,01/01/01 08:00,,01/01/01 08:00,,100.00%,100.00%,3,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-753
+75,0,1.00,24.00h,24.00h,24.00h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,03/01/01 17:00,0,-65535
+70,11,25,Data Service with SDK 4.4 Upgraders from 1.4,24.00h,24.00h,05/01/01 08:00,,05/01/01 08:00,,100.00%,100.00%,3,16FS,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-754
+75,0,1.00,24.00h,24.00h,24.00h,0h,$0.00,$0.00,$0.00,05/01/01 08:00,09/01/01 17:00,0,-65535
+70,12,33,WS-Enumeration Upgrader,8.00h,8.00h,01/01/01 08:00,,01/01/01 08:00,,50.25%,50.25%,3,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-766
+75,0,1.00,8.00h,4.02h,4.02h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,01/01/01 17:00,0,-65535
+70,13,10,Continued Development,645.00h,88.00h,01/01/01 08:00,,01/01/01 08:00,,43.99%,43.99%,1,,,,,,
+71,"The release following the SHA 2 release, currently known as 1.6"
+75,0,1.00,88.00h,38.71h,38.71h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,15/01/01 17:00,0,-65535
+70,14,13,Fix service build problems with spaces in the path,80.00h,80.00h,01/01/01 08:00,,01/01/01 08:00,,100.00%,100.00%,2,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-161
+75,0,1.00,80.00h,80.00h,80.00h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,12/01/01 17:00,0,-65535
+70,15,17,Client Tool for Service Identities,8.00h,8.00h,01/01/01 08:00,,01/01/01 08:00,,100.00%,100.00%,2,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-619
+75,0,1.00,8.00h,8.00h,8.00h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,01/01/01 17:00,0,-65535
+70,16,30,Merge caCORE SDK 4.4 data service style,16.00h,16.00h,03/01/01 08:00,,03/01/01 08:00,,100.00%,100.00%,2,6FS,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-755
+75,0,1.00,16.00h,16.00h,16.00h,0h,$0.00,$0.00,$0.00,03/01/01 08:00,04/01/01 17:00,0,-65535
+70,17,34,Migrate XMI Datatypes Browser to SDK 4.3 or newer,40.00h,40.00h,01/01/01 08:00,,01/01/01 08:00,,0.00%,0.00%,2,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-90
+70,18,41,Discoverable Target Grids,16.00h,16.00h,01/01/01 08:00,,01/01/01 08:00,,0.00%,0.00%,2,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-141
+70,19,42,Break WS-Core Ivy module into more granular components,1.00h,1.00h,04/01/01 08:00,,04/01/01 08:00,,0.00%,0.00%,2,20FS,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-173
+70,20,43,Remove dependency on GLOBUS_LOCATION,24.00h,24.00h,01/01/01 08:00,,01/01/01 08:00,,0.00%,0.00%,2,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-677
+70,21,44,Dorian Users Password Reset Mechanism,40.00h,40.00h,01/01/01 08:00,,01/01/01 08:00,,0.00%,0.00%,2,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-357
+70,22,46,New Resource Property to indicate Semantic Annotation Source,16.00h,16.00h,01/01/01 08:00,,01/01/01 08:00,,0.00%,0.00%,2,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-380
+70,23,47,Introduce Advanced Deployment Option,4.00h,4.00h,01/01/01 08:00,,01/01/01 08:00,,0.00%,0.00%,2,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-393
+70,24,48,Rework GAARDS-UI's target grid configuration,24.00h,24.00h,01/01/01 08:00,,01/01/01 08:00,,0.00%,0.00%,2,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-633
+70,25,49,FQP performance and scalability,80.00h,80.00h,01/01/01 08:00,,01/01/01 08:00,,70.00%,70.00%,2,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-646
+75,0,1.00,80.00h,56.00h,56.00h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,12/01/01 17:00,0,-65535
+70,26,50,SDK Data Services under OpenJDK,8.00h,8.00h,01/01/01 08:00,,01/01/01 08:00,,0.00%,0.00%,2,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-673
+70,27,51,Introduce Update and Version Coordination,4.00h,4.00h,01/01/01 08:00,,01/01/01 08:00,,29.66%,29.66%,2,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-679
+75,0,1.00,4.00h,1.19h,1.19h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,01/01/01 17:00,0,-65535
+70,28,52,Dynamic Data Type creation with FQP,80.00h,80.00h,01/01/01 08:00,,01/01/01 08:00,,20.34%,20.34%,2,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-685
+75,0,1.00,80.00h,16.27h,16.27h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,12/01/01 17:00,0,-65535
+70,29,14,Introduce Upgraders,88.00h,24.00h,01/01/01 08:00,,01/01/01 08:00,,56.53%,56.53%,2,,,,,,
+75,0,1.00,24.00h,13.57h,13.57h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,03/01/01 17:00,0,-65535
+70,30,16,CaGrid Metadata Extension Upgrader,8.00h,8.00h,01/01/01 08:00,,01/01/01 08:00,,50.25%,50.25%,3,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-758
+75,0,1.00,8.00h,4.02h,4.02h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,01/01/01 17:00,0,-65535
+70,31,20,Data Service with SDK 4.2 Upgraders from 1.4 and 1.5,24.00h,24.00h,01/01/01 08:00,,01/01/01 08:00,,40.44%,40.44%,3,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-752
+75,0,1.00,24.00h,9.71h,9.71h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,03/01/01 17:00,0,-65535
+70,32,22,Data Service with SDK 4.3 Upgraders from 1.4 and 1.5,24.00h,24.00h,01/01/01 08:00,,01/01/01 08:00,,66.67%,66.67%,3,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-753
+75,0,1.00,24.00h,16.00h,16.00h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,03/01/01 17:00,0,-65535
+70,33,26,Data Service with SDK 4.4 Upgraders from 1.4 and 1.5,24.00h,24.00h,01/01/01 08:00,,01/01/01 08:00,,66.67%,66.67%,3,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-754
+75,0,1.00,24.00h,16.00h,16.00h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,03/01/01 17:00,0,-65535
+70,34,31,WS-Enumeration Upgrader,8.00h,8.00h,01/01/01 08:00,,01/01/01 08:00,,50.25%,50.25%,3,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-767
+75,0,1.00,8.00h,4.02h,4.02h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,01/01/01 17:00,0,-65535
+70,35,35,Tech Stack Upgrades,116.00h,88.00h,01/01/01 08:00,,01/01/01 08:00,,48.72%,48.72%,2,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-83
+75,0,1.00,88.00h,42.87h,42.87h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,15/01/01 17:00,0,-65535
+70,36,36,Tomcat 6 Support,24.00h,24.00h,01/01/01 08:00,,01/01/01 08:00,,95.00%,95.00%,3,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-104https://tracker.nci.nih.gov/browse/CAGRID-110
+75,0,1.00,24.00h,22.80h,22.80h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,03/01/01 17:00,0,-65535
+70,37,38,JBoss 5.1 support,60.00h,60.00h,04/01/01 08:00,,04/01/01 08:00,,9.56%,9.56%,3,36FS,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-103https://tracker.nci.nih.gov/browse/CAGRID-768
+75,0,1.00,60.00h,5.74h,5.74h,0h,$0.00,$0.00,$0.00,04/01/01 08:00,15/01/01 17:00,0,-65535
+70,38,40,MySQL 5.1.x support,8.00h,8.00h,01/01/01 08:00,,01/01/01 08:00,,49.75%,49.75%,3,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-108
+75,0,1.00,8.00h,3.98h,3.98h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,01/01/01 17:00,0,-65535
+70,39,45,Ant 1.8.x support,24.00h,24.00h,01/01/01 08:00,,01/01/01 08:00,,100.00%,100.00%,3,,,,,,
+71,https://tracker.nci.nih.gov/browse/CAGRID-372
+75,0,1.00,24.00h,24.00h,24.00h,0h,$0.00,$0.00,$0.00,01/01/01 08:00,03/01/01 17:00,0,-65535
