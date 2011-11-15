@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="lAgo8lRLsFK">
+  <start-date>2011-11-15T13:00:00.000Z</start-date>
+  <prototype-task>
+    <task id="t-2">
+      <title>Task 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-3">
+      <title>Milestone 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-4">
+      <title>Group 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r-2">
+      <name>Resource 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-3">
+      <name>Equipment 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-4">
+      <name>Material 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-5">
+      <name>Group 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <type>Group</type>
+    <child-resource idref="r1"/>
+    <child-resource idref="r2"/>
+    <child-resource idref="r3"/>
+  </resource>
+  <resource id="r1">
+    <name>Resource 1</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r2">
+    <name>Joe George</name>
+    <type>Staff</type>
+    <units-available>0.600000023841858</units-available>
+  </resource>
+  <resource id="r3">
+    <name>David Ervin</name>
+    <type>Staff</type>
+    <units-available>0.600000023841858</units-available>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t1"/>
+  </task>
+  <task id="t1">
+    <title>caGrid Release Plan</title>
+    <type>group</type>
+    <child-task idref="t60"/>
+    <child-task idref="t63"/>
+    <child-task idref="t69"/>
+    <child-task idref="t72"/>
+    <child-task idref="t77"/>
+  </task>
+  <task id="t58">
+    <title>NCI Production LDAP Authentication Service allows user IDs with garbage appended</title>
+    <leveled-start>2011-11-22T15:10:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <effort-done>51840.0020599365</effort-done>
+    <start-constraint-date>2011-11-14T18:45:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t67"/>
+    <assignment idref="r2" units="0.600000023841858"/>
+  </task>
+  <task id="t59">
+    <title>Update authentication Service to include configurable lockout settings</title>
+    <leveled-start>2011-11-25T18:50:00.000Z</leveled-start>
+    <effort>144000</effort>
+    <effort-done>115200</effort-done>
+    <prerequisite-task idref="t58"/>
+    <assignment idref="r3" units="0.300000011920929"/>
+    <assignment idref="r2" units="0.300000011920929"/>
+  </task>
+  <task id="t60">
+    <title>1.4.1 Release</title>
+    <type>group</type>
+    <child-task idref="t159"/>
+  </task>
+  <task id="t62">
+    <title>Merge caCORE SDK 4.4 data service style project into caGrid 1.4.1 branch</title>
+    <leveled-start>2011-12-09T18:50:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <prerequisite-task idref="t59"/>
+    <assignment idref="r3" units="0.600000023841858"/>
+  </task>
+  <task id="t63">
+    <title>Documentation</title>
+    <type>group</type>
+    <child-task idref="t68"/>
+  </task>
+  <task id="t64">
+    <title>Create upgraders for all services, extensions, and data service styles</title>
+    <leveled-start>2011-11-25T18:50:00.000Z</leveled-start>
+    <effort>216000</effort>
+    <assignment idref="r2" units="0.600000023841858"/>
+    <assignment idref="r3" units="0.600000023841858"/>
+  </task>
+  <task id="t65">
+    <title>Create 1.4.1 Branch from 1.4 branch in SVN</title>
+    <leveled-start>2011-11-17T19:20:00.000Z</leveled-start>
+    <effort>1800</effort>
+    <prerequisite-task idref="t162"/>
+    <assignment idref="r3" units="0.600000023841858"/>
+  </task>
+  <task id="t66">
+    <title>Create CI builds for 1.4.1</title>
+    <leveled-start>2011-11-17T20:10:00.000Z</leveled-start>
+    <effort>14400</effort>
+    <prerequisite-task idref="t65"/>
+    <assignment idref="r3" units="0.600000023841858"/>
+  </task>
+  <task id="t67">
+    <title>Update version numbers to 1.4.1</title>
+    <leveled-start>2011-11-18T18:50:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <prerequisite-task idref="t66"/>
+    <assignment idref="r3" units="0.600000023841858"/>
+    <assignment idref="r2" units="0.600000023841858"/>
+  </task>
+  <task id="t68">
+    <title>Update all necessary documentation and guides</title>
+    <leveled-start>2011-12-14T21:30:00.000Z</leveled-start>
+    <effort>216000</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <assignment idref="r2" units="0.600000023841858"/>
+    <assignment idref="r3" units="0.600000023841858"/>
+  </task>
+  <task id="t69">
+    <title>Testing</title>
+    <type>group</type>
+    <child-task idref="t70"/>
+    <child-task idref="t71"/>
+  </task>
+  <task id="t70">
+    <title>Unit Testing</title>
+    <leveled-start>2011-12-23T14:30:00.000Z</leveled-start>
+    <effort>144000</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <assignment idref="r2" units="0.600000023841858"/>
+    <assignment idref="r3" units="0.600000023841858"/>
+  </task>
+  <task id="t71">
+    <title>Integration Testing</title>
+    <leveled-start>2011-12-29T15:50:00.000Z</leveled-start>
+    <effort>144000</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <assignment idref="r2" units="0.600000023841858"/>
+    <assignment idref="r3" units="0.600000023841858"/>
+  </task>
+  <task id="t72">
+    <title>App Scan</title>
+    <type>group</type>
+    <child-task idref="t76"/>
+    <child-task idref="t75"/>
+    <prerequisite-task idref="t69"/>
+  </task>
+  <task id="t73">
+    <title>Move to Prod and test</title>
+    <leveled-start>2012-01-19T13:10:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t158"/>
+    <assignment idref="r2" units="0.600000023841858"/>
+    <assignment idref="r3" units="0.600000023841858"/>
+  </task>
+  <task id="t75">
+    <title>Fix App Scan issues</title>
+    <leveled-start>2012-01-05T18:10:00.000Z</leveled-start>
+    <effort>86400</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t76"/>
+    <assignment idref="r2" units="0.600000023841858"/>
+    <assignment idref="r3" units="0.600000023841858"/>
+  </task>
+  <task id="t76">
+    <title>Perform App Scan Process</title>
+    <effort>28800</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t77">
+    <title>Deployment</title>
+    <type>group</type>
+    <child-task idref="t156"/>
+    <child-task idref="t157"/>
+    <child-task idref="t158"/>
+    <child-task idref="t73"/>
+    <prerequisite-task idref="t72"/>
+  </task>
+  <task id="t156">
+    <title>Move to Training and test</title>
+    <effort>57600</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t157">
+    <title>Move to QA and test</title>
+    <effort>86400</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t156"/>
+  </task>
+  <task id="t158">
+    <title>Move to Stage and test</title>
+    <effort>57600</effort>
+    <start-constraint-date>2011-11-04T12:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t157"/>
+  </task>
+  <task id="t159">
+    <title>Development Tasks</title>
+    <type>group</type>
+    <child-task idref="t162"/>
+    <child-task idref="t65"/>
+    <child-task idref="t66"/>
+    <child-task idref="t67"/>
+    <child-task idref="t58"/>
+    <child-task idref="t59"/>
+    <child-task idref="t161"/>
+    <child-task idref="t62"/>
+    <child-task idref="t64"/>
+  </task>
+  <task id="t161">
+    <title>Add a view for locked out accounts to GAARDS-UI</title>
+    <leveled-start>2011-12-07T21:30:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>https://tracker.nci.nih.gov/browse/CAGRID-717</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+    <prerequisite-task idref="t59"/>
+    <assignment idref="r2" units="0.600000023841858"/>
+    <assignment idref="r3" units="0.600000023841858"/>
+  </task>
+  <task id="t162">
+    <title>Organize tasks in JIRA</title>
+    <leveled-start>2011-11-16T13:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <assignment idref="r3" units="0.600000023841858"/>
+  </task>
+  <critical-path root="-1" enabled="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>
