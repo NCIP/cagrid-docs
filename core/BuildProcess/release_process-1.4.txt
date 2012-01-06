@@ -57,7 +57,7 @@ cd <directory for release>
 svn export https://ncisvn.nci.nih.gov/svn/cagrid/tags/caGrid-1_4_release_final
 
 ----- create caGrid source release -----
-cd Software/core/caGrid
+cd Software/core
 zip -r caGrid-1.4.zip caGrid
 mv  caGrid-1.4.zip <directory for release>
 md5sum <directory for release>/caGrid-1.4.zip > <directory for release>/caGrid-1.4.zip.md5sum
