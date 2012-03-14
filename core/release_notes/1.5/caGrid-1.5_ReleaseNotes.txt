@@ -168,6 +168,7 @@ Specific highlighted improvements in caGrid 1.5 include:
   upgrade functionality which will migrate services created using caGrid 1.3 and the downloadable
   Introduce extension for caCORE SDK 4.4 to caGrid 1.5
   - Builds of caGrid now leverage the NCI's nexus repository rather than the one based on SVN and GForge
+  - Support for NCI Tech Stack changes including Tomcat 6 and JBoss 5.1.0.GA deployment support
 * Data Services:
   - Data services have dramatically improved performance for serializing and deserializing CQL and CQL 2 results
 * Introduce Toolkit
