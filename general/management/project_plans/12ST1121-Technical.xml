@@ -410,8 +410,8 @@
             <TotalSlack>0</TotalSlack>
             <FixedCost>0</FixedCost>
             <FixedCostAccrual>3</FixedCostAccrual>
-            <PercentComplete>2</PercentComplete>
-            <PercentWorkComplete>2</PercentWorkComplete>
+            <PercentComplete>3</PercentComplete>
+            <PercentWorkComplete>3</PercentWorkComplete>
             <Cost>0</Cost>
             <OvertimeCost>0</OvertimeCost>
             <OvertimeWork>PT0H0M0S</OvertimeWork>
@@ -538,8 +538,8 @@
             <TotalSlack>0</TotalSlack>
             <FixedCost>0</FixedCost>
             <FixedCostAccrual>3</FixedCostAccrual>
-            <PercentComplete>6</PercentComplete>
-            <PercentWorkComplete>6</PercentWorkComplete>
+            <PercentComplete>8</PercentComplete>
+            <PercentWorkComplete>8</PercentWorkComplete>
             <Cost>0</Cost>
             <OvertimeCost>0</OvertimeCost>
             <OvertimeWork>PT0H0M0S</OvertimeWork>
@@ -852,8 +852,8 @@
             <IsNull>0</IsNull>
             <OutlineLevel>2</OutlineLevel>
             <Priority>500</Priority>
-            <Start>2013-01-03T08:00:00</Start>
-            <ManualStart>2013-01-03T08:00:00</ManualStart>
+            <Start>2013-02-04T08:00:00</Start>
+            <ManualStart>2013-02-04T08:00:00</ManualStart>
             <ManualFinish>2013-03-29T15:00:00</ManualFinish>
             <Duration>PT0H0M0S</Duration>
             <Work>PT0H0M0S</Work>
@@ -875,8 +875,8 @@
             <TotalSlack>0</TotalSlack>
             <FixedCost>0</FixedCost>
             <FixedCostAccrual>3</FixedCostAccrual>
-            <PercentComplete>0</PercentComplete>
-            <PercentWorkComplete>0</PercentWorkComplete>
+            <PercentComplete>7</PercentComplete>
+            <PercentWorkComplete>7</PercentWorkComplete>
             <Cost>0</Cost>
             <OvertimeCost>0</OvertimeCost>
             <OvertimeWork>PT0H0M0S</OvertimeWork>
@@ -918,13 +918,13 @@
             <IsNull>0</IsNull>
             <OutlineLevel>3</OutlineLevel>
             <Priority>500</Priority>
-            <Start>2013-01-03T08:00:00</Start>
-            <ManualStart>2013-01-03T08:00:00</ManualStart>
-            <ManualFinish>2013-01-16T17:00:00</ManualFinish>
-            <Duration>PT80H0M0S</Duration>
+            <Start>2013-02-04T08:00:00</Start>
+            <ManualStart>2013-02-04T08:00:00</ManualStart>
+            <ManualFinish>2013-02-22T17:00:00</ManualFinish>
+            <Duration>PT120H0M0S</Duration>
             <DurationFormat>9</DurationFormat>
-            <Work>PT80H0M0S</Work>
-            <ManualDuration>PT80H0M0S</ManualDuration>
+            <Work>PT120H0M0S</Work>
+            <ManualDuration>PT120H0M0S</ManualDuration>
             <ResumeValid>0</ResumeValid>
             <EffortDriven>0</EffortDriven>
             <Recurring>0</Recurring>
@@ -943,20 +943,21 @@
             <TotalSlack>0</TotalSlack>
             <FixedCost>0</FixedCost>
             <FixedCostAccrual>3</FixedCostAccrual>
-            <PercentComplete>0</PercentComplete>
-            <PercentWorkComplete>0</PercentWorkComplete>
+            <PercentComplete>25</PercentComplete>
+            <PercentWorkComplete>25</PercentWorkComplete>
             <Cost>0</Cost>
             <OvertimeCost>0</OvertimeCost>
             <OvertimeWork>PT0H0M0S</OvertimeWork>
+            <ActualStart>2013-02-04T08:00:00</ActualStart>
             <ActualDuration>PT0H0M0S</ActualDuration>
             <ActualCost>0</ActualCost>
             <ActualOvertimeCost>0</ActualOvertimeCost>
-            <ActualWork>PT0H0M0S</ActualWork>
+            <ActualWork>PT30H0M0S</ActualWork>
             <ActualOvertimeWork>PT0H0M0S</ActualOvertimeWork>
             <RegularWork>PT0H0M0S</RegularWork>
-            <RemainingDuration>PT80H0M0S</RemainingDuration>
+            <RemainingDuration>PT90H0M0S</RemainingDuration>
             <RemainingCost>0</RemainingCost>
-            <RemainingWork>PT80H0M0S</RemainingWork>
+            <RemainingWork>PT90H0M0S</RemainingWork>
             <RemainingOvertimeCost>0</RemainingOvertimeCost>
             <RemainingOvertimeWork>PT0H0M0S</RemainingOvertimeWork>
             <ACWP>0</ACWP>
@@ -987,9 +988,9 @@
             <IsNull>0</IsNull>
             <OutlineLevel>3</OutlineLevel>
             <Priority>500</Priority>
-            <Start>2013-01-17T08:00:00</Start>
-            <ManualStart>2013-01-17T08:00:00</ManualStart>
-            <ManualFinish>2013-01-30T17:00:00</ManualFinish>
+            <Start>2013-02-25T08:00:00</Start>
+            <ManualStart>2013-02-25T08:00:00</ManualStart>
+            <ManualFinish>2013-03-08T17:00:00</ManualFinish>
             <Duration>PT80H0M0S</Duration>
             <DurationFormat>9</DurationFormat>
             <Work>PT80H0M0S</Work>
@@ -1055,9 +1056,9 @@
             <IsNull>0</IsNull>
             <OutlineLevel>3</OutlineLevel>
             <Priority>500</Priority>
-            <Start>2013-01-31T08:00:00</Start>
-            <ManualStart>2013-01-31T08:00:00</ManualStart>
-            <ManualFinish>2013-01-31T10:00:00</ManualFinish>
+            <Start>2013-03-11T08:00:00</Start>
+            <ManualStart>2013-03-11T08:00:00</ManualStart>
+            <ManualFinish>2013-03-11T10:00:00</ManualFinish>
             <Duration>PT2H0M0S</Duration>
             <DurationFormat>5</DurationFormat>
             <Work>PT0H0M0S</Work>
@@ -1214,8 +1215,8 @@
             <TotalSlack>0</TotalSlack>
             <FixedCost>0</FixedCost>
             <FixedCostAccrual>3</FixedCostAccrual>
-            <PercentComplete>0</PercentComplete>
-            <PercentWorkComplete>0</PercentWorkComplete>
+            <PercentComplete>1</PercentComplete>
+            <PercentWorkComplete>1</PercentWorkComplete>
             <Cost>0</Cost>
             <OvertimeCost>0</OvertimeCost>
             <OvertimeWork>PT0H0M0S</OvertimeWork>
@@ -1282,11 +1283,12 @@
             <TotalSlack>0</TotalSlack>
             <FixedCost>0</FixedCost>
             <FixedCostAccrual>3</FixedCostAccrual>
-            <PercentComplete>0</PercentComplete>
-            <PercentWorkComplete>0</PercentWorkComplete>
+            <PercentComplete>20</PercentComplete>
+            <PercentWorkComplete>20</PercentWorkComplete>
             <Cost>0</Cost>
             <OvertimeCost>0</OvertimeCost>
             <OvertimeWork>PT0H0M0S</OvertimeWork>
+            <ActualStart>2013-01-03T08:00:00</ActualStart>
             <ActualDuration>PT0H0M0S</ActualDuration>
             <ActualCost>0</ActualCost>
             <ActualOvertimeCost>0</ActualOvertimeCost>
@@ -1593,14 +1595,14 @@
         <Task>
             <UID>18</UID>
             <ID>18</ID>
-            <Name>Migration Plan: caGrid.org to NCI</Name>
+            <Name>Migrate caGrid.org wiki</Name>
             <Type>0</Type>
             <IsNull>0</IsNull>
             <OutlineLevel>2</OutlineLevel>
             <Priority>500</Priority>
-            <Start>2013-03-07T08:00:00</Start>
-            <ManualStart>2013-03-07T08:00:00</ManualStart>
-            <ManualFinish>2013-03-11T12:00:00</ManualFinish>
+            <Start>2013-01-28T08:00:00</Start>
+            <ManualStart>2013-01-28T08:00:00</ManualStart>
+            <ManualFinish>2013-01-30T12:00:00</ManualFinish>
             <Duration>PT20H0M0S</Duration>
             <DurationFormat>7</DurationFormat>
             <Work>PT40H0M0S</Work>
@@ -1623,11 +1625,12 @@
             <TotalSlack>0</TotalSlack>
             <FixedCost>0</FixedCost>
             <FixedCostAccrual>3</FixedCostAccrual>
-            <PercentComplete>0</PercentComplete>
-            <PercentWorkComplete>0</PercentWorkComplete>
+            <PercentComplete>10</PercentComplete>
+            <PercentWorkComplete>10</PercentWorkComplete>
             <Cost>0</Cost>
             <OvertimeCost>0</OvertimeCost>
             <OvertimeWork>PT0H0M0S</OvertimeWork>
+            <ActualStart>2013-01-28T08:00:00</ActualStart>
             <ActualDuration>PT0H0M0S</ActualDuration>
             <ActualCost>0</ActualCost>
             <ActualOvertimeCost>0</ActualOvertimeCost>
@@ -1654,7 +1657,7 @@
             <ActualWorkProtected>PT0H0M0S</ActualWorkProtected>
             <ActualOvertimeWorkProtected>PT0H0M0S</ActualOvertimeWorkProtected>
             <PredecessorLink>
-                <PredecessorUID>6</PredecessorUID>
+                <PredecessorUID>5</PredecessorUID>
                 <Type>1</Type>
             </PredecessorLink>
         </Task>
@@ -5122,7 +5125,7 @@
             <Delay>0</Delay>
             <OvertimeWork>PT0H0M0S</OvertimeWork>
             <RemainingWork>PT2H0M0S</RemainingWork>
-            <Start>2013-01-31T08:00:00</Start>
+            <Start>2013-03-11T08:00:00</Start>
             <Units>1.000000e+00</Units>
             <Work>PT2H0M0S</Work>
         </Assignment>
@@ -5136,7 +5139,7 @@
             <Delay>0</Delay>
             <OvertimeWork>PT0H0M0S</OvertimeWork>
             <RemainingWork>PT2H0M0S</RemainingWork>
-            <Start>2013-01-31T08:00:00</Start>
+            <Start>2013-03-11T08:00:00</Start>
             <Units>1.000000e+00</Units>
             <Work>PT2H0M0S</Work>
         </Assignment>
@@ -5150,7 +5153,7 @@
             <Delay>0</Delay>
             <OvertimeWork>PT0H0M0S</OvertimeWork>
             <RemainingWork>PT2H0M0S</RemainingWork>
-            <Start>2013-01-31T08:00:00</Start>
+            <Start>2013-03-11T08:00:00</Start>
             <Units>1.000000e+00</Units>
             <Work>PT2H0M0S</Work>
         </Assignment>
@@ -5164,7 +5167,7 @@
             <Delay>0</Delay>
             <OvertimeWork>PT0H0M0S</OvertimeWork>
             <RemainingWork>PT80H0M0S</RemainingWork>
-            <Start>2013-01-17T08:00:00</Start>
+            <Start>2013-02-25T08:00:00</Start>
             <Units>1.000000e+00</Units>
             <Work>PT80H0M0S</Work>
         </Assignment>
@@ -5229,12 +5232,12 @@
             <TaskUID>18</TaskUID>
             <ResourceUID>1</ResourceUID>
             <ActualCost>0</ActualCost>
-            <ActualWork>PT0H0M0S</ActualWork>
+            <ActualWork>PT2H0M0S</ActualWork>
             <Cost>0</Cost>
             <Delay>0</Delay>
             <OvertimeWork>PT0H0M0S</OvertimeWork>
-            <RemainingWork>PT20H0M0S</RemainingWork>
-            <Start>2013-03-07T08:00:00</Start>
+            <RemainingWork>PT18H0M0S</RemainingWork>
+            <Start>2013-01-28T08:00:00</Start>
             <Units>1.000000e+00</Units>
             <Work>PT20H0M0S</Work>
         </Assignment>
@@ -5243,12 +5246,12 @@
             <TaskUID>18</TaskUID>
             <ResourceUID>2</ResourceUID>
             <ActualCost>0</ActualCost>
-            <ActualWork>PT0H0M0S</ActualWork>
+            <ActualWork>PT2H0M0S</ActualWork>
             <Cost>0</Cost>
             <Delay>0</Delay>
             <OvertimeWork>PT0H0M0S</OvertimeWork>
-            <RemainingWork>PT20H0M0S</RemainingWork>
-            <Start>2013-03-07T08:00:00</Start>
+            <RemainingWork>PT18H0M0S</RemainingWork>
+            <Start>2013-01-28T08:00:00</Start>
             <Units>1.000000e+00</Units>
             <Work>PT20H0M0S</Work>
         </Assignment>
@@ -5299,11 +5302,11 @@
             <TaskUID>13</TaskUID>
             <ResourceUID>2</ResourceUID>
             <ActualCost>0</ActualCost>
-            <ActualWork>PT0H0M0S</ActualWork>
+            <ActualWork>PT8H0M0S</ActualWork>
             <Cost>0</Cost>
             <Delay>0</Delay>
             <OvertimeWork>PT0H0M0S</OvertimeWork>
-            <RemainingWork>PT40H0M0S</RemainingWork>
+            <RemainingWork>PT32H0M0S</RemainingWork>
             <Start>2013-01-03T08:00:00</Start>
             <Units>1.000000e+00</Units>
             <Work>PT40H0M0S</Work>
