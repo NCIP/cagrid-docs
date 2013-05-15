@@ -57,7 +57,43 @@
 	<array>
 		<dict>
 			<key>Bounds</key>
-			<string>{{370.00000071725964, 464.99999928274042}, {258.81796264648438, 32}}</string>
+			<string>{{370, 562}, {258.81796264648438, 32}}</string>
+			<key>Class</key>
+			<string>ShapedGraphic</string>
+			<key>ID</key>
+			<integer>28</integer>
+			<key>Magnets</key>
+			<array>
+				<string>{0, 1}</string>
+				<string>{0, -1}</string>
+				<string>{1, 0}</string>
+				<string>{-1, 0}</string>
+			</array>
+			<key>Shape</key>
+			<string>ParallelLines</string>
+			<key>Style</key>
+			<dict/>
+			<key>Text</key>
+			<dict>
+				<key>Align</key>
+				<integer>0</integer>
+				<key>Text</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\b\fs24 \cf0 taverna-grid\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+{\field{\*\fldinst{HYPERLINK "https://github.com/NCIP/cagrid-core"}}{\fldrslt 
+\b0 \cf0 https://github.com/NCIP/taverna-grid}}}</string>
+				<key>VerticalPad</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>Bounds</key>
+			<string>{{370.00000071725964, 374.99999928274042}, {258.81796264648438, 32}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -94,7 +130,7 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{370, 382}, {258.81796264648438, 32}}</string>
+			<string>{{370, 292}, {258.81796264648438, 32}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -131,7 +167,7 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{370, 299}, {258.81796264648438, 32}}</string>
+			<string>{{370, 506}, {258.81796264648438, 32}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -276,7 +312,7 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{17.61097163111226, 257.50001506245155}, {87, 32}}</string>
+			<string>{{93.221943262224528, 215.99999980366249}, {87, 32}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -357,7 +393,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2013-05-15 01:09:28 +0000</string>
+	<string>2013-05-15 01:50:23 +0000</string>
 	<key>Modifier</key>
 	<string>John Eisenschmidt</string>
 	<key>NotesVisible</key>
