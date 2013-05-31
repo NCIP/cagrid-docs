@@ -1,9 +1,9 @@
-Welcome to the cagrid-docs Project!
+Welcome to the caGrid Documentation Project!
 =====================================
 
-cagrid-docs contains the documentation artifacts for the NCIP caGrid core infrastructure, Portal, and Workflow projects.
+caGrid Documentation contains the documentation artifacts for the NCIP caGrid core infrastructure, Portal, and Workflow projects.
 
-cagrid-docs is distributed under the BSD 3-Clause License. Please see the NOTICE and LICENSE files for details.
+caGrid Documentation is distributed under the BSD 3-Clause License. Please see the NOTICE and LICENSE files for details.
 
 You will find more details about the various NCIP caGrid projects in the following links:
 
@@ -15,4 +15,4 @@ You will find more details about the various NCIP caGrid projects in the followi
  * [caGrid-portal Repository] (https://github.com/NCIP/cagrid-portal)
  * [caGrid-workflow Repository] (https://github.com/NCIP/cagrid-workflow)
 
-Please join us in further developing and improving cagrid-docs.
+Please join us in further developing and improving caGrid Documentation.
