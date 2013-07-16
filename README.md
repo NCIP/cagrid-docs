@@ -10,7 +10,7 @@ This repository holds documentation for the the following caGrid 1.x projects:
 For further information about the documentation in this repository, please visit the relevant project
 listed above. 
 
-Currently, caGrid 2.0 is under development, and documentation relevant to that will be hosed in those repositories:
+Currently, caGrid 2.0 is under development, and documentation relevant to that will be housed in those repositories:
  * [caGrid2] (https://github.com/NCIP/cagrid2)
  * [caGrid2-WSRF] (https://github.com/NCIP/cagrid2-wsrf)
 
