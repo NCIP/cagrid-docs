@@ -13,10 +13,11 @@ chance of keeping on top of things.
 Getting Started
 ---------------
 
-* Make sure you have a GitHub Account. If you don't, visit this URL
-  to obtain one: https://github.com/signup/free
+* Make sure you have a `GitHub Account`_.
 
 * Fork the repository on GitHub to publish any proposed changes
+
+.. _`GitHub Account`: https://github.com/signup/free
 
 --------------
 Making Changes
@@ -43,7 +44,7 @@ Making Changes
   Start with a one-line summary followed by a blank line followed by a
   detailed free-form description:
 
-  https://github.com/NCIP/ncip.github.com/wiki/Good-Practices#wiki-commit-messages
+.. _`NCIP Good Practices for Commit Messages`: https://github.com/NCIP/ncip.github.com/wiki/Good-Practices#wiki-commit-messages
 
 ------------------
 Submitting Changes
@@ -58,10 +59,12 @@ Submitting Changes
 
 * Submit a pull request to the repository in the NCIP organization.
 
+.. _`BSD 3-Clause License`: http://opensource.org/licenses/BSD-3-Clause
+
 --------------------
 Additional Resources
 --------------------
 
-For help learning Git and Github, see the `NCIP Learning Resources:
+For help learning Git and Github, see the `NCIP Learning Resources`_.
 
-https://github.com/NCIP/ncip.github.com/wiki/Learning-Resources
+.. _`NCIP Learning Resources`: https://github.com/NCIP/ncip.github.com/wiki/Learning-Resources
