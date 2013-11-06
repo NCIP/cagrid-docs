@@ -1,0 +1,60 @@
+MPX,Microsoft Project for Windows,4.0,ANSI
+10,$,1,2,",",.
+11,2,0,1,8,40,$0.00/h,$0.00/h,1,1
+12,0,1,480,/,:,AM,PM,0
+20,Standard,0,1,1,1,1,1,0
+25,1
+25,2,08:00,12:00,13:00,17:00
+25,3,08:00,12:00,13:00,17:00
+25,4,08:00,12:00,13:00,17:00
+25,5,08:00,12:00,13:00,17:00
+25,6,08:00,12:00,13:00,17:00
+25,7
+30,13XS487-Technical,,,Standard,10/01/13 08:00,,0,
+41,1,40,42,43,49
+50,Lantern Three Project Manager,1,$0.00/h,$0.00/h,1
+55,Standard,2,2,2,2,2,2,2
+50,Lantern Three Software Architect,2,$0.00/h,$0.00/h,2
+55,Standard,2,2,2,2,2,2,2
+50,NCI Documentation,3,$0.00/h,$0.00/h,3
+55,Standard,2,2,2,2,2,2,2
+50,NCI Project Officer,4,$0.00/h,$0.00/h,4
+55,Standard,2,2,2,2,2,2,2
+50,NCI Quality Assurance,5,$0.00/h,$0.00/h,5
+55,Standard,2,2,2,2,2,2,2
+50,NCI Systems,6,$0.00/h,$0.00/h,6
+55,Standard,2,2,2,2,2,2,2
+50,SAIC-F Technical Project Manager,7,$0.00/h,$0.00/h,7
+55,Standard,2,2,2,2,2,2,2
+61,90,1,20,40,81,25,44,68,91,3,70,95,98,74,50,51,58,59
+70,1,Start,0d,0d,Yes,100%,100%,10/18/13 08:00,Start No Earlier Than,0,,Medium,1,,10/18/13 08:00,,10/18/13 08:00,10/18/13 08:00
+70,2,caGrid Architectural Mentoring,,,No,0%,0%,,As Soon As Possible,0,1FS,Medium,2,1FS,10/18/13 08:00,,,
+70,3,caGrid Operations & Maintenance,,1y,No,0%,0%,,As Soon As Possible,1,1FS,Medium,3,1FS,10/18/13 08:00,,,
+75,2,1.0000,1920.000000h,,0.000000h,,,,,10/18/13 08:00,,,2
+75,1,1.0000,1920.000000h,,0.000000h,,,,,10/18/13 08:00,,,1
+70,4,caGrid 2.0 Cookbook Development,,,No,0%,0%,,As Soon As Possible,0,1FS,Medium,4,1FS,10/18/13 08:00,,,
+70,5,Start,0d,0d,Yes,0%,0%,,As Soon As Possible,1,1FS,Medium,5,1FS,10/18/13 08:00,,,
+70,6,Upgrading caGrid Services 1.x to SHA-2,5d,1w,No,0%,0%,,As Soon As Possible,1,5FS,Medium,6,5FS,10/18/13 08:00,,,
+75,2,1.0000,40.000000h,,0.000000h,,,,,10/18/13 08:00,,,2
+70,7,Splitting Grid Service Containers <?>,5d,1w,No,0%,0%,,As Soon As Possible,1,5FS,Medium,7,5FS,10/18/13 08:00,,,
+75,2,1.0000,40.000000h,,0.000000h,,,,,10/18/13 08:00,,,2
+70,8,Developing services for caGrid 2.0,15d,3w,No,0%,0%,,As Soon As Possible,1,5FS,Medium,8,5FS,10/18/13 08:00,,,
+75,2,1.0000,120.000000h,,0.000000h,,,,,10/18/13 08:00,,,2
+70,9,End,0d,0d,Yes,0%,0%,,As Soon As Possible,1,"6FS,8FS,7FS",Medium,9,"6FS,8FS,7FS",11/07/13 17:00,,,
+70,10,caGrid 2.0 Deployment,,,No,24%,24%,,As Soon As Possible,0,,Medium,10,,07/22/13 10:00,,,
+70,11,Start,0d,0d,Yes,100%,100%,,As Soon As Possible,1,1FS,Medium,11,1FS,10/18/13 08:00,,10/18/13 08:00,10/18/13 08:00
+70,12,Documentation,15d,3w,No,0%,0%,,As Soon As Possible,1,11FS,Medium,12,11FS,10/18/13 08:00,,,
+75,2,1.0000,120.000000h,,0.000000h,,,,,10/18/13 08:00,,,2
+70,13,Deployment,,,No,34%,34%,,As Soon As Possible,1,,Medium,13,,07/22/13 10:00,,,
+70,14,Architecture Review Checklist,5d,1w,No,100%,100%,,As Soon As Possible,2,11FS,Medium,14,11FS,07/22/13 10:00,,07/22/13 10:00,07/26/13 17:00
+75,1,1.0000,40.000000h,,38.000000h,,,,,10/18/13 08:00,,,1
+70,15,Deployment to NCI QA,5d,1w,No,100%,100%,,As Soon As Possible,2,14FS,Medium,15,14FS,10/21/13 10:00,,10/21/13 10:00,10/25/13 17:00
+75,6,1.0000,40.000000h,,38.000000h,,,,,10/25/13 08:00,,,6
+70,16,QA Testing,15d,3w,No,25%,25%,,As Soon As Possible,2,15FS,Medium,16,15FS,10/28/13 08:00,,10/28/13 08:00,
+70,17,App Scan,,3d,No,0%,0%,,As Soon As Possible,2,16FS,Medium,17,16FS,11/18/13 08:00,,,
+70,18,Deployment to NCI Stage,5d,1w,No,0%,0%,,As Soon As Possible,2,17FS,Medium,18,17FS,11/21/13 08:00,,,
+75,6,1.0000,40.000000h,,0.000000h,,,,,11/27/13 08:00,,,6
+70,19,Deployment to NCI Production,5d,1w,No,0%,0%,,As Soon As Possible,2,18FS,Medium,19,18FS,11/28/13 08:00,,,
+75,6,1.0000,40.000000h,,0.000000h,,,,,12/04/13 08:00,,,6
+70,20,End,1d,1d,No,0%,0%,,As Soon As Possible,2,"19FS,14FS,16FS,18FS,15FS",Medium,20,"19FS,14FS,16FS,18FS,15FS",12/05/13 08:00,,,
+70,21,End,0d,0d,Yes,0%,0%,,As Soon As Possible,0,"4FS,3FS,2FS,20FS,9FS",Medium,21,"4FS,3FS,2FS,20FS,9FS",09/18/14 17:00,,,
