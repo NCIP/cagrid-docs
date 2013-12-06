@@ -10,7 +10,7 @@ MPX,Microsoft Project for Windows,4.0,ANSI
 25,5,08:00,12:00,13:00,17:00
 25,6,08:00,12:00,13:00,17:00
 25,7
-30,13XS487-Technical,,,Standard,10/01/13 08:00,,0,
+30,13XS487-Technical,,,Standard,07/22/13 08:00,,0,
 41,1,40,42,43,49
 50,Lantern Three Project Manager,1,$0.00/h,$0.00/h,1
 55,Standard,2,2,2,2,2,2,2
@@ -32,29 +32,58 @@ MPX,Microsoft Project for Windows,4.0,ANSI
 70,3,caGrid Operations & Maintenance,,1y,No,0%,0%,,As Soon As Possible,1,1FS,Medium,3,1FS,10/18/13 08:00,,,
 75,2,1.0000,1920.000000h,,0.000000h,,,,,10/18/13 08:00,,,2
 75,1,1.0000,1920.000000h,,0.000000h,,,,,10/18/13 08:00,,,1
-70,4,caGrid 2.0 Cookbook Development,,,No,0%,0%,,As Soon As Possible,0,1FS,Medium,4,1FS,10/18/13 08:00,,,
-70,5,Start,0d,0d,Yes,0%,0%,,As Soon As Possible,1,1FS,Medium,5,1FS,10/18/13 08:00,,,
-70,6,Upgrading caGrid Services 1.x to SHA-2,5d,1w,No,0%,0%,,As Soon As Possible,1,5FS,Medium,6,5FS,10/18/13 08:00,,,
-75,2,1.0000,40.000000h,,0.000000h,,,,,10/18/13 08:00,,,2
+70,4,caGrid 2.0 Cookbook Development,,,No,20%,20%,,As Soon As Possible,0,1FS,Medium,4,1FS,10/18/13 08:00,,,
+70,5,Start,0d,0d,Yes,100%,100%,,As Soon As Possible,1,1FS,Medium,5,1FS,10/18/13 08:00,,10/18/13 08:00,10/18/13 08:00
+70,6,Upgrading caGrid Services 1.x to SHA-2,5d,1w,No,100%,100%,,As Soon As Possible,1,5FS,Medium,6,5FS,10/18/13 08:00,,10/18/13 08:00,
+75,2,1.0000,40.000000h,,40.000000h,,,,,10/18/13 08:00,,,2
 70,7,Splitting Grid Service Containers <?>,5d,1w,No,0%,0%,,As Soon As Possible,1,5FS,Medium,7,5FS,10/18/13 08:00,,,
 75,2,1.0000,40.000000h,,0.000000h,,,,,10/18/13 08:00,,,2
 70,8,Developing services for caGrid 2.0,15d,3w,No,0%,0%,,As Soon As Possible,1,5FS,Medium,8,5FS,10/18/13 08:00,,,
 75,2,1.0000,120.000000h,,0.000000h,,,,,10/18/13 08:00,,,2
-70,9,End,0d,0d,Yes,0%,0%,,As Soon As Possible,1,"6FS,8FS,7FS",Medium,9,"6FS,8FS,7FS",11/07/13 17:00,,,
-70,10,caGrid 2.0 Deployment,,,No,24%,24%,,As Soon As Possible,0,,Medium,10,,07/22/13 10:00,,,
+70,9,End,0d,0d,Yes,0%,0%,,As Soon As Possible,1,"7FS,6FS,8FS",Medium,9,"7FS,6FS,8FS",11/07/13 17:00,,,
+70,10,caGrid 2.0 Deployment,,,No,69%,69%,,As Soon As Possible,0,,Medium,10,,07/22/13 10:00,,,
 70,11,Start,0d,0d,Yes,100%,100%,,As Soon As Possible,1,1FS,Medium,11,1FS,10/18/13 08:00,,10/18/13 08:00,10/18/13 08:00
-70,12,Documentation,15d,3w,No,0%,0%,,As Soon As Possible,1,11FS,Medium,12,11FS,10/18/13 08:00,,,
-75,2,1.0000,120.000000h,,0.000000h,,,,,10/18/13 08:00,,,2
-70,13,Deployment,,,No,34%,34%,,As Soon As Possible,1,,Medium,13,,07/22/13 10:00,,,
+70,12,Documentation,15d,3w,No,100%,100%,,As Soon As Possible,1,11FS,Medium,12,11FS,10/18/13 08:00,,10/18/13 08:00,12/02/13 17:00
+71,https://cagrid.org/display/caGrid20/Home
+75,2,1.0000,120.000000h,,120.000000h,,,,,10/18/13 08:00,,,2
+70,13,Deployment,,,No,44%,44%,,As Soon As Possible,1,,Medium,13,,07/22/13 10:00,,,
 70,14,Architecture Review Checklist,5d,1w,No,100%,100%,,As Soon As Possible,2,11FS,Medium,14,11FS,07/22/13 10:00,,07/22/13 10:00,07/26/13 17:00
 75,1,1.0000,40.000000h,,38.000000h,,,,,10/18/13 08:00,,,1
 70,15,Deployment to NCI QA,5d,1w,No,100%,100%,,As Soon As Possible,2,14FS,Medium,15,14FS,10/21/13 10:00,,10/21/13 10:00,10/25/13 17:00
 75,6,1.0000,40.000000h,,38.000000h,,,,,10/25/13 08:00,,,6
-70,16,QA Testing,15d,3w,No,25%,25%,,As Soon As Possible,2,15FS,Medium,16,15FS,10/28/13 08:00,,10/28/13 08:00,
+70,16,QA Testing,15d,3w,No,50%,50%,,As Soon As Possible,2,15FS,Medium,16,15FS,10/28/13 08:00,,10/28/13 08:00,
+75,5,1.0000,120.000000h,,60.000000h,,,,,11/01/13 08:00,,,5
 70,17,App Scan,,3d,No,0%,0%,,As Soon As Possible,2,16FS,Medium,17,16FS,11/18/13 08:00,,,
+75,6,1.0000,24.000000h,,0.000000h,,,,,11/22/13 08:00,,,6
 70,18,Deployment to NCI Stage,5d,1w,No,0%,0%,,As Soon As Possible,2,17FS,Medium,18,17FS,11/21/13 08:00,,,
 75,6,1.0000,40.000000h,,0.000000h,,,,,11/27/13 08:00,,,6
 70,19,Deployment to NCI Production,5d,1w,No,0%,0%,,As Soon As Possible,2,18FS,Medium,19,18FS,11/28/13 08:00,,,
 75,6,1.0000,40.000000h,,0.000000h,,,,,12/04/13 08:00,,,6
-70,20,End,1d,1d,No,0%,0%,,As Soon As Possible,2,"19FS,14FS,16FS,18FS,15FS",Medium,20,"19FS,14FS,16FS,18FS,15FS",12/05/13 08:00,,,
-70,21,End,0d,0d,Yes,0%,0%,,As Soon As Possible,0,"4FS,3FS,2FS,20FS,9FS",Medium,21,"4FS,3FS,2FS,20FS,9FS",09/18/14 17:00,,,
+70,20,End,1d,1d,No,0%,0%,,As Soon As Possible,2,"16FS,18FS,15FS,19FS,14FS",Medium,20,"16FS,18FS,15FS,19FS,14FS",12/05/13 08:00,,,
+70,21,caGrid 2.1 Development,,,No,0%,0%,,As Soon As Possible,0,,Medium,21,,12/05/13 17:00,,,
+70,22,Start,,0h,No,0%,0%,,As Soon As Possible,1,20FS,Medium,22,20FS,12/05/13 17:00,,,
+70,23,Service Development,,,No,0%,0%,,As Soon As Possible,1,,Medium,23,,12/05/13 17:00,,,
+70,24,Start,,0h,No,0%,0%,,As Soon As Possible,2,22FS,Medium,24,22FS,12/05/13 17:00,,,
+70,25,MMS Service,50h,1.2w,No,0%,0%,,As Soon As Possible,2,24FS,Medium,25,24FS,12/06/13 08:00,,,
+70,26,Index Service,120h,3w,No,0%,0%,,As Soon As Possible,2,24FS,Medium,26,24FS,12/06/13 08:00,,,
+70,27,Authentication Service,80h,2w,No,0%,0%,,As Soon As Possible,2,24FS,Medium,27,24FS,12/06/13 08:00,,,
+70,28,FQP,80h,2w,No,0%,0%,,As Soon As Possible,2,24FS,Medium,28,24FS,12/06/13 08:00,,,
+70,29,Taverna,120h,3w,No,0%,0%,,As Soon As Possible,2,24FS,Medium,29,24FS,12/06/13 08:00,,,
+70,30,ID Prefix,40h,1w,No,0%,0%,,As Soon As Possible,2,24FS,Medium,30,24FS,12/06/13 08:00,,,
+70,31,ID Naming,50h,1.2w,No,0%,0%,,As Soon As Possible,2,24FS,Medium,31,24FS,12/06/13 08:00,,,
+70,32,SyncGTS,100h,2.5w,No,0%,0%,,As Soon As Possible,2,24FS,Medium,32,24FS,12/06/13 08:00,,,
+70,33,End,1d,1d,No,0%,0%,,As Soon As Possible,2,"25FS,31FS,30FS,27FS,32FS,26FS,29FS,28FS",Medium,33,"25FS,31FS,30FS,27FS,32FS,26FS,29FS,28FS",12/27/13 08:00,,,
+70,34,Other Activities,,,No,0%,0%,,As Soon As Possible,1,,Medium,34,,12/05/13 17:00,,,
+70,35,Start,,0h,No,0%,0%,,As Soon As Possible,2,22FS,Medium,35,22FS,12/05/13 17:00,,,
+70,36,Project Management,40h,1w,No,0%,0%,,As Soon As Possible,2,35FS,Medium,36,35FS,12/06/13 08:00,,,
+70,37,Training Grid Update,40h,1w,No,0%,0%,,As Soon As Possible,2,33FS,Medium,37,33FS,12/30/13 08:00,,,
+70,38,Deployment Documentation,80h,2w,No,0%,0%,,As Soon As Possible,2,33FS,Medium,38,33FS,12/30/13 08:00,,,
+70,39,SHA-2,,0h,No,0%,0%,,As Soon As Possible,2,35FS,Medium,39,35FS,12/05/13 17:00,,,
+70,40,WSRF Libraries,,0h,No,0%,0%,,As Soon As Possible,2,35FS,Medium,40,35FS,12/05/13 17:00,,,
+70,41,Testing,60h,1.5w,No,0%,0%,,As Soon As Possible,2,33FS,Medium,41,33FS,12/30/13 08:00,,,
+70,42,Target Grid,,0h,No,0%,0%,,As Soon As Possible,2,33FS,Medium,42,33FS,12/27/13 17:00,,,
+70,43,Jenkins Setup,8h,1d,No,0%,0%,,As Soon As Possible,2,35FS,Medium,43,35FS,12/06/13 08:00,,,
+70,44,Deployment Support,24h,3d,No,0%,0%,,As Soon As Possible,2,41FS,Medium,44,41FS,01/08/14 13:00,,,
+70,45,End,,0h,No,0%,0%,,As Soon As Possible,2,"40FS,36FS,38FS,42FS,39FS,43FS,37FS,41FS",Medium,45,"40FS,36FS,38FS,42FS,39FS,43FS,37FS,41FS",01/10/14 17:00,,,
+70,46,End,,0h,No,0%,0%,,As Soon As Possible,1,"45FS,33FS",Medium,46,"45FS,33FS",01/10/14 17:00,,,
+70,47,End,0d,0d,Yes,0%,0%,,As Soon As Possible,0,"46FS,2FS,3FS,20FS,4FS,9FS",Medium,47,"46FS,2FS,3FS,20FS,4FS,9FS",09/18/14 17:00,,,

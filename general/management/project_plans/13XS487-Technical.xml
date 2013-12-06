@@ -51,24 +51,22 @@
     <AdminProject>0</AdminProject>
     <Calendars>
         <Calendar>
-            <UID>2</UID>
+            <UID>1</UID>
             <WeekDays>
                 <WeekDay>
-                    <DayWorking>1</DayWorking>
-                    <WorkingTimes>
-                        <WorkingTime>
-                            <FromTime>00:00:00</FromTime>
-                            <ToTime>00:00:00</ToTime>
-                        </WorkingTime>
-                    </WorkingTimes>
+                    <DayWorking>0</DayWorking>
                     <DayType>1</DayType>
                 </WeekDay>
                 <WeekDay>
                     <DayWorking>1</DayWorking>
                     <WorkingTimes>
                         <WorkingTime>
-                            <FromTime>00:00:00</FromTime>
-                            <ToTime>00:00:00</ToTime>
+                            <FromTime>08:00:00</FromTime>
+                            <ToTime>12:00:00</ToTime>
+                        </WorkingTime>
+                        <WorkingTime>
+                            <FromTime>13:00:00</FromTime>
+                            <ToTime>17:00:00</ToTime>
                         </WorkingTime>
                     </WorkingTimes>
                     <DayType>2</DayType>
@@ -77,8 +75,12 @@
                     <DayWorking>1</DayWorking>
                     <WorkingTimes>
                         <WorkingTime>
-                            <FromTime>00:00:00</FromTime>
-                            <ToTime>00:00:00</ToTime>
+                            <FromTime>08:00:00</FromTime>
+                            <ToTime>12:00:00</ToTime>
+                        </WorkingTime>
+                        <WorkingTime>
+                            <FromTime>13:00:00</FromTime>
+                            <ToTime>17:00:00</ToTime>
                         </WorkingTime>
                     </WorkingTimes>
                     <DayType>3</DayType>
@@ -87,8 +89,12 @@
                     <DayWorking>1</DayWorking>
                     <WorkingTimes>
                         <WorkingTime>
-                            <FromTime>00:00:00</FromTime>
-                            <ToTime>00:00:00</ToTime>
+                            <FromTime>08:00:00</FromTime>
+                            <ToTime>12:00:00</ToTime>
+                        </WorkingTime>
+                        <WorkingTime>
+                            <FromTime>13:00:00</FromTime>
+                            <ToTime>17:00:00</ToTime>
                         </WorkingTime>
                     </WorkingTimes>
                     <DayType>4</DayType>
@@ -97,8 +103,12 @@
                     <DayWorking>1</DayWorking>
                     <WorkingTimes>
                         <WorkingTime>
-                            <FromTime>00:00:00</FromTime>
-                            <ToTime>00:00:00</ToTime>
+                            <FromTime>08:00:00</FromTime>
+                            <ToTime>12:00:00</ToTime>
+                        </WorkingTime>
+                        <WorkingTime>
+                            <FromTime>13:00:00</FromTime>
+                            <ToTime>17:00:00</ToTime>
                         </WorkingTime>
                     </WorkingTimes>
                     <DayType>5</DayType>
@@ -107,29 +117,27 @@
                     <DayWorking>1</DayWorking>
                     <WorkingTimes>
                         <WorkingTime>
-                            <FromTime>00:00:00</FromTime>
-                            <ToTime>00:00:00</ToTime>
+                            <FromTime>08:00:00</FromTime>
+                            <ToTime>12:00:00</ToTime>
+                        </WorkingTime>
+                        <WorkingTime>
+                            <FromTime>13:00:00</FromTime>
+                            <ToTime>17:00:00</ToTime>
                         </WorkingTime>
                     </WorkingTimes>
                     <DayType>6</DayType>
                 </WeekDay>
                 <WeekDay>
-                    <DayWorking>1</DayWorking>
-                    <WorkingTimes>
-                        <WorkingTime>
-                            <FromTime>00:00:00</FromTime>
-                            <ToTime>00:00:00</ToTime>
-                        </WorkingTime>
-                    </WorkingTimes>
+                    <DayWorking>0</DayWorking>
                     <DayType>7</DayType>
                 </WeekDay>
             </WeekDays>
-            <Name>24 hours</Name>
+            <Name>Standard</Name>
             <IsBaseCalendar>1</IsBaseCalendar>
             <BaseCalendarUID>-1</BaseCalendarUID>
         </Calendar>
         <Calendar>
-            <UID>3</UID>
+            <UID>2</UID>
             <WeekDays>
                 <WeekDay>
                     <DayWorking>0</DayWorking>
@@ -237,22 +245,24 @@
             <BaseCalendarUID>-1</BaseCalendarUID>
         </Calendar>
         <Calendar>
-            <UID>1</UID>
+            <UID>3</UID>
             <WeekDays>
                 <WeekDay>
-                    <DayWorking>0</DayWorking>
+                    <DayWorking>1</DayWorking>
+                    <WorkingTimes>
+                        <WorkingTime>
+                            <FromTime>00:00:00</FromTime>
+                            <ToTime>00:00:00</ToTime>
+                        </WorkingTime>
+                    </WorkingTimes>
                     <DayType>1</DayType>
                 </WeekDay>
                 <WeekDay>
                     <DayWorking>1</DayWorking>
                     <WorkingTimes>
                         <WorkingTime>
-                            <FromTime>08:00:00</FromTime>
-                            <ToTime>12:00:00</ToTime>
-                        </WorkingTime>
-                        <WorkingTime>
-                            <FromTime>13:00:00</FromTime>
-                            <ToTime>17:00:00</ToTime>
+                            <FromTime>00:00:00</FromTime>
+                            <ToTime>00:00:00</ToTime>
                         </WorkingTime>
                     </WorkingTimes>
                     <DayType>2</DayType>
@@ -261,12 +271,8 @@
                     <DayWorking>1</DayWorking>
                     <WorkingTimes>
                         <WorkingTime>
-                            <FromTime>08:00:00</FromTime>
-                            <ToTime>12:00:00</ToTime>
-                        </WorkingTime>
-                        <WorkingTime>
-                            <FromTime>13:00:00</FromTime>
-                            <ToTime>17:00:00</ToTime>
+                            <FromTime>00:00:00</FromTime>
+                            <ToTime>00:00:00</ToTime>
                         </WorkingTime>
                     </WorkingTimes>
                     <DayType>3</DayType>
@@ -275,12 +281,8 @@
                     <DayWorking>1</DayWorking>
                     <WorkingTimes>
                         <WorkingTime>
-                            <FromTime>08:00:00</FromTime>
-                            <ToTime>12:00:00</ToTime>
-                        </WorkingTime>
-                        <WorkingTime>
-                            <FromTime>13:00:00</FromTime>
-                            <ToTime>17:00:00</ToTime>
+                            <FromTime>00:00:00</FromTime>
+                            <ToTime>00:00:00</ToTime>
                         </WorkingTime>
                     </WorkingTimes>
                     <DayType>4</DayType>
@@ -289,12 +291,8 @@
                     <DayWorking>1</DayWorking>
                     <WorkingTimes>
                         <WorkingTime>
-                            <FromTime>08:00:00</FromTime>
-                            <ToTime>12:00:00</ToTime>
-                        </WorkingTime>
-                        <WorkingTime>
-                            <FromTime>13:00:00</FromTime>
-                            <ToTime>17:00:00</ToTime>
+                            <FromTime>00:00:00</FromTime>
+                            <ToTime>00:00:00</ToTime>
                         </WorkingTime>
                     </WorkingTimes>
                     <DayType>5</DayType>
@@ -303,22 +301,24 @@
                     <DayWorking>1</DayWorking>
                     <WorkingTimes>
                         <WorkingTime>
-                            <FromTime>08:00:00</FromTime>
-                            <ToTime>12:00:00</ToTime>
-                        </WorkingTime>
-                        <WorkingTime>
-                            <FromTime>13:00:00</FromTime>
-                            <ToTime>17:00:00</ToTime>
+                            <FromTime>00:00:00</FromTime>
+                            <ToTime>00:00:00</ToTime>
                         </WorkingTime>
                     </WorkingTimes>
                     <DayType>6</DayType>
                 </WeekDay>
                 <WeekDay>
-                    <DayWorking>0</DayWorking>
+                    <DayWorking>1</DayWorking>
+                    <WorkingTimes>
+                        <WorkingTime>
+                            <FromTime>00:00:00</FromTime>
+                            <ToTime>00:00:00</ToTime>
+                        </WorkingTime>
+                    </WorkingTimes>
                     <DayType>7</DayType>
                 </WeekDay>
             </WeekDays>
-            <Name>Standard</Name>
+            <Name>24 hours</Name>
             <IsBaseCalendar>1</IsBaseCalendar>
             <BaseCalendarUID>-1</BaseCalendarUID>
         </Calendar>
@@ -398,8 +398,8 @@
             <TotalSlack>0</TotalSlack>
             <FixedCost>0</FixedCost>
             <FixedCostAccrual>3</FixedCostAccrual>
-            <PercentComplete>5</PercentComplete>
-            <PercentWorkComplete>5</PercentWorkComplete>
+            <PercentComplete>7</PercentComplete>
+            <PercentWorkComplete>7</PercentWorkComplete>
             <Cost>0</Cost>
             <OvertimeCost>0</OvertimeCost>
             <OvertimeWork>PT0H0M0S</OvertimeWork>
@@ -417,7 +417,7 @@
             <CV>0</CV>
             <ConstraintType>2</ConstraintType>
             <CalendarUID>1</CalendarUID>
-            <ConstraintDate>2013-10-01T08:00:00</ConstraintDate>
+            <ConstraintDate>2013-07-22T08:00:00</ConstraintDate>
             <LevelAssignments>0</LevelAssignments>
             <LevelingCanSplit>0</LevelingCanSplit>
             <IgnoreResourceCalendar>0</IgnoreResourceCalendar>
@@ -1039,15 +1039,15 @@
             <ActualWorkProtected>PT0H0M0S</ActualWorkProtected>
             <ActualOvertimeWorkProtected>PT0H0M0S</ActualOvertimeWorkProtected>
             <PredecessorLink>
-                <PredecessorUID>8</PredecessorUID>
-                <Type>1</Type>
-            </PredecessorLink>
-            <PredecessorLink>
                 <PredecessorUID>7</PredecessorUID>
                 <Type>1</Type>
             </PredecessorLink>
             <PredecessorLink>
                 <PredecessorUID>6</PredecessorUID>
+                <Type>1</Type>
+            </PredecessorLink>
+            <PredecessorLink>
+                <PredecessorUID>8</PredecessorUID>
                 <Type>1</Type>
             </PredecessorLink>
         </Task>
@@ -1082,8 +1082,8 @@
             <TotalSlack>0</TotalSlack>
             <FixedCost>0</FixedCost>
             <FixedCostAccrual>3</FixedCostAccrual>
-            <PercentComplete>57</PercentComplete>
-            <PercentWorkComplete>57</PercentWorkComplete>
+            <PercentComplete>69</PercentComplete>
+            <PercentWorkComplete>69</PercentWorkComplete>
             <Cost>0</Cost>
             <OvertimeCost>0</OvertimeCost>
             <OvertimeWork>PT0H0M0S</OvertimeWork>
@@ -1194,11 +1194,11 @@
             <Priority>500</Priority>
             <Start>2013-10-18T08:00:00</Start>
             <ManualStart>2013-10-18T08:00:00</ManualStart>
-            <ManualFinish>2013-11-07T17:00:00</ManualFinish>
-            <Duration>PT120H0M0S</Duration>
-            <DurationFormat>9</DurationFormat>
+            <ManualFinish>2013-12-02T17:00:00</ManualFinish>
+            <Duration>PT256H0M0S</Duration>
+            <DurationFormat>11</DurationFormat>
             <Work>PT120H0M0S</Work>
-            <ManualDuration>PT120H0M0S</ManualDuration>
+            <ManualDuration>PT256H0M0S</ManualDuration>
             <ResumeValid>0</ResumeValid>
             <EffortDriven>0</EffortDriven>
             <Recurring>0</Recurring>
@@ -1217,12 +1217,13 @@
             <TotalSlack>0</TotalSlack>
             <FixedCost>0</FixedCost>
             <FixedCostAccrual>3</FixedCostAccrual>
-            <PercentComplete>90</PercentComplete>
-            <PercentWorkComplete>90</PercentWorkComplete>
+            <PercentComplete>100</PercentComplete>
+            <PercentWorkComplete>100</PercentWorkComplete>
             <Cost>0</Cost>
             <OvertimeCost>0</OvertimeCost>
             <OvertimeWork>PT0H0M0S</OvertimeWork>
             <ActualStart>2013-10-18T08:00:00</ActualStart>
+            <ActualFinish>2013-12-02T17:00:00</ActualFinish>
             <ActualDuration>PT0H0M0S</ActualDuration>
             <ActualCost>0</ActualCost>
             <ActualOvertimeCost>0</ActualOvertimeCost>
@@ -1497,12 +1498,11 @@
             <ActualDuration>PT0H0M0S</ActualDuration>
             <ActualCost>0</ActualCost>
             <ActualOvertimeCost>0</ActualOvertimeCost>
-            <ActualWork>PT60H0M0S</ActualWork>
+            <ActualWork>PT0H0M0S</ActualWork>
             <ActualOvertimeWork>PT0H0M0S</ActualOvertimeWork>
             <RegularWork>PT0H0M0S</RegularWork>
-            <RemainingDuration>PT60H0M0S</RemainingDuration>
             <RemainingCost>0</RemainingCost>
-            <RemainingWork>PT60H0M0S</RemainingWork>
+            <RemainingWork>PT0H0M0S</RemainingWork>
             <RemainingOvertimeCost>0</RemainingOvertimeCost>
             <RemainingOvertimeWork>PT0H0M0S</RemainingOvertimeWork>
             <ACWP>0</ACWP>
@@ -1569,9 +1569,8 @@
             <ActualWork>PT0H0M0S</ActualWork>
             <ActualOvertimeWork>PT0H0M0S</ActualOvertimeWork>
             <RegularWork>PT0H0M0S</RegularWork>
-            <RemainingDuration>PT24H0M0S</RemainingDuration>
             <RemainingCost>0</RemainingCost>
-            <RemainingWork>PT24H0M0S</RemainingWork>
+            <RemainingWork>PT0H0M0S</RemainingWork>
             <RemainingOvertimeCost>0</RemainingOvertimeCost>
             <RemainingOvertimeWork>PT0H0M0S</RemainingOvertimeWork>
             <ACWP>0</ACWP>
@@ -1795,6 +1794,10 @@
             <ActualWorkProtected>PT0H0M0S</ActualWorkProtected>
             <ActualOvertimeWorkProtected>PT0H0M0S</ActualOvertimeWorkProtected>
             <PredecessorLink>
+                <PredecessorUID>16</PredecessorUID>
+                <Type>1</Type>
+            </PredecessorLink>
+            <PredecessorLink>
                 <PredecessorUID>18</PredecessorUID>
                 <Type>1</Type>
             </PredecessorLink>
@@ -1803,15 +1806,11 @@
                 <Type>1</Type>
             </PredecessorLink>
             <PredecessorLink>
-                <PredecessorUID>14</PredecessorUID>
-                <Type>1</Type>
-            </PredecessorLink>
-            <PredecessorLink>
-                <PredecessorUID>16</PredecessorUID>
-                <Type>1</Type>
-            </PredecessorLink>
-            <PredecessorLink>
                 <PredecessorUID>19</PredecessorUID>
+                <Type>1</Type>
+            </PredecessorLink>
+            <PredecessorLink>
+                <PredecessorUID>14</PredecessorUID>
                 <Type>1</Type>
             </PredecessorLink>
         </Task>
@@ -2694,27 +2693,11 @@
             <ActualWorkProtected>PT0H0M0S</ActualWorkProtected>
             <ActualOvertimeWorkProtected>PT0H0M0S</ActualOvertimeWorkProtected>
             <PredecessorLink>
-                <PredecessorUID>27</PredecessorUID>
-                <Type>1</Type>
-            </PredecessorLink>
-            <PredecessorLink>
-                <PredecessorUID>26</PredecessorUID>
-                <Type>1</Type>
-            </PredecessorLink>
-            <PredecessorLink>
-                <PredecessorUID>28</PredecessorUID>
-                <Type>1</Type>
-            </PredecessorLink>
-            <PredecessorLink>
-                <PredecessorUID>29</PredecessorUID>
-                <Type>1</Type>
-            </PredecessorLink>
-            <PredecessorLink>
-                <PredecessorUID>32</PredecessorUID>
-                <Type>1</Type>
-            </PredecessorLink>
-            <PredecessorLink>
                 <PredecessorUID>25</PredecessorUID>
+                <Type>1</Type>
+            </PredecessorLink>
+            <PredecessorLink>
+                <PredecessorUID>31</PredecessorUID>
                 <Type>1</Type>
             </PredecessorLink>
             <PredecessorLink>
@@ -2722,7 +2705,23 @@
                 <Type>1</Type>
             </PredecessorLink>
             <PredecessorLink>
-                <PredecessorUID>31</PredecessorUID>
+                <PredecessorUID>27</PredecessorUID>
+                <Type>1</Type>
+            </PredecessorLink>
+            <PredecessorLink>
+                <PredecessorUID>32</PredecessorUID>
+                <Type>1</Type>
+            </PredecessorLink>
+            <PredecessorLink>
+                <PredecessorUID>26</PredecessorUID>
+                <Type>1</Type>
+            </PredecessorLink>
+            <PredecessorLink>
+                <PredecessorUID>29</PredecessorUID>
+                <Type>1</Type>
+            </PredecessorLink>
+            <PredecessorLink>
+                <PredecessorUID>28</PredecessorUID>
                 <Type>1</Type>
             </PredecessorLink>
         </Task>
@@ -3543,11 +3542,11 @@
             <ActualWorkProtected>PT0H0M0S</ActualWorkProtected>
             <ActualOvertimeWorkProtected>PT0H0M0S</ActualOvertimeWorkProtected>
             <PredecessorLink>
-                <PredecessorUID>36</PredecessorUID>
+                <PredecessorUID>40</PredecessorUID>
                 <Type>1</Type>
             </PredecessorLink>
             <PredecessorLink>
-                <PredecessorUID>39</PredecessorUID>
+                <PredecessorUID>36</PredecessorUID>
                 <Type>1</Type>
             </PredecessorLink>
             <PredecessorLink>
@@ -3555,19 +3554,19 @@
                 <Type>1</Type>
             </PredecessorLink>
             <PredecessorLink>
-                <PredecessorUID>37</PredecessorUID>
-                <Type>1</Type>
-            </PredecessorLink>
-            <PredecessorLink>
-                <PredecessorUID>40</PredecessorUID>
-                <Type>1</Type>
-            </PredecessorLink>
-            <PredecessorLink>
                 <PredecessorUID>42</PredecessorUID>
                 <Type>1</Type>
             </PredecessorLink>
             <PredecessorLink>
+                <PredecessorUID>39</PredecessorUID>
+                <Type>1</Type>
+            </PredecessorLink>
+            <PredecessorLink>
                 <PredecessorUID>43</PredecessorUID>
+                <Type>1</Type>
+            </PredecessorLink>
+            <PredecessorLink>
+                <PredecessorUID>37</PredecessorUID>
                 <Type>1</Type>
             </PredecessorLink>
             <PredecessorLink>
@@ -3713,15 +3712,7 @@
             <ActualWorkProtected>PT0H0M0S</ActualWorkProtected>
             <ActualOvertimeWorkProtected>PT0H0M0S</ActualOvertimeWorkProtected>
             <PredecessorLink>
-                <PredecessorUID>3</PredecessorUID>
-                <Type>1</Type>
-            </PredecessorLink>
-            <PredecessorLink>
-                <PredecessorUID>9</PredecessorUID>
-                <Type>1</Type>
-            </PredecessorLink>
-            <PredecessorLink>
-                <PredecessorUID>4</PredecessorUID>
+                <PredecessorUID>46</PredecessorUID>
                 <Type>1</Type>
             </PredecessorLink>
             <PredecessorLink>
@@ -3729,11 +3720,19 @@
                 <Type>1</Type>
             </PredecessorLink>
             <PredecessorLink>
-                <PredecessorUID>46</PredecessorUID>
+                <PredecessorUID>3</PredecessorUID>
                 <Type>1</Type>
             </PredecessorLink>
             <PredecessorLink>
                 <PredecessorUID>20</PredecessorUID>
+                <Type>1</Type>
+            </PredecessorLink>
+            <PredecessorLink>
+                <PredecessorUID>4</PredecessorUID>
+                <Type>1</Type>
+            </PredecessorLink>
+            <PredecessorLink>
+                <PredecessorUID>9</PredecessorUID>
                 <Type>1</Type>
             </PredecessorLink>
         </Task>
@@ -4051,20 +4050,48 @@
     <Assignments>
         <Assignment>
             <UID>1</UID>
-            <TaskUID>12</TaskUID>
+            <TaskUID>3</TaskUID>
             <ResourceUID>2</ResourceUID>
             <ActualCost>0</ActualCost>
-            <ActualWork>PT108H0M0S</ActualWork>
+            <ActualWork>PT0H0M0S</ActualWork>
             <Cost>0</Cost>
             <Delay>0</Delay>
             <OvertimeWork>PT0H0M0S</OvertimeWork>
-            <RemainingWork>PT11H59M59S</RemainingWork>
+            <RemainingWork>PT1920H0M0S</RemainingWork>
             <Start>2013-10-18T08:00:00</Start>
             <Units>1.000000e+00</Units>
-            <Work>PT120H0M0S</Work>
+            <Work>PT1920H0M0S</Work>
         </Assignment>
         <Assignment>
             <UID>2</UID>
+            <TaskUID>3</TaskUID>
+            <ResourceUID>1</ResourceUID>
+            <ActualCost>0</ActualCost>
+            <ActualWork>PT0H0M0S</ActualWork>
+            <Cost>0</Cost>
+            <Delay>0</Delay>
+            <OvertimeWork>PT0H0M0S</OvertimeWork>
+            <RemainingWork>PT1920H0M0S</RemainingWork>
+            <Start>2013-10-18T08:00:00</Start>
+            <Units>1.000000e+00</Units>
+            <Work>PT1920H0M0S</Work>
+        </Assignment>
+        <Assignment>
+            <UID>3</UID>
+            <TaskUID>12</TaskUID>
+            <ResourceUID>2</ResourceUID>
+            <ActualCost>0</ActualCost>
+            <ActualWork>PT256H0M0S</ActualWork>
+            <Cost>0</Cost>
+            <Delay>0</Delay>
+            <OvertimeWork>PT0H0M0S</OvertimeWork>
+            <RemainingWork>PT0H0M0S</RemainingWork>
+            <Start>2013-10-18T08:00:00</Start>
+            <Units>1.000000e+00</Units>
+            <Work>PT256H0M0S</Work>
+        </Assignment>
+        <Assignment>
+            <UID>4</UID>
             <TaskUID>19</TaskUID>
             <ResourceUID>6</ResourceUID>
             <ActualCost>0</ActualCost>
@@ -4078,21 +4105,35 @@
             <Work>PT40H0M0S</Work>
         </Assignment>
         <Assignment>
-            <UID>3</UID>
-            <TaskUID>15</TaskUID>
-            <ResourceUID>6</ResourceUID>
+            <UID>5</UID>
+            <TaskUID>16</TaskUID>
+            <ResourceUID>5</ResourceUID>
             <ActualCost>0</ActualCost>
-            <ActualWork>PT38H0M0S</ActualWork>
+            <ActualWork>PT60H0M0S</ActualWork>
             <Cost>0</Cost>
             <Delay>0</Delay>
             <OvertimeWork>PT0H0M0S</OvertimeWork>
-            <RemainingWork>PT0H0M0S</RemainingWork>
-            <Start>2013-10-21T10:00:00</Start>
+            <RemainingWork>PT60H0M0S</RemainingWork>
+            <Start>2013-10-28T08:00:00</Start>
             <Units>1.000000e+00</Units>
-            <Work>PT38H0M0S</Work>
+            <Work>PT120H0M0S</Work>
         </Assignment>
         <Assignment>
-            <UID>4</UID>
+            <UID>6</UID>
+            <TaskUID>17</TaskUID>
+            <ResourceUID>6</ResourceUID>
+            <ActualCost>0</ActualCost>
+            <ActualWork>PT0H0M0S</ActualWork>
+            <Cost>0</Cost>
+            <Delay>0</Delay>
+            <OvertimeWork>PT0H0M0S</OvertimeWork>
+            <RemainingWork>PT24H0M0S</RemainingWork>
+            <Start>2013-11-18T08:00:00</Start>
+            <Units>1.000000e+00</Units>
+            <Work>PT24H0M0S</Work>
+        </Assignment>
+        <Assignment>
+            <UID>7</UID>
             <TaskUID>18</TaskUID>
             <ResourceUID>6</ResourceUID>
             <ActualCost>0</ActualCost>
@@ -4106,7 +4147,21 @@
             <Work>PT40H0M0S</Work>
         </Assignment>
         <Assignment>
-            <UID>5</UID>
+            <UID>8</UID>
+            <TaskUID>15</TaskUID>
+            <ResourceUID>6</ResourceUID>
+            <ActualCost>0</ActualCost>
+            <ActualWork>PT38H0M0S</ActualWork>
+            <Cost>0</Cost>
+            <Delay>0</Delay>
+            <OvertimeWork>PT0H0M0S</OvertimeWork>
+            <RemainingWork>PT0H0M0S</RemainingWork>
+            <Start>2013-10-21T10:00:00</Start>
+            <Units>1.000000e+00</Units>
+            <Work>PT38H0M0S</Work>
+        </Assignment>
+        <Assignment>
+            <UID>9</UID>
             <TaskUID>14</TaskUID>
             <ResourceUID>1</ResourceUID>
             <ActualCost>0</ActualCost>
@@ -4120,35 +4175,7 @@
             <Work>PT38H0M0S</Work>
         </Assignment>
         <Assignment>
-            <UID>6</UID>
-            <TaskUID>3</TaskUID>
-            <ResourceUID>2</ResourceUID>
-            <ActualCost>0</ActualCost>
-            <ActualWork>PT0H0M0S</ActualWork>
-            <Cost>0</Cost>
-            <Delay>0</Delay>
-            <OvertimeWork>PT0H0M0S</OvertimeWork>
-            <RemainingWork>PT1920H0M0S</RemainingWork>
-            <Start>2013-10-18T08:00:00</Start>
-            <Units>1.000000e+00</Units>
-            <Work>PT1920H0M0S</Work>
-        </Assignment>
-        <Assignment>
-            <UID>7</UID>
-            <TaskUID>3</TaskUID>
-            <ResourceUID>1</ResourceUID>
-            <ActualCost>0</ActualCost>
-            <ActualWork>PT0H0M0S</ActualWork>
-            <Cost>0</Cost>
-            <Delay>0</Delay>
-            <OvertimeWork>PT0H0M0S</OvertimeWork>
-            <RemainingWork>PT1920H0M0S</RemainingWork>
-            <Start>2013-10-18T08:00:00</Start>
-            <Units>1.000000e+00</Units>
-            <Work>PT1920H0M0S</Work>
-        </Assignment>
-        <Assignment>
-            <UID>8</UID>
+            <UID>10</UID>
             <TaskUID>8</TaskUID>
             <ResourceUID>2</ResourceUID>
             <ActualCost>0</ActualCost>
@@ -4162,21 +4189,7 @@
             <Work>PT120H0M0S</Work>
         </Assignment>
         <Assignment>
-            <UID>9</UID>
-            <TaskUID>7</TaskUID>
-            <ResourceUID>2</ResourceUID>
-            <ActualCost>0</ActualCost>
-            <ActualWork>PT0H0M0S</ActualWork>
-            <Cost>0</Cost>
-            <Delay>0</Delay>
-            <OvertimeWork>PT0H0M0S</OvertimeWork>
-            <RemainingWork>PT40H0M0S</RemainingWork>
-            <Start>2013-10-18T08:00:00</Start>
-            <Units>1.000000e+00</Units>
-            <Work>PT40H0M0S</Work>
-        </Assignment>
-        <Assignment>
-            <UID>10</UID>
+            <UID>11</UID>
             <TaskUID>6</TaskUID>
             <ResourceUID>2</ResourceUID>
             <ActualCost>0</ActualCost>
@@ -4185,6 +4198,20 @@
             <Delay>0</Delay>
             <OvertimeWork>PT0H0M0S</OvertimeWork>
             <RemainingWork>PT0H0M0S</RemainingWork>
+            <Start>2013-10-18T08:00:00</Start>
+            <Units>1.000000e+00</Units>
+            <Work>PT40H0M0S</Work>
+        </Assignment>
+        <Assignment>
+            <UID>12</UID>
+            <TaskUID>7</TaskUID>
+            <ResourceUID>2</ResourceUID>
+            <ActualCost>0</ActualCost>
+            <ActualWork>PT0H0M0S</ActualWork>
+            <Cost>0</Cost>
+            <Delay>0</Delay>
+            <OvertimeWork>PT0H0M0S</OvertimeWork>
+            <RemainingWork>PT40H0M0S</RemainingWork>
             <Start>2013-10-18T08:00:00</Start>
             <Units>1.000000e+00</Units>
             <Work>PT40H0M0S</Work>
