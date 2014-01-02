@@ -30,8 +30,8 @@ MPX,Microsoft Project for Windows,4.0,ANSI
 70,1,Start,0d,0d,Yes,100%,100%,10/18/13 08:00,Start No Earlier Than,0,,Medium,1,,10/18/13 08:00,,10/18/13 08:00,10/18/13 08:00
 70,2,caGrid Architectural Mentoring,,,No,0%,0%,,As Soon As Possible,0,1FS,Medium,2,1FS,10/18/13 08:00,,,
 70,3,caGrid Operations & Maintenance,,1y,No,0%,0%,,As Soon As Possible,1,1FS,Medium,3,1FS,10/18/13 08:00,,,
-75,2,1.0000,1920.000000h,,0.000000h,,,,,10/18/13 08:00,,,2
 75,1,1.0000,1920.000000h,,0.000000h,,,,,10/18/13 08:00,,,1
+75,2,1.0000,1920.000000h,,0.000000h,,,,,10/18/13 08:00,,,2
 70,4,caGrid 2.0 Cookbook Development,,,No,20%,20%,,As Soon As Possible,0,1FS,Medium,4,1FS,10/18/13 08:00,,,
 70,5,Start,0d,0d,Yes,100%,100%,,As Soon As Possible,1,1FS,Medium,5,1FS,10/18/13 08:00,,10/18/13 08:00,10/18/13 08:00
 70,6,Upgrading caGrid Services 1.x to SHA-2,5d,1w,No,100%,100%,,As Soon As Possible,1,5FS,Medium,6,5FS,10/18/13 08:00,,10/18/13 08:00,
@@ -41,49 +41,65 @@ MPX,Microsoft Project for Windows,4.0,ANSI
 70,8,Developing services for caGrid 2.0,15d,3w,No,0%,0%,,As Soon As Possible,1,5FS,Medium,8,5FS,10/18/13 08:00,,,
 75,2,1.0000,120.000000h,,0.000000h,,,,,10/18/13 08:00,,,2
 70,9,End,0d,0d,Yes,0%,0%,,As Soon As Possible,1,"7FS,6FS,8FS",Medium,9,"7FS,6FS,8FS",11/07/13 17:00,,,
-70,10,caGrid 2.0 Deployment,,,No,69%,69%,,As Soon As Possible,0,,Medium,10,,07/22/13 10:00,,,
+70,10,caGrid 2.0 Deployment,,,No,95%,95%,,As Soon As Possible,0,,Medium,10,,07/22/13 10:00,,,
 70,11,Start,0d,0d,Yes,100%,100%,,As Soon As Possible,1,1FS,Medium,11,1FS,10/18/13 08:00,,10/18/13 08:00,10/18/13 08:00
 70,12,Documentation,15d,3w,No,100%,100%,,As Soon As Possible,1,11FS,Medium,12,11FS,10/18/13 08:00,,10/18/13 08:00,12/02/13 17:00
 71,https://cagrid.org/display/caGrid20/Home
 75,2,1.0000,120.000000h,,120.000000h,,,,,10/18/13 08:00,,,2
-70,13,Deployment,,,No,44%,44%,,As Soon As Possible,1,,Medium,13,,07/22/13 10:00,,,
+70,13,Deployment,,,No,95%,95%,,As Soon As Possible,1,,Medium,13,,07/22/13 10:00,,,
 70,14,Architecture Review Checklist,5d,1w,No,100%,100%,,As Soon As Possible,2,11FS,Medium,14,11FS,07/22/13 10:00,,07/22/13 10:00,07/26/13 17:00
 75,1,1.0000,40.000000h,,38.000000h,,,,,10/18/13 08:00,,,1
 70,15,Deployment to NCI QA,5d,1w,No,100%,100%,,As Soon As Possible,2,14FS,Medium,15,14FS,10/21/13 10:00,,10/21/13 10:00,10/25/13 17:00
 75,6,1.0000,40.000000h,,38.000000h,,,,,10/25/13 08:00,,,6
-70,16,QA Testing,15d,3w,No,50%,50%,,As Soon As Possible,2,15FS,Medium,16,15FS,10/28/13 08:00,,10/28/13 08:00,
-75,5,1.0000,120.000000h,,60.000000h,,,,,11/01/13 08:00,,,5
+70,16,QA Testing,15d,3w,No,100%,100%,,As Soon As Possible,2,15FS,Medium,16,15FS,10/28/13 08:00,,10/28/13 08:00,
+75,5,1.0000,120.000000h,,120.000000h,,,,,11/01/13 08:00,,,5
 70,17,App Scan,,3d,No,0%,0%,,As Soon As Possible,2,16FS,Medium,17,16FS,11/18/13 08:00,,,
+71,https://tracker.nci.nih.gov/browse/SECURITYTEAM-222
 75,6,1.0000,24.000000h,,0.000000h,,,,,11/22/13 08:00,,,6
-70,18,Deployment to NCI Stage,5d,1w,No,0%,0%,,As Soon As Possible,2,17FS,Medium,18,17FS,11/21/13 08:00,,,
+70,18,Training Grid,,,No,100%,100%,,As Soon As Possible,2,,Medium,18,,10/18/13 08:00,,,12/23/13 17:00
+70,19,Start,,0h,No,100%,100%,,As Soon As Possible,3,11FS,Medium,19,11FS,10/18/13 08:00,,10/18/13 08:00,12/17/13 17:00
+70,20,Dorian,1d,1d,No,100%,100%,,As Soon As Possible,3,19FS,Medium,20,19FS,10/18/13 08:00,,10/18/13 08:00,12/17/13 17:00
+75,2,1.0000,8.000000h,,8.000000h,,,,,10/18/13 08:00,,,2
+70,21,Master GTS,1d,1d,No,100%,100%,,As Soon As Possible,3,19FS,Medium,21,19FS,10/18/13 08:00,,10/18/13 08:00,12/17/13 17:00
+75,2,1.0000,8.000000h,,8.000000h,,,,,10/18/13 08:00,,,2
+70,22,Slave GTS,1d,1d,No,100%,100%,,As Soon As Possible,3,19FS,Medium,22,19FS,10/18/13 08:00,,10/18/13 08:00,12/17/13 17:00
+75,2,1.0000,8.000000h,,8.000000h,,,,,10/18/13 08:00,,,2
+70,23,Index,1d,1d,No,100%,100%,,As Soon As Possible,3,19FS,Medium,23,19FS,10/18/13 08:00,,10/18/13 08:00,12/17/13 17:00
+75,2,1.0000,8.000000h,,8.000000h,,,,,10/18/13 08:00,,,2
+70,24,Grid Grouper,1d,1d,No,100%,100%,,As Soon As Possible,3,19FS,Medium,24,19FS,10/18/13 08:00,,10/18/13 08:00,12/20/13 17:00
+75,2,1.0000,8.000000h,,8.000000h,,,,,10/18/13 08:00,,,2
+70,25,MMS,1d,1d,No,100%,100%,,As Soon As Possible,3,19FS,Medium,25,19FS,10/18/13 08:00,,10/18/13 08:00,12/22/13 17:00
+75,2,1.0000,8.000000h,,8.000000h,,,,,10/18/13 08:00,,,2
+70,26,GME,1d,1d,No,100%,100%,,As Soon As Possible,3,19FS,Medium,26,19FS,10/18/13 08:00,,10/18/13 08:00,12/23/13 17:00
+75,2,1.0000,8.000000h,,8.000000h,,,,,10/18/13 08:00,,,2
+70,27,End,,0h,No,100%,100%,,As Soon As Possible,3,"21FS,25FS,20FS,23FS,24FS,22FS,26FS",Medium,27,"21FS,25FS,20FS,23FS,24FS,22FS,26FS",10/18/13 17:00,,10/18/13 17:00,12/23/13 17:00
+75,2,1.0000,0.000000h,,0.000000h,,,,,10/18/13 17:00,,,2
+70,28,Deployment to NCI Stage,,1w,No,0%,0%,,As Soon As Possible,2,17FS,Medium,28,17FS,11/21/13 08:00,,,
 75,6,1.0000,40.000000h,,0.000000h,,,,,11/27/13 08:00,,,6
-70,19,Deployment to NCI Production,5d,1w,No,0%,0%,,As Soon As Possible,2,18FS,Medium,19,18FS,11/28/13 08:00,,,
+70,29,Deployment to NCI Production,,1w,No,0%,0%,,As Soon As Possible,2,28FS,Medium,29,28FS,11/28/13 08:00,,,
 75,6,1.0000,40.000000h,,0.000000h,,,,,12/04/13 08:00,,,6
-70,20,End,1d,1d,No,0%,0%,,As Soon As Possible,2,"16FS,18FS,15FS,19FS,14FS",Medium,20,"16FS,18FS,15FS,19FS,14FS",12/05/13 08:00,,,
-70,21,caGrid 2.1 Development,,,No,0%,0%,,As Soon As Possible,0,,Medium,21,,12/05/13 17:00,,,
-70,22,Start,,0h,No,0%,0%,,As Soon As Possible,1,20FS,Medium,22,20FS,12/05/13 17:00,,,
-70,23,Service Development,,,No,0%,0%,,As Soon As Possible,1,,Medium,23,,12/05/13 17:00,,,
-70,24,Start,,0h,No,0%,0%,,As Soon As Possible,2,22FS,Medium,24,22FS,12/05/13 17:00,,,
-70,25,MMS Service,50h,1.2w,No,0%,0%,,As Soon As Possible,2,24FS,Medium,25,24FS,12/06/13 08:00,,,
-70,26,Index Service,120h,3w,No,0%,0%,,As Soon As Possible,2,24FS,Medium,26,24FS,12/06/13 08:00,,,
-70,27,Authentication Service,80h,2w,No,0%,0%,,As Soon As Possible,2,24FS,Medium,27,24FS,12/06/13 08:00,,,
-70,28,FQP,80h,2w,No,0%,0%,,As Soon As Possible,2,24FS,Medium,28,24FS,12/06/13 08:00,,,
-70,29,Taverna,120h,3w,No,0%,0%,,As Soon As Possible,2,24FS,Medium,29,24FS,12/06/13 08:00,,,
-70,30,ID Prefix,40h,1w,No,0%,0%,,As Soon As Possible,2,24FS,Medium,30,24FS,12/06/13 08:00,,,
-70,31,ID Naming,50h,1.2w,No,0%,0%,,As Soon As Possible,2,24FS,Medium,31,24FS,12/06/13 08:00,,,
-70,32,SyncGTS,100h,2.5w,No,0%,0%,,As Soon As Possible,2,24FS,Medium,32,24FS,12/06/13 08:00,,,
-70,33,End,1d,1d,No,0%,0%,,As Soon As Possible,2,"25FS,31FS,30FS,27FS,32FS,26FS,29FS,28FS",Medium,33,"25FS,31FS,30FS,27FS,32FS,26FS,29FS,28FS",12/27/13 08:00,,,
-70,34,Other Activities,,,No,0%,0%,,As Soon As Possible,1,,Medium,34,,12/05/13 17:00,,,
-70,35,Start,,0h,No,0%,0%,,As Soon As Possible,2,22FS,Medium,35,22FS,12/05/13 17:00,,,
-70,36,Project Management,40h,1w,No,0%,0%,,As Soon As Possible,2,35FS,Medium,36,35FS,12/06/13 08:00,,,
-70,37,Training Grid Update,40h,1w,No,0%,0%,,As Soon As Possible,2,33FS,Medium,37,33FS,12/30/13 08:00,,,
-70,38,Deployment Documentation,80h,2w,No,0%,0%,,As Soon As Possible,2,33FS,Medium,38,33FS,12/30/13 08:00,,,
-70,39,SHA-2,,0h,No,0%,0%,,As Soon As Possible,2,35FS,Medium,39,35FS,12/05/13 17:00,,,
-70,40,WSRF Libraries,,0h,No,0%,0%,,As Soon As Possible,2,35FS,Medium,40,35FS,12/05/13 17:00,,,
-70,41,Testing,60h,1.5w,No,0%,0%,,As Soon As Possible,2,33FS,Medium,41,33FS,12/30/13 08:00,,,
-70,42,Target Grid,,0h,No,0%,0%,,As Soon As Possible,2,33FS,Medium,42,33FS,12/27/13 17:00,,,
-70,43,Jenkins Setup,8h,1d,No,0%,0%,,As Soon As Possible,2,35FS,Medium,43,35FS,12/06/13 08:00,,,
-70,44,Deployment Support,24h,3d,No,0%,0%,,As Soon As Possible,2,41FS,Medium,44,41FS,01/08/14 13:00,,,
-70,45,End,,0h,No,0%,0%,,As Soon As Possible,2,"40FS,36FS,38FS,42FS,39FS,43FS,37FS,41FS",Medium,45,"40FS,36FS,38FS,42FS,39FS,43FS,37FS,41FS",01/10/14 17:00,,,
-70,46,End,,0h,No,0%,0%,,As Soon As Possible,1,"45FS,33FS",Medium,46,"45FS,33FS",01/10/14 17:00,,,
-70,47,End,0d,0d,Yes,0%,0%,,As Soon As Possible,0,"46FS,2FS,3FS,20FS,4FS,9FS",Medium,47,"46FS,2FS,3FS,20FS,4FS,9FS",09/18/14 17:00,,,
+70,30,Deployment Support,55h,1.4w,No,0%,0%,,As Soon As Possible,2,"16FS,15FS,17FS,28FS,29FS",Medium,30,"16FS,15FS,17FS,28FS,29FS",12/05/13 08:00,,,
+70,31,End,,0h,No,0%,0%,,As Soon As Possible,2,"15FS,29FS,28FS,16FS,14FS,30FS",Medium,31,"15FS,29FS,28FS,16FS,14FS,30FS",12/13/13 16:00,,,
+70,32,caGrid 2.1 Development,,,No,2%,2%,,As Soon As Possible,0,,Medium,32,,12/30/13 08:00,,,
+70,33,Start,,0h,No,100%,100%,,As Soon As Possible,1,31FS,Medium,33,31FS,12/30/13 08:00,,12/30/13 08:00,
+70,34,Service Development,,,No,5%,5%,,As Soon As Possible,1,,Medium,34,,12/30/13 08:00,,,
+70,35,Start,,0h,No,0%,0%,,As Soon As Possible,2,33FS,Medium,35,33FS,12/30/13 08:00,,,
+70,36,MMS Service,50h,1.2w,No,0%,0%,,As Soon As Possible,2,35FS,Medium,36,35FS,12/30/13 08:00,,,
+70,37,Index Service,120h,3w,No,0%,0%,,As Soon As Possible,2,35FS,Medium,37,35FS,12/30/13 08:00,,,
+70,38,Authentication Service,80h,2w,No,0%,0%,,As Soon As Possible,2,35FS,Medium,38,35FS,12/30/13 08:00,,,
+70,39,SyncGTS,84h,2w,No,20%,20%,,As Soon As Possible,2,35FS,Medium,39,35FS,12/30/13 08:00,,12/30/13 08:00,
+70,40,End,,0h,No,0%,0%,,As Soon As Possible,2,"36FS,39FS,37FS,38FS",Medium,40,"36FS,39FS,37FS,38FS",01/17/14 17:00,,,
+70,41,Other Activities,,,No,0%,0%,,As Soon As Possible,1,,Medium,41,,12/30/13 08:00,,,
+70,42,Start,,0h,No,0%,0%,,As Soon As Possible,2,33FS,Medium,42,33FS,12/30/13 08:00,,,
+70,43,Project Management,40h,1w,No,0%,0%,,As Soon As Possible,2,42FS,Medium,43,42FS,12/30/13 08:00,,,
+70,44,Training Grid Update,40h,1w,No,0%,0%,,As Soon As Possible,2,40FS,Medium,44,40FS,01/20/14 08:00,,,
+70,45,Deployment Documentation,80h,2w,No,0%,0%,,As Soon As Possible,2,40FS,Medium,45,40FS,01/20/14 08:00,,,
+70,46,SHA-2,,0h,No,0%,0%,,As Soon As Possible,2,42FS,Medium,46,42FS,12/30/13 08:00,,,
+70,47,WSRF Libraries,,0h,No,0%,0%,,As Soon As Possible,2,42FS,Medium,47,42FS,12/30/13 08:00,,,
+70,48,Testing,60h,1.5w,No,0%,0%,,As Soon As Possible,2,40FS,Medium,48,40FS,01/20/14 08:00,,,
+70,49,Target Grid,,0h,No,0%,0%,,As Soon As Possible,2,40FS,Medium,49,40FS,01/17/14 17:00,,,
+70,50,Jenkins Setup,8h,1d,No,0%,0%,,As Soon As Possible,2,42FS,Medium,50,42FS,12/30/13 08:00,,,
+70,51,Deployment Support,24h,3d,No,0%,0%,,As Soon As Possible,2,48FS,Medium,51,48FS,01/29/14 13:00,,,
+70,52,End,,0h,No,0%,0%,,As Soon As Possible,2,"50FS,48FS,49FS,46FS,45FS,43FS,47FS,44FS",Medium,52,"50FS,48FS,49FS,46FS,45FS,43FS,47FS,44FS",01/31/14 17:00,,,
+70,53,End,,0h,No,0%,0%,,As Soon As Possible,1,"52FS,40FS",Medium,53,"52FS,40FS",01/31/14 17:00,,,
+70,54,End,0d,0d,Yes,0%,0%,,As Soon As Possible,0,"53FS,4FS,9FS,31FS,3FS,2FS",Medium,54,"53FS,4FS,9FS,31FS,3FS,2FS",09/18/14 17:00,,,
